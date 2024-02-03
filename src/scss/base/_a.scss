@@ -1,0 +1,9 @@
+a[target*="blank"]:after {
+  content: " (opens in new window)";
+  display: inline-block;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: 200%;
+  width: 0;
+}

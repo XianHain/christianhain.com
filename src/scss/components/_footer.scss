@@ -1,0 +1,31 @@
+.footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@supports (padding-bottom:env(safe-area-inset-bottom)) {
+  .footer {
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    padding-bottom: var(--safe-area-inset-bottom);
+  }
+}
+
+.footer__footer {
+  margin: 4rem 0 0;
+}
+
+.footer__copyright {
+  border-top: .0625rem solid hsla(0, 0%, 0%, .3);
+  font-family: var(--font-meta);
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.footer__footer small {
+  font-size: .75rem;
+}
+
+.footer__footer span {
+  font-weight: 900;
+}

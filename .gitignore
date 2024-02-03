@@ -1,8 +1,13 @@
 .idea
+
 public
+
 node_modules
 
 yarn-debug.log*
 yarn-error.log*
 
 .DS_Store
+
+*.css
+*.css.map

@@ -6,8 +6,12 @@ import uglify from 'gulp-uglify';
 import htmlMin from 'gulp-htmlmin';
 import replace from 'gulp-replace';
 import cleanCss from 'gulp-clean-css';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 
+
+const sass = gulpSass(dartSass);
 const destDir = 'public';
 
 function cleanDist() {
@@ -15,9 +19,10 @@ function cleanDist() {
     .pipe(clean())
 }
 
-function minifyCss() {
+function compileScss() {
   return gulp
-    .src('src/styles.css')
+    .src('src/scss/styles.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       cascade: false,
     }))
@@ -53,7 +58,7 @@ function transpileJs() {
 
 export const build = gulp.series(
   cleanDist,
-  minifyCss,
   copyIndex,
+  compileScss,
   transpileJs,
 );
