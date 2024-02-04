@@ -20,6 +20,50 @@ body {
   margin: 0;
 }
 
+/****************************************************************************** Menu */
+.menu {
+  position: absolute;
+  right: .5rem;
+  top: 0;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+  padding: .5rem;
+  border: .0625rem solid hsla(194, 100%, 50%, .25);
+  margin: 0;
+  justify-content: flex-end;
+  border-radius: 2.5rem;
+  background: hsla(206, 100%, 4%, .95);
+  box-shadow: 0 0 2rem 1rem var(--blue-dark);
+}
+
+.menu__link {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.menu__link-icon {
+  color: var(--blue-bright);
+  opacity: .25;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu__link-text {
+  white-space: nowrap;
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
 /****************************************************************************** Header */
 .header {
   display: grid;
@@ -52,99 +96,6 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
-.header__menu {
-  max-width: 6rem;
-  margin: 0;
-  position: absolute;
-  border: .0625rem solid var(--menu-border-color);
-  right: 1rem;
-  top: 0;
-  border-radius: .5rem;
-  padding: 1rem;
-}
-@media (min-width: 37rem) {
-  .header__menu {
-    max-width: 100%;
-  }
-}
-.header__menu[open] {
-  --menu-border-color: var(--blue-bright);
-  background: hsla(194, 100%, 50%, .1);
-}
-
-.header__menu-toggle {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  justify-content: flex-end;
-  cursor: default;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  user-select: none;
-}
-.header__menu-toggle:hover,
-.header__menu-toggle:focus-visible {
-  --hamburger-color: var(--white);
-}
-.header__menu-toggle::-webkit-details-marker {
-  display:none;
-}
-
-.header__nav {
-  padding: 2rem 0 0;
-  margin: 0 0 0 1rem;
-}
-@media (min-width: 29rem) {
-  .header__nav {
-    margin-left: 0;
-  }
-}
-
-.header__nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header__nav-list li {
-  margin: 1rem 0 0;
-}
-
-.header__nav-list a {
-  color: var(--blue-bright);
-}
-.header__nav-list a:hover {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
-
-/****************************************************************************** Hamburger Menu */
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1.5rem;
-  height: 1rem;
-}
-
-.hamburger-menu__line {
-  width: 100%;
-  height: .1875rem;
-  background-color: var(--hamburger-color);
-  transition: transform 0.3s ease-in-out;
-  border-radius: .125rem;
-}
-
-.hamburger-menu__line:first-child {
-  transform-origin: top;
-}
-
-.hamburger-menu__line:last-child {
-  transform-origin: bottom;
-}
-
 
 /****************************************************************************** Content */
 .content {
