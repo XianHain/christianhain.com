@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
 import clean from 'gulp-clean';
+import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import htmlMin from 'gulp-htmlmin';
@@ -45,12 +46,14 @@ function copyIndex() {
     .pipe(gulp.dest(destDir));
 }
 
-function transpileJs() {
+function transpileMjs() {
   return gulp
-    .src('src/script.js')
+    .src('src/scripts/**.mjs')
     .pipe(babel({
       presets: ['@babel/env'],
     }))
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('src'))
     .pipe(uglify())
     .pipe(rename('script.min.js'))
     .pipe(gulp.dest(destDir));
@@ -60,5 +63,14 @@ export const build = gulp.series(
   cleanDist,
   copyIndex,
   compileScss,
-  transpileJs,
+  transpileMjs,
 );
+
+export const watchJs = gulp.series(
+  function watchJsSeries() {
+    return gulp.watch(
+      'src/scripts/**.mjs',
+      gulp.series(transpileMjs)
+    )
+  },
+)
