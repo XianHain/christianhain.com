@@ -1,27 +1,28 @@
 window.xian = window.xian || {};
 xian.hashnode = xian.hashnode || (function hashnode() {
-  const blogUrl = 'https://blog.christianhain.com';
-  const blogUsername = 'xianhain';
   const blogContainer = document.querySelector(
     '[rel~="js-blog-container"]'
   );
 
   const getUserArticlesGQL = `
-    query GetUserArticles($page: Int!) {
-      user(username: "${blogUsername}") {
-        publication {
-          posts(page: $page) {
+    query Publication {
+    publication(host: "blog.christianhain.com") {
+      title
+      posts(first: 10) {
+        edges {
+          node {
             title
             brief
-            slug
+            url
           }
         }
       }
     }
+  }
   `;
 
   async function gql(query, variables={}) {
-    const data = await fetch('https://api.hashnode.com/', {
+    const data = await fetch('https://gql.hashnode.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -38,7 +39,7 @@ xian.hashnode = xian.hashnode || (function hashnode() {
   function init() {
     gql(getUserArticlesGQL, { page: 0 })
       .then((result) => {
-        const articles = result.data.user.publication.posts;
+        const articles = result.data.publication.posts.edges;
         const template = document.querySelector('[rel~="js-blog-entry-template"]');
 
         // Test to see if the browser supports the HTML template element by
@@ -49,13 +50,13 @@ xian.hashnode = xian.hashnode || (function hashnode() {
             const clone = template.content.cloneNode(true);
 
             const title = clone.querySelector('[rel~="js-blog-entry__title"]');
-            title.textContent = article.title;
+            title.textContent = article.node.title;
 
             const brief = clone.querySelector('[rel~="js-blog-entry__brief"]');
-            brief.textContent = article.brief;
+            brief.textContent = article.node.brief;
 
             const link = clone.querySelector('[rel~="js-blog-entry__link"]');
-            link.href = `${blogUrl}/${article.slug}`;
+            link.href = article.node.url;
 
             blogContainer.appendChild(clone);
           });
@@ -64,7 +65,7 @@ xian.hashnode = xian.hashnode || (function hashnode() {
           //       the HTML template element is not supported.
         }
       })
-      .catch(() => {
+      .catch((error) => {
         const template = document.querySelector('[rel~="js-blog-entry-failed-template"]');
         const clone = template.content.cloneNode(true);
         blogContainer.appendChild(clone);
