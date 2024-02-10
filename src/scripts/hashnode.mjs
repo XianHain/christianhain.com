@@ -4,6 +4,9 @@ xian.hashnode = xian.hashnode || (function hashnode() {
     '[rel~="js-blog-container"]'
   );
 
+  const blogBriefElements = [];
+  const blogTitleElements = [];
+
   const getUserArticlesGQL = `
     query Publication {
     publication(host: "blog.christianhain.com") {
@@ -36,6 +39,28 @@ xian.hashnode = xian.hashnode || (function hashnode() {
     return data.json();
   }
 
+  function getMaxHeight(elements) {
+    return elements.map((element) => element.clientHeight)
+      .sort((a, b) => {
+        let returnValue = 0;
+
+        if (a < b) {
+          returnValue = -1;
+        } else if (a > b) {
+          returnValue = 1;
+        }
+
+        return returnValue;
+      })
+      .pop();
+  }
+
+  function matchHeight(elements, maxHeight) {
+    elements.forEach((element) => {
+      element.style.height = `${maxHeight}px`;
+    })
+  }
+
   function init() {
     gql(getUserArticlesGQL, { page: 0 })
       .then((result) => {
@@ -51,9 +76,11 @@ xian.hashnode = xian.hashnode || (function hashnode() {
 
             const title = clone.querySelector('[rel~="js-blog-entry__title"]');
             title.textContent = article.node.title;
+            blogTitleElements.push(title);
 
             const brief = clone.querySelector('[rel~="js-blog-entry__brief"]');
             brief.textContent = article.node.brief;
+            blogBriefElements.push(brief);
 
             const link = clone.querySelector('[rel~="js-blog-entry__link"]');
             link.href = article.node.url;
@@ -72,6 +99,8 @@ xian.hashnode = xian.hashnode || (function hashnode() {
       })
       .finally(() => {
         document.querySelector('[rel~="js-blog-spinner"]').remove();
+        matchHeight(blogBriefElements, getMaxHeight(blogBriefElements));
+        matchHeight(blogTitleElements, getMaxHeight(blogTitleElements));
       })
     ;
   }
