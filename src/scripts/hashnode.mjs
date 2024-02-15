@@ -92,7 +92,7 @@ xian.hashnode = xian.hashnode || (function hashnode() {
           //       the HTML template element is not supported.
         }
       })
-      .catch((error) => {
+      .catch(() => {
         const template = document.querySelector('[rel~="js-blog-entry-failed-template"]');
         const clone = template.content.cloneNode(true);
         blogContainer.appendChild(clone);
