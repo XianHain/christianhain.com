@@ -73,4 +73,18 @@ export const watchJs = gulp.series(
       gulp.series(transpileMjs)
     )
   },
-)
+);
+
+export const watchScss = gulp.series(
+  function watchScssSeries() {
+    return gulp.watch(
+      'src/scss/**/*.scss',
+      gulp.series(compileScss)
+    )
+  },
+);
+
+export const watch = gulp.parallel(
+  watchJs,
+  watchScss,
+);
