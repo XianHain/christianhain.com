@@ -225,7 +225,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 60vh;
+  min-height: min(45rem, 60vh);
   text-align: center;
 }
 
@@ -324,7 +324,7 @@ body {
 /****************************************************************************** Tenants */
 .tenants {
   margin: 3rem auto 0;
-  min-height: 40vh;
+  min-height: min(25rem, 40vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
