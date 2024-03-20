@@ -102,8 +102,16 @@ body {
 .header__logo {
   color: var(--blue-bright);
   display: block;
-  margin: 0 auto;
+  margin: .25rem auto 0;
   padding: 0 1rem;
+  width: 10rem;
+  height: 2.5rem;
+
+  @media (min-width: 40rem) {
+    margin-top: 0;
+    width: 16rem;
+    height: 4rem;
+  }
 }
 
 /****************************************************************************** Content */
