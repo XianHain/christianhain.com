@@ -23,8 +23,9 @@ body {
 /****************************************************************************** Menu */
 .menu {
   position: absolute;
-  right: .5rem;
-  top: 0;
+  right: 0;
+  top: -.5rem;
+  padding: .5rem 1rem 1rem;
 }
 
 .menu__list {
@@ -38,6 +39,11 @@ body {
   border-radius: 2.5rem;
   background: hsla(206, 100%, 4%, .95);
   box-shadow: 0 0 2rem 1rem var(--blue-dark);
+  transition: border .2s ease-in-out;
+
+  .menu:hover & {
+    border: .0625rem solid hsla(194, 100%, 50%, .5);
+  }
 }
 
 .menu__link {
@@ -50,9 +56,14 @@ body {
 .menu__link-icon {
   color: var(--blue-bright);
   opacity: .25;
+  transition: opacity .2s ease-in-out;
 
-  &:hover,
-  .menu__link:focus & {
+  .menu:hover & {
+    opacity: .5;
+  }
+
+  .menu:hover &:hover,
+  .menu__link:focus-visible & {
     opacity: 1;
   }
 }
