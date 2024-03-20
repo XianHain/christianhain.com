@@ -10,10 +10,14 @@ import cleanCss from 'gulp-clean-css';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
-
+import gulpHeaderComment from 'gulp-header-comment';
 
 const sass = gulpSass(dartSass);
 const destDir = 'public';
+const headerComment = `
+  Generated on <%= moment().format('YYYY-MM-DDTHH:MM:SSZ') %>
+  Author: <%= pkg.author %>
+`
 
 function cleanDist() {
   return gulp.src(destDir, {allowEmpty: true})
@@ -29,6 +33,7 @@ function compileScss() {
     }))
     .pipe(cleanCss())
     .pipe(rename('styles.min.css'))
+    .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }
 
@@ -43,6 +48,7 @@ function copyIndex() {
       minifyJS: true,
       collapseWhitespace: true
     }))
+    .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }
 
@@ -56,6 +62,7 @@ function transpileMjs() {
     .pipe(gulp.dest('src'))
     .pipe(uglify())
     .pipe(rename('script.min.js'))
+    .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }
 
