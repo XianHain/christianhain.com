@@ -1,0 +1,91 @@
+$border-color-blue-hsl: 194, 100%, 50%;
+$border-color-black-hsl: 0, 0%, 0%;
+
+%_menu-link {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+/****************************************************************************** Menu */
+.menu {
+  position: absolute;
+  right: 0;
+  top: -.5rem;
+  padding: .5rem 1rem 1rem;
+
+  --menu-link-color: var(--blue-bright);
+  --menu-border-color: hsla(#{$border-color-blue-hsl}, .25);
+  --menu-shadow-color: var(--blue-dark);
+  --menu-background-color: hsla(206, 100%, 4%, .95);
+
+  @media print {
+    display: none;
+  }
+}
+
+.menu--light {
+  --menu-link-color: var(--black);
+  --menu-border-color: hsla(#{$border-color-black-hsl}, .25);
+  --menu-shadow-color: var(--white-shadow);
+  --menu-background-color: var(--white);
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+  padding: .5rem;
+  border: .0625rem solid var(--menu-border-color, black);
+  //border-color: var(--menu-border-color);
+  margin: 0;
+  justify-content: flex-end;
+  border-radius: 2.5rem;
+  background: var(--menu-background-color);
+  box-shadow: 0 0 2rem 1rem var(--menu-shadow-color);
+  transition: border .2s ease-in-out;
+
+  .menu:hover & {
+    --menu-border-color: hsla(#{$border-color-blue-hsl}, .5);
+  }
+
+  .menu.menu--light:hover & {
+    --menu-border-color: hsla(#{$border-color-black-hsl}, .5);
+  }
+}
+
+.menu__link {
+  @extend %_menu-link;
+}
+
+.menu__button {
+  @extend %_menu-link;
+  appearance: none;
+  background: 0;
+  border: 0;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.menu__link-icon {
+  color: var(--menu-link-color);
+  opacity: .25;
+  transition: opacity .2s ease-in-out;
+
+  .menu:hover & {
+    opacity: .5;
+  }
+
+  .menu:hover &:hover,
+  .menu__link:focus-visible & {
+    opacity: 1;
+  }
+}
+
+.menu__link-text {
+  white-space: nowrap;
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}

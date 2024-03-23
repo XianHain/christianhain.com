@@ -1,0 +1,38 @@
+/****************************************************************************** Header */
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem auto 0;
+  position: relative;
+  max-width: 80rem;
+
+  @media (min-width: 40rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.header__spacer {
+  display: none;
+
+  @media (min-width: 40rem) {
+    display: block;
+  }
+}
+
+.header__logo {
+  color: var(--blue-bright);
+  display: block;
+  margin: .25rem auto 0;
+  padding: 0 1rem;
+  width: 10rem;
+  height: 2.5rem;
+
+  @media (min-width: 40rem) {
+    margin-top: 0;
+    width: 16rem;
+    height: 4rem;
+  }
+}

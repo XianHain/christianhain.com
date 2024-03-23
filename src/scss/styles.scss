@@ -1,6 +1,10 @@
+@use "base/(root)" as *;
 @use "base/a";
 @use "base/body";
 
 @use "components/footer";
+@use "components/header";
+@use "components/menu";
 
+@use "pages/cv";
 @use "pages/homepage";

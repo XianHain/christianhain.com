@@ -37,9 +37,9 @@ function compileScss() {
     .pipe(gulp.dest(destDir));
 }
 
-function copyIndex() {
+function copyHtml() {
   return gulp
-    .src('src/index.html')
+    .src('src/pages/**/*.html')
     .pipe(replace(/(styles.css|script.js)/g, function handleReplace(match) {
       const parts = match.split('.');
       return `${parts[0]}.min.${parts[1]}`;
@@ -68,7 +68,7 @@ function transpileMjs() {
 
 export const build = gulp.series(
   cleanDist,
-  copyIndex,
+  copyHtml,
   compileScss,
   transpileMjs,
 );

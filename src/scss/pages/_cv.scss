@@ -1,0 +1,290 @@
+@use "../utils/_print-page-dimensions" as *;
+
+$two-column-breakpoint: 53rem;
+
+/****************************************************************************** Layout */
+.page--cv {
+  background-color: var(--white);
+}
+
+.page-break {
+  border: 0;
+  page-break-after: always;
+  margin: 0;
+}
+
+.page__content {
+  max-width: $two-column-breakpoint;
+  margin: 0 auto;
+  font-smooth: always;
+  padding: 0 1rem;
+
+  &.printable {
+    @extend %print-page-dimensions;
+  }
+}
+
+/****************************************************************************** Meta Info */
+.cv-meta {
+  text-align: center;
+}
+
+.cv-meta__title {
+  font-size: 3em;
+  margin: 1em 0 0;
+}
+
+.cv-meta__item {
+  margin: 0;
+}
+
+/****************************************************************************** Grid */
+.cv-grid {
+  --grid-template-columns: repeat(1, 1fr);
+
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+
+  @media print, (min-width: $two-column-breakpoint) {
+    --grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cv-grid__a1 {
+  @media print, (min-width: $two-column-breakpoint) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+.cv-grid__a2 {
+  @media print, (min-width: $two-column-breakpoint) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}
+.cv-grid__b1 {
+  @media print, (min-width: $two-column-breakpoint) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+/****************************************************************************** Section */
+.cv-section {
+  --margin-top: 1em;
+  --padding: 1em 1em 0;
+
+  border-top: .0625rem solid black;
+  margin: var(--margin-top) 0 0;
+  padding: var(--padding);
+
+  @media (min-width: $two-column-breakpoint) {
+    --margin-top: 3em;
+    --padding: 2em 4em 0;
+  }
+
+  @media print {
+    --margin-top: 1em;
+    --padding: 1em 4em 0;
+  }
+}
+
+.cv-section--new-page {
+  @media print {
+    padding: 0 4em;
+    page-break-before: always;
+    border: none;
+  }
+}
+
+.cv-section--no-border {
+  border: 0;
+}
+
+/****************************************************************************** Headings */
+.cv-section-title {
+  margin: 0;
+  font-family: var(--font-emphasis-ultra);
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
+.cv-section-header,
+.cv-section-subheader {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  font-family: var(--font-emphasis-black);
+}
+
+.cv-section-header {
+  font-size: 1.375em;
+}
+
+.cv-section-subheader {
+  font-size: 1.125em;
+}
+
+.cv-section-header--margin {
+  margin: 1em 0 0;
+}
+
+/****************************************************************************** Lists */
+.cv-list {
+  padding: 0 0 0 1em;
+  text-align: justify;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cv-list--2-column {
+  display: block;
+  gap: 3em;
+
+  @media print, (min-width: $two-column-breakpoint) {
+    column-count: 2;
+  }
+
+  > * + * {
+    margin: 1em 0 0;
+  }
+}
+
+.cv-sneaky-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: table-row;
+  }
+
+  span {
+    display: table-cell;
+
+    &:first-child {
+      text-align: center;
+    }
+
+    & + span {
+      padding: 0 0 0 .25em;
+    }
+  }
+}
+
+.cv-details {
+  margin: 0;
+  padding: 0;
+
+  dd {
+    display: inline;
+    margin: 0;
+
+    &:not(dd:has(+ dt)):not(dd:last-child)::after {
+      content: ", "
+    }
+  }
+
+  li {
+    display: inline;
+    margin: 0;
+
+    &:not(&:last-child) {
+      &::after {
+        content: ", ";
+      }
+
+      &:has(+ li:last-child)::after {
+        content: ", and ";
+      }
+    }
+  }
+}
+
+.cv-details__title {
+  display: inline;
+  font-family: var(--font-primary-bold);
+
+  &:after {
+    content: ": ";
+    font-family: var(--font-primary-regular);
+  }
+
+  dd + &:before {
+    display: block;
+    content: "";
+    margin: 1em;
+  }
+}
+
+/****************************************************************************** Story */
+.cv-story {
+  --max-width: calc(100% - 4rem);
+  --margin-top: 1rem;
+
+  font-family: serif;
+  margin: var(--margin-top) auto 0;
+  text-align: justify;
+  max-width: var(--max-width);
+  
+  @media print, (min-width: $two-column-breakpoint) {
+    --max-width: 37em;
+    --margin-top: .5em;
+  }
+
+  > * {
+    --margin-top: 0;
+  }
+
+  > * + * {
+    --margin-top: 1em;
+  }
+}
+
+.cv-story--margin {
+  margin-top: 2rem;
+}
+
+/****************************************************************************** Employment Heading */
+.cv-employment-heading {
+  align-items: flex-end;
+  gap: 1em;
+
+  @media print, (min-width: $two-column-breakpoint) {
+    display: flex;
+  }
+
+  > h2 > span:first-child {
+    &:after {
+      content: ": ";
+      font-family: var(--font-primary-bold);
+    }
+  }
+
+  > h2 > span:last-child {
+    font-family: var(--font-emphasis-regular);
+  }
+
+  dl {
+    display: flex;
+    margin: 0;
+    text-transform: uppercase;
+    gap: 1em;
+    line-height: 1.75;
+  }
+
+  dt {
+    display: none;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--font-emphasis-regular);
+  }
+}
+
+/****************************************************************************** Misc */
+.cv-p {
+  margin: 0;
+}
