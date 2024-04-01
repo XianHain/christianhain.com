@@ -3,9 +3,11 @@ $border-color-black-hsl: 0, 0%, 0%;
 
 %_menu-link {
   align-items: center;
-  display: flex;
-  text-decoration: none;
   color: var(--white);
+  display: flex;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  text-decoration: none;
 }
 
 /****************************************************************************** Menu */
@@ -65,11 +67,13 @@ $border-color-black-hsl: 0, 0%, 0%;
   background: 0;
   border: 0;
   color: var(--white);
+  padding: 0;
   text-decoration: none;
 }
 
 .menu__link-icon {
   color: var(--menu-link-color);
+  margin: 0 auto;
   opacity: .25;
   transition: opacity .2s ease-in-out;
 

@@ -1,24 +1,28 @@
 /****************************************************************************** Header */
 .header {
+  --header-template-columns: repeat(2, 1fr);
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: var(--header-template-columns);
   grid-template-rows: 1fr;
   gap: 1rem;
-  width: 100%;
   margin: 1rem auto 0;
   position: relative;
   max-width: 80rem;
+  width: 100%;
 
   @media (min-width: 40rem) {
-    grid-template-columns: repeat(3, 1fr);
+    --header-template-columns: repeat(3, 1fr);
   }
 }
 
 .header__spacer {
-  display: none;
+  --spacer-display: none;
+
+  display: var(--spacer-display);
 
   @media (min-width: 40rem) {
-    display: block;
+    --spacer-display: block;
   }
 }
 
@@ -27,12 +31,6 @@
   display: block;
   margin: .25rem auto 0;
   padding: 0 1rem;
-  width: 10rem;
-  height: 2.5rem;
-
-  @media (min-width: 40rem) {
-    margin-top: 0;
-    width: 16rem;
-    height: 4rem;
-  }
+  height: 4rem;
+  width: 11.75rem;
 }
