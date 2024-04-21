@@ -5,6 +5,23 @@ $two-column-breakpoint: 53rem;
 /****************************************************************************** Layout */
 .page--cv {
   background-color: var(--white);
+
+  @media only screen {
+    a {
+      color: hsl(339°, 80%, 35%);
+
+      &:hover {
+        color: hsl(339°, 80%, 50%);
+      }
+    }
+  }
+
+  @media print {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }
 
 .page-break {
