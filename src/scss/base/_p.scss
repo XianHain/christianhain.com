@@ -1,0 +1,11 @@
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  margin: var(--p-margin);
+
+  font-family: var(--p-font-family);
+  font-optical-sizing: auto;
+  font-weight: var(--p-font-weight);
+  font-style: var(--p-font-style);
+}

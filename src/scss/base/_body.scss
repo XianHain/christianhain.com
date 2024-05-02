@@ -1,6 +1,7 @@
 @use "../utils/fonts";
 
-.page {
+body {
+  background-color: var(--background-color);
   font-family: var(--font-primary-regular);
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;

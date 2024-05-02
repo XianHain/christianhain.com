@@ -1,6 +1,12 @@
 @use "base/(root)" as *;
 @use "base/a";
+@use "base/p";
+@use "base/pre";
 @use "base/body";
+@use "base/code";
+@use "base/blockquote";
+
+@use "themes/cv" as cv-theme;
 
 @use "components/page-title";
 @use "components/footer";

@@ -1,0 +1,17 @@
+code {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  font-family: "Sometype Mono", monospace;;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  &:not(pre > &) {
+    margin: var(--p-margin);
+
+    background: hsla(0, 0%, 0%, .1);
+    padding: 0 .575em;
+    border-radius: .25em;
+  }
+}

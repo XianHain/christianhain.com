@@ -1,9 +1,26 @@
-a[target*="blank"]:after {
-  content: " (opens in new window)";
-  display: inline-block;
-  font-size: 0;
-  height: 0;
-  overflow: hidden;
-  text-indent: 200%;
-  width: 0;
+@media only screen {
+  a {
+    color: var(--a-default-color);
+
+    &:hover {
+      color: var(--a-hover-color);
+    }
+
+    &[target*="blank"]:after {
+      content: " (opens in new window)";
+      display: inline-block;
+      font-size: 0;
+      height: 0;
+      overflow: hidden;
+      text-indent: 200%;
+      width: 0;
+    }
+  }
+}
+
+@media print {
+  a {
+    color: var(--a-print-color);
+    text-decoration: none;
+  }
 }
