@@ -4,7 +4,6 @@ import clean from 'gulp-clean';
 import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
-import htmlMin from 'gulp-htmlmin';
 import replace from 'gulp-replace';
 import cleanCss from 'gulp-clean-css';
 import dartSass from 'sass';
@@ -32,21 +31,18 @@ function compileScss() {
       cascade: false,
     }))
     .pipe(cleanCss())
+    .pipe(gulp.dest(destDir))
     .pipe(rename('styles.min.css'))
     .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }
 
-function copyHtml() {
+function processHtml() {
   return gulp
-    .src('src/pages/**/*.html')
-    .pipe(replace(/(styles.css|script.js)/g, function handleReplace(match) {
+    .src('public/**/*.html')
+    .pipe(replace(/(styles.css|scripts.js)/g, function handleReplace(match) {
       const parts = match.split('.');
       return `${parts[0]}.min.${parts[1]}`;
-    }))
-    .pipe(htmlMin({
-      minifyJS: true,
-      collapseWhitespace: true
     }))
     .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
@@ -58,19 +54,26 @@ function transpileMjs() {
     .pipe(babel({
       presets: ['@babel/env'],
     }))
-    .pipe(concat('script.js'))
-    .pipe(gulp.dest('src'))
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(destDir))
     .pipe(uglify())
-    .pipe(rename('script.min.js'))
+    .pipe(rename('scripts.min.js'))
     .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }
 
-export const build = gulp.series(
+export const prepare = gulp.series(
   cleanDist,
-  copyHtml,
+);
+
+export const prepareResources = gulp.series(
   compileScss,
   transpileMjs,
+)
+
+export const build = gulp.series(
+  processHtml,
+  prepareResources,
 );
 
 export const watchJs = gulp.series(
@@ -91,7 +94,10 @@ export const watchScss = gulp.series(
   },
 );
 
-export const watch = gulp.parallel(
-  watchJs,
-  watchScss,
+export const watch = gulp.series(
+  prepareResources,
+  gulp.parallel(
+    watchJs,
+    watchScss,
+  ),
 );

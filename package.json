@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Christian Hain's Website",
   "scripts": {
-    "dev": "gulp watch",
+    "dev": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "gulp prepare && npx @11ty/eleventy && gulp build"
   },
   "main": "gulpfile.mjs",
   "author": "Christian Hain",
@@ -16,6 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@11ty/eleventy": "2.0.1",
     "@babel/core": "7.23.6",
     "@babel/preset-env": "7.23.6",
     "gulp": "4.0.2",
@@ -25,11 +26,11 @@
     "gulp-clean-css": "4.3.0",
     "gulp-concat": "2.6.1",
     "gulp-header-comment": "^0.10.0",
-    "gulp-htmlmin": "5.0.1",
     "gulp-rename": "2.0.0",
     "gulp-replace": "1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "3.0.2",
+    "html-minifier": "^4.0.0",
     "sass": "^1.69.7"
   }
 }
