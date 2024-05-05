@@ -1,0 +1,10 @@
+[data-theme="homepage"] {
+  --menu-link-color: var(--blue-bright);
+  --menu-shadow-color: var(--blue-dark);
+  --menu-background-color: hsla(206, 100%, 4%, .95);
+  --menu-border-color-base-hsl-values: 194, 100%, 50%;
+
+  background-image: linear-gradient(to bottom,var(--blue-dark),var(--blue-mid));
+  background-attachment: fixed;
+  color: var(--white);
+}

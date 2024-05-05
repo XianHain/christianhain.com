@@ -1,6 +1,8 @@
 const htmlmin = require('html-minifier');
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+
   eleventyConfig.addTransform('htmlmin', function (content) {
     return ((this.page.outputPath || '').endsWith('.html'))
       ? htmlmin.minify(content, {

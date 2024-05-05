@@ -1,6 +1,5 @@
 {
   "name": "xianhain.com",
-  "version": "1.0.0",
   "description": "Christian Hain's Website",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",

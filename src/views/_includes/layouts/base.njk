@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple (for now) bio site for Christian Hain, Certified Scrum Developer">
+  <title>XianHain.com</title>
+  <link rel="icon" type="image/png" href="https://assets.christianhain.com/images/favicon.png">
+  <link rel="stylesheet" href="https://assets.christianhain.com/fonts/webfontkit-20240321-130701/stylesheet.css">
+  <link rel="stylesheet" href="/styles.css?v={{ calVer.cssVersion }}">
+</head>
+<body class="page" data-theme="{{ theme }}">
+
+  {% include "components/header.njk" %}
+
+  {% block content %}
+    {{ content | safe }}
+  {% endblock content %}
+
+  {% include "components/footer.njk" %}
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTZFDM9WP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CSTZFDM9WP');
+  </script>
+  <script async src="/scripts.js?v={{ calVer.jsVersion }}"></script>
+</body>
+</html>

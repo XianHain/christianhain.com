@@ -1,0 +1,36 @@
+<div class="menu">
+  <ul class="menu__list">
+    {% for menuItem in menu %}
+      {% if menuItem.type in menuTypes %}
+        <li rel="js-menu-item" data-active="false">
+          {% if menuItem.attributes.href %}
+            <a
+              rel="{{ menuItem.attributes.rel | join(" ") }} js-menu-item-link"
+              href="{{ menuItem.attributes.href }}"
+              class="menu__link"
+              title="{{ menuItem.attributes.title }}"
+              target="{{ "_blank" if menuItem.type == "social" else "_self" }}"
+            >
+              <span class="menu__link-icon">
+                {% include "icons/" + menuItem.id + ".svg"  %}
+              </span>
+              <span class="menu__link-text">{{ menuItem.attributes.title }}</span>
+            </a>
+          {% else %}
+            <button
+              rel="{{ menuItem.attributes.rel | join(" ") }} js-menu-item-link"
+              onclick="{{ menuItem.attributes.onclick }}"
+              class="menu__button"
+              title="{{ menuItem.attributes.title }}"
+            >
+              <span class="menu__link-icon">
+                {% include "icons/" + menuItem.id + ".svg"  %}
+              </span>
+              <span class="menu__link-text">{{ menuItem.attributes.title }}</span>
+            </button>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

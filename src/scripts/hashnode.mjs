@@ -61,7 +61,7 @@ xian.hashnode = xian.hashnode || (function hashnode() {
     })
   }
 
-  function init() {
+  function populateBlog() {
     gql(getUserArticlesGQL, { page: 0 })
       .then((result) => {
         const articles = result.data.publication.posts.edges;
@@ -103,6 +103,12 @@ xian.hashnode = xian.hashnode || (function hashnode() {
         matchHeight(blogTitleElements, getMaxHeight(blogTitleElements));
       })
     ;
+  }
+
+  function init() {
+    if (blogContainer) {
+      populateBlog();
+    }
   }
 
   return {

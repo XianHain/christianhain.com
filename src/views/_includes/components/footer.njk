@@ -1,0 +1,26 @@
+<div class="footer">
+  <footer class="footer__footer">
+    <div class="content">
+      <div class="footer__copyright">
+        <small>
+          <span>&copy;2011&ndash;{% year %} CRHain Design LLC.</span>
+          All rights reserved. Logos, graphics, and writing of work samples
+          copyright of their respective owners. Views expressed on this site are
+          those of CRHain Design LLC, and do not necessarily reflect those of the
+          client or employer.
+
+          {% if "csm" in footerTypes %}
+            "CERTIFIED SCRUM DEVELOPER®” is a registered mark of
+            Scrum Alliance, Inc. Any unauthorized use is strictly prohibited.
+          {% endif %}
+
+        </small>
+      </div>
+    </div>
+
+    {% if "companies" in footerTypes %}
+      {% include "components/companies.njk" %}
+    {% endif %}
+
+  </footer>
+</div>

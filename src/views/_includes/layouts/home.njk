@@ -1,0 +1,155 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<main>
+  <section class="intro content">
+    <div
+      rel="js-headshot"
+      class="headshot"
+      data-state="original"
+      data-tweening="false"
+    >
+      <img
+        alt="Christian Hain's Headshot"
+        rel="js-headshot--original"
+        src="https://assets.christianhain.com/images/xianhain-headshot.png"
+        width="200"
+        height="200"
+      >
+      <img
+        alt="Christian's Adobe Creative Type Illustration: The Innovator"
+        rel="js-headshot--modified"
+        src="https://assets.christianhain.com/images/adobe-innovator.gif"
+        class="headshot__modified-img"
+        width="200"
+        height="200"
+        aria-hidden="true"
+      >
+    </div>
+    <h1>Hello, World!</h1>
+    <p>I'm Christian <span>(he/him)</span>, and I'm an Internet power-user,
+      creator, and
+      <a
+        rel="nofollow"
+        href="https://badgecert.com/bc/html/groupbadges.html?k=U1U5Z1BhdlF0Nys4K0VVa2NUOVNMems0cTkybW0yb2Q"
+        target="_blank"
+      >Certified Scrum Developer&reg;</a> engineer. Specializing in
+      browser-based experiences, my goal is to share what I know about making
+      beautiful <abbr title="user interfaces">UI</abbr> and frictionless
+      <abbr title="user experiences">UX</abbr> accessible to everyone.
+    </p>
+  </section>
+  <section class="blog">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <div class="blog__content">
+      <div class="content">
+        <h2 class="content__title">This is my blog</h2>
+      </div>
+      <div class="blog__entries">
+        <img
+          alt="Loading blog content"
+          rel="js-blog-spinner"
+          src="https://assets.christianhain.com/images/spinner-light.svg"
+          class="blog__spinner"
+          width="100"
+          height="100"
+        />
+        <template rel="js-blog-entry-failed-template">
+          <swiper-slide>
+            <div class="content">
+              <div class="blog-error">
+                <h3 class="blog-error__text">Womp womp!</h3>
+                <p class="blog-error__text">
+                  Sorry, there's supposed to be blog content here, but the request to load posts has failed.
+                </p>
+                <p class="blog-error__text">
+                  That's okay, though. Here's a link instead.
+                </p>
+                <a
+                  rel="nofollow"
+                  href="https://blog.christianhain.com"
+                  class="cta cta--primary blog-error__link"
+                >
+                  View Hashnode Blog
+                </a>
+              </div>
+            </div>
+          </swiper-slide>
+        </template>
+        <template rel="js-blog-entry-template">
+          <swiper-slide class="blog-entry">
+            <article rel="js-blog-entry">
+              <h3 rel="js-blog-entry__title"></h3>
+              <p rel="js-blog-entry__brief"></p>
+              <p>
+                <a
+                  rel="nofollow js-blog-entry__link"
+                  class="cta cta--primary"
+                >
+                  Read More
+                </a>
+              </p>
+            </article>
+          </swiper-slide>
+        </template>
+        <swiper-container
+          rel="js-blog-container"
+          grab-cursor="true"
+          space-between="16"
+          slides-per-view="auto"
+          slides-offset-after="16"
+          slides-offset-before="16"
+          center-insufficient-slides="true"
+        >
+        </swiper-container>
+      </div>
+    </div>
+  </section>
+  <section class="tenants content">
+    <h2 id="tenants" class="content__title">These are my tenants</h2>
+    <ol aria-labelledby="tenants">
+      <li>
+        <h3>Premium <abbr title="user interface">UI</abbr> development</h3>
+        High-end, accessible interfaces must elevate the user's browsing
+        experience. Customers perceive quality based on the standards set by
+        their favorite mobile and desktop websites, regardless of industry
+        or purpose.
+      </li>
+      <li>
+        <h3>Maintainable software</h3>
+        Yours, mine, ours— everyone is invested in the code. It must be
+        logical and maintainable, it must have context about its existence,
+        and it must be written cohesively so everyone can understand.
+      </li>
+      <li>
+        <h3>Full-stack and full-cycle</h3>
+        As you know, there's more to a website than its code. In addition to
+        business objectives, there's planning, refining, designing,
+        prototyping, developing, documenting, testing, deploying,
+        supporting, reporting, advertising, marketing, <i>et cetera</i>.
+        Therefore, I pay attention to all these aspects to ensure effective
+        design and development cycles that favor the investments spent to
+        delight the users.
+      </li>
+    </ol>
+  </section>
+  <section class="ctas content">
+    <a
+      href="https://assets.christianhain.com/pdfs/christian-hain-cv-2022.pdf"
+      class="cta cta--primary"
+      target="_blank"
+    >
+      Download my <abbr title="curriculum vitae">CV</abbr>
+    </a>
+    <a
+      rel="nofollow"
+      class="cta cta--primary"
+      href="https://www.linkedin.com/in/crhain"
+      target="_blank"
+    >
+      Check out my LinkedIn
+    </a>
+  </section>
+</main>
+
+{% endblock %}

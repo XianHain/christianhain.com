@@ -13,14 +13,10 @@ xian.adobeCreativeType = xian.adobeCreativeType || (function adobeCreativeType()
     const cacheCount = state.focusCount;
     state.focusCount = state.focusCount + weight;
 
-    let returnValue = false;
-    if (cacheCount < 1 && state.focusCount === 1) {
-      returnValue = true;
-    } else if (cacheCount > 0 && state.focusCount === 0) {
-      returnValue = true;
-    }
-
-    return returnValue;
+    return (
+      (cacheCount < 1 && state.focusCount === 1)
+        || (cacheCount > 0 && state.focusCount === 0)
+    );
   }
 
   function toggle() {
@@ -49,20 +45,30 @@ xian.adobeCreativeType = xian.adobeCreativeType || (function adobeCreativeType()
     {name: 'mouseover', weight: 1},
   ];
 
-  headshotToggleEvents.forEach(function(event) {
-    headshotToggle.addEventListener(
-      event.name,
-      function headshotToggleHandler() {
-        if (shouldToggle(event.weight)) {
-          toggle();
-        }
-      },
-      false
-    );
-  });
+  function attachEventListeners() {
+    headshotToggleEvents.forEach(function(event) {
+      headshotToggle.addEventListener(
+        event.name,
+        function headshotToggleHandler() {
+          if (shouldToggle(event.weight)) {
+            toggle();
+          }
+        },
+        false
+      );
+    });
+  }
+
+  function init() {
+    if (headshotToggle) {
+      attachEventListeners();
+    }
+  }
 
   return {
+    init: init,
     toggle: toggle,
   };
 });
 xian.adobeCreativeType = xian.adobeCreativeType();
+xian.adobeCreativeType.init();

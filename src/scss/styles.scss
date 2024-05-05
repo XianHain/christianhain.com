@@ -7,8 +7,10 @@
 @use "base/blockquote";
 
 @use "themes/cv" as cv-theme;
+@use "themes/homepage" as homepage-theme;
 
 @use "components/page-title";
+@use "components/companies";
 @use "components/footer";
 @use "components/header";
 @use "components/menu";

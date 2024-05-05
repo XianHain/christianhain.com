@@ -1,6 +1,3 @@
-$border-color-blue-hsl: 194, 100%, 50%;
-$border-color-black-hsl: 0, 0%, 0%;
-
 %_menu-link {
   align-items: center;
   color: var(--white);
@@ -12,26 +9,16 @@ $border-color-black-hsl: 0, 0%, 0%;
 
 /****************************************************************************** Menu */
 .menu {
+  --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .25);
+
   position: absolute;
   right: 0;
   top: -.5rem;
   padding: .5rem 1rem 1rem;
 
-  --menu-link-color: var(--blue-bright);
-  --menu-border-color: hsla(#{$border-color-blue-hsl}, .25);
-  --menu-shadow-color: var(--blue-dark);
-  --menu-background-color: hsla(206, 100%, 4%, .95);
-
   @media print {
     display: none;
   }
-}
-
-.menu--light {
-  --menu-link-color: var(--black);
-  --menu-border-color: hsla(#{$border-color-black-hsl}, .25);
-  --menu-shadow-color: var(--white-shadow);
-  --menu-background-color: var(--white);
 }
 
 .menu__list {
@@ -49,11 +36,7 @@ $border-color-black-hsl: 0, 0%, 0%;
   transition: border .2s ease-in-out;
 
   .menu:hover & {
-    --menu-border-color: hsla(#{$border-color-blue-hsl}, .5);
-  }
-
-  .menu.menu--light:hover & {
-    --menu-border-color: hsla(#{$border-color-black-hsl}, .5);
+    --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .5);
   }
 }
 
@@ -71,8 +54,9 @@ $border-color-black-hsl: 0, 0%, 0%;
   text-decoration: none;
 }
 
-.menu__link-icon {
+.menu__link-icon > svg {
   color: var(--menu-link-color);
+  display: block;
   margin: 0 auto;
   opacity: .25;
   transition: opacity .2s ease-in-out;

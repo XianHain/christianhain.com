@@ -1,0 +1,15 @@
+<svg
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+  height="24"
+>
+  <g transform="matrix(1,0,0,1,-920.316,-431.332)">
+    <g transform="matrix(0.046815,0,0,0.046815,920.316,431.332)">
+      <path
+        d="M512,76.8L512,435.2C512,477.587 477.587,512 435.2,512L76.8,512C34.413,512 0,477.587 0,435.2L0,76.8C0,34.413 34.413,0 76.8,0L435.2,0C477.587,0 512,34.413 512,76.8ZM296,120L410,392L410,120L296,120ZM255,219L207,337L259,337L282,392L328,392L255,219ZM216,120L102,120L102,392L216,120Z"
+        style="fill:currentColor;"
+      />
+    </g>
+  </g>
+</svg>
