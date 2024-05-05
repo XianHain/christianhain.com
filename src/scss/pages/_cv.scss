@@ -205,7 +205,7 @@ $two-column-breakpoint: 53rem;
   --max-width: calc(100% - 4rem);
   --margin-top: 1rem;
 
-  font-family: serif;
+  font-family: "Inria Serif", serif;
   margin: var(--margin-top) auto 0;
   text-align: justify;
   max-width: var(--max-width);
@@ -216,11 +216,11 @@ $two-column-breakpoint: 53rem;
   }
 
   > * {
-    --margin-top: 0;
+    --p-margin: 0;
   }
 
   > * + * {
-    --margin-top: 1em;
+    --p-margin: 1em 0 0;
   }
 }
 
