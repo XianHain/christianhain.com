@@ -1,0 +1,23 @@
+.blog-table {
+  font-family: "Sometype Mono", monospace;
+  margin: 4em 0 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blog-table__heading {
+  text-align: left;
+  font-family: 'Amsi Pro Condensed', sans-serif;
+  text-transform: uppercase;
+  padding: .5em 1em;
+}
+
+.blog-table__cell {
+  border-top: .0625em solid hsl(0, 0%, 60%);
+  padding: .5em 1.15em;
+  vertical-align: top;
+}
+
+.blog-table__cell--time {
+  white-space: nowrap;
+}

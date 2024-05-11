@@ -1,5 +1,14 @@
 [
   {
+    "id": "arrow-left",
+    "type": "blog",
+    "attributes": {
+      "rel": [],
+      "href": "/blog",
+      "title": "Back to Blog"
+    }
+  },
+  {
     "id": "home",
     "type": "navigation",
     "attributes": {

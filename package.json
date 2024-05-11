@@ -7,6 +7,9 @@
     "build": "gulp prepare && npx @11ty/eleventy && gulp build"
   },
   "main": "gulpfile.mjs",
+  "exports": {
+    ".": "./public/script.min.js"
+  },
   "author": "Christian Hain",
   "license": "UNLICENSED",
   "repository": {
@@ -16,7 +19,9 @@
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy-fetch": "4.0.1",
     "@babel/core": "7.23.6",
+    "@babel/plugin-syntax-import-attributes": "7.24.1",
     "@babel/preset-env": "7.23.6",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "9.0.0",
@@ -30,6 +35,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "3.0.2",
     "html-minifier": "^4.0.0",
+    "marked": "12.0.2",
     "sass": "^1.69.7"
   }
 }

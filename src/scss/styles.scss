@@ -7,6 +7,7 @@
 @use "base/blockquote";
 
 @use "themes/cv" as cv-theme;
+@use "themes/blog";
 @use "themes/homepage" as homepage-theme;
 
 @use "components/page-title";
@@ -17,3 +18,5 @@
 
 @use "pages/cv";
 @use "pages/homepage";
+@use "pages/blog-entry";
+@use "pages/blog-index";

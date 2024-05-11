@@ -1,0 +1,23 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <main class="page__content printable">
+    <article class="blog__article">
+      <div class="page-title">
+        <h1 class="page-title__h1">{{ blogpost.title }}</h1>
+        <p class="page-title__meta">
+          <time datetime="{{ item.publishedAt }}">
+            {{ blogpost.publishedAt | blogPostTimestamp }}
+          </time>
+        </p>
+        <p>
+          {{ blogpost.readTimeInMinutes }} min. read
+        </p>
+      </div>
+      <div class="blog__copy">
+        {{ blogpost.content.markdown | markdown | safe }}
+      </div>
+      <p class="blog__signature">&mdash; {{ blogpost.author.name }}</p>
+    </article>
+  </main>
+{% endblock %}

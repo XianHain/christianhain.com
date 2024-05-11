@@ -9,19 +9,20 @@ xian.hashnode = xian.hashnode || (function hashnode() {
 
   const getUserArticlesGQL = `
     query Publication {
-    publication(host: "blog.christianhain.com") {
-      title
-      posts(first: 10) {
-        edges {
-          node {
-            title
-            brief
-            url
+      publication(host: "blog.christianhain.com") {
+        title
+        posts(first: 10) {
+          edges {
+            node {
+              title
+              brief
+              url
+              
+            }
           }
         }
       }
     }
-  }
   `;
 
   async function gql(query, variables={}) {

@@ -53,6 +53,7 @@ function transpileMjs() {
     .src('src/scripts/**.mjs')
     .pipe(babel({
       presets: ['@babel/env'],
+      plugins: ['@babel/plugin-syntax-import-attributes'],
     }))
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest(destDir))
