@@ -8,6 +8,13 @@
 }
 
 /****************************************************************************** Menu */
+:root {
+  --menu-link-color: var(--black);
+  --menu-shadow-color: var(--white-shadow);
+  --menu-background-color: var(--white);
+  --menu-border-color-base-hsl-values: 0, 0%, 0%;
+}
+
 .menu {
   --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .25);
 
@@ -27,7 +34,6 @@
   gap: .5rem;
   padding: .5rem;
   border: .0625rem solid var(--menu-border-color, black);
-  //border-color: var(--menu-border-color);
   margin: 0;
   justify-content: flex-end;
   border-radius: 2.5rem;

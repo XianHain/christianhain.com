@@ -1,12 +1,13 @@
 [data-theme="cv"] {
   --background-color: var(--white);
 
+  --font-primary-regular: var(--amsi-narrow-regular);
+  --font-primary-bold: var(--amsi-narrow-bold);
+  --font-emphasis-regular: var(--amsi-condensed-regular);
+  --font-emphasis-black: var(--amsi-condensed-black);
+  --font-emphasis-ultra: var(--amsi-condensed-ultra);
+
   --a-print-color: inherit;
   --a-hover-color: var(--pink-bright);
   --a-default-color: var(--pink-dark);
-
-  --menu-link-color: var(--black);
-  --menu-shadow-color: var(--white-shadow);
-  --menu-background-color: var(--white);
-  --menu-border-color-base-hsl-values: 0, 0%, 0%;
 }

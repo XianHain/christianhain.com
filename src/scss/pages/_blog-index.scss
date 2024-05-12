@@ -1,5 +1,5 @@
 .blog-table {
-  font-family: "Sometype Mono", monospace;
+  font-family: var(--sometype);
   margin: 4em 0 0;
   width: 100%;
   border-collapse: collapse;
@@ -7,7 +7,7 @@
 
 .blog-table__heading {
   text-align: left;
-  font-family: 'Amsi Pro Condensed', sans-serif;
+  font-family: var(--amsi-condensed-bold);
   text-transform: uppercase;
   padding: .5em 1em;
 }

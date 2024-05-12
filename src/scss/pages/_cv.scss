@@ -205,7 +205,7 @@ $two-column-breakpoint: 53rem;
   --max-width: calc(100% - 4rem);
   --margin-top: 1rem;
 
-  font-family: "Inria Serif", serif;
+  font-family: var(--inra);
   margin: var(--margin-top) auto 0;
   text-align: justify;
   max-width: var(--max-width);

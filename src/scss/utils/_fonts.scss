@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
-  --font-primary-light: 'amsi_pro_narrowlight', sans-serif;
-  --font-primary-regular: 'amsi_pro_narrowregular', sans-serif;
-  --font-primary-bold: 'amsi_pro_narrowbold', sans-serif;
-  --font-emphasis-regular: 'amsi_pro_condensedregular', sans-serif;
-  --font-emphasis-bold: 'amsi_pro_condensedbold', sans-serif;
-  --font-emphasis-black: 'amsi_pro_condensedblack', sans-serif;
-  --font-emphasis-ultra: 'amsi_pro_condensedultra', sans-serif;
+  --amsi-narrow-light: 'amsi_pro_narrowlight', sans-serif;
+  --amsi-narrow-regular: 'amsi_pro_narrowregular', sans-serif;
+  --amsi-narrow-bold: 'amsi_pro_narrowbold', sans-serif;
+  --amsi-condensed-regular: 'amsi_pro_condensedregular', sans-serif;
+  --amsi-condensed-bold: 'amsi_pro_condensedbold', sans-serif;
+  --amsi-condensed-black: 'amsi_pro_condensedblack', sans-serif;
+  --amsi-condensed-ultra: 'amsi_pro_condensedultra', sans-serif;
+
+  --sometype: 'Sometype Mono', monospace;
+
+  --inra: 'Inria Serif', serif;
+
+  --edu: 'Edu TAS Beginner', cursive;
+
+  --font-meta: sans-serif;
 }

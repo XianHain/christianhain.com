@@ -2,21 +2,19 @@
   --max-width: 45em;
   --background-color: var(--white);
 
+  --font-emphasis-bold: var(--amsi-condensed-bold);
+  --font-emphasis-regular: var(--amsi-condensed-regular);
+
   --p-font-size: 1em;
   --p-line-height: 2;
   --p-color: hsl(262, 99%, 10%);
-  --p-font-family: "Sometype Mono", monospace;
+  --p-font-family: var(--sometype);
   --p-font-weight: 400;
   --p-font-style: normal;
 
   --a-print-color: inherit;
   --a-hover-color: var(--pink-bright);
   --a-default-color: var(--pink-dark);
-
-  --menu-link-color: var(--black);
-  --menu-shadow-color: var(--white-shadow);
-  --menu-background-color: var(--white);
-  --menu-border-color-base-hsl-values: 0, 0%, 0%;
 
   font-size: 1rem;
 }

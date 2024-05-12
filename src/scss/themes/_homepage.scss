@@ -1,4 +1,12 @@
 [data-theme="homepage"] {
+  --font-primary-light: var(--amsi-narrow-light);
+  --font-primary-regular: var(--amsi-narrow-regular);
+  --font-primary-bold: var(--amsi-narrow-bold);
+  --font-emphasis-regular: var(--amsi-condensed-regular);
+  --font-emphasis-bold: var(--amsi-condensed-bold);
+  --font-emphasis-black: var(--amsi-condensed-black);
+  --font-emphasis-ultra: var(--amsi-condensed-ultra);
+
   --menu-link-color: var(--blue-bright);
   --menu-shadow-color: var(--blue-dark);
   --menu-background-color: hsla(206, 100%, 4%, .95);

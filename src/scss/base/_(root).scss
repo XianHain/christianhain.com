@@ -1,9 +1,4 @@
 :root {
-  --font-primary-light: 'amsi_pro_narrowlight', sans-serif;
-  --font-primary-regular: 'amsi_pro_narrowregular', sans-serif;
-  --font-emphasis-black: 'amsi_pro_condensedblack', sans-serif;
-  --font-emphasis-ultra: 'amsi_pro_condensedultra', sans-serif;
-  --font-meta: sans-serif;
   --blue-bright: hsl(194, 100%, 50%);
   --blue-mid: hsl(205, 100%, 14%);
   --blue-dark: hsl(206, 100%, 4%);
@@ -12,7 +7,7 @@
   --white-shadow: hsl(200, 16%, 95%);
   --pink-bright: hsl(339, 80%, 50%);
   --pink-dark: hsl(339, 80%, 35%);
-  --hamburger-color: var(--blue-bright);
+
   --menu-border-color: transparent;
 
   @media (prefers-color-scheme: dark) {

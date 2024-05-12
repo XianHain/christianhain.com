@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
-
 %_copy {
   max-width: 45em;
   margin: 0 auto;
@@ -65,7 +63,7 @@ h3 {
 
 ol {
   .blog__copy & {
-    font-family: "Sometype Mono", monospace;
+    font-family: var(--sometype);
     margin: 2em 0 0;
     padding: 0 0 0 1.75em;
   }
@@ -105,7 +103,7 @@ figure iframe,
 }
 
 figcaption {
-  font-family: "Edu TAS Beginner", cursive;
+  font-family: var(--edu);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
