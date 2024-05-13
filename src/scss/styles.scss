@@ -2,13 +2,17 @@
 @use "base/a";
 @use "base/p";
 @use "base/hx";
+@use "base/img";
 @use "base/pre";
 @use "base/body";
 @use "base/code";
+@use "base/figure";
 @use "base/blockquote";
 
 @use "themes/cv" as cv-theme;
 @use "themes/blog";
+@use "themes/memo";
+@use "themes/article";
 @use "themes/homepage" as homepage-theme;
 
 @use "components/page-title";

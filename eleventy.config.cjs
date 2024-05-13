@@ -33,9 +33,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('markdown', async (content) =>
     await marked.parse(content)
-      .replace('<meta data-xian="article-start" />', '<div data-theme="article">')
-      .replace('<meta data-xian="article-end" />',   '</div>')
-      // .replace(/<hr data-xian="remove" \/>/g, '')
+      .replace('<meta data-xian="article-start" />', '</div><div data-theme="article"><div class="blog__copy">')
+      .replace('<meta data-xian="article-end" />',   '</div></div><div class="blog__copy" data-theme="memo">')
   );
 
   return {

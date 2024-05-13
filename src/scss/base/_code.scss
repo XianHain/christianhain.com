@@ -11,7 +11,7 @@ code {
     margin: var(--p-margin);
 
     background: hsla(0, 0%, 0%, .1);
-    padding: 0 .575em;
+    padding: 0 var(--code-padding-x, .25ch);
     border-radius: .25em;
   }
 }

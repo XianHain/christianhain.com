@@ -9,12 +9,12 @@
           <time datetime="{{ item.publishedAt }}">
             {{ blogpost.publishedAt | blogPostTimestamp }}
           </time>
-        </p>
-        <p>
-          {{ blogpost.readTimeInMinutes }} min. read
+          <span>
+            {{ blogpost.readTimeInMinutes }} minute read
+          </span>
         </p>
       </div>
-      <div class="blog__copy">
+      <div class="blog__copy" data-theme="memo">
         {{ blogpost.content.markdown | markdown | safe }}
       </div>
       <p class="blog__signature">&mdash; {{ blogpost.author.name }}</p>

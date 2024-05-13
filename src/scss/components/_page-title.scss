@@ -11,3 +11,19 @@
 .page-title__item {
   margin: 0;
 }
+
+.page-title__meta {
+  display: flex;
+  gap: 2ch;
+  justify-content: center;
+
+  > * + * {
+    display: inline-block;
+
+    &:before {
+      content: "\2022";
+      display: inline-block;
+      margin: 0 2ch 0 0;
+    }
+  }
+}

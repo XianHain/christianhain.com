@@ -1,6 +1,6 @@
 [data-theme="blog"] {
-  --max-width: 45em;
   --background-color: var(--white);
+  //--background-color: #001b26;
 
   --font-emphasis-bold: var(--amsi-condensed-bold);
   --font-emphasis-regular: var(--amsi-condensed-regular);
@@ -16,5 +16,7 @@
   --a-hover-color: var(--pink-bright);
   --a-default-color: var(--pink-dark);
 
-  font-size: 1rem;
+  p + p {
+    --p-margin: 2em 0 0;
+  }
 }

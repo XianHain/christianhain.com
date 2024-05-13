@@ -1,5 +1,5 @@
 %_copy {
-  max-width: 45em;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -18,96 +18,9 @@
 
 .blog__copy {
   @extend %_copy;
-
-  > * + * {
-    margin: 2rem 0 0;
-  }
-}
-
-p {
-  .blog__copy & {
-    text-indent: 4.0625em;
-  }
-
-  h3 + & {
-    .blog__copy & {
-      margin: 1em 0 0;
-    }
-  }
-}
-
-h2 {
-  .blog__copy & {
-    @extend %_heading;
-    font-size: 2em;
-    margin: 2em 0 0;
-  }
-}
-
-h3 {
-  .blog__copy & {
-    @extend %_heading;
-    font-weight: 400;
-  }
-
-  h2 + & {
-    .blog__copy & {
-      margin: 0;
-    }
-  }
 }
 
 .blog__signature {
   text-align: right;
 }
 
-ol {
-  .blog__copy & {
-    font-family: var(--sometype);
-    margin: 2em 0 0;
-    padding: 0 0 0 1.75em;
-  }
-}
-
-li {
-  .blog__copy & {
-    padding: 0 0 0 2.2625em;
-  }
-}
-
-figure,
-.blog-img {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 .125em .125em hsla(0, 0%, 0%, .05);
-  border-radius: .25em;
-  rotate: -1deg;
-  background: hsl(0, 0%, 95%);
-  border: .0625em solid hsl(0, 0%, 90%);
-  border-top-color: hsl(0, 0%, 100%);
-  border-bottom-color: hsl(0, 0%, 80%);
-  padding: .5em;
-}
-
-img,
-figure iframe,
-.blog-img__img {
-  width: 100%;
-  display: block;
-  clip-path: rect(0 0 100% 100% round .125em);
-
-  .blog__article & {
-    background: hsl(0, 0%, 0%);
-  }
-}
-
-figcaption {
-  font-family: var(--edu);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin: .5em 0 0;
-  text-align: center;
-  color: hsla(0, 0%, 0%, .7);
-}

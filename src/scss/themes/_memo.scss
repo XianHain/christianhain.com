@@ -1,0 +1,25 @@
+[data-theme="memo"] {
+  --max-width: 80ch;
+  --code-padding-x: 1ch;
+
+  & ~ & > p,
+  & > p:not(& > p:first-of-type):not(p:has(img)) {
+    --p-text-indent: 4ch;
+  }
+
+  > *:first-child {
+    margin: 0;
+  }
+
+  > * + h2 {
+    --h2-margin: 2em 0 0;
+  }
+
+  > * + h3 {
+    --h3-margin: 1em 0 0;
+  }
+
+  * + p {
+    --p-margin: 1em 0 0;
+  }
+}

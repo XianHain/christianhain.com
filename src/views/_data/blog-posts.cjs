@@ -11,6 +11,7 @@ const getUserArticlesGQL = `
             brief
             title
             publishedAt
+            tags { id }
             readTimeInMinutes
             author {
               name
@@ -28,7 +29,7 @@ const getUserArticlesGQL = `
 async function gql(query, variables = {}) {
   try {
     return await EleventyFetch('https://gql.hashnode.com/', {
-      duration: '1d',
+      duration: '0',
       type: 'json',
       fetchOptions: {
         method: 'POST',

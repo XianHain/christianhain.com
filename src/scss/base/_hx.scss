@@ -1,7 +1,14 @@
 h1 {
   font-family: var(--font-emphasis-regular);
+  margin: var(--h1-margin, 4em 0);
 }
 
-h2, h3 {
+h2 {
   font-family: var(--font-emphasis-bold);
+  margin: var(--h2-margin, 1.25em 0);
+}
+
+h3 {
+  font-family: var(--font-emphasis-bold);
+  margin: var(--h3-margin, 1.125em 0);
 }
