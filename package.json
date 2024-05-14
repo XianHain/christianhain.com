@@ -1,6 +1,7 @@
 {
   "name": "xianhain.com",
   "description": "Christian Hain's Website",
+  "type": "module",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy": "3.0.0-alpha.10",
     "@11ty/eleventy-fetch": "4.0.1",
     "@babel/core": "7.23.6",
     "@babel/plugin-syntax-import-attributes": "7.24.1",
@@ -34,7 +35,7 @@
     "gulp-replace": "1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "3.0.2",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "7.2.0",
     "marked": "12.0.2",
     "sass": "^1.69.7"
   }

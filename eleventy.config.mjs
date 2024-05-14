@@ -1,17 +1,18 @@
-const htmlmin = require('html-minifier');
-const marked = require('marked');
+// import {htmlmin} from 'html-minifier';
+import {marked} from 'marked';
+import {minify} from 'html-minifier-terser';
 
-module.exports = function(eleventyConfig) {
+export default async function(eleventyConfig) {
   eleventyConfig.addShortcode('year', () => new Date().getFullYear());
 
-  eleventyConfig.addTransform('htmlmin', function (content) {
+  eleventyConfig.addTransform('minify', async function (content) {
     return ((this.page.outputPath || '').endsWith('.html'))
-      ? htmlmin.minify(content, {
-          minifyJS: true,
-          removeComments: true,
-          useShortDoctype: true,
-          collapseWhitespace: true,
-        })
+      ? await minify(content, {
+        minifyJS: true,
+        removeComments: true,
+        useShortDoctype: true,
+        collapseWhitespace: true,
+      })
       : content;
   });
 
@@ -43,4 +44,4 @@ module.exports = function(eleventyConfig) {
       output: 'public',
     },
   };
-};
+}
