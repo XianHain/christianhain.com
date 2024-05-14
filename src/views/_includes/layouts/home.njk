@@ -47,54 +47,6 @@
         <h2 class="content__title">This is my blog</h2>
       </div>
       <div class="blog__entries">
-        <img
-          alt="Loading blog content"
-          rel="js-blog-spinner"
-          src="https://assets.christianhain.com/images/spinner-light.svg"
-          class="blog__spinner"
-          width="100"
-          height="100"
-        />
-        <template rel="js-blog-entry-failed-template">
-          <swiper-slide>
-            <div class="content">
-              <div class="blog-error">
-                <h3 class="blog-error__text">Womp womp!</h3>
-                <p class="blog-error__text">
-                  Sorry, there's supposed to be blog content here, but the request to load posts has failed.
-                </p>
-                <p class="blog-error__text">
-                  That's okay, though. Here's a link instead.
-                </p>
-                <a
-                  rel="nofollow"
-                  href="https://blog.christianhain.com"
-                  title="View on Hashnode.com"
-                  class="cta cta--primary blog-error__link"
-                >
-                  View Hashnode Blog
-                </a>
-              </div>
-            </div>
-          </swiper-slide>
-        </template>
-        <template rel="js-blog-entry-template">
-          <swiper-slide class="blog-entry">
-            <article rel="js-blog-entry">
-              <h3 rel="js-blog-entry__title"></h3>
-              <p rel="js-blog-entry__brief"></p>
-              <p>
-                <a
-                  rel="nofollow js-blog-entry__link"
-                  class="cta cta--primary"
-                  title="View on Hashnode.com"
-                >
-                  Read More
-                </a>
-              </p>
-            </article>
-          </swiper-slide>
-        </template>
         <swiper-container
           rel="js-blog-container"
           grab-cursor="true"
@@ -104,6 +56,24 @@
           slides-offset-before="16"
           center-insufficient-slides="true"
         >
+          {% for item in pagination.items %}
+            <swiper-slide class="blog-entry">
+              <article>
+                <h3 rel="js-blog-entry__title">{{ item.title }}</h3>
+                <p rel="js-blog-entry__brief"> {{ item.brief }}</p>
+                <p>
+                  <a
+                    rel="nofollow"
+                    href="/blog/{{ item.slug }}"
+                    class="cta cta--primary"
+                    title="View on Hashnode.com"
+                  >
+                    Read More
+                  </a>
+                </p>
+              </article>
+            </swiper-slide>
+          {% endfor %}
         </swiper-container>
       </div>
     </div>
