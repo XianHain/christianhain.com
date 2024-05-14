@@ -24,6 +24,7 @@
     "@babel/core": "7.23.6",
     "@babel/plugin-syntax-import-attributes": "7.24.1",
     "@babel/preset-env": "7.23.6",
+    "eleventy-plugin-robotstxt": "0.0.4",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "9.0.0",
     "gulp-babel": "8.0.0",

@@ -2122,6 +2122,11 @@ electron-to-chromium@^1.4.601:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.616.tgz#4bddbc2c76e1e9dbf449ecd5da3d8119826ea4fb"
   integrity sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==
 
+eleventy-plugin-robotstxt@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-robotstxt/-/eleventy-plugin-robotstxt-0.0.4.tgz#f7447ada0286acbdd7afa22c8d9f878fc2980b91"
+  integrity sha512-+lOKyCAmtnVwnOl0mIVKfunBIcuZGeAh3NIpqTcbyNO9CPhXiYrpiuAGnHpd3ICzW5+s0994SF5EkUbbE630EA==
+
 encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"

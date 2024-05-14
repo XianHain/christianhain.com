@@ -1,8 +1,13 @@
 // import {htmlmin} from 'html-minifier';
 import {marked} from 'marked';
 import {minify} from 'html-minifier-terser';
+import EleventyPluginRobotsTxt from "eleventy-plugin-robotstxt";
 
 export default async function(eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {
+    shouldBlockAIRobots: true,
+  });
+
   eleventyConfig.addShortcode('year', () => new Date().getFullYear());
 
   eleventyConfig.addTransform('minify', async function (content) {
