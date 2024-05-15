@@ -2,7 +2,7 @@ const EleventyFetch = require('@11ty/eleventy-fetch');
 
 const getUserArticlesGQL = `
   query Publication {
-    publication(host: "blog.christianhain.com") {
+    publication(host: "christianhain.com/blog") {
       title
       posts(first: 10) {
         edges {

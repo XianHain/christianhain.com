@@ -5,7 +5,8 @@
     "attributes": {
       "rel": [],
       "href": "/blog",
-      "title": "Back to Blog"
+      "title": "Back to Blog",
+      "target": "_self"
     }
   },
   {
@@ -14,7 +15,8 @@
     "attributes": {
       "rel": [],
       "href": "/",
-      "title": "Home"
+      "title": "Home",
+      "target": "_self"
     }
   },
   {
@@ -23,16 +25,18 @@
     "attributes": {
       "rel": [],
       "title": "Print",
-      "onclick": "window.print()"
+      "onclick": "window.print()",
+      "target": "_self"
     }
   },
   {
     "id": "hashnode",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://blog.christianhain.com",
-      "title": "Hashnode Blog"
+      "rel": [],
+      "href": "/blog",
+      "title": "Blog (Powered by Hashnode)",
+      "target": "_self"
     }
   },
   {
@@ -41,7 +45,8 @@
     "attributes": {
       "rel": ["nofollow"],
       "href": "https://behance.net/CRHain",
-      "title": "Behance"
+      "title": "Behance",
+      "target": "_blank"
     }
   },
   {
@@ -50,7 +55,8 @@
     "attributes": {
       "rel": ["nofollow"],
       "href": "https://www.linkedin.com/in/crhain",
-      "title": "LinkedIn"
+      "title": "LinkedIn",
+      "target": "_blank"
     }
   },
   {
@@ -59,7 +65,8 @@
     "attributes": {
       "rel": ["nofollow", "js-headshot-toggle"],
       "href": "https://mycreativetype.com/type/innovator/",
-      "title": "My Adobe Creative Type"
+      "title": "My Adobe Creative Type",
+      "target": "_blank"
     }
   },
   {
@@ -68,7 +75,8 @@
     "attributes": {
       "rel": ["nofollow"],
       "href": "https://github.com/xianhain",
-      "title": "GitHub"
+      "title": "GitHub",
+      "target": "_blank"
     }
   }
 ]

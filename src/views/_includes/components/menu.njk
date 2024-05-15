@@ -9,7 +9,7 @@
               href="{{ menuItem.attributes.href }}"
               class="menu__link"
               title="{{ menuItem.attributes.title }}"
-              target="{{ "_blank" if menuItem.type == "social" else "_self" }}"
+              target="{{ menuItem.attributes.target }}"
             >
               <span class="menu__link-icon">
                 {% include "icons/" + menuItem.id + ".svg"  %}
