@@ -20,4 +20,20 @@
       <p class="blog__signature">&mdash; {{ blogpost.author.name }}</p>
     </article>
   </main>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "url": "{{ blogpost.url }}",
+      "text": "{{ blogpost.content.text }}",
+      "headline": "{{ blogpost.title }}",
+      "datePublished": "{{ blogpost.publishedAt }}",
+      "copyrightHolder": "CRHain Design LLC",
+      "author": {
+        "@type": "Person",
+        "givenName": "{{ blogpost.author.givenName }}",
+        "familyName": "{{ blogpost.author.familyName }}"
+      }
+    }
+  </script>
 {% endblock %}

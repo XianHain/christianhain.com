@@ -7,6 +7,7 @@ const getUserArticlesGQL = `
       posts(first: 10) {
         edges {
           node {
+            url
             slug
             brief
             title
@@ -17,6 +18,7 @@ const getUserArticlesGQL = `
               name
             }
             content {
+              text
               markdown
             }
           }
@@ -50,7 +52,14 @@ async function gql(query, variables = {}) {
 async function getAllPosts() {
   const hashnodeData = await gql(getUserArticlesGQL, { page: 0 });
   return hashnodeData.data.publication.posts.edges.map(
-    (edge) => ({...edge.node})
+    (edge) => ({
+      ...edge.node,
+      author: {
+        ...edge.node.author,
+        givenName: edge.node.author.name.split(' ')[0],
+        familyName: edge.node.author.name.split(' ')[1],
+      }
+    })
   );
 }
 
