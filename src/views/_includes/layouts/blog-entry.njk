@@ -6,7 +6,7 @@
       <div class="page-title">
         <h1 class="page-title__h1">{{ blogpost.title }}</h1>
         <p class="page-title__meta">
-          <time datetime="{{ item.publishedAt }}">
+          <time datetime="{{ blogpost.publishedAt }}">
             {{ blogpost.publishedAt | blogPostTimestamp }}
           </time>
           <span>
