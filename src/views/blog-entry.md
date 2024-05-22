@@ -10,4 +10,7 @@ pagination:
   size: 1
   alias: blogpost
 permalink: blog/{{ blogpost.slug }}/index.html
+
+eleventyComputed:
+  headTitle: "{{ blogpost.title }}"
 ---
