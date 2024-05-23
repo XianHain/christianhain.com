@@ -27,6 +27,7 @@ function compileScss() {
     .src('src/scss/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(lightningcss({minify: false}))
+    .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir))
     .pipe(lightningcss({minify: true}))
     .pipe(gulpHeaderComment(headerComment))
@@ -53,6 +54,7 @@ function transpileMjs() {
       plugins: ['@babel/plugin-syntax-import-attributes'],
     }))
     .pipe(concat('scripts.js'))
+    .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir))
     .pipe(uglify())
     .pipe(rename('scripts.min.js'))
