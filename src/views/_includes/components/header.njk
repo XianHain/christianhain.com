@@ -1,12 +1,21 @@
 <header class="header">
   <i class="header__spacer"></i>
-  <img
-    class="header__logo"
-    src="https://assets.christianhain.com/images/xianhain-logo-{{ logo }}.svg"
-    alt="@XianHain | Christian Hain"
-    width="256"
-    height="64"
-  >
+  <picture>
+    {% if logoDark %}
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://assets.christianhain.com/images/xianhain-logo-{{ logoDark }}.svg"
+      />
+    {% endif %}
+
+    <img
+      alt="@XianHain | Christian Hain"
+      src="https://assets.christianhain.com/images/xianhain-logo-{{ logo }}.svg"
+      width="256"
+      class="header__logo"
+      height="64"
+    >
+  </picture>
 
   {% include "components/menu.njk" %}
 

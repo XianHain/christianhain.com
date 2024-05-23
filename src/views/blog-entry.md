@@ -2,6 +2,7 @@
 layout: layouts/blog-entry.njk
 theme: blog
 logo: black
+logoDark: green
 menuTypes: ["blog", "navigation"]
 footerTypes: []
 

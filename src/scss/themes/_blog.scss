@@ -1,22 +1,36 @@
 [data-theme="blog"] {
-  --background-color: var(--white);
-  //--background-color: #001b26;
+  --background-color: light-dark(var(--white), var(--green-dark));
 
   --font-emphasis-bold: var(--amsi-condensed-bold);
   --font-emphasis-regular: var(--amsi-condensed-regular);
 
   --p-font-size: 1em;
   --p-line-height: 2;
-  --p-color: hsl(262, 99%, 10%);
   --p-font-family: var(--sometype);
   --p-font-weight: 400;
   --p-font-style: normal;
 
   --a-print-color: inherit;
-  --a-hover-color: var(--pink-bright);
-  --a-default-color: var(--pink-dark);
+  --a-hover-color: light-dark(var(--pink-bright), var(--amber));
+  --a-default-color: light-dark(var(--pink-dark), var(--white));
+
+  --body-color: light-dark(var(--blue-ink), var(--green-bright));
+
+  --menu-shadow-color: light-dark(var(--white-shadow), var(--green-shadow));
+  --menu-background-color: light-dark(var(--white), var(--green-dark));
+  --menu-border-color: light-dark(var(--black), var(--green-bright));
+  --menu-link-color: light-dark(var(--black), var(--white));
+
+  --footer-color: light-dark(
+    var(--black), color-mix(in hsl, var(--body-color), var(--background-color) 30%)
+  );
+  --footer-border-color: color-mix(in hsl, var(--body-color) 20%, var(--background-color));
 
   p + p {
     --p-margin: 2em 0 0;
+  }
+
+  figure  > img {
+    --img-background: hsl(0, 0%, 20%);
   }
 }

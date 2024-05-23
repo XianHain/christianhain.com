@@ -13,7 +13,7 @@
 }
 
 .blog-table__cell {
-  border-top: .0625em solid hsl(0, 0%, 60%);
+  border-top: .0625em solid var(--footer-border-color);
   padding: .5em 1.15em;
   vertical-align: top;
 }

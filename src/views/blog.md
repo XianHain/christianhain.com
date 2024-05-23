@@ -2,6 +2,7 @@
 layout: layouts/blog.njk
 theme: blog
 logo: black
+logoDark: green
 headTitle: 'Blogs, Memos, and Articles'
 menuTypes: ["navigation"]
 footerTypes: []

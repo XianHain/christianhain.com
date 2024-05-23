@@ -4,6 +4,7 @@ p {
   line-height: var(--p-line-height);
   margin: var(--p-margin);
   text-indent: var(--p-text-indent, 0);
+  text-wrap: pretty;
 
   font-family: var(--p-font-family);
   font-optical-sizing: auto;

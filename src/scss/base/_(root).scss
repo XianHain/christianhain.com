@@ -1,17 +1,19 @@
 :root {
+  color-scheme: light dark;
+
   --blue-bright: hsl(194, 100%, 50%);
   --blue-mid: hsl(205, 100%, 14%);
   --blue-dark: hsl(206, 100%, 4%);
+  --blue-ink: hsl(262, 99%, 10%);
   --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
-  --white-shadow: hsl(200, 16%, 95%);
+  --white: light-dark(hsl(0, 0%, 100%), hsl(200, 16%, 89%));
+  --white-shadow: light-dark(hsl(200, 16%, 95%), hsl(200, 16%, 84%));
   --pink-bright: hsl(339, 80%, 50%);
   --pink-dark: hsl(339, 80%, 35%);
+  --green-bright: hsl(137, 84%, 44%);
+  --green-dark: hsl(148, 98%, 7%);
+  --green-shadow: hsl(148, 98%, 5%);
+  --amber: hsl(31, 100%, 50%);
 
   --menu-border-color: transparent;
-
-  @media (prefers-color-scheme: dark) {
-    --white: hsl(200, 16%, 89%);
-    --white-shadow: hsl(200, 16%, 84%);
-  }
 }

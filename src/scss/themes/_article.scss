@@ -1,23 +1,26 @@
 [data-theme="article"] {
-  --background-color: var(--white);
+  --body-color: light-dark(hsl(262, 99%, 10%), hsla(0, 0%, 100%, .8));
+  --background-color: light-dark(var(--white), hsla(43, 74%, 49%, .05));
 
   --font-emphasis-bold: var(--amsi-condensed-bold);
   --font-emphasis-regular: var(--amsi-condensed-regular);
 
   --p-font-size: 1em;
   --p-line-height: 2;
-  --p-color: hsl(262, 99%, 10%);
+  --p-color: light-dark(hsl(262, 99%, 10%), hsla(0, 0%, 100%, .8));
   --p-font-family: var(--inra);
   --p-font-weight: 400;
   --p-font-style: normal;
 
   --a-print-color: inherit;
-  --a-hover-color: var(--pink-bright);
-  --a-default-color: var(--pink-dark);
+  --a-hover-color: var(--amber);
+  --a-default-color: var(--white);
 
   font-size: 1rem;
+  color: var(--body-color);
 
   [data-theme="blog"] & {
+    background: var(--background-color);
     border: .0625em solid hsla(0, 0%, 0%, .05);
     border-top-color: hsla(0, 0%, 100%, .25);
     border-bottom-color: hsla(0, 0%, 0%, .07);

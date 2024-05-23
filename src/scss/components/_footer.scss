@@ -4,6 +4,7 @@
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1em;
+  color: var(--footer-color);
 
   @supports (padding-bottom:env(safe-area-inset-bottom)) {
     --safe-area-inset-bottom: env(safe-area-inset-bottom);
@@ -20,7 +21,7 @@
 }
 
 .footer__copyright {
-  border-top: .0625rem solid hsla(0, 0%, 0%, .3);
+  border-top: .0625rem solid var(--footer-border-color, hsla(0, 0%, 0%, .3));
   font-family: var(--font-meta);
   line-height: 1.5;
   padding: 1em 0;
