@@ -5,10 +5,9 @@ import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import replace from 'gulp-replace';
-import cleanCss from 'gulp-clean-css';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-import autoprefixer from 'gulp-autoprefixer';
+import lightningcss from 'gulp-lightningcss';
 import gulpHeaderComment from 'gulp-header-comment';
 
 const sass = gulpSass(dartSass);
@@ -27,13 +26,11 @@ function compileScss() {
   return gulp
     .src('src/scss/styles.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      cascade: false,
-    }))
-    .pipe(cleanCss())
+    .pipe(lightningcss({minify: false}))
     .pipe(gulp.dest(destDir))
-    .pipe(rename('styles.min.css'))
+    .pipe(lightningcss({minify: true}))
     .pipe(gulpHeaderComment(headerComment))
+    .pipe(rename('styles.min.css'))
     .pipe(gulp.dest(destDir));
 }
 
