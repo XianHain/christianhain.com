@@ -4,7 +4,7 @@ theme: blog
 logo: black
 logoDark: green
 menuTypes: ["blog", "navigation"]
-footerTypes: []
+footerTypes: ["written-by-human"]
 
 pagination:
   data: blog-posts

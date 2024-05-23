@@ -4,5 +4,5 @@ theme: cv
 logo: black-csm
 headTitle: 'Curriculum Vitae'
 menuTypes: ["navigation", "utility"]
-footerTypes: ["csm"]
+footerTypes: ["csm", "written-by-human"]
 ---

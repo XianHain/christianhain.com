@@ -5,7 +5,7 @@ logo: black
 logoDark: green
 headTitle: 'Blogs, Memos, and Articles'
 menuTypes: ["navigation"]
-footerTypes: []
+footerTypes: ["written-by-human"]
 
 pagination:
   data: blog-posts

@@ -15,6 +15,7 @@
 @use "themes/article";
 @use "themes/homepage" as homepage-theme;
 
+@use "components/written-by-human";
 @use "components/page-title";
 @use "components/companies";
 @use "components/footer";

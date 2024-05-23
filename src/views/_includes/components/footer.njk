@@ -15,12 +15,15 @@
           {% endif %}
 
         </small>
+
+        {% if "written-by-human" in footerTypes %}
+          {% include "components/written-by-human.njk" %}
+        {% endif %}
       </div>
     </div>
 
     {% if "companies" in footerTypes %}
       {% include "components/companies.njk" %}
     {% endif %}
-
   </footer>
 </div>
