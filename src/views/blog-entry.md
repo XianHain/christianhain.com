@@ -14,4 +14,5 @@ permalink: blog/{{ blogpost.slug }}/index.html
 
 eleventyComputed:
   headTitle: "{{ blogpost.title }}"
+  canonical: "https://christianhain.com/blog/{{ blogpost.slug }}"
 ---

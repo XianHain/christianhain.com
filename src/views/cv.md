@@ -5,4 +5,6 @@ logo: black-csm
 headTitle: 'Curriculum Vitae'
 menuTypes: ["navigation", "utility"]
 footerTypes: ["csm", "written-by-human"]
+
+canonical: "https://christianhain.com/cv"
 ---
