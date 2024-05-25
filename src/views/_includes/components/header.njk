@@ -1,21 +1,23 @@
 <header class="header">
   <i class="header__spacer"></i>
-  <picture>
-    {% if logoDark %}
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="https://assets.christianhain.com/images/xianhain-logo-{{ logoDark }}.svg"
-      />
-    {% endif %}
+  <a href="/" title="Homepage">
+    <picture>
+      {% if logoDark %}
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://assets.christianhain.com/images/xianhain-logo-{{ logoDark }}.svg"
+        />
+      {% endif %}
 
-    <img
-      alt="@XianHain | Christian Hain"
-      src="https://assets.christianhain.com/images/xianhain-logo-{{ logo }}.svg"
-      width="256"
-      class="header__logo"
-      height="64"
-    >
-  </picture>
+      <img
+        alt="@XianHain | Christian Hain"
+        src="https://assets.christianhain.com/images/xianhain-logo-{{ logo }}.svg"
+        width="256"
+        class="header__logo"
+        height="64"
+      >
+    </picture>
+  </a>
 
   {% include "components/menu.njk" %}
 
