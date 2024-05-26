@@ -26,11 +26,16 @@
   );
   --footer-border-color: color-mix(in hsl, var(--body-color) 20%, var(--background-color));
 
-  p + p {
+  p + p, {
     --p-margin: 2em 0 0;
   }
 
   figure  > img {
     --img-background: hsl(0, 0%, 20%);
+  }
+
+  li {
+    font-family: var(--p-font-family);
+    line-height: var(--p-line-height);
   }
 }
