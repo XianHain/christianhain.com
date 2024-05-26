@@ -13,8 +13,8 @@
   --p-font-style: normal;
 
   --a-print-color: inherit;
-  --a-hover-color: var(--amber);
-  --a-default-color: var(--white);
+  --a-hover-color: light-dark(var(--pink-bright), var(--amber));
+  --a-default-color: light-dark(var(--pink-dark), var(--white));
 
   font-size: 1rem;
   color: var(--body-color);
