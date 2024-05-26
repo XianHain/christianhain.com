@@ -3,11 +3,6 @@
   margin: 0 auto;
 }
 
-%_heading {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .blog__article {
   @extend %_copy;
 
@@ -18,6 +13,10 @@
 
 .blog__copy {
   @extend %_copy;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .blog__signature {
