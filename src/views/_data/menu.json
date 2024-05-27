@@ -78,5 +78,25 @@
       "title": "GitHub",
       "target": "_blank"
     }
+  },
+  {
+    "id": "footer-blog",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/blog",
+      "title": "Blog",
+      "target": "_self"
+    }
+  },
+  {
+    "id": "footer-rss",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/blog/feed.xml",
+      "title": "Blog RSS Feed",
+      "target": "_blank"
+    }
   }
 ]

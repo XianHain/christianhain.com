@@ -1,9 +1,12 @@
 // import {htmlmin} from 'html-minifier';
 import {marked} from 'marked';
 import {minify} from 'html-minifier-terser';
+import pluginRss from '@11ty/eleventy-plugin-rss';
 import EleventyPluginRobotsTxt from "eleventy-plugin-robotstxt";
 
 export default async function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {
     shouldBlockAIRobots: true,
   });
@@ -11,15 +14,29 @@ export default async function(eleventyConfig) {
   eleventyConfig.addShortcode('year', () => new Date().getFullYear());
 
   eleventyConfig.addTransform('minify', async function (content) {
-    return ((this.page.outputPath || '').endsWith('.html'))
-      ? await minify(content, {
+    const outputPath = this.page.outputPath || '';
+    let options = null;
+
+    if (outputPath.endsWith('.html')) {
+      options = {
         minifyJS: true,
         removeComments: true,
         useShortDoctype: true,
         collapseWhitespace: true,
-      })
+      };
+    } else if (outputPath.endsWith('.xml')) {
+      options = {
+        keepClosingSlash: true,
+        collapseWhitespace: true,
+      };
+    }
+
+    return (options)
+      ? await minify(content, options)
       : content;
   });
+
+  eleventyConfig.addFilter('atom_dateToRfc3339', (date) => pluginRss.dateToRfc3339(new Date(date)));
 
   eleventyConfig.addFilter('blogListTimestamp', (date) =>
     new Date(date).toLocaleString('en-US', {
