@@ -6,7 +6,8 @@
       "rel": [],
       "href": "/blog",
       "title": "Back to Blog",
-      "target": "_self"
+      "target": "_self",
+      "displayValue": "Blog"
     }
   },
   {
@@ -16,7 +17,8 @@
       "rel": [],
       "href": "/",
       "title": "Home",
-      "target": "_self"
+      "target": "_self",
+      "displayValue": "Home"
     }
   },
   {
@@ -26,7 +28,8 @@
       "rel": [],
       "title": "Print",
       "onclick": "window.print()",
-      "target": "_self"
+      "target": "_self",
+      "displayValue": "Print"
     }
   },
   {
@@ -36,7 +39,8 @@
       "rel": [],
       "href": "/blog",
       "title": "Blog (Powered by Hashnode)",
-      "target": "_self"
+      "target": "_self",
+      "displayValue": "Blog"
     }
   },
   {
@@ -46,7 +50,8 @@
       "rel": ["nofollow"],
       "href": "https://behance.net/CRHain",
       "title": "Behance",
-      "target": "_blank"
+      "target": "_blank",
+      "displayValue": "Behance"
     }
   },
   {
@@ -56,7 +61,8 @@
       "rel": ["nofollow"],
       "href": "https://www.linkedin.com/in/crhain",
       "title": "LinkedIn",
-      "target": "_blank"
+      "target": "_blank",
+      "displayValue": "LinkedIn"
     }
   },
   {
@@ -66,7 +72,8 @@
       "rel": ["nofollow", "js-headshot-toggle"],
       "href": "https://mycreativetype.com/type/innovator/",
       "title": "My Adobe Creative Type",
-      "target": "_blank"
+      "target": "_blank",
+      "displayValue": "My Adobe Creative Type"
     }
   },
   {
@@ -76,7 +83,8 @@
       "rel": ["nofollow"],
       "href": "https://github.com/xianhain",
       "title": "GitHub",
-      "target": "_blank"
+      "target": "_blank",
+      "displayValue": "GitHub"
     }
   },
   {
@@ -86,7 +94,8 @@
       "rel": [],
       "href": "/blog",
       "title": "Blog",
-      "target": "_self"
+      "target": "_self",
+      "displayValue": "Blog"
     }
   },
   {
@@ -96,7 +105,8 @@
       "rel": [],
       "href": "/blog/feed.xml",
       "title": "Blog RSS Feed",
-      "target": "_blank"
+      "target": "_blank",
+      "displayValue": "RSS"
     }
   }
 ]
