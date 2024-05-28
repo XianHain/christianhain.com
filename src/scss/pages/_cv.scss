@@ -202,17 +202,22 @@ $two-column-breakpoint: 53rem;
 
 /****************************************************************************** Story */
 .cv-story {
-  --max-width: calc(100% - 4rem);
+  --p-line-height: 1.5;
   --margin-top: 1rem;
+  --max-width: calc(100% - 4rem);
 
   font-family: var(--inra);
   margin: var(--margin-top) auto 0;
-  text-align: justify;
   max-width: var(--max-width);
+  text-align: justify;
   
   @media print, (min-width: $two-column-breakpoint) {
     --max-width: 37em;
     --margin-top: .5em;
+  }
+
+  @media print {
+    --p-line-height: 1.2;
   }
 
   > * {
@@ -225,7 +230,7 @@ $two-column-breakpoint: 53rem;
 }
 
 .cv-story--margin {
-  margin-top: 2rem;
+  --margin-top: 1rem;
 }
 
 /****************************************************************************** Employment Heading */
