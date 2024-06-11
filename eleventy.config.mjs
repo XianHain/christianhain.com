@@ -54,11 +54,16 @@ export default async function(eleventyConfig) {
     })
   );
 
-  eleventyConfig.addFilter('markdown', async (content) =>
-    await marked.parse(content)
-      .replace('<meta data-xian="article-start" />', '</div><div data-theme="article"><div class="blog__copy">')
-      .replace('<meta data-xian="article-end" />',   '</div></div><div class="blog__copy" data-theme="memo">')
-  );
+  eleventyConfig.addFilter('markdown', async (content) => {
+    return await marked.parse(content)
+      // Article Theme
+      .replace('<meta data-xian="article-start">', '</div><div data-theme="article"><div class="blog__copy">')
+      .replace('<meta data-xian="article-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+      // Email Theme
+      .replace('<meta data-xian="email-start">', '</div><div data-theme="email"><div class="blog__copy">')
+      .replace('<meta data-xian="email-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+  });
 
   return {
     dir: {

@@ -12,8 +12,10 @@
 @use "themes/cv" as cv-theme;
 @use "themes/blog";
 @use "themes/memo";
+@use "themes/email";
 @use "themes/article";
 @use "themes/homepage" as homepage-theme;
+@use "themes/polaroid";
 
 @use "components/written-by-human";
 @use "components/page-title";

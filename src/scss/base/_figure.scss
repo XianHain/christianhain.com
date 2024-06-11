@@ -1,12 +1,14 @@
+@use "../utils/fonts";
+
 figure {
-  width: 75%;
+  width: var(--figure-width, auto);
   margin-left: auto !important;
   margin-right: auto !important;
   display: block;
   box-shadow: 0 .125em .125em hsla(0, 0%, 0%, .05);
   border-radius: .25em;
-  rotate: -1deg;
-  background: hsl(0, 0%, 95%);
+  rotate: var(--figure-rotate, 0deg);
+  background: var(--white-shadow);
   border: .0625em solid hsl(0, 0%, 90%);
   border-top-color: hsl(0, 0%, 100%);
   border-bottom-color: hsl(0, 0%, 80%);
@@ -21,11 +23,11 @@ figure {
 }
 
 figcaption {
-  font-family: var(--edu);
+  color: hsla(0, 0%, 0%, .7);
+  font-family: var(--figcaption-font);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin: .5em 0 0;
-  text-align: center;
-  color: hsla(0, 0%, 0%, .7);
+  text-align: var(--figcaption-text-align, left);
 }

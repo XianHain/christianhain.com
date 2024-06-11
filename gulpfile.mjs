@@ -42,6 +42,7 @@ function processHtml() {
       const parts = match.split('.');
       return `${parts[0]}.min.${parts[1]}`;
     }))
+    .pipe(replace('<div class="blog__copy" data-theme="memo"></div>', ''))
     .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }

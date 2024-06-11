@@ -1,0 +1,18 @@
+[data-theme="email"] {
+  --background-color: light-dark(var(--white-shadow), var(--black));
+
+  background: var(--background-color);
+  border: .0625em solid hsla(0, 0%, 0%, .05);
+  border-top-color: hsla(0, 0%, 100%, .25);
+  border-bottom-color: hsla(0, 0%, 0%, .07);
+  border-radius: .125em;
+  padding: 1em;
+  box-shadow: 0 .125em 1em hsla(0, 0%, 0%, .04);
+
+  display: flex;
+  justify-content: center;
+
+  .blog__copy {
+    max-width: 80ch;
+  }
+}
