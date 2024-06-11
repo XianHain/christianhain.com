@@ -4,12 +4,12 @@
     <title>{{ metadata.title }}</title>
     <subtitle>{{ metadata.subtitle }}</subtitle>
     <link href="{{ metadata.permalink }}" rel="self" />
-    <link href="{{ metadata.url }}" />
     <updated>{{ blogposts[0].publishedAt | atom_dateToRfc3339 }}</updated>
     <id>{{ metadata.url }}</id>
     <author>
       <name>{{ metadata.author.name }}</name>
     </author>
+    <icon>https://assets.christianhain.com/favicons/favicon.png</icon>
     {%- for blogpost in blogposts %}
       {%- set absolutePostUrl = blogpost.url | absoluteUrl(metadata.url) %}
       <entry>
@@ -17,9 +17,19 @@
         <link href="{{ absolutePostUrl }}" />
         <updated>{{ blogpost.publishedAt | atom_dateToRfc3339 }}</updated>
         <id>{{ blogpost.url }}</id>
+        <summary>
+          {{ blogpost.brief }}
+        </summary>
         <content xml:lang="{{ metadata.language }}" type="html">
           {{ blogpost.content.markdown | markdown | htmlToAbsoluteUrls(absolutePostUrl) }}
         </content>
+        {%- if blogpost.ogMetaData.image %}
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
+            url="{{ blogpost.ogMetaData.image }}"
+            height="129" width="247"
+          >
+          </media:thumbnail>
+        {%- endif %}
       </entry>
     {%- endfor %}
   </feed>

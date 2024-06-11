@@ -12,11 +12,10 @@ const getUserArticlesGQL = `
             brief
             title
             publishedAt
-            tags { id }
             readTimeInMinutes
-            author {
-              name
-            }
+            tags { id }
+            author { name }
+            ogMetaData { image }
             content {
               text
               markdown
