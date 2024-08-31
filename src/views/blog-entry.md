@@ -6,11 +6,12 @@ logoDark: green
 menuTypes: ["blog", "navigation"]
 footerTypes: ["written-by-human"]
 
+permalink: blog/{{ blogpost.slug }}/index.html
 pagination:
   data: blog-posts
   size: 1
   alias: blogpost
-permalink: blog/{{ blogpost.slug }}/index.html
+  addAllPagesToCollections: true
 
 eleventyComputed:
   headTitle: "{{ blogpost.title }}"

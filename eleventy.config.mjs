@@ -8,6 +8,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {
+    sitemapURL: 'https://www.christianhain.com/sitemap.xml',
     shouldBlockAIRobots: true,
   });
 
