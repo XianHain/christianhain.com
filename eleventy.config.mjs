@@ -64,6 +64,10 @@ export default async function(eleventyConfig) {
       // Email Theme
       .replace('<meta data-xian="email-start">', '</div><div data-theme="email"><div class="blog__copy">')
       .replace('<meta data-xian="email-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+      // Video-Player Theme
+      .replace('<meta data-xian="videoplayer-start">', '</div><div data-theme="video-player"><div class="blog__copy">')
+      .replace('<meta data-xian="videoplayer-end">', '</div></div><div class="blog__copy" data-theme="memo">')
   });
 
   return {

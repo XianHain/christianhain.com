@@ -1,0 +1,9 @@
+@use "../utils/wide-frame";
+
+[data-theme="video-player"] {
+  @extend %wide-frame;
+
+  > iframe {
+    aspect-ratio: 16 / 9;
+  }
+}
