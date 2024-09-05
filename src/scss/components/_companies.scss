@@ -122,11 +122,12 @@
   }
 }
 
-.company--leasequery {
-  background-image: url("https://assets.christianhain.com/images/logo-leasequery.svg");
+.company--finquery {
+  background-image: url("https://assets.christianhain.com/images/logo-finquery.svg");
   grid-area: 1/1/1/1;
   height: 2rem;
-  width: 6rem;
+  transform: translateY(.25rem);
+  width: 7rem;
 }
 
 .company--outworlders {
