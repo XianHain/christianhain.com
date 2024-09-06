@@ -15,5 +15,5 @@ pagination:
 
 eleventyComputed:
   headTitle: "{{ blogpost.title }}"
-  canonical: "https://christianhain.com/blog/{{ blogpost.slug }}"
+  canonical: "https://christianhain.com/blog/{{ blogpost.slug }}/"
 ---

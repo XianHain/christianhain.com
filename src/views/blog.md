@@ -7,7 +7,7 @@ headTitle: 'Blogs, Memos, and Articles'
 menuTypes: ["navigation"]
 footerTypes: ["written-by-human"]
 
-canonical: "https://christianhain.com/blog"
+canonical: "https://christianhain.com/blog/"
 pagination:
   data: blog-posts
   size: 12
