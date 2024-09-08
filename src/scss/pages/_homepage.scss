@@ -72,7 +72,7 @@
 
 .headshot > img {
   border-radius: 50%;
-  border: .25rem solid var(--blue-bright);
+  border: .25rem solid light-dark(var(--blue-mid), var(--blue-bright));
   box-shadow: inset 0 0 0 .25rem var(--blue-bright);
   box-sizing: border-box;
   display: block;
@@ -123,9 +123,9 @@
 }
 
 .intro h1 {
-  color: hsl(194, 100%, 50%);
+  color: light-dark(var(--blue-mid), var(--blue-bright));
   font-size: 5rem;
-  text-shadow: 0 .25rem .125rem var(--black);
+  text-shadow: light-dark(initial, 0 .25rem .125rem var(--black));
   font-family: var(--font-emphasis-ultra);
   letter-spacing: -.5px;
   margin: 1rem 0 0;
@@ -134,7 +134,6 @@
 
 .intro p {
   --p-margin: 1em 0 0;
-  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -146,7 +145,10 @@
 
 .intro a {
   white-space: nowrap;
-  color: var(--white);
+  color: light-dark(var(--pink-dark), var(--white));
+}
+.intro a:hover {
+  color: light-dark(var(--pink-bright), var(--white));
 }
 
 /****************************************************************************** Blog */
