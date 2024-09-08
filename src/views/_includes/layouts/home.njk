@@ -41,40 +41,39 @@
     </p>
   </section>
   <section class="blog">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <div class="blog__content">
       <div class="content">
         <h2 class="content__title">This is my blog</h2>
       </div>
       <div class="blog__entries">
-        <swiper-container
-          rel="js-blog-container"
-          grab-cursor="true"
-          space-between="16"
-          slides-per-view="auto"
-          slides-offset-after="16"
-          slides-offset-before="16"
-          center-insufficient-slides="true"
-        >
-          {% for item in pagination.items %}
-            <swiper-slide class="blog-entry">
-              <article>
-                <h3 rel="js-blog-entry__title">{{ item.title }}</h3>
-                <p rel="js-blog-entry__brief"> {{ item.brief }}</p>
-                <p>
-                  <a
-                    rel="nofollow"
-                    href="/blog/{{ item.slug }}"
-                    class="cta cta--primary"
-                    title="View on Hashnode.com"
-                  >
+        {% for item in pagination.items %}
+          <article class="blog-entry">
+            <h3 class="blog-entry__title">{{ item.title }}</h3>
+            <div class="blog-entry__body-copy">
+              <p class="blog-entry__meta page-title__meta">
+                <time datetime="{{ item.publishedAt }}">
+                  {{ item.publishedAt | blogPostTimestamp }}
+                </time>
+                <span>
+                  {{ item.readTimeInMinutes }} minute read
+                </span>
+              </p>
+              <p class="blog-entry__brief"> {{ item.brief }}</p>
+              <ul class="blog-entry__link-list">
+                <li>
+                  <a class="blog-entry__link" href="/blog/{{ item.slug }}" title="{{ item.title }}">
                     Read More
                   </a>
-                </p>
-              </article>
-            </swiper-slide>
-          {% endfor %}
-        </swiper-container>
+                </li>
+                <li>
+                  <a class="blog-entry__link" href="/blog/" title="Blog">
+                    View All
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        {% endfor %}
       </div>
     </div>
   </section>

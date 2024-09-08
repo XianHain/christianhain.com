@@ -152,41 +152,63 @@
 /****************************************************************************** Blog */
 .blog {
   margin: 4rem 0 0;
+  padding: 0 1rem;
 }
 
 .blog-entry {
-  padding: 1rem;
-  background-color: var(--blue-bright);
-  border-radius: .25rem;
-  color: hsl(206, 100%, 4%);
-  box-sizing: border-box;
-  max-width: 20rem;
-  width: 80%;
-  opacity: .85;
-  transition:
-    opacity .2s ease-in-out,
-    transform .1s ease-in,
-    background-color .1s ease-in-out;
-
-  &:hover,
-  &:has(a:focus){
-    opacity: 1;
-    transform: scale(1.01);
-    box-shadow: 0 0 2rem .5rem black;
-    z-index: 100;
-  }
-
-  &:has(a:focus),
-  &:has(a:hover) {
-    background-color: var(--white);
-  }
+  background-color: light-dark(var(--white), var(--green-dark));
+  border: .125rem solid light-dark(var(--white-shadow), var(--green-bright));
+  border-radius: light-dark(.25rem, 1rem);
+  color: light-dark(var(--black), var(--green-bright));
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 2rem 2rem 1rem;
+  text-decoration: none;
 }
 
-.blog-entry article > * {
+.blog-entry__title {
+  text-align: center;
+  font-size: 2rem;
   margin: 0;
+}
 
-  & + * {
-    margin: .5rem 0 0;
+.blog-entry__body-copy {
+  font-family: var(--sometype);
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-entry__link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4ch;
+}
+
+.blog-entry__link {
+  color: light-dark(var(--black), var(--white));
+  opacity: light-dark(.7, initial);
+  font-family: light-dark(var(--edu), inherit);
+  font-size: light-dark(1.5rem, inherit);
+  text-decoration: light-dark(underline, none);
+  text-underline-offset: .5rem;
+  text-decoration-color: light-dark(var(--blue-bright), inherit);
+}
+.blog-entry__link:hover {
+  opacity: initial;
+  color: light-dark(var(--pink-bright), var(--amber));
+}
+
+@media (prefers-color-scheme: dark) {
+  .blog-entry__link:before {
+    content: ">";
+    text-decoration: underline;
+    font-weight: 700;
+    margin: 0 1ch 0 0;
   }
 }
 
