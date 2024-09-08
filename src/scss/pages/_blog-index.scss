@@ -1,3 +1,5 @@
+@use "../utils/blog-nav";
+
 .blog-table {
   font-family: var(--sometype);
   margin: 4em 0 0;
@@ -36,4 +38,20 @@
   @media (min-width: 40rem) {
     white-space: nowrap;
   }
+}
+
+.blog-nav {
+  padding: 2rem 0 0;
+}
+
+.blog-nav__link-list {
+  @extend %blog-nav-link-list;
+}
+
+.blog-nav__link {
+  @extend %blog-nav-link;
+}
+
+.blog-nav__link:before {
+  @extend %blog-nav-link-pseudo-before;
 }

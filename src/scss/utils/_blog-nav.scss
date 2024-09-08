@@ -1,0 +1,29 @@
+%blog-nav-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4ch;
+}
+
+%blog-nav-link {
+  --a-default-color: light-dark(var(--black), var(--white));
+  --a-hover-color: light-dark(var(--pink-bright), var(--amber));
+
+  opacity: light-dark(.7, initial);
+  font-family: light-dark(var(--edu), inherit);
+  font-size: light-dark(1.5rem, inherit);
+  text-decoration: light-dark(underline, none);
+  text-underline-offset: .5rem;
+  text-decoration-color: light-dark(var(--blue-bright), inherit);
+}
+
+%blog-nav-link-pseudo-before {
+  @media (prefers-color-scheme: dark) {
+    content: ">";
+    text-decoration: underline;
+    font-weight: 700;
+    margin: 0 1ch 0 0;
+  }
+}

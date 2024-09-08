@@ -33,5 +33,23 @@
         </tbody>
       </table>
     </article>
+    <nav class="blog-nav">
+      <ul class="blog-nav__link-list">
+        {% if pagination.previousPageLink %}
+          <li>
+            <a class="blog-nav__link" href="{{ pagination.previousPageLink }}">
+              Previous
+            </a>
+          </li>
+        {% endif %}
+        {% if pagination.nextPageLink %}
+          <li>
+            <a class="blog-nav__link" href="{{ pagination.nextPageLink }}">
+              Next
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
   </main>
 {% endblock %}
