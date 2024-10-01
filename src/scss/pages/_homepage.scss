@@ -75,7 +75,7 @@
 .headshot > img {
   border-radius: 50%;
   border: .25rem solid light-dark(var(--blue-mid), var(--blue-bright));
-  box-shadow: inset 0 0 0 .25rem var(--blue-bright);
+  box-shadow: inset 0 0 0 .25rem light-dark(var(--blue-mid), var(--blue-bright));
   box-sizing: border-box;
   display: block;
   height: 100%;

@@ -8,19 +8,19 @@
   --font-emphasis-ultra: var(--amsi-condensed-ultra);
 
   --menu-link-color: light-dark(var(--blue-dark), var(--blue-bright));
-  --menu-shadow-color: light-dark(var(--blue-bright), var(--blue-dark));
-  --menu-background-color: light-dark(var(--blue-bright), hsla(206, 100%, 4%, .95));
+  --menu-shadow-color: light-dark(var(--white-shadow), var(--blue-dark));
+  --menu-background-color: light-dark(var(--white-shadow), hsla(206, 100%, 4%, .95));
   --menu-border-color-base-hsl-values: 205, 100%, 14%;
 
-  --background-start-color: light-dark(var(--blue-bright), var(--blue-dark));
-  --background-end-color: light-dark(var(--white), var(--blue-mid));
+  --background-start-color: light-dark(var(--white-mid), var(--blue-dark));
+  --background-end-color: light-dark(var(--white-shadow), var(--blue-mid));
+  --background-direction: light-dark(120deg, 0deg);
   background-image: linear-gradient(
-    to bottom,
-    var(--background-start-color),
-    var(--background-end-color)
+    var(--background-direction),
+    var(--background-start-color) 0%,
+    var(--background-end-color) 100%
   );
   background-attachment: light-dark(initial, fixed);
-  height: light-dark(50vh, initial);
   background-repeat: no-repeat;
   color: light-dark(var(--blue-dark), var(--white));
 }
