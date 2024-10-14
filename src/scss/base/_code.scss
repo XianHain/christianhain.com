@@ -8,10 +8,9 @@ code {
   font-weight: 400;
 
   &:not(pre > &) {
-    margin: var(--p-margin);
-
-    background: hsla(0, 0%, 0%, .1);
-    padding: 0 var(--code-padding-x, .25ch);
+    background: light-dark(hsla(0, 0%, 0%, .1), hsla(0, 0, 0%, .5));
     border-radius: .25em;
+    margin: var(--p-margin);
+    padding: 0 var(--code-padding-x, .25ch);
   }
 }
