@@ -1,4 +1,5 @@
 blockquote {
-  margin: var(--p-margin);
-  padding: 0 0 0 4.0625em;
+  margin: var(--blockquote-margin, var(--p-margin));
+  padding: var(--blockquote-padding, 0 0 0 4.0625em);
+  border-left: .125em solid var(--blockquote-border-color, hsla(0, 0%, 0%, .05));
 }

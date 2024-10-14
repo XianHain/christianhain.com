@@ -57,9 +57,9 @@
     }
 
     blockquote {
-      border-left: .125em solid hsla(0, 0%, 0%, .05);
-      padding: 1em 0 1em 2em;
-      margin: 1em 0;
+      --blockquote-padding: 1em 0 1em 2em;
+      --blockquote-margin: 1em 0;
+      --blockquote-border-color: light-dark(hsla(0, 0%, 0%, .05), hsla(0, 0%, 100%, .5));
     }
   }
 }

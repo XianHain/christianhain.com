@@ -16,6 +16,10 @@
 
   --body-color: light-dark(var(--blue-ink), var(--green-bright));
 
+  --blockquote-margin: 2em 0;
+  --blockquote-padding: 0 0 0 4ch;
+  --blockquote-border-color: light-dark(hsla(0, 0%, 0%, .05), hsla(137, 84%, 44%, .15));
+
   --menu-shadow-color: light-dark(var(--white-shadow), var(--green-shadow));
   --menu-background-color: light-dark(var(--white), var(--green-dark));
   --menu-border-color: light-dark(var(--black), var(--green-bright));
