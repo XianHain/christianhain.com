@@ -3450,6 +3450,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gulp-minify-inline-json@npm:1.4.12":
+  version: 1.4.12
+  resolution: "gulp-minify-inline-json@npm:1.4.12"
+  dependencies:
+    minify-inline-json: "npm:^1.1.2"
+    plugin-error: "npm:^2.0.1"
+    through2: "npm:^4.0.2"
+  checksum: 10c0/37af4ee34d87f34090b14b896eef1c418221c4b35b2abc006b01071cfafdd41b2b4fd48137640d91b6d8ea8c36f144b4661d257522f093b690837ee9e34bc7e4
+  languageName: node
+  linkType: hard
+
 "gulp-rename@npm:2.0.0":
   version: 2.0.0
   resolution: "gulp-rename@npm:2.0.0"
@@ -4436,6 +4447,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minify-inline-json@npm:^1.1.2":
+  version: 1.1.11
+  resolution: "minify-inline-json@npm:1.1.11"
+  checksum: 10c0/ceac6819517eae56180bf1c278d219073e269aeacbf5412134fd266c4d02dd1b006cdb23e8c24219429905d7a524fa610451781976b3e0f01cdeeabecf59513c
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.0, minimatch@npm:^3.1.1":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -5002,7 +5020,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plugin-error@npm:^2.0.0":
+"plugin-error@npm:^2.0.0, plugin-error@npm:^2.0.1":
   version: 2.0.1
   resolution: "plugin-error@npm:2.0.1"
   dependencies:
@@ -5889,7 +5907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"through2@npm:4.0.2":
+"through2@npm:4.0.2, through2@npm:^4.0.2":
   version: 4.0.2
   resolution: "through2@npm:4.0.2"
   dependencies:
@@ -6302,6 +6320,7 @@ __metadata:
     gulp-concat: "npm:2.6.1"
     gulp-header-comment: "npm:^0.10.0"
     gulp-lightningcss: "npm:1.0.0"
+    gulp-minify-inline-json: "npm:1.4.12"
     gulp-rename: "npm:2.0.0"
     gulp-replace: "npm:1.1.4"
     gulp-sass: "npm:^5.1.0"

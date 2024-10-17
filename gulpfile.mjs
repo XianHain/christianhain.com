@@ -8,6 +8,7 @@ import replace from 'gulp-replace';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import lightningcss from 'gulp-lightningcss';
+import minifyInlineJSON from 'gulp-minify-inline-json';
 import gulpHeaderComment from 'gulp-header-comment';
 
 const sass = gulpSass(dartSass);
@@ -43,6 +44,7 @@ function processHtml() {
       return `${parts[0]}.min.${parts[1]}`;
     }))
     .pipe(replace('<div class="blog__copy" data-theme="memo"></div>', ''))
+    .pipe(minifyInlineJSON())
     .pipe(gulpHeaderComment(headerComment))
     .pipe(gulp.dest(destDir));
 }

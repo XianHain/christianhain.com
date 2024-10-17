@@ -55,6 +55,8 @@ export default async function(eleventyConfig) {
     })
   );
 
+  eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, "\\n").trim());
+
   eleventyConfig.addFilter('markdown', async (content) => {
     return await marked.parse(content)
       // Article Theme
