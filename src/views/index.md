@@ -8,7 +8,7 @@ permalink: "{%- if pagination.pageNumber == 0 -%}/index.html{%- else -%}/.delete
 footerTypes: ["csm", "companies"]
 eleventyExcludeFromCollections: true
 
-canonical: "https://christianhain.com"
+canonical: "https://www.christianhain.com"
 pagination:
   data: blog-posts
   size: 1
