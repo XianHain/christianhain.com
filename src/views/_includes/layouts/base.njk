@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ site.authorName }}">
-  <meta name="description" content="{{ site.description }}">
+
+  {% if headDescription %}
+    <meta name="description" content="{{ headDescription }}">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
   <title>
     {% if headTitle %}
       {{ headTitle }} &mdash;
     {% endif %}
     @XianHain
   </title>
+
   <link rel="canonical" href="{{ canonical }}">
   <link rel="icon" type="{{ site.favicon.type }}" href="{{ site.favicon.url }}">
   <link rel="apple-touch-icon" href="{{ site.favicon.url }}">

@@ -1,6 +1,7 @@
 module.exports = {
   eleventyComputed: {
-    headTitle: (data) => data,
     canonical: (data) => data,
+    headTitle: (data) => data,
+    headDescription: (data) => data,
   },
 };

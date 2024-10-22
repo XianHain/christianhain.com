@@ -13,6 +13,7 @@ const getUserArticlesGQL = `
             title
             publishedAt
             readTimeInMinutes
+            seo { description }
             tags { id }
             author { name }
             ogMetaData { image }

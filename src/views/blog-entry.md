@@ -14,6 +14,7 @@ pagination:
   addAllPagesToCollections: true
 
 eleventyComputed:
-  headTitle: "{{ blogpost.title }}"
   canonical: "https://www.christianhain.com/blog/{{ blogpost.slug }}/"
+  headTitle: "{{ blogpost.title }}"
+  headDescription: "{{ blogpost.seo.description }}"
 ---
