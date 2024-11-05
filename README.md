@@ -1,7 +1,7 @@
 # ChristianHain.com
 
 This repo contains the source code for my 
-[personal website](https://christianhain.com).
+[personal website](https://www.christianhain.com).
 
 ## Prerequisites
 This repo uses `yarn` to and `gulp` to manage deployment.
