@@ -1,4 +1,3 @@
-// import {htmlmin} from 'html-minifier';
 import {marked} from 'marked';
 import {minify} from 'html-minifier-terser';
 import pluginRss from '@11ty/eleventy-plugin-rss';
