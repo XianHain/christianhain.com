@@ -1,9 +1,9 @@
-.companies {
+.social-proof {
   margin: 2rem 0 0;
   padding: 0 0 1rem;
 }
 
-.companies__title {
+.social-proof__title {
   font-family: var(--font-primary-regular);
   font-size: 1rem;
   letter-spacing: .0625rem;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.companies__list {
+.companies-list {
   --companies-grid-template-columns: repeat(2, 1fr);
   --companies-grid-template-rows: repeat(3, 1fr);
   --companies-list-display: grid;
