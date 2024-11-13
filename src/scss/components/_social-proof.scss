@@ -26,7 +26,6 @@
   justify-items: center;
   margin: var(--companies-list-margin-top) auto;
   padding: 0;
-  width: calc(100% - 2rem);
 
   @media (min-width: 30rem) {
     --companies-grid-template-columns: repeat(3, 1fr);
@@ -34,7 +33,7 @@
     --companies-list-margin-top: 2rem;
   }
 
-  @media (min-width: 47rem) {
+  @media (min-width: 60rem) {
     --companies-list-display: flex;
     --companies-list-margin-top: 1rem;
     gap: 3rem;
@@ -149,8 +148,20 @@
 
 .awards-list {
   display: flex;
-  gap: 3em;
-  justify-content: center;
+  flex-wrap: var(--flex-wrap, wrap);
+  gap: var(--gap, 1em);
+  justify-content: var(--justify-content, flex-start);
+  list-style: none;
+  margin: 0 auto;
+  max-width: var(--max-width, 15em);
+  padding: 0;
+
+  @media (min-width: 30em) {
+    --flex-wrap: nowrap;
+    --gap: 3em;
+    --justify-content: center;
+    --max-width: initial;
+  }
 }
 
 .award a {
@@ -165,11 +176,11 @@
 .award--webby a {
   height: 4rem;
   mask-image: url("https://assets.christianhain.com/images/webby-honoree-badge.svg");
-  width: 11rem;
+  width: 10.5rem;
 }
 
 .award--csd a {
   height: 4rem;
   mask-image: url("https://assets.christianhain.com/images/csd-badge.svg");
-  width: 17rem;
+  width: 16.75rem;
 }
