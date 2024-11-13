@@ -146,3 +146,30 @@
     --outworlders-translateY: -.75rem;
   }
 }
+
+.awards-list {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+
+.award a {
+  background-color: light-dark(var(--blue-mid), var(--blue-bright));
+  mask-mode: alpha;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  text-indent: -9999rem;
+  display: block;
+}
+
+.award--webby a {
+  height: 4rem;
+  mask-image: url("https://assets.christianhain.com/images/webby-honoree-badge.svg");
+  width: 11rem;
+}
+
+.award--csd a {
+  height: 4rem;
+  mask-image: url("https://assets.christianhain.com/images/csd-badge.svg");
+  width: 17rem;
+}
