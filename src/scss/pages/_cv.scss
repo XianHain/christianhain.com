@@ -194,8 +194,11 @@ $two-column-breakpoint: 53rem;
   }
 
   dd + &:before {
-    display: block;
     content: "";
+    display: block;
+  }
+
+  :not(.cv-details--tight) > dd + &:before {
     margin: 1em;
   }
 }
@@ -269,6 +272,37 @@ $two-column-breakpoint: 53rem;
     margin: 0;
     font-family: var(--font-emphasis-regular);
   }
+}
+
+/****************************************************************************** Awards and Certifications */
+.cv-award-details {
+  --margin-top: 1em;
+  margin: var(--margin-top) 0 0;
+
+  & + & {
+    --margin-top: 2em;
+  }
+}
+
+.cv-award-details__badges {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1em 0 0;
+}
+
+.cv-award-details__badges img {
+  aspect-ratio: 1 / 1;
+
+  @media print {
+    height: 11em;
+    width: 11em;
+  }
+}
+
+.cv-award-details__specs {
+  margin: 1em 0 0;
+  text-align: center;
 }
 
 /****************************************************************************** Misc */
