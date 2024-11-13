@@ -108,5 +108,16 @@
       "target": "_blank",
       "displayValue": "RSS"
     }
+  },
+  {
+    "id": "footer-cv",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/cv",
+      "title": "Curriculum Vitae",
+      "target": "_self",
+      "displayValue": "CV"
+    }
   }
 ]
