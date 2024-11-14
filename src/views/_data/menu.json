@@ -88,6 +88,17 @@
     }
   },
   {
+    "id": "footer-home",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/",
+      "title": "Homepage",
+      "target": "_self",
+      "displayValue": "Home"
+    }
+  },
+  {
     "id": "footer-blog",
     "type": "footer",
     "attributes": {
