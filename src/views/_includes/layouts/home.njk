@@ -45,29 +45,33 @@
       <div class="blog__entries">
         {% for item in pagination.items %}
           <article class="blog-entry">
-            <h3 class="blog-entry__title">{{ item.title }}</h3>
-            <div class="blog-entry__body-copy">
-              <p class="blog-entry__meta page-title__meta">
-                <time datetime="{{ item.publishedAt }}">
-                  {{ item.publishedAt | blogPostTimestamp }}
-                </time>
-                <span>
+            <div class="blog-entry__window">
+              <div class="blog-entry__content">
+                <h3 class="blog-entry__title">{{ item.title }}</h3>
+                <div class="blog-entry__body-copy">
+                  <p class="blog-entry__meta page-title__meta">
+                    <time datetime="{{ item.publishedAt }}">
+                      {{ item.publishedAt | blogPostTimestamp }}
+                    </time>
+                    <span>
                   {{ item.readTimeInMinutes }} minute read
                 </span>
-              </p>
-              <p class="blog-entry__brief"> {{ item.brief }}</p>
-              <ul class="blog-entry__link-list">
-                <li>
-                  <a class="blog-entry__link" href="/blog/{{ item.slug }}" title="{{ item.title }}">
-                    Read More
-                  </a>
-                </li>
-                <li>
-                  <a class="blog-entry__link" href="/blog/" title="Blog">
-                    View All
-                  </a>
-                </li>
-              </ul>
+                  </p>
+                  <p class="blog-entry__brief"> {{ item.brief }}</p>
+                  <ul class="blog-entry__link-list">
+                    <li>
+                      <a class="blog-entry__link" href="/blog/{{ item.slug }}" title="{{ item.title }}">
+                        Read Post
+                      </a>
+                    </li>
+                    <li>
+                      <a class="blog-entry__link" href="/blog/" title="Blog">
+                        View All Posts
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </article>
         {% endfor %}

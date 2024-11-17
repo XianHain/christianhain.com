@@ -14,16 +14,27 @@
 
 .page-title__meta {
   display: flex;
-  gap: 2ch;
   justify-content: center;
+  flex-direction: var(--flex-direction, column);
+  align-items: center;
+  margin: var(--margin, 1em);
+  line-height: 1.5;
+
+  @media (min-width: 30rem) {
+    --flex-direction: row;
+    --margin: .5em;
+    gap: 2ch;
+  }
 
   > * + * {
     display: inline-block;
 
     &:before {
-      content: "\2022";
-      display: inline-block;
-      margin: 0 2ch 0 0;
+      @media (min-width: 30rem) {
+        content: "\2022";
+        display: inline-block;
+        margin: 0 2ch 0 0;
+      }
     }
   }
 }
