@@ -1,0 +1,156 @@
+[
+  {
+    "id": "hashnode",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://hashnode.com/@XianHain",
+      "title": "Hashnode",
+      "target": "_blank",
+      "displayValue": "Hashnode"
+    }
+  },
+  {
+    "id": "behance",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://behance.net/CRHain",
+      "title": "Behance",
+      "target": "_blank",
+      "displayValue": "Behance"
+    }
+  },
+  {
+    "id": "linkedin",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.linkedin.com/in/crhain",
+      "title": "LinkedIn",
+      "target": "_blank",
+      "displayValue": "LinkedIn"
+    }
+  },
+  {
+    "id": "adobe",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow", "js-headshot-toggle"],
+      "href": "https://mycreativetype.com/type/innovator/",
+      "title": "My Adobe Creative Type",
+      "target": "_blank",
+      "displayValue": "My Adobe Creative Type"
+    }
+  },
+  {
+    "id": "github",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://github.com/xianhain",
+      "title": "GitHub",
+      "target": "_blank",
+      "displayValue": "GitHub"
+    }
+  },
+  {
+    "id": "codepen",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://codepen.io/xianhain",
+      "title": "CodePen",
+      "target": "_blank",
+      "displayValue": "CodePen"
+    }
+  },
+  {
+    "id": "instagram",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://instagram.com/xianhain",
+      "title": "Instagram",
+      "target": "_blank",
+      "displayValue": "Instagram"
+    }
+  },
+  {
+    "id": "tiktok",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://tiktok.com/@xianhain",
+      "title": "TikTok",
+      "target": "_blank",
+      "displayValue": "TikTok"
+    }
+  },
+  {
+    "id": "bluesky",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://bsky.app/profile/xianhain.bsky.social",
+      "title": "Bluesky",
+      "target": "_blank",
+      "displayValue": "Bluesky"
+    }
+  },
+  {
+    "id": "reddit",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.reddit.com/user/XianHain/",
+      "title": "Reddit",
+      "target": "_blank",
+      "displayValue": "Reddit"
+    }
+  },
+  {
+    "id": "youtube",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.youtube.com/@XianHain",
+      "title": "YouTube",
+      "target": "_blank",
+      "displayValue": "YouTube"
+    }
+  },
+  {
+    "id": "spotify",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://open.spotify.com/user/1282452590?si=5ab8145563764157",
+      "title": "Spotify",
+      "target": "_blank",
+      "displayValue": "Spotify"
+    }
+  },
+  {
+    "id": "xbox",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.xbox.com/en-US/play/user/XianHain",
+      "title": "Xbox",
+      "target": "_blank",
+      "displayValue": "Xbox"
+    }
+  },
+  {
+    "id": "steam",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://steamcommunity.com/id/xianhain/",
+      "title": "Steam",
+      "target": "_blank",
+      "displayValue": "Steam"
+    }
+  }
+]
