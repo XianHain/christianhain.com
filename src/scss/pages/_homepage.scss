@@ -279,7 +279,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 1rem;
   padding: 0;
   list-style: none;
   row-gap: 1rem;
@@ -287,7 +287,7 @@
 
 .work-with-me__social-link {
   display: block;
-  opacity: light-dark(.25, .35);
+  opacity: light-dark(.5, .75);
   max-height: 1.5rem;
   max-width: 1.5rem;
   overflow: hidden;

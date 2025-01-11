@@ -77,6 +77,17 @@
     }
   },
   {
+    "id": "threads",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.threads.net/@xianhain",
+      "title": "Threads",
+      "target": "_blank",
+      "displayValue": "Threads"
+    }
+  },
+  {
     "id": "tiktok",
     "type": "social",
     "attributes": {
@@ -107,6 +118,17 @@
       "title": "Reddit",
       "target": "_blank",
       "displayValue": "Reddit"
+    }
+  },
+  {
+    "id": "twitch",
+    "type": "social",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://www.twitch.tv/xianhain",
+      "title": "Twitch",
+      "target": "_blank",
+      "displayValue": "Twitch"
     }
   },
   {
