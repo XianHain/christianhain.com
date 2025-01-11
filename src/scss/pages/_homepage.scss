@@ -259,6 +259,11 @@
   }
 }
 
+.work-with-me__about {
+  max-width: 75ch;
+  margin: 1rem 0 0;
+}
+
 .work-with-me__title {
   font-family: var(--amsi-condensed-ultra);
   font-size: 2em;
@@ -266,8 +271,8 @@
   margin: 0;
 }
 
-.work-with-me__about {
-  max-width: 75ch;
+.work-with-me__p {
+  margin: 1rem 0 0;
 }
 
 .work-with-me__socials {
