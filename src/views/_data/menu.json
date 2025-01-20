@@ -33,8 +33,8 @@
     }
   },
   {
-    "id": "hashnode",
-    "type": "social",
+    "id": "blog",
+    "type": "home",
     "attributes": {
       "rel": [],
       "href": "/blog",
@@ -44,47 +44,14 @@
     }
   },
   {
-    "id": "behance",
-    "type": "social",
+    "id": "cv",
+    "type": "home",
     "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://behance.net/CRHain",
-      "title": "Behance",
-      "target": "_blank",
-      "displayValue": "Behance"
-    }
-  },
-  {
-    "id": "linkedin",
-    "type": "social",
-    "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://www.linkedin.com/in/crhain",
-      "title": "LinkedIn",
-      "target": "_blank",
-      "displayValue": "LinkedIn"
-    }
-  },
-  {
-    "id": "adobe",
-    "type": "social",
-    "attributes": {
-      "rel": ["nofollow", "js-headshot-toggle"],
-      "href": "https://mycreativetype.com/type/innovator/",
-      "title": "My Adobe Creative Type",
-      "target": "_blank",
-      "displayValue": "My Adobe Creative Type"
-    }
-  },
-  {
-    "id": "github",
-    "type": "social",
-    "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://github.com/xianhain",
-      "title": "GitHub",
-      "target": "_blank",
-      "displayValue": "GitHub"
+      "rel": [],
+      "href": "/cv",
+      "title": "Curriculum Vitae",
+      "target": "_self",
+      "displayValue": "CV"
     }
   },
   {

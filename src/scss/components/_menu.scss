@@ -2,8 +2,8 @@
   align-items: center;
   color: var(--white);
   display: flex;
-  min-height: 1.5rem;
-  min-width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
   text-decoration: none;
 }
 
@@ -31,9 +31,9 @@
 .menu__list {
   display: flex;
   list-style: none;
-  gap: .5rem;
-  padding: .5rem;
-  border: .0625rem solid var(--menu-border-color, black);
+  gap: 1rem;
+  padding: .5rem 2rem;
+  border: .125rem solid var(--menu-border-color, black);
   margin: 0;
   justify-content: flex-end;
   border-radius: 2.5rem;
