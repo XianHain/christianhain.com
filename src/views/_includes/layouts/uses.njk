@@ -1,0 +1,61 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+
+  <main class="page__content">
+    <div class="page-title">
+      <h1 class="page-title__h1">/Uses</h1>
+    </div>
+
+    <p>
+      Inspired by
+      <a
+        rel="nofollow"
+        href="https://wesbos.com/"
+        title="Wes Bos' Website"
+        target="_blank"
+      >
+        Wes Bos,
+      </a>
+      this is a
+      <a
+        href="https://uses.tech/"
+        target="_blank"
+      >
+        <code>/uses</code> Page,
+      </a>
+      a non-exhaustive list of the tools and programs I use to capture, create, and develop.
+    </p>
+
+    {% for category in uses %}
+      <div class="uses-grid">
+        <h2 class="uses-grid__heading">{{ category.category }}</h2>
+        {% for subcategory in category.items %}
+          <div class="uses-grid__subgrid">
+            <h3 class="uses-grid__subgrid-heading">{{ subcategory.category }}</h3>
+            <div class="uses-grid__subgrid-items">
+              {% for item in subcategory.items %}
+                <a
+                  rel="nofollow"
+                  href="{{ item.url }}"
+                  class="uses-item uses-item--{{ category.category | lower }}"
+                  target="_blank"
+                >
+                  <div class="uses-item__image-wrapper">
+                    <img
+                      alt="{{ item.productName }} product image or icon"
+                      src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
+                      class="uses-item__image"
+                    >
+                  </div>
+                  <p>{{ item.productName }}</p>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </main>
+
+{% endblock %}

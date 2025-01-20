@@ -55,6 +55,17 @@
     }
   },
   {
+    "id": "uses",
+    "type": "home",
+    "attributes": {
+      "rel": [],
+      "href": "/uses",
+      "title": "What I Use",
+      "target": "_self",
+      "displayValue": "/uses"
+    }
+  },
+  {
     "id": "footer-home",
     "type": "footer",
     "attributes": {
@@ -96,6 +107,17 @@
       "title": "Curriculum Vitae",
       "target": "_self",
       "displayValue": "CV"
+    }
+  },
+  {
+    "id": "footer-uses",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/uses",
+      "title": "What I Use",
+      "target": "_self",
+      "displayValue": "/uses"
     }
   }
 ]
