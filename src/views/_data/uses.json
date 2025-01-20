@@ -1,0 +1,471 @@
+[
+  {
+    "category": "Hardware",
+    "items": [
+      {
+        "category": "Computers",
+        "items": [
+          {
+            "productName": "Mac Studio",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/mac-studio/",
+            "image": "mac-studio-m1.png",
+            "license": null,
+            "specs": [
+              ["Year", "2022"],
+              ["Chip", "Apple M1 Max"],
+              ["Memory", "64 GB"]
+            ]
+          },
+          {
+            "productName": "MacBook Pro",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/macbook-pro/",
+            "image": "macbook-pro-m1.png",
+            "license": null,
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Displays",
+        "items": [
+          {
+            "productName": "LG DualUp",
+            "vendor": "LG Electronics",
+            "url": "https://www.lg.com/us/monitors/lg-28mq780-b-dualup-monitor",
+            "image": "lg-dualup.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "LG Ultrawide",
+            "vendor": "LG Electronics",
+            "url": "https://www.lg.com/us/monitors/lg-34UC97-S-ultrawide-monitor",
+            "image": "lg-ultrawide.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Prompter",
+            "vendor": "Elgato",
+            "url": "https://www.elgato.com/us/en/p/prompter",
+            "image": "elgato-prompter.jpg",
+            "license": null,
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Input Devices",
+        "items": [
+          {
+            "productName": "X-Bows® Knight Plus",
+            "vendor": "X-Bows Store",
+            "url": "https://x-bows.com/",
+            "image": "xbows-knight-plus.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Expert Mouse® Wireless Trackball",
+            "vendor": "Kensington Computer Products Group, a division of ACCO Brands",
+            "url": "https://www.kensington.com/p/products/electronic-control-solutions/trackball-products/expert-mouse-wireless-trackball-3/",
+            "image": "kensington-trackball-mouse.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Apple Magic Keyboard",
+            "vendor": "Apple Inc.",
+            "url": "",
+            "image": "apple-keyboard.png",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Magic Trackpad",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/shop/product/MXK93AM/A/magic-trackpad-usb‑c-white-multi-touch-surface",
+            "image": "apple-magic-trackpad.png",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Magic Mouse",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/shop/product/MXK53AM/A/magic-mouse-usb‑c-white-multi-touch-surface",
+            "image": "apple-magic-mouse.png",
+            "license": null,
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Audio/Video",
+        "items": [
+          {
+            "productName": "iPhone 16 Pro Max",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/iphone-16-pro/",
+            "image": "iphone-16-pro-max.avif",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Facecam Pro",
+            "vendor": "Elgato",
+            "url": "https://www.elgato.com/us/en/p/facecam-pro",
+            "image": "elgato-facecam-pro.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Newer LED Lights",
+            "vendor": "Neewer",
+            "url": "https://neewer.com/products/neewer-rgb1200-app-control-rgb-light-66601606",
+            "image": "neewer-rgb1200.webp",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "RØDECaster Pro II",
+            "vendor": "RØDE",
+            "url": "https://rode.com/en-us/interfaces-and-mixers/rodecaster-series/rodecaster-pro-ii",
+            "image": "rodecaster-pro-ii.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "RØDE Procaster",
+            "vendor": "RØDE",
+            "url": "https://rode.com/en-us/microphones/broadcast/procaster",
+            "image": "rode-procaster.jpg",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Beyerdynamic DT 770 Pro",
+            "vendor": "Beyerdynamic",
+            "url": "https://north-america.beyerdynamic.com/p/dt-770-pro",
+            "image": "beyerdynamic-dt-770-pro.png",
+            "license": null,
+            "specs": null
+          },
+          {
+            "productName": "Beyerdynamic DT 1990 Pro",
+            "vendor": "Beyerdynamic",
+            "url": "https://north-america.beyerdynamic.com/p/dt-1990-pro-mk-2",
+            "image": "beyerdynamic-dt-990-pro.png",
+            "license": null,
+            "specs": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Software",
+    "items": [
+      {
+        "category": "OS",
+        "items": [
+          {
+            "productName": "macOS",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/macos/macos-sequoia/",
+            "image": "mac-os.svg",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "id": 6,
+            "productName": "iOS",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/ios/ios-18/",
+            "image": "ios-18.png",
+            "license": "Perpetual",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Development Applications",
+        "items": [
+          {
+            "productName": "WebStorm",
+            "vendor": "JetBrains s.r.o.",
+            "url": "https://www.jetbrains.com/webstorm/",
+            "image": "jetbrains-webstorm.svg",
+            "license": "Annual",
+            "specs": null
+          },
+          {
+            "productName": "Transmit",
+            "vendor": "Panic Inc.",
+            "url": "https://panic.com/transmit/",
+            "image": "panic-transmit.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "iTerm2",
+            "vendor": "George Nachman",
+            "url": "https://iterm2.com/",
+            "image": "iterm-2.png",
+            "license": "Donationware",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Audio/Video Applications",
+        "items": [
+          {
+            "productName": "Cleanshot X",
+            "vendor": "MTW",
+            "url": "https://cleanshot.com/",
+            "image": "cleanshot-x.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "ScreenFlow",
+            "vendor": "Telestream LLC",
+            "url": "https://www.telestream.net/screenflow/overview.htm",
+            "image": "screenflow-8.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Logic Pro",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/logic-pro/",
+            "image": "apple-logic-pro-11.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Final Cut Pro",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/final-cut-pro/",
+            "image": "apple-final-cut-pro-11.png",
+            "license": "Perpetual",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Design Applications",
+        "items": [
+          {
+            "productName": "Affinity Designer 2",
+            "vendor": "Serif (Europe) Ltd",
+            "url": "https://affinity.serif.com/en-us/designer/",
+            "image": "affinity-designer-2.svg",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Affinity Photo 2",
+            "vendor": "Serif (Europe) Ltd",
+            "url": "https://affinity.serif.com/en-us/photo/",
+            "image": "affinity-photo-2.svg",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Affinity Publisher 2",
+            "vendor": "Serif (Europe) Ltd",
+            "url": "https://affinity.serif.com/en-us/publisher/",
+            "image": "affinity-publisher-2.svg",
+            "license": "Perpetual",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Browsers",
+        "items": [
+          {
+            "productName": "Polypane",
+            "vendor": "Polypane",
+            "url": "https://polypane.app",
+            "image": "polypane-icon.svg",
+            "license": "Monthly",
+            "specs": null
+          },
+          {
+            "productName": "Firefox",
+            "vendor": "Mozilla",
+            "url": "https://www.mozilla.org/en-US/firefox/new/",
+            "image": "firefox-logo-2019.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Safari",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/safari/",
+            "image": "safari-browser-logo.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Arc Browser",
+            "vendor": "The Browser Company",
+            "url": "https://arc.net/gift/d0d83acb",
+            "image": "arc-browser-logo.svg",
+            "license": "Free",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Tech Stacks",
+        "items": [
+          {
+            "productName": "HTML, CSS (Sass), Javascript (TypeScript)",
+            "vendor": null,
+            "url": null,
+            "image": "html-css-js.png",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Lit",
+            "vendor": "Google LLC",
+            "url": "https://lit.dev",
+            "image": "lit-logo.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "React",
+            "vendor": "Meta Platforms, Inc.",
+            "url": "https://react.dev",
+            "image": "react-icon.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "11ty",
+            "vendor": "Zach Leatherman",
+            "url": "https://www.11ty.dev/",
+            "image": "11ty-logo.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Next.js",
+            "vendor": "Vercel, Inc.",
+            "url": "https://nextjs.org/",
+            "image": "next-js-icon.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Node.js",
+            "vendor": "OpenJS Foundation",
+            "url": "https://nodejs.org/en",
+            "image": "nodejs-icon.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Yarn",
+            "vendor": null,
+            "url": "https://yarnpkg.com/",
+            "image": "yarn-icon.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Git",
+            "vendor": null,
+            "url": "https://git-scm.com/",
+            "image": "git-icon.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Gulp",
+            "vendor": null,
+            "url": "https://gulpjs.com/",
+            "image": "gulp-icon.svg",
+            "license": "Free",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Writing",
+        "items": [
+          {
+            "productName": "Typora",
+            "vendor": "Typora",
+            "url": "https://typora.io/",
+            "image": "typora-icon.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Pages",
+            "vendor": "Apple Inc.",
+            "url": "https://www.apple.com/in/pages/",
+            "image": "apple-pages.png",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Google Docs",
+            "vendor": "Google LLC",
+            "url": "https://workspace.google.com/products/docs/",
+            "image": "google-docs-2020.svg",
+            "license": "Free",
+            "specs": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "SaaS",
+    "items": [
+      {
+        "category": "Development",
+        "items": [
+          {
+            "productName": "GitHub",
+            "vendor": "Microsoft",
+            "url": "https://github.com",
+            "image": "github-logo.svg",
+            "license": "Annual",
+            "specs": null
+          },
+          {
+            "productName": "DigitalOcean",
+            "vendor": "DigitalOcean, LLC",
+            "url": "https://www.digitalocean.com/",
+            "image": "digitalocean-logo.svg",
+            "license": "Monthly",
+            "specs": null
+          }
+        ]
+      },
+      {
+        "category": "Writing",
+        "items": [
+          {
+            "productName": "Grammarly",
+            "vendor": "Grammarly Inc.",
+            "url": "https://www.grammarly.com/",
+            "image": "grammarly-icon.svg",
+            "license": "Annual",
+            "specs": null
+          }
+        ]
+      }
+    ]
+  }
+]
