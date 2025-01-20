@@ -1,4 +1,5 @@
 @use "../utils/blog-nav";
+@use "../utils/video-background";
 
 /****************************************************************************** Content */
 .content {
@@ -22,19 +23,19 @@
 }
 
 .cta {
-  border: .0625rem solid var(--blue-dark);
-  border-radius: 1rem;
+  border-radius: 2em;
+  border: .125em solid var(--blue-dark);
   box-sizing: border-box;
   display: block;
+  font-family: var(--amsi-narrow-bold);
+  font-weight: 400;
   line-height: .75;
   margin: 0 auto;
   max-width: 20rem;
-  padding: .5rem 1rem;
+  padding: .5em 1em;
   text-align: center;
   text-decoration: none;
-  width: calc(100% - 2rem);
-  font-weight: 400;
-  font-family: var(--amsi-narrow-bold);
+  width: calc(100% - 2em);
 
   & + & {
     margin-top: 1rem;
@@ -42,53 +43,31 @@
 }
 
 .cta--primary {
+  --a-default-color: var(--blue-bright);
+  --a-hover-color: var(--white);
   background-image: linear-gradient(
     to top,
     var(--blue-dark),
     var(--blue-mid)
   );
-  color: var(--blue-bright);
-
-  &:hover {
-    color: var(--white);
-  }
 }
 
-/****************************************************************************** Headshot */
-.headshot {
-  margin: 4rem auto 0;
-  position: relative;
-  width: 10rem;
-  height: 10rem;
+/****************************************************************************** YouTube CTA */
+.youtube-cta {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.headshot > img {
-  border-radius: 50%;
-  border: .25rem solid light-dark(var(--blue-mid), var(--blue-bright));
-  box-shadow: inset 0 0 0 .25rem light-dark(var(--blue-mid), var(--blue-bright));
-  box-sizing: border-box;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  aspect-ratio: 1;
+.youtube-cta__icon {
+  height: 1em;
+  width: 1.5em;
 }
 
-.headshot__modified-img {
-  opacity: 0;
-  transition: opacity .2s ease-in-out;
-
-  .headshot[data-state="modified"] & {
-    opacity: 1;
-  }
-
-  .headshot[data-state="original"][data-tweening="false"] & {
-    z-index: -1;
-  }
+.youtube-cta__text {
+  display: block;
+  transform: translateY(-.125em);
 }
 
 /****************************************************************************** Intro */
@@ -97,42 +76,71 @@
   flex-direction: column;
   justify-content: center;
   min-height: min(45rem, 60vh);
+}
+
+.intro__text {
+  @extend %video-background-layer-1;
+
+  max-width: 30rem;
   text-align: center;
 }
 
-.intro h1 {
+.intro__text h1 {
+  --light-text-shadow:
+    0 .5rem .5rem var(--white),
+    0 -.5rem .5rem var(--white),
+    .5rem 0 .5rem var(--white),
+    -.5rem 0 .5rem var(--white);
+
+  --dark-text-shadow: 0 .25rem .125rem var(--black);
+
   color: light-dark(var(--blue-mid), var(--blue-bright));
-  font-size: 5rem;
-  text-shadow: light-dark(initial, 0 .25rem .125rem var(--black));
   font-family: var(--font-emphasis-ultra);
+  font-size: 5rem;
   letter-spacing: -.5px;
-  margin: 1rem 0 0;
   line-height: .875;
+  margin: 1rem 0 0;
+  text-shadow: light-dark(var(--light-text-shadow), var(--dark-text-shadow));
 }
 
-.intro p {
+.intro__text p {
   --p-margin: 1em 0 0;
   font-size: 1.5rem;
 }
 
-.intro span {
-  font-family: var(--font-primary-light);
-  font-size: .875em;
-  text-transform: uppercase;
+.intro__text a {
+  margin: 2em auto 0;
 }
 
-.intro a {
-  white-space: nowrap;
-  color: light-dark(var(--pink-dark), var(--white));
+.intro__video-wrapper {
+  @extend %video-background-layer-0;
+
+  filter: light-dark(grayscale(100%) contrast(2), grayscale(100%));
+  left: 0;
+  margin: 0 auto;
+  mask-image: linear-gradient(hsl(0, 0%, 0%) 75%, hsla(0, 0%, 0%, 0) 99%);
+  max-height: 70rem;
+  min-height: min(60rem, 60vh);
+  mix-blend-mode: light-dark(multiply, overlay);
+  opacity: light-dark(.35, 1);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.intro a:hover {
-  color: light-dark(var(--pink-bright), var(--white));
+
+.intro__video {
+  margin-left: 50%;
+  min-height: 60rem;
+  min-width: 100vw;
+  transform: translateX(-50%);
 }
 
 /****************************************************************************** Blog */
 .blog {
   margin: 4rem 0 0;
   padding: 0 1rem;
+  position: relative;
 }
 
 .blog-entry {
@@ -204,6 +212,43 @@
 }
 .blog-entry__link:before {
   @extend %blog-nav-link-pseudo-before;
+}
+
+/****************************************************************************** Headshot */
+.headshot {
+  margin: 4rem auto 0;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.headshot > img {
+  border-radius: 50%;
+  border: .25rem solid light-dark(var(--blue-mid), var(--blue-bright));
+  box-shadow: inset 0 0 0 .25rem light-dark(var(--blue-mid), var(--blue-bright));
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  aspect-ratio: 1;
+}
+
+.headshot__modified-img {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+
+  .headshot[data-state="modified"] & {
+    opacity: 1;
+  }
+
+  .headshot[data-state="original"][data-tweening="false"] & {
+    z-index: -1;
+  }
 }
 
 /****************************************************************************** Work with Me */

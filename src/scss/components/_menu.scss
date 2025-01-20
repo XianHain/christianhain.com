@@ -1,3 +1,5 @@
+@use "../utils/video-background";
+
 %_menu-link {
   align-items: center;
   color: var(--white);
@@ -18,6 +20,7 @@
 .menu {
   --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .25);
 
+  @extend %video-background-layer-1;
   position: absolute;
   right: 0;
   top: -.5rem;

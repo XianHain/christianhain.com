@@ -2,10 +2,30 @@
 
 {% block content %}
 <main>
-  <section class="intro content">
-    <h1>Cheers to 13 years! 🥂</h1>
-    <p>Thank you to everyone who's been a part of this journey.</p>
-    <p>11/11/11 &ndash; Tomorrow and Beyond</p>
+  <section class="intro">
+    <div class="intro__text content">
+      <h1>Welcome Back to the Channel!</h1>
+      <p>That's right! My YouTube hiatus is over, and we've got some things to talk about.</p>
+      <a
+        rel="nofollow"
+        href="https://www.youtube.com/@XianHain"
+        class="youtube-cta cta cta--primary"
+        target="_blank"
+        title="@XianHain on YouTube"
+      >
+        <span class="youtube-cta__icon">
+          {% include "icons/youtube-solid.svg"  %}
+        </span>
+        <span class="youtube-cta__text">
+          Check out my videos!
+        </span>
+      </a>
+    </div>
+    <div class="intro__video-wrapper">
+      <video class="intro__video" autoplay="true" playsinline="true" muted="true" loop="true">
+        <source src="https://assets.christianhain.com/videos/intro-background-video-2025-01-14.mp4">
+      </video>
+    </div>
   </section>
   <section class="blog">
     <div class="blog__content">
