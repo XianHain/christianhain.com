@@ -1,7 +1,10 @@
+@use "../utils/video-background";
+
 /****************************************************************************** Header */
 .header {
   --header-template-columns: repeat(2, 1fr);
 
+  @extend %video-background-layer-1;
   display: grid;
   grid-template-columns: var(--header-template-columns);
   grid-template-rows: 1fr;
