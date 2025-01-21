@@ -119,5 +119,16 @@
       "target": "_self",
       "displayValue": "/uses"
     }
+  },
+  {
+    "id": "footer-source-code",
+    "type": "footer",
+    "attributes": {
+      "rel": ["nofollow"],
+      "href": "https://github.com/XianHain/christianhain.com",
+      "title": "Source Code (GitHub)",
+      "target": "_blank",
+      "displayValue": "Source"
+    }
   }
 ]
