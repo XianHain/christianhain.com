@@ -66,6 +66,17 @@
     }
   },
   {
+    "id": "now",
+    "type": "home",
+    "attributes": {
+      "rel": [],
+      "href": "/now",
+      "title": "What am I up to Now",
+      "target": "_self",
+      "displayValue": "/now"
+    }
+  },
+  {
     "id": "footer-home",
     "type": "footer",
     "attributes": {
@@ -118,6 +129,17 @@
       "title": "What I Use",
       "target": "_self",
       "displayValue": "/uses"
+    }
+  },
+  {
+    "id": "footer-now",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/now",
+      "title": "What am I up to Now",
+      "target": "_self",
+      "displayValue": "/now"
     }
   },
   {
