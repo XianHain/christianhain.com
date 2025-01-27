@@ -11,6 +11,7 @@
 
 @use "themes/cv" as cv-theme;
 @use "themes/404" as four-oh-four;
+@use "themes/now" as now-theme;
 @use "themes/blog";
 @use "themes/memo";
 @use "themes/email";
@@ -26,6 +27,7 @@
 @use "components/menu";
 
 @use "pages/cv";
+@use "pages/now";
 @use "pages/uses";
 @use "pages/homepage";
 @use "pages/blog-entry";

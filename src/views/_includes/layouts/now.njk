@@ -2,19 +2,67 @@
 
 {% block content %}
 
-  <main class="page__content">
-    <div class="page-title">
-      <h1 class="page-title__h1">/Now</h1>
+  <main>
+    <div class="now-clock-hero">
+      <div class="now-clock-hero__face now-clock-face">
+        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--11" style="grid-area: n11;"><span>11</span></div>
+        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--01" style="grid-area: n01;"><span>1</span></div>
+        <div class="now-clock-face__number now-clock-face-number" style="grid-area: n03;"><span>3</span></div>
+        <div class="now-clock-face__number now-clock-face-number" style="grid-area: n05;"><span>5</span></div>
+        <div class="now-clock-face__number now-clock-face-number" style="grid-area: n06;"><span>6</span></div>
+        <div class="now-clock-face__number now-clock-face-number" style="grid-area: n07;"><span>7</span></div>
+        <div class="now-clock-face__number now-clock-face-number" style="grid-area: n09;"><span>9</span></div>
+      </div>
+      <div class="now-clock-hero__ticker">
+        <svg class="now-clock-hero__ticker-circle" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="50" fill="currentColor" />
+        </svg>
+        <div class="now-clock-hero__ticker-hand now-hand now-hand--hour" rel="js-hour-hand">
+          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
+        </div>
+        <div class="now-clock-hero__ticker-hand now-hand now-hand--minute" rel="js-minute-hand">
+          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
+        </div>
+        <div class="now-clock-hero__ticker-hand now-hand now-hand--second" rel="js-second-hand">
+          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
+        </div>
+      </div>
+
+      <div class="now-title">
+        <h1>/now</h1>
+        <p>
+          Inspired by the <a rel="nofollow" href="http://nownownow.com" title="NowNowNow Community: sites with a /now page" target="_blank">NowNowNow community</a>.
+        </p>
+      </div>
     </div>
 
-    <p>
-      Inspired by the <a rel="nofollow" href="http://nownownow.com" title="sites with a /now page" target="_blank">
-        NowNowNow community
-      </a>.
-    </p>
+    <div class="now-computer">
+      <div class="now-computer__shell">
+        <div class="now-computer__bevel">
+          <div class="now-computer__screen">
+            <div class="now-content">
+              <div class="page__content">
+                <p class="now-content__timestamp">Last updated: <time datetime="{{ lastUpdate }}">{{ lastUpdate }}</time></p>
+                {{ content | safe }}
+              </div>
 
-    <p>Last updated: <time datetime="{{ lastUpdate }}">{{ lastUpdate }}</time></p>
+            </div>
+          </div>
+        </div>
 
-    {{ content | safe }}
+        <div class="now-computer__sticker">
+          <div class="now-pantone-sticker">
+            <p class="now-pantone-sticker__text">
+              Color scheme inspired by:<br>
+              <span class="now-pantone-sticker__name">PANTONE&reg; Mocha Mousse</span>,<br>
+              <span class="now-pantone-sticker__color-of-the-year">2025 Color of the Year.</span>
+            </p>
+            <div class="now-pantone-sticker__swatch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 {% endblock %}

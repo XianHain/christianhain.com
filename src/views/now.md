@@ -1,18 +1,18 @@
 ---
 layout: layouts/now.njk
-theme: cv
-logo: black
+theme: now
+logo: pantone-mocha-mousse
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]
-footerTypes: ["written-by-human"]
+footerTypes: ["pantone", "written-by-human"]
 
 lastUpdate: 2025-01-22
 
 canonical: "https://www.christianhain.com/now/"
 ---
 
-## What's going on?
+## So, what am I up to now?
 Capricorn Season is over, but the hustle isn't. I've got a couple of things I'm working on:
 
 1. **My 2025 Resolution is to cook a soup a week.** I should be making a Saffron Winter Soup with Salt Cod right now,
