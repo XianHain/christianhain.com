@@ -25,11 +25,6 @@ $breakpoint-normal: 58.25em;
 $breakpoint-wide: 79em;
 $breakpoint-ultra: 146em;
 
-html,
-body {
-  scrollbar-color: hsl(60, 33%, 93%) hsl(10, 47%, 15%);
-}
-
 /****************************************************************************** clock-hero */
 .now-clock-hero {
   height: calc(100vh - 5.5em);
