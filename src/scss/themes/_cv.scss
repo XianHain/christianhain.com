@@ -1,6 +1,11 @@
 [data-theme="cv"] {
-  --body-color: var(--black);
-  --background-color: var(--white);
+  --body-color: light-dark(var(--black), hsl(215, 22%, 66%));
+  --background-color: light-dark(var(--white), var(--charcoal));
+
+  --menu-link-color: light-dark(var(--blue-dark), hsl(215, 22%, 66%));
+  --menu-shadow-color: light-dark(var(--white-shadow), var(--charcoal-dark));
+  --menu-background-color: light-dark(var(--white-shadow),var(--charcoal));
+  --menu-border-color-base-hsl-values: 215, 33%, 10%;
 
   --font-primary-regular: var(--amsi-narrow-regular);
   --font-primary-bold: var(--amsi-narrow-bold);
@@ -9,6 +14,6 @@
   --font-emphasis-ultra: var(--amsi-condensed-ultra);
 
   --a-print-color: inherit;
-  --a-hover-color: var(--pink-bright);
-  --a-default-color: var(--pink-dark);
+  --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
+  --a-default-color: light-dark(var(--pink-dark), hsl(215, 22%, 66%));
 }
