@@ -66,28 +66,6 @@
     }
   },
   {
-    "id": "instagram",
-    "type": "social",
-    "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://instagram.com/xianhain",
-      "title": "Instagram",
-      "target": "_blank",
-      "displayValue": "Instagram"
-    }
-  },
-  {
-    "id": "threads",
-    "type": "social",
-    "attributes": {
-      "rel": ["nofollow"],
-      "href": "https://www.threads.net/@xianhain",
-      "title": "Threads",
-      "target": "_blank",
-      "displayValue": "Threads"
-    }
-  },
-  {
     "id": "tiktok",
     "type": "social",
     "attributes": {
