@@ -115,24 +115,43 @@
 .intro__video-wrapper {
   @extend %video-background-layer-0;
 
-  filter: light-dark(grayscale(100%) contrast(2), grayscale(100%));
   left: 0;
   margin: 0 auto;
   mask-image: linear-gradient(hsl(0, 0%, 0%) 75%, hsla(0, 0%, 0%, 0) 99%);
   max-height: 70rem;
   min-height: min(60rem, 60vh);
-  mix-blend-mode: light-dark(multiply, overlay);
-  opacity: light-dark(.35, 1);
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
+
+  &:after {
+    background-image: linear-gradient(
+      var(--background-direction),
+      var(--background-start-color) 0%,
+      var(--background-end-color) 100%,
+    );
+    content: "";
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+  }
 }
 
 .intro__video {
+  @extend %video-background-layer-1;
+
+  filter: light-dark(grayscale(100%) contrast(2), grayscale(100%));
   margin-left: 50%;
   min-height: 60rem;
   min-width: 100vw;
+  mix-blend-mode: light-dark(multiply, overlay);
+  opacity: light-dark(.35, 1);
+  position: relative;
   transform: translateX(-50%);
 }
 
