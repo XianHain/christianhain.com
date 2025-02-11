@@ -35,21 +35,37 @@
             <h3 class="uses-grid__subgrid-heading">{{ subcategory.category }}</h3>
             <div class="uses-grid__subgrid-items">
               {% for item in subcategory.items %}
-                <a
-                  rel="nofollow"
-                  href="{{ item.url }}"
-                  class="uses-item uses-item--{{ category.category | lower }}"
-                  target="_blank"
-                >
-                  <div class="uses-item__image-wrapper">
-                    <img
-                      alt="{{ item.productName }} product image or icon"
-                      src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
-                      class="uses-item__image"
-                    >
+                {% if item.url %}
+                  <a
+                    rel="nofollow"
+                    href="{{ item.url }}"
+                    class="uses-item uses-item--{{ category.category | lower }}"
+                    target="_blank"
+                  >
+                    <div class="uses-item__image-wrapper">
+                      <img
+                        alt="{{ item.productName }} product image or icon"
+                        src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
+                        class="uses-item__image"
+                      >
+                    </div>
+                    <p>{{ item.productName }}</p>
+                  </a>
+                {% else %}
+                  <div
+                    rel="nofollow"
+                    class="uses-item uses-item--{{ category.category | lower }}"
+                  >
+                    <div class="uses-item__image-wrapper">
+                      <img
+                        alt="{{ item.productName }} product image or icon"
+                        src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
+                        class="uses-item__image"
+                      >
+                    </div>
+                    <p>{{ item.productName }}</p>
                   </div>
-                  <p>{{ item.productName }}</p>
-                </a>
+                {% endif %}
               {% endfor %}
             </div>
           </div>
