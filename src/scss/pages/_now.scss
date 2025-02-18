@@ -39,7 +39,7 @@ $breakpoint-ultra: 146em;
   position: absolute;
   right: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: $z-layer-numbers;
 }
 
@@ -259,9 +259,28 @@ $breakpoint-ultra: 146em;
   box-shadow: inset 0 8em 10em $pantone-tapestry-shadow-semitransparent;
   color: hsl(185, 100%, 87%);
   padding: .5em 0;
+  position: relative;
 
   @media (min-width: $breakpoint-narrow) {
     padding: 2em 0;
+    border-radius: 2em;
+  }
+}
+
+.now-content__video {
+  border-radius: .5em;
+  height: 100%;
+  left: 0;
+  mix-blend-mode: multiply;
+  object-fit: fill;
+  opacity: .35;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+
+  @media (min-width: $breakpoint-narrow) {
     border-radius: 2em;
   }
 }
@@ -287,21 +306,23 @@ $breakpoint-ultra: 146em;
 .now-content {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
   font-family: var(--amsi-normal), sans-serif;
   font-size: .875em;
   line-height: 2;
-  text-shadow: $pantone-tapestry-shadow-semitransparent 0 .0625em .125em;
-  overflow-y: scroll;
-  max-height: 50vh;
-  scrollbar-color: $pantone-tapestry $pantone-tapestry-shadow-semitransparent;
-  scrollbar-width: thin;
-  padding: 1em .5em;
   mask-image: linear-gradient(to bottom, transparent, black 2em, black calc(100% - 2em), transparent),
               linear-gradient(to right, transparent calc(100% - 1.5em), black calc(100% - 1.5em));
-  box-sizing: border-box;
-  scroll-padding-block-start: 20em;
+  max-height: 50vh;
+  overflow-y: scroll;
+  padding: 1em .5em;
+  position: relative;
   scroll-margin-top: 20em;
+  scroll-padding-block-start: 20em;
+  scrollbar-color: $pantone-tapestry $pantone-tapestry-shadow-semitransparent;
   scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  text-shadow: $pantone-tapestry-shadow-semitransparent 0 .0625em .125em;
+  z-index: 1;
 
   @media (min-width: $breakpoint-super-narrow) {
     font-size: 1em;
@@ -343,7 +364,7 @@ $breakpoint-ultra: 146em;
 }
 
 .now-content p {
-  text-shadow: $pantone-tapestry-shadow-semitransparent 0 .0625em .125em, $pantone-color-of-year 0 0 .25em;
+  text-shadow: $pantone-tapestry-shadow-semitransparent 0 .0625em .125em, $pantone-tapestry-shadow-semitransparent 0 0 .25em;
 }
 
 .now-content a {

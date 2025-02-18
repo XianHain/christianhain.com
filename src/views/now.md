@@ -5,7 +5,7 @@ logo: pantone-mocha-mousse
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]
-footerTypes: ["pantone", "written-by-human"]
+footerTypes: ["pantone", "written-by-human", "vecteezy-crt-tv-screen"]
 
 lastUpdate: 2025-01-22
 
