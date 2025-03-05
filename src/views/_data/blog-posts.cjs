@@ -4,7 +4,7 @@ const getUserArticlesGQL = `
   query Publication {
     publication(host: "www.christianhain.com/blog") {
       title
-      posts(first: 10) {
+      posts(first: 50) {
         edges {
           node {
             url
