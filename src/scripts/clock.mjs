@@ -11,7 +11,7 @@ xian.clock = xian.clock || (function clock() {
 
     if (degrees === 90) {
       xOffset = Math.abs(xOffset);
-      yOffset = Math.abs(yOffset);
+      yOffset = -Math.abs(yOffset);
     } else if (degrees >= 0 && degrees < 90) {
       xOffset = Math.abs(xOffset);
       yOffset = -Math.abs(yOffset);

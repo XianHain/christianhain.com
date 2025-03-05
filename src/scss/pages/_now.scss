@@ -74,9 +74,7 @@ $breakpoint-ultra: 146em;
   display: flex;
   margin: 0 auto;
   pointer-events: none;
-  position: absolute;
   rotate: 90deg;
-  top: 50%;
   transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
   width: 100%;
 }
@@ -86,12 +84,12 @@ $breakpoint-ultra: 146em;
   display: grid;
   grid-template-areas:
     "n11 n12 n01"
-    "n10  .  n02"
+    //"n10  .  n02"
     "n09  .  n03"
-    "n08  .  n04"
+    //"n08  .  n04"
     "n07 n06 n05";
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   pointer-events: none;
 }
 
@@ -109,24 +107,58 @@ $breakpoint-ultra: 146em;
   font-size: max(30vh, 4em);
 }
 
+.now-clock-face-number--12 {grid-area: n12;}
+.now-clock-face-number--01 {grid-area: n01;}
+.now-clock-face-number--02 {grid-area: n02;}
+.now-clock-face-number--03 {grid-area: n03;}
+.now-clock-face-number--04 {grid-area: n04;}
+.now-clock-face-number--05 {grid-area: n05;}
+.now-clock-face-number--06 {grid-area: n06;}
+.now-clock-face-number--07 {grid-area: n07;}
+.now-clock-face-number--08 {grid-area: n08;}
+.now-clock-face-number--09 {grid-area: n09;}
+.now-clock-face-number--10 {grid-area: n10;}
+.now-clock-face-number--11 {grid-area: n11;}
+
+.now-clock-face-number--01,
+.now-clock-face-number--02,
+.now-clock-face-number--04,
+.now-clock-face-number--05,
+.now-clock-face-number--07,
+.now-clock-face-number--08,
+.now-clock-face-number--10,
 .now-clock-face-number--11 {
   --opacity: 0;
-
-  @media(min-width: $breakpoint-narrow) {
-    --opacity: .25;
-  }
+  display: none;
 }
 
-.now-clock-face-number--01 {
-  --opacity: 0;
+.now-clock-face-number--03 {
+  justify-content: flex-end;
+}
 
-  @media(min-width: $breakpoint-wide) {
-    --opacity: .25;
-  }
+.now-clock-face-number--09 {
+  justify-content: flex-start;
 }
 
 /****************************************************************************** hand */
-.now-hand {}
+.now-hand {
+  position: absolute;
+
+  &.now-hand--hour {
+    height: 1em;
+    top: calc(50% - (1em / 2));
+  }
+
+  &.now-hand--minute {
+    height: .25em;
+    top: calc(50% - (.25em / 2));
+  }
+
+  &.now-hand--second {
+    height: .125em;
+    top: calc(50% - (.125em / 2));
+  }
+}
 
 .now-hand__radius {
   width: 50%;
@@ -140,19 +172,10 @@ $breakpoint-ultra: 146em;
   border: .125em solid $dark-accent;
   max-width: 45vh;
   width: 100%;
-
-  .now-hand--hour & {
-    height: 1em;
-    margin: -.25em;
-  }
-
-  .now-hand--minute & {
-    height: .25em;
-  }
+  height: 100%;
 
   .now-hand--second & {
     background: $light-accent;
-    height: .125em;
   }
 }
 
