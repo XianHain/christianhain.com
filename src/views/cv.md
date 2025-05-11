@@ -1,5 +1,5 @@
 ---
-layout: layouts/cv.njk
+layout: layouts/cv.liquid
 theme: cv
 logo: black-csm
 logoDark: dusty-blue-csm

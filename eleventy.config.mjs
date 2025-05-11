@@ -1,3 +1,4 @@
+import {Liquid} from 'liquidjs';
 import {marked} from 'marked';
 import {minify} from 'html-minifier-terser';
 import pluginRss from '@11ty/eleventy-plugin-rss';
@@ -69,6 +70,11 @@ export default async function(eleventyConfig) {
       // Video-Player Theme
       .replace('<meta data-xian="videoplayer-start">', '</div><div data-theme="video-player"><div class="blog__copy">')
       .replace('<meta data-xian="videoplayer-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+  });
+
+  eleventyConfig.setLibrary('liquid', new Liquid());
+  eleventyConfig.setLiquidOptions({
+    jsTruthy: true,
   });
 
   return {

@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog-rss.njk
+layout: layouts/blog-rss.liquid
 permalink: /blog/feed.xml
 eleventyExcludeFromCollections: true
 

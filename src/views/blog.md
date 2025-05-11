@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/blog.liquid
 theme: blog
 logo: black
 logoDark: green

@@ -4,27 +4,27 @@
       <div class="footer__copyright">
         <div>
           <small>
-            <span>&copy;2011&ndash;{% year %} CRHain Design LLC.</span>
+            <span>&copy;2011&ndash;{{ "now" | date: "%Y" }} CRHain Design LLC.</span>
             All rights reserved. Logos, graphics, and writing of work samples
             copyright of their respective owners. Views expressed on this site are
             those of CRHain Design LLC, and do not necessarily reflect those of the
             client or employer.
 
-            {% if "csm" in footerTypes %}
+            {% if footerTypes contains "csm" %}
               "CERTIFIED SCRUM DEVELOPER&reg;" (or "CSD&reg;") is a registered
               mark of Scrum Alliance, Inc. Any unauthorized use is strictly
               prohibited.
             {% endif %}
 
-            {% if "webby" in footerTypes %}
-             "THE WEBBY AWARDS" is a trademark of Recognition Media, LLC.
+            {% if footerTypes contains "webby" %}
+              "THE WEBBY AWARDS" is a trademark of Recognition Media, LLC.
             {% endif %}
 
-            {% if "pantone" in footerTypes %}
+            {% if footerTypes contains "pantone" %}
               PANTONE&reg; and other Pantone trademarks are the property of Pantone LLC.
             {% endif %}
 
-            {% if "vecteezy-crt-tv-screen" in footerTypes %}
+            {% if footerTypes contains "vecteezy-crt-tv-screen" %}
               <a
                 rel="nofollow"
                 href="https://www.vecteezy.com/video/54561226-an-old-television-screen-with-a-white-background"
@@ -37,7 +37,7 @@
           <nav>
             <ul class="footer__quick-links">
               {% for menuItem in menu %}
-                {% if menuItem.type == 'footer' %}
+                {% if menuItem.type == "footer" %}
                   <li>
                     <a
                       href="{{ menuItem.attributes.href }}"
@@ -53,8 +53,8 @@
           </nav>
         </div>
 
-        {% if "written-by-human" in footerTypes %}
-          {% include "components/written-by-human.njk" %}
+        {% if footerTypes contains "written-by-human" %}
+          {% include "./written-by-human.liquid" %}
         {% endif %}
       </div>
     </div>

@@ -1,7 +1,6 @@
-{% extends 'layouts/base.njk' %}
+{% layout "./base.liquid" %}
 
 {% block content %}
-
   <main class="page__content">
     <div class="page-title">
       <h1 class="page-title__h1">/Uses</h1>
@@ -39,7 +38,7 @@
                   <a
                     rel="nofollow"
                     href="{{ item.url }}"
-                    class="uses-item uses-item--{{ category.category | lower }}"
+                    class="uses-item uses-item--{{ category.category | downcase }}"
                     target="_blank"
                   >
                     <div class="uses-item__image-wrapper">
@@ -54,7 +53,7 @@
                 {% else %}
                   <div
                     rel="nofollow"
-                    class="uses-item uses-item--{{ category.category | lower }}"
+                    class="uses-item uses-item--{{ category.category | downcase }}"
                   >
                     <div class="uses-item__image-wrapper">
                       <img
@@ -73,5 +72,4 @@
       </div>
     {% endfor %}
   </main>
-
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'layouts/base.njk' %}
+{% layout "./base.liquid" %}
 
 {% block content %}
   <main class="page__content printable">
@@ -8,28 +8,28 @@
       </div>
       <table class="blog-table">
         <thead>
-        <tr>
-          <th class="blog-table__heading">Date</th>
-          <th class="blog-table__heading">Subject</th>
-        </tr>
+          <tr>
+            <th class="blog-table__heading">Date</th>
+            <th class="blog-table__heading">Subject</th>
+          </tr>
         </thead>
         <tbody>
-        {% for item in pagination.items %}
-          <tr>
-            <td class="blog-table__cell blog-table__cell--time">
-              <time
-                title="{{ item.publishedAt | blogPostTimestamp }}"
-                datetime="{{ item.publishedAt }}"
-              >
-                {{ item.publishedAt | blogListTimestamp }}
-              </time>
-            </td>
-            <td class="blog-table__cell">
-              <a href="/blog/{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a>
-              <p>{{ item.brief }}</p>
-            </td>
-          </tr>
-        {% endfor %}
+          {% for item in pagination.items %}
+            <tr>
+              <td class="blog-table__cell blog-table__cell--time">
+                <time
+                  title="{{ item.publishedAt | blogPostTimestamp }}"
+                  datetime="{{ item.publishedAt }}"
+                >
+                  {{ item.publishedAt | blogListTimestamp }}
+                </time>
+              </td>
+              <td class="blog-table__cell">
+                <a href="/blog/{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a>
+                <p>{{ item.brief }}</p>
+              </td>
+            </tr>
+          {% endfor %}
         </tbody>
       </table>
     </article>

@@ -3,7 +3,7 @@
   {% for page in collections.all %}
     <url>
       <loc>{{ site.url }}{{ page.url | url }}</loc>
-      <lastmod>{{ page.date.toISOString() }}</lastmod>
+      <lastmod>{{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</lastmod>
     </url>
   {% endfor %}
 </urlset>

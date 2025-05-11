@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/home.liquid
 theme: homepage
 logo: blue-mid-2
 logoDark: blue

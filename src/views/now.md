@@ -1,5 +1,5 @@
 ---
-layout: layouts/now.njk
+layout: layouts/now.liquid
 theme: now
 logo: pantone-mocha-mousse
 headTitle: "/now"
