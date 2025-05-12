@@ -205,22 +205,18 @@ $two-column-breakpoint: 53rem;
 
 /****************************************************************************** Story */
 .cv-story {
-  --p-line-height: 1.5;
+  --p-line-height: 2;
   --margin-top: 1rem;
-  --max-width: calc(100% - 4rem);
+  --max-width: 60ch;
+  --p-font-size: .75em;
 
-  font-family: var(--inra);
+  font-family: var(--monolisa);
+  hyphens: auto;
   margin: var(--margin-top) auto 0;
   max-width: var(--max-width);
-  text-align: justify;
-  
-  @media print, (min-width: $two-column-breakpoint) {
-    --max-width: 37em;
-    --margin-top: .5em;
-  }
 
-  @media print {
-    --p-line-height: 1.2;
+  @media (min-width: $two-column-breakpoint) {
+    --margin-top: .5em;
   }
 
   > * {
@@ -241,7 +237,7 @@ $two-column-breakpoint: 53rem;
   align-items: flex-end;
   gap: 1em;
 
-  @media print, (min-width: $two-column-breakpoint) {
+  @media (min-width: $two-column-breakpoint) {
     display: flex;
   }
 
