@@ -20,7 +20,7 @@
   margin: 4em 0 0;
 }
 
-.footer__copyright {
+.footer__content {
   --p-font-family: var(--font-meta);
 
   border-top: .0625rem solid var(--footer-border-color, hsla(0, 0%, 0%, .3));
@@ -36,8 +36,13 @@
   }
 }
 
-.footer__footer small {
+.footer__copyright {
+  display: inline-block;
   font-size: .75em;
+
+  @media print {
+    font-size: .5em;
+  }
 }
 
 .footer__footer span {
