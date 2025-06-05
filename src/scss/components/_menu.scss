@@ -1,88 +1,101 @@
 @use "../utils/video-background";
 
-%_menu-link {
-  align-items: center;
-  color: var(--white);
-  display: flex;
-  height: 2rem;
-  width: 2rem;
-  text-decoration: none;
-}
-
-/****************************************************************************** Menu */
-:root {
-  --menu-link-color: var(--black);
-  --menu-shadow-color: var(--white-shadow);
-  --menu-background-color: var(--white);
-  --menu-border-color-base-hsl-values: 0, 0%, 0%;
-}
-
 .menu {
-  --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .25);
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
 
-  @extend %video-background-layer-1;
-  position: absolute;
-  right: 0;
-  top: -.5rem;
-  padding: .5rem 1rem 1rem;
+  @extend %video-background-layer-2;
+}
 
-  @media print {
-    display: none;
-  }
+.menu__nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  @extend %video-background-layer-3;
 }
 
 .menu__list {
   display: flex;
   list-style: none;
-  gap: 1rem;
-  padding: .5rem 2rem;
-  border: .125rem solid var(--menu-border-color, black);
   margin: 0;
-  justify-content: flex-end;
-  border-radius: 2.5rem;
-  background: var(--menu-background-color);
-  box-shadow: 0 0 2rem 1rem var(--menu-shadow-color);
-  transition: border .2s ease-in-out;
-
-  .menu:hover & {
-    --menu-border-color: hsla(var(--menu-border-color-base-hsl-values), .5);
-  }
+  gap: .75em;
 }
 
-.menu__link {
-  @extend %_menu-link;
-}
-
-.menu__button {
-  @extend %_menu-link;
-  appearance: none;
-  background: 0;
-  border: 0;
-  color: var(--white);
-  padding: 0;
-  text-decoration: none;
-}
-
-.menu__link-icon > svg {
-  color: var(--menu-link-color);
+.menu-item {
   display: block;
-  margin: 0 auto;
-  opacity: .25;
-  transition: opacity .2s ease-in-out;
+  font-size: 1em;
+  overflow: hidden;
+  transition: opacity .2s ease-in-out,
+              color .3s ease-in-out,
+              background-color .2s ease-in-out;
+}
 
-  .menu:hover & {
-    opacity: .5;
+.menu-item--link {
+  color: var(--portal-window-color-primary);
+  filter: drop-shadow(0 .125em .0625em var(--black));
+  opacity: .5;
+
+  &:hover {
+    color: var(--pink-mid);
   }
 
-  .menu:hover &:hover,
-  .menu__link:focus-visible & {
+  .menu:hover &,
+  [data-active="true"] & {
     opacity: 1;
   }
 }
 
-.menu__link-text {
-  white-space: nowrap;
-  height: 0;
+.menu-item--button {
+  appearance: none;
+  background: 0;
+  border-radius: 50%;
+  border: 0;
+  color: var(--portal-window-color-secondary);
+  filter: drop-shadow(0 .0625em 0 color-mix(in hsl, var(--white) 30%, transparent));
+  margin: 0 .25em;
+  padding: .25em;
+
+  &:hover {
+    background-color: color-mix(in hsl, var(--portal-window-color-primary) 50%, transparent);
+    box-shadow: 0 .125em 0 color-mix(in hsl, var(--portal-window-color-primary) 30%, transparent),
+                inset 0 .125em .125em color-mix(in hsl, var(--portal-window-color-secondary) 50%, transparent);
+  }
+}
+
+.menu-item__icon {
+  display: block;
+  block-size: 1.5em;
+  inline-size: 1.5em;
+
+  .menu-item--home & {
+    transform: scale(.9) translateY(-.0625em);
+  }
+
+  .menu-item--blog & {
+    transform: translateY(.125em);
+  }
+
+  .menu-item--cv & {
+    transform: translateY(.125em);
+  }
+
+  .menu-item--uses & {
+    transform: scale(.95);
+  }
+
+  .menu-item--now & {
+    transform: scale(.95) translateY(.0625em);
+  }
+}
+
+.menu-item__text {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: .0625em;
   overflow: hidden;
-  width: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: .0625em;
 }

@@ -1,37 +1,53 @@
 <div class="menu">
-  <ul class="menu__list">
-    {% for menuItem in menu %}
-      {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
-      {% if menuTypes contains menuItem.type %}
-        <li rel="js-menu-item" data-active="false">
-          {% if menuItem.attributes.href %}
-            <a
-              rel="{{ menuItem.attributes.rel | join: " " }} js-menu-item-link"
-              href="{{ menuItem.attributes.href }}"
-              class="menu__link"
-              title="{{ menuItem.attributes.title }}"
-              target="{{ menuItem.attributes.target }}"
-            >
-              <span class="menu__link-icon">
-                {% include _iconPath %}
-              </span>
-              <span class="menu__link-text">{{ menuItem.attributes.title }}</span>
-            </a>
-          {% else %}
-            <button
-              rel="{{ menuItem.attributes.rel | join: " " }} js-menu-item-link"
-              onclick="{{ menuItem.attributes.onclick }}"
-              class="menu__button"
-              title="{{ menuItem.attributes.title }}"
-            >
-              <span class="menu__link-icon">
-                {% include _iconPath %}
-              </span>
-              <span class="menu__link-text">{{ menuItem.attributes.title }}</span>
-            </button>
+  <nav class="menu__nav portal-window">
+    <ul class="menu__list portal-window__screen">
+      {% for menuItem in menu %}
+        {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
+
+        {% if menuItem.type == "navigation" %}
+          {% assign active = false %}
+          {% if page.url contains menuItem.id %}
+            {% assign active = true %}
+          {% elsif page.url == "/" and menuItem.id == "home" %}
+            {% assign active = true %}
           {% endif %}
-        </li>
+
+          <li rel="js-menu-item" data-active="{{ active }}">
+            {% if menuItem.attributes.href %}
+              <a
+                rel="{{ menuItem.attributes.rel | join: " " }}"
+                href="{{ menuItem.attributes.href }}"
+                class="menu-item menu-item--link menu-item--{{ menuItem.id }}"
+                title="{{ menuItem.attributes.title }}"
+                target="{{ menuItem.attributes.target }}"
+              >
+                <span class="menu-item__icon">
+                  {% include _iconPath %}
+                </span>
+                <span class="menu-item__text">{{ menuItem.attributes.title }}</span>
+              </a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+
+    {% for menuItem in menu %}
+      {% if menuItem.type == "utility" and menuTypes contains "utility" %}
+        {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
+        <button
+          rel="{{ menuItem.attributes.rel | join: " " }}"
+          class="menu-item menu-item--button"
+          title="{{ menuItem.attributes.title }}"
+          onclick="{{ menuItem.attributes.onclick }}"
+        >
+          <span class="menu-item__icon">
+            {% include _iconPath %}
+          </span>
+          <span class="menu-item__text">{{ menuItem.attributes.title }}</span>
+        </button>
       {% endif %}
     {% endfor %}
-  </ul>
+  </nav>
 </div>

@@ -1,16 +1,5 @@
 [
   {
-    "id": "arrow-left",
-    "type": "blog",
-    "attributes": {
-      "rel": [],
-      "href": "/blog",
-      "title": "Back to Blog",
-      "target": "_self",
-      "displayValue": "Blog"
-    }
-  },
-  {
     "id": "home",
     "type": "navigation",
     "attributes": {
@@ -22,19 +11,8 @@
     }
   },
   {
-    "id": "print",
-    "type": "utility",
-    "attributes": {
-      "rel": [],
-      "title": "Print",
-      "onclick": "window.print()",
-      "target": "_self",
-      "displayValue": "Print"
-    }
-  },
-  {
     "id": "blog",
-    "type": "home",
+    "type": "navigation",
     "attributes": {
       "rel": [],
       "href": "/blog",
@@ -45,7 +23,7 @@
   },
   {
     "id": "cv",
-    "type": "home",
+    "type": "navigation",
     "attributes": {
       "rel": [],
       "href": "/cv",
@@ -56,7 +34,7 @@
   },
   {
     "id": "uses",
-    "type": "home",
+    "type": "navigation",
     "attributes": {
       "rel": [],
       "href": "/uses",
@@ -67,13 +45,24 @@
   },
   {
     "id": "now",
-    "type": "home",
+    "type": "navigation",
     "attributes": {
       "rel": [],
       "href": "/now",
       "title": "What am I up to Now",
       "target": "_self",
       "displayValue": "/now"
+    }
+  },
+  {
+    "id": "print",
+    "type": "utility",
+    "attributes": {
+      "rel": [],
+      "title": "Print",
+      "onclick": "window.print()",
+      "target": "_self",
+      "displayValue": "Print"
     }
   },
   {

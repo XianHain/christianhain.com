@@ -3,7 +3,6 @@ layout: layouts/blog-entry.liquid
 theme: blog
 logo: black
 logoDark: green
-menuTypes: ["blog", "navigation"]
 footerTypes: ["written-by-human"]
 
 permalink: blog/{{ blogpost.slug }}/index.html

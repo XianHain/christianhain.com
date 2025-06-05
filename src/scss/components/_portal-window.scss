@@ -1,0 +1,35 @@
+.portal-window {
+  --portal-window-color-primary: var(--blue-bright);
+  --portal-window-color-secondary: var(--blue-mid);
+
+  background: linear-gradient(
+      to bottom,
+      color-mix(in hsl, var(--portal-window-color-primary) 30%, transparent) 50%,
+      color-mix(in hsl, var(--portal-window-color-primary) 55%, transparent) 100%
+  );
+  border-radius: var(--portal-window-border-radius, 2rem);
+  border: .0625rem solid var(--portal-window-color-primary);
+  box-shadow: 0 1rem 4rem hsl(0, 0%, 0%, .4);
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: var(--portal-window-frame-padding, .25rem);
+}
+
+.portal-window__screen {
+  --portal-window-screen-shadow: hsl(0, 0%, 0%, .2);
+
+  background: var(--portal-window-screen-background, radial-gradient(
+      farthest-corner at 50% -50%,
+      var(--portal-window-color-secondary) 80%,
+      color-mix(in hsl, var(--portal-window-color-secondary) 70%, var(--black)) 100%
+  ));
+  border: var(--portal-window-screen-border, .125rem solid var(--black));
+  border-radius: var(--portal-window-screen-border-radius, var(--portal-window-border-radius, 2rem));
+  box-shadow: inset 1rem 1rem 2rem var(--portal-window-screen-shadow),
+              inset -1rem -1rem 2rem var(--portal-window-screen-shadow);
+  padding: var(--portal-window-screen-padding, .5rem 1rem);
+
+  @media (min-width: 30rem) {
+    --border-radius: .75rem;
+  }
+}

@@ -163,38 +163,27 @@
 }
 
 .blog-entry {
-  background: light-dark(
-    linear-gradient(to bottom, hsla(194, 100%, 50%, .3) 50%, hsla(194, 100%, 50%, .55) 100%),
-    linear-gradient(to bottom, hsla(137, 84%, 44%, .3) 50%, hsla(137, 84%, 44%, .55) 100%)
+  --portal-window-frame-padding: .5rem;
+  --portal-window-border-radius: 1.5rem;
+  --portal-window-color-primary: light-dark(var(--blue-bright), var(--green-bright));
+  --portal-window-color-secondary: light-dark(var(--white), var(--green-dark));
+  --portal-window-screen-background: light-dark(
+      var(--white),
+      radial-gradient(
+        farthest-corner at 50% -50%,
+        var(--portal-window-color-secondary) 80%,
+        color-mix(in hsl, var(--portal-window-color-secondary) 70%, var(--black)) 100%
+    )
   );
-  padding: var(--padding, .5rem);
-  border-radius: 1.5rem;
-  border: .0625rem solid light-dark(var(--blue-bright), var(--green-bright));
-  max-width: 50rem;
-  margin: 0 auto;
-  box-shadow: 0 1rem 4rem hsl(0, 0%, 0%, .4);
+  --portal-window-screen-border: .125rem solid light-dark(hsl(194, 100%, 45%), var(--black));
+  --portal-window-screen-border-radius: .75rem;
+  --portal-window-screen-padding: 1rem;
+  --portal-window-screen-shadow: light-dark(hsl(0, 0%, 0%, .05), hsl(0, 0%, 0%, .2));
+
+  color: light-dark(var(--black), var(--portal-window-color-primary));
 
   @media (min-width: 30rem) {
-    --padding: 1rem;
-  }
-}
-
-.blog-entry__window {
-  --shadow: light-dark(hsl(0, 0%, 0%, .05), hsl(0, 0%, 0%, .2));
-
-  background: light-dark(
-    var(--white),
-    radial-gradient(farthest-corner at 50% -50%, var(--green-dark) 80%, var(--green-shadow) 100%)
-  );
-  border: .125rem solid light-dark(hsl(194, 100%, 45%), var(--black));
-  border-radius: var(--border-radius, 1rem);
-  box-shadow: inset 1rem 1rem 2rem var(--shadow),
-    inset -1rem -1rem 2rem var(--shadow);
-  color: light-dark(var(--black), var(--green-bright));
-  padding: 1rem;
-
-  @media (min-width: 30rem) {
-    --border-radius: .75rem;
+    --portal-window-frame-padding: 1rem;
   }
 }
 

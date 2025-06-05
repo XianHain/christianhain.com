@@ -4,7 +4,7 @@
 .header {
   --header-template-columns: repeat(2, 1fr);
 
-  @extend %video-background-layer-1;
+  @extend %video-background-layer-3;
   display: grid;
   grid-template-columns: var(--header-template-columns);
   grid-template-rows: 1fr;
@@ -34,4 +34,8 @@
   margin: .25rem auto 0;
   padding: 0 1rem;
   width: 11.75rem;
+}
+
+.header__menu {
+  padding: 0 .5rem;
 }
