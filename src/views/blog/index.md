@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.liquid
+layout: layouts/blog-index.liquid
 theme: blog
 logo: black
 logoDark: green
