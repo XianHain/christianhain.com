@@ -1,0 +1,41 @@
+{% layout "./base.liquid" %}
+
+{% block content %}
+  <main class="page__content">
+    <article>
+      <div class="page-title">
+        <h1 class="page-title__h1">Portfolio</h1>
+      </div>
+      <ul>
+        {%- for portfolio in collections.portfolio -%}
+          <li>
+            <a
+              href="{{ portfolio.url }}"
+              title="{{ portfolio.data.headTitle }}"
+            >
+              {{ portfolio.data.headTitle }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </article>
+    <nav class="blog-nav">
+      <ul class="blog-nav__link-list">
+        {% if pagination.previousPageLink %}
+          <li>
+            <a class="blog-nav__link" href="{{ pagination.previousPageLink }}">
+              Previous
+            </a>
+          </li>
+        {% endif %}
+        {% if pagination.nextPageLink %}
+          <li>
+            <a class="blog-nav__link" href="{{ pagination.nextPageLink }}">
+              Next
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </main>
+{% endblock %}

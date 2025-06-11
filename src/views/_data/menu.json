@@ -33,6 +33,17 @@
     }
   },
   {
+    "id": "portfolio",
+    "type": "navigation",
+    "attributes": {
+      "rel": [],
+      "href": "/portfolio",
+      "title": "Portfolio",
+      "target": "_self",
+      "displayValue": "Portfolio"
+    }
+  },
+  {
     "id": "uses",
     "type": "navigation",
     "attributes": {
