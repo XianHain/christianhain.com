@@ -201,7 +201,8 @@
 }
 
 .blog-entry__body-copy {
-  font-family: var(--monolisa);
+  --p-font-family: var(--monolisa);
+  --p-font-size: .75em;
   line-height: 2;
   display: flex;
   flex-direction: column;

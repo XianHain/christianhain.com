@@ -1,10 +1,11 @@
 @use "../utils/blog-nav";
 
 .blog-table {
+  border-collapse: collapse;
   font-family: var(--monolisa);
+  font-size: .75em;
   margin: 4em 0 0;
   width: 100%;
-  border-collapse: collapse;
 }
 
 .blog-table__heading {
