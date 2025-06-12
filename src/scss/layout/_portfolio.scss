@@ -1,0 +1,14 @@
+.layout-portfolio {
+  margin: 2rem 0 0;
+
+  @media (min-width: 50rem) {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.layout-portfolio__sidebar {
+  max-width: 15rem;
+  width: 100%;
+  order: 1;
+}

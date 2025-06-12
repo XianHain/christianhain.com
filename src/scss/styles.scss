@@ -18,6 +18,7 @@
 @use "themes/article";
 @use "themes/homepage" as homepage-theme;
 @use "themes/polaroid";
+@use "themes/portfolio";
 @use "themes/video-player";
 
 @use "components/written-by-human";
@@ -26,6 +27,8 @@
 @use "components/footer";
 @use "components/header";
 @use "components/menu";
+
+@use "layout/portfolio" as portfolio-layout;
 
 @use "pages/cv";
 @use "pages/now";

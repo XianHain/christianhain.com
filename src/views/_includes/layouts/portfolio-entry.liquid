@@ -1,59 +1,45 @@
 {% layout "./base.liquid" %}
 
 {% block content %}
-  <main class="page__content">
+  <main class="page__content" data-theme="portfolio">
     <article>
       <div class="page-title">
         <h1 class="page-title__h1">{{ headTitle }}</h1>
       </div>
 
-      <aside>
-        {{ headDescription }}
-        <dl>
-          {% for metadatum in metadata %}
-            <dt>{{ metadatum.title }}</dt>
-            {% for metadatumValue in metadatum.values %}
-              <dd>
-                {% if metadatumValue.type == "string" %}
-                  {{ metadatumValue.displayValue }}
-                {% elsif metadatumValue.type == "date" %}
-                  <time datetime="{{ metadatumValue.datetime }}">
+      <div class="layout-portfolio">
+        <aside class="layout-portfolio__sidebar">
+          <p>{{ headDescription }}</p>
+          <dl>
+            {% for metadatum in metadata %}
+              <dt>{{ metadatum.title }}</dt>
+              {% for metadatumValue in metadatum.values %}
+                <dd>
+                  {% if metadatumValue.type == "string" %}
                     {{ metadatumValue.displayValue }}
-                  </time>
-                {% elsif metadatumValue.type == "href" %}
-                  <a
-                    rel="nofollow"
-                    href="{{ metadatumValue.href }}"
-                    title="{{ metadatumValue.title }}"
-                    target="_blank"
-                  >
-                    {{ metadatumValue.displayValue }}
-                  </a>
-                {% endif %}
-              </dd>
+                  {% elsif metadatumValue.type == "date" %}
+                    <time datetime="{{ metadatumValue.datetime }}">
+                      {{ metadatumValue.displayValue }}
+                    </time>
+                  {% elsif metadatumValue.type == "href" %}
+                    <a
+                      rel="nofollow"
+                      href="{{ metadatumValue.href }}"
+                      title="{{ metadatumValue.title }}"
+                      target="_blank"
+                    >
+                      {{ metadatumValue.displayValue }}
+                    </a>
+                  {% endif %}
+                </dd>
+              {% endfor %}
             {% endfor %}
-          {% endfor %}
-        </dl>
-      </aside>
-      {{ content }}
+          </dl>
+        </aside>
+        <section>
+          {{ content }}
+        </section>
+      </div>
     </article>
-    <nav class="blog-nav">
-      <ul class="blog-nav__link-list">
-        {% if pagination.previousPageLink %}
-          <li>
-            <a class="blog-nav__link" href="{{ pagination.previousPageLink }}">
-              Previous
-            </a>
-          </li>
-        {% endif %}
-        {% if pagination.nextPageLink %}
-          <li>
-            <a class="blog-nav__link" href="{{ pagination.nextPageLink }}">
-              Next
-            </a>
-          </li>
-        {% endif %}
-      </ul>
-    </nav>
   </main>
 {% endblock %}

@@ -2,7 +2,7 @@
 layout: layouts/portfolio-entry.liquid
 theme: portfolio
 logo: black
-logoDark: green
+logoDark: dusty-blue
 headTitle: "Flood Risk Evaluator Website"
 headDescription: "Website redesign focused on the user, and helping them discover the site's service."
 footerTypes: ["written-by-human"]
@@ -45,7 +45,7 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/flood-risk-evaluator-website"
 ---
 
-![](https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/fre20150913.jpg)
+![Enviornmental shot of the Flood Risk Evaluator on a laptop and mobile phone](https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/fre20150913.jpg)
 ## Background
 The Flood Risk Evaluator (FRE) is service powered by Smart Vent Products, Inc.
 Aimed at lowering the cost of flood insurance for homeowners, FRE provides
@@ -57,7 +57,7 @@ The existing website did not reflect the credibility necessary to prove the
 service is legitimate and that the savings are real. FRE contacted me to help
 redesign the site, specifically asking for a modern and professional look.
 
-<figure>
+<figure data-theme="polaroid">
   <img 
     alt="Pre-existing FRE Website" 
     src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
@@ -81,10 +81,9 @@ nice-to-have marketing copy. By planning for the mobile user first, we were able
 to put the most important information first, and then rearranging the content on
 larger devices.
 
-<figure>
+<figure data-theme="video-player">
   <iframe
-    width="560" 
-    height="315" 
+    width="100%"
     src="https://www.youtube.com/embed/rzBR2brBkMQ?si=0dPs8dfqn7vd52-8" 
     title="YouTube video player" 
     frameborder="0" 
@@ -104,7 +103,7 @@ Vent Products, Inc. which uses a royal blue for their construction product.
 
 Reds and oranges were also chosen to add warmth to the page.
 
-<figure>
+<figure data-theme="polaroid">
   <img 
     alt="Color Palette with various tints" 
     src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.jpg"
@@ -120,7 +119,7 @@ of a distraction than an asset. The message could be communicated with generic
 patterns that captured the most distinct details of their real-world
 counterparts.
 
-<figure>
+<figure data-theme="polaroid">
   <img 
     alt="Icons of FEMA documents" 
     src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/fredocuments20150913.jpg"
@@ -141,7 +140,7 @@ Carefully, I recreated the e to match the stroke of the rest of the font family,
 removed tension points. I also skewed the letter for a more natural look, where
 the handle is at the bottom of the glass.
 
-<figure>
+<figure data-theme="polaroid">
   <img 
     alt="Redesigned Logo Icons" 
     src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/freicons20150913.jpg"
@@ -169,7 +168,7 @@ architecture could have these scene anywhere between Miami and Seattle.
 The video was colorized help re-enforce the brand and create extra contrast
 between the picture and website content.
 
-<figure>
+<figure data-theme="polaroid">
   <img 
     alt="Color-graded Video Image" 
     src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"

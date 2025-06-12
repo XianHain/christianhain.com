@@ -6,7 +6,8 @@
 
         {% if menuItem.type == "navigation" %}
           {% assign active = false %}
-          {% if page.url contains menuItem.id %}
+          {% assign firstPath = page.url | split: "/" | slice: 1, 1 | first %}
+          {% if firstPath == menuItem.id %}
             {% assign active = true %}
           {% elsif page.url == "/" and menuItem.id == "home" %}
             {% assign active = true %}

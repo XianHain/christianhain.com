@@ -1,0 +1,35 @@
+[data-theme="portfolio"] {
+  --p-font-family: var(--monolisa);
+  --p-font-size: .75em;
+
+  p {
+    max-width: 80ch;
+    align-self: center;
+  }
+
+  p + p, {
+    --p-margin: 2em 0 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--amsi-narrow-bold);
+  }
+
+  dt {
+    font-family: var(--amsi-narrow-bold);
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--monolisa);
+    font-size: .75em;
+  }
+
+  dd + dt {
+    margin-top: .5rem;
+  }
+}
