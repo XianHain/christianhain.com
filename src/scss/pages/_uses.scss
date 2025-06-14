@@ -1,8 +1,12 @@
 $uses-grid-breakpoint: 40rem;
 $uses-subgrid-bredakpoint: 34rem;
 
+[data-pagename="uses"] {
+  font-family: var(--amsi-normal), sans-serif;
+}
+
 .uses-grid__heading {
-  font-family: var(--font-emphasis-black), sans-serif;
+  font-family: var(--amsi-condensed-black), sans-serif;
   font-size: 2em;
   grid-column: 1 / -1;
   margin: 4em 0 0;
@@ -32,7 +36,7 @@ $uses-subgrid-bredakpoint: 34rem;
 }
 
 .uses-grid__subgrid-heading {
-  font-family: var(--font-primary-bold), sans-serif;
+  font-family: var(--amsi-narrow-bold), sans-serif;
   grid-column: 1;
   margin: 0;
 

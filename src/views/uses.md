@@ -1,6 +1,6 @@
 ---
 layout: layouts/uses.liquid
-theme: cv
+pageName: uses
 logo: black
 logoDark: dusty-blue
 headTitle: "/uses"
