@@ -1,9 +1,7 @@
-[data-theme="404"] {
-  --body-color: var(--black);
-
-  --font-primary-regular: var(--amsi-narrow-light);
-
+[data-pagename="404"] {
   background-color: var(--yellow-c);
+  color: var(--black);
+  font-family: var(--amsi-narrow-light), sans-serif;
 
   .header__logo {
     transform: translateY(-1.25rem);

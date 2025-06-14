@@ -10,7 +10,6 @@
 @use "base/blockquote";
 
 @use "themes/cv" as cv-theme;
-@use "themes/404" as four-oh-four;
 @use "themes/now" as now-theme;
 @use "themes/blog";
 @use "themes/memo";
@@ -31,6 +30,7 @@
 @use "layout/portfolio" as portfolio-layout;
 
 @use "pages/cv";
+@use "pages/404" as four-oh-four;
 @use "pages/now";
 @use "pages/uses";
 @use "pages/homepage";
