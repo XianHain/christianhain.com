@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.liquid
-theme: homepage
+pageName: homepage
 logo: blue-mid-2
 logoDark: blue
 menuTypes: ["navigation"]

@@ -1,6 +1,31 @@
 @use "../utils/blog-nav";
 @use "../utils/video-background";
 
+[data-pagename="homepage"] {
+  --font-primary-light: var(--amsi-normal-light);
+  --font-primary-regular: var(--amsi-normal);
+  --font-primary-bold: var(--amsi-normal-black);
+  --font-emphasis-regular: var(--amsi-condensed-regular);
+  --font-emphasis-bold: var(--amsi-condensed-bold);
+  --font-emphasis-black: var(--amsi-condensed-black);
+  --font-emphasis-ultra: var(--amsi-condensed-ultra);
+  line-height: 1.75em;
+
+  --background-start-color: light-dark(var(--white-mid), var(--blue-dark));
+  --background-end-color: light-dark(var(--white-shadow), var(--blue-mid));
+  --background-direction: light-dark(120deg, 0deg);
+  background-image: linear-gradient(
+      var(--background-direction),
+      var(--background-start-color) 0%,
+      var(--background-end-color) 100%
+  );
+  background-attachment: light-dark(initial, fixed);
+  background-repeat: no-repeat;
+
+  color: light-dark(var(--blue-dark), var(--white));
+}
+
+
 /****************************************************************************** Content */
 .content {
   max-width: 45rem;
