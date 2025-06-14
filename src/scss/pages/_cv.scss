@@ -2,6 +2,18 @@
 
 $two-column-breakpoint: 53rem;
 
+[data-pagename="cv"] {
+  color: light-dark(var(--black), hsl(215, 22%, 66%));
+  background-color: light-dark(var(--white), var(--charcoal));
+
+  font-family: var(--amsi-narrow-regular), sans-serif;
+
+  --a-print-color: inherit;
+  --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
+  --a-default-color: light-dark(var(--pink-dark), hsl(215, 22%, 66%));
+}
+
+
 /****************************************************************************** Layout */
 .page-break {
   border: 0;
@@ -85,7 +97,7 @@ $two-column-breakpoint: 53rem;
 /****************************************************************************** Headings */
 .cv-section-title {
   margin: 0;
-  font-family: var(--font-emphasis-ultra), sans-serif;
+  font-family: var(--amsi-condensed-ultra), sans-serif;
   font-weight: 400;
   font-size: 1.75em;
 }
@@ -95,7 +107,7 @@ $two-column-breakpoint: 53rem;
   text-transform: uppercase;
   margin: 0;
   font-weight: 400;
-  font-family: var(--font-emphasis-black), sans-serif;
+  font-family: var(--amsi-condensed-black), sans-serif;
 }
 
 .cv-section-header {
@@ -186,11 +198,11 @@ $two-column-breakpoint: 53rem;
 
 .cv-details__title {
   display: inline;
-  font-family: var(--font-primary-bold), sans-serif;
+  font-family: var(--amsi-narrow-bold), sans-serif;
 
   &:after {
     content: ": ";
-    font-family: var(--font-primary-regular), sans-serif;
+    font-family: var(--amsi-narrow-regular), sans-serif;
   }
 
   dd + &:before {
@@ -244,12 +256,12 @@ $two-column-breakpoint: 53rem;
   > h2 > span:first-child {
     &:after {
       content: ": ";
-      font-family: var(--font-primary-bold), sans-serif;
+      font-family: var(--amsi-narrow-bold), sans-serif;
     }
   }
 
   > h2 > span:last-child {
-    font-family: var(--font-emphasis-regular), sans-serif;
+    font-family: var(--amsi-condensed-regular), sans-serif;
   }
 
   dl {
@@ -266,7 +278,7 @@ $two-column-breakpoint: 53rem;
 
   dd {
     margin: 0;
-    font-family: var(--font-emphasis-regular), sans-serif;
+    font-family: var(--amsi-condensed-regular), sans-serif;
   }
 }
 

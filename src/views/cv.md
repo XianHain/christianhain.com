@@ -1,6 +1,6 @@
 ---
 layout: layouts/cv.liquid
-theme: cv
+pageName: cv
 logo: black-csm
 logoDark: dusty-blue-csm
 headTitle: "Curriculum Vitae"
