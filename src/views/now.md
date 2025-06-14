@@ -1,6 +1,6 @@
 ---
 layout: layouts/now.liquid
-theme: now
+pageName: now
 logo: pantone-mocha-mousse
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"

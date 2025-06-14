@@ -26,6 +26,12 @@ $breakpoint-wide: 79em;
 $breakpoint-ultra: 146em;
 
 /****************************************************************************** clock-hero */
+[data-pagename="now"] {
+  color: var(--black);
+  background-color: var(--pantone-mocha-mousse);
+  scrollbar-color: hsl(60, 33%, 93%) hsl(10, 47%, 93%);
+}
+
 .now-clock-hero {
   height: calc(100vh - 5.5em);
 }
