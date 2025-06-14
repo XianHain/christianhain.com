@@ -27,7 +27,7 @@
   border: .125em solid var(--blue-dark);
   box-sizing: border-box;
   display: block;
-  font-family: var(--amsi-narrow-bold);
+  font-family: var(--amsi-narrow-bold), sans-serif;
   font-weight: 400;
   line-height: .75;
   margin: 0 auto;
@@ -95,7 +95,7 @@
   --dark-text-shadow: 0 .25rem .125rem var(--black);
 
   color: light-dark(var(--blue-mid), var(--blue-bright));
-  font-family: var(--font-emphasis-ultra);
+  font-family: var(--font-emphasis-ultra), sans-serif;
   font-size: 5rem;
   letter-spacing: -.5px;
   line-height: .875;
@@ -197,7 +197,7 @@
   font-size: 2rem;
   margin: 0;
   font-weight: 400;
-  font-family: var(--amsi-narrow-bold);
+  font-family: var(--amsi-narrow-bold), sans-serif;
 }
 
 .blog-entry__body-copy {
@@ -385,7 +385,7 @@
 .tenants__title {
   margin: 0;
   font-weight: 400;
-  font-family: var(--font-primary-bold);
+  font-family: var(--font-primary-bold), sans-serif;
 }
 
 /****************************************************************************** Social Proof */
@@ -400,7 +400,7 @@
 .social-proof-container__title {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: var(--amsi-condensed-regular);
+  font-family: var(--amsi-condensed-regular), sans-serif;
   margin: 0;
   text-align: var(--text-align, center);
 

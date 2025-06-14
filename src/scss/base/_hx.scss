@@ -1,17 +1,17 @@
 h1 {
-  font-family: var(--font-emphasis-regular);
+  font-family: var(--font-emphasis-regular), sans-serif;
   margin: var(--h1-margin, 4em 0);
   font-weight: 400;
 }
 
 h2 {
-  font-family: var(--font-emphasis-bold);
+  font-family: var(--font-emphasis-bold), sans-serif;
   margin: var(--h2-margin, 1.25em 0);
   font-weight: 400;
 }
 
 h3 {
-  font-family: var(--font-emphasis-bold);
+  font-family: var(--font-emphasis-bold), sans-serif;
   margin: var(--h3-margin, 1.125em 0);
   font-weight: 400;
 }

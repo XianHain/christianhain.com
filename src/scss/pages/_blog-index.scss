@@ -2,7 +2,7 @@
 
 .blog-table {
   border-collapse: collapse;
-  font-family: var(--monolisa);
+  font-family: var(--monolisa), monospace;
   font-size: .75em;
   margin: 4em 0 0;
   width: 100%;
@@ -12,7 +12,7 @@
   --left-right-padding: .5625em;
 
   text-align: left;
-  font-family: var(--amsi-condensed-bold);
+  font-family: var(--amsi-condensed-bold), sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   padding: .5em var(--left-right-padding);

@@ -85,7 +85,7 @@ $two-column-breakpoint: 53rem;
 /****************************************************************************** Headings */
 .cv-section-title {
   margin: 0;
-  font-family: var(--font-emphasis-ultra);
+  font-family: var(--font-emphasis-ultra), sans-serif;
   font-weight: 400;
   font-size: 1.75em;
 }
@@ -95,7 +95,7 @@ $two-column-breakpoint: 53rem;
   text-transform: uppercase;
   margin: 0;
   font-weight: 400;
-  font-family: var(--font-emphasis-black);
+  font-family: var(--font-emphasis-black), sans-serif;
 }
 
 .cv-section-header {
@@ -186,11 +186,11 @@ $two-column-breakpoint: 53rem;
 
 .cv-details__title {
   display: inline;
-  font-family: var(--font-primary-bold);
+  font-family: var(--font-primary-bold), sans-serif;
 
   &:after {
     content: ": ";
-    font-family: var(--font-primary-regular);
+    font-family: var(--font-primary-regular), sans-serif;
   }
 
   dd + &:before {
@@ -210,7 +210,7 @@ $two-column-breakpoint: 53rem;
   --max-width: 60ch;
   --p-font-size: .75em;
 
-  font-family: var(--monolisa);
+  font-family: var(--monolisa), monospace;
   hyphens: auto;
   margin: var(--margin-top) auto 0;
   max-width: var(--max-width);
@@ -244,12 +244,12 @@ $two-column-breakpoint: 53rem;
   > h2 > span:first-child {
     &:after {
       content: ": ";
-      font-family: var(--font-primary-bold);
+      font-family: var(--font-primary-bold), sans-serif;
     }
   }
 
   > h2 > span:last-child {
-    font-family: var(--font-emphasis-regular);
+    font-family: var(--font-emphasis-regular), sans-serif;
   }
 
   dl {
@@ -266,7 +266,7 @@ $two-column-breakpoint: 53rem;
 
   dd {
     margin: 0;
-    font-family: var(--font-emphasis-regular);
+    font-family: var(--font-emphasis-regular), sans-serif;
   }
 }
 

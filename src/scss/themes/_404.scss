@@ -22,7 +22,7 @@
 
   h1 {
     color: var(--yellow-c);
-    font-family: var(--amsi-condensed-ultra);
+    font-family: var(--amsi-condensed-ultra), sans-serif;
     font-size: 8em;
     line-height: .8;
     margin: var(--margin-top, 0) 0 0;
@@ -42,14 +42,14 @@
   }
 
   .fourohfour__status {
-    font-family: var(--amsi-narrow-light);
+    font-family: var(--amsi-narrow-light), sans-serif;
     font-size: 2em;
     margin: 1em 0 0;
     text-align: center;
   }
 
   .fourohfour__status strong {
-    font-family: var(--amsi-condensed-ultra);
+    font-family: var(--amsi-condensed-ultra), sans-serif;
     font-weight: 400;
     margin: 1em 0 0;
   }

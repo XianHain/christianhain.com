@@ -14,18 +14,18 @@
   h1,
   h2,
   h3 {
-    font-family: var(--amsi-narrow-bold);
+    font-family: var(--amsi-narrow-bold), sans-serif;
   }
 
   dt {
-    font-family: var(--amsi-narrow-bold);
+    font-family: var(--amsi-narrow-bold), sans-serif;
     font-size: .75rem;
     text-transform: uppercase;
   }
 
   dd {
     margin: 0;
-    font-family: var(--monolisa);
+    font-family: var(--monolisa), monospace;
     font-size: .75em;
   }
 

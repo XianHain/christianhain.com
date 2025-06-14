@@ -6,7 +6,7 @@ p {
   text-indent: var(--p-text-indent, 0);
   text-wrap: pretty;
 
-  font-family: var(--p-font-family);
+  font-family: var(--p-font-family), sans-serif;
   font-optical-sizing: auto;
   font-weight: var(--p-font-weight);
   font-style: var(--p-font-style);

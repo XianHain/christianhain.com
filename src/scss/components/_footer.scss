@@ -25,7 +25,7 @@
 
   border-top: .0625rem solid var(--footer-border-color, hsla(0, 0%, 0%, .3));
   display: flex;
-  font-family: var(--p-font-family);
+  font-family: var(--p-font-family), sans-serif;
   gap: 2em;
   justify-content: start;
   line-height: 1.5;

@@ -3,7 +3,7 @@ code {
   font-size: inherit;
   line-height: inherit;
 
-  font-family: "Sometype Mono", monospace;;
+  font-family: var(--sometype-mono), monospace;
   font-optical-sizing: auto;
   font-weight: 400;
 
