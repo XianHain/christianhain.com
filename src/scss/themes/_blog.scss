@@ -20,11 +20,6 @@
   --blockquote-padding: 0 0 0 4ch;
   --blockquote-border-color: light-dark(hsla(0, 0%, 0%, .05), hsla(137, 84%, 44%, .15));
 
-  --menu-shadow-color: light-dark(var(--white-shadow), var(--green-shadow));
-  --menu-background-color: light-dark(var(--white), var(--green-dark));
-  --menu-border-color: light-dark(var(--black), var(--green-bright));
-  --menu-link-color: light-dark(var(--black), var(--white));
-
   --footer-color: light-dark(
     var(--black), color-mix(in hsl, var(--body-color), var(--background-color) 30%)
   );
