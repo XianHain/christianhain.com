@@ -1,6 +1,6 @@
 ---
 layout: layouts/portfolio-index.liquid
-theme: portfolio
+pageName: portfolio
 logo: black
 logoDark: dusty-blue
 headTitle: "Portfolio"

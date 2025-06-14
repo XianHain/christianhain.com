@@ -16,7 +16,6 @@
 @use "themes/article";
 @use "themes/homepage" as homepage-theme;
 @use "themes/polaroid";
-@use "themes/portfolio";
 @use "themes/video-player";
 
 @use "components/written-by-human";
@@ -35,3 +34,4 @@
 @use "pages/homepage";
 @use "pages/blog-entry";
 @use "pages/blog-index";
+@use "pages/portfolio-entry";
