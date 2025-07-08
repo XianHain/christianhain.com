@@ -77,24 +77,6 @@
   );
 }
 
-/****************************************************************************** YouTube CTA */
-.youtube-cta {
-  align-items: center;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.youtube-cta__icon {
-  height: 1em;
-  width: 1.5em;
-}
-
-.youtube-cta__text {
-  display: block;
-  transform: translateY(-.125em);
-}
-
 /****************************************************************************** Intro */
 .intro {
   display: flex;
@@ -169,15 +151,10 @@
 
 .intro__video {
   @extend %video-background-layer-1;
-
-  filter: light-dark(grayscale(100%) contrast(2), grayscale(100%));
-  margin-left: 50%;
   min-height: 60rem;
   min-width: 100vw;
-  mix-blend-mode: light-dark(multiply, overlay);
-  opacity: light-dark(.35, 1);
   position: relative;
-  transform: translateX(-50%);
+  background-color: light-dark(var(--white), var(--black));
 }
 
 /****************************************************************************** Blog */
