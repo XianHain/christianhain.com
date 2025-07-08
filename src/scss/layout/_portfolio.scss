@@ -7,8 +7,12 @@
   }
 }
 
+.layout-portfolio__content {
+  flex-grow: 1;
+}
+
 .layout-portfolio__sidebar {
-  max-width: 15rem;
-  width: 100%;
+  max-inline-size: 15rem;
+  inline-size: 100%;
   order: 1;
 }
