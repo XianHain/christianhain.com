@@ -5,6 +5,8 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Withered Album Credits"
 headDescription: "An Pen of d4vd's \"Withered\" credits, made accessible"
+thumbnail: "https://assets.christianhain.com/pages/portfolio/d4vd-withered-credits/withered-thumbnail.jpg"
+publishDate: 2025-07-07
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
 

@@ -16,3 +16,48 @@
   inline-size: 100%;
   order: 1;
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.portfolio-list__item {
+  flex: 1 1 calc(33.333% - 2rem);
+  box-sizing: border-box;
+  min-inline-size: 10rem;
+  max-inline-size: calc(33.333% - 2rem);
+  inline-size: 100%;
+}
+
+@media (max-width: 56.25rem) {
+  .portfolio-list__item {
+    flex: 1 1 calc(50% - 2rem);
+    max-inline-size: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .portfolio-list__item {
+    flex: 1 1 100%;
+    max-inline-size: 100%;
+  }
+}
+
+.portfolio-list__link {
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-list__title {
+  margin: .5rem 0 0;
+}
+
+.portfolio-list__synopsis {
+  margin: .5rem 0 0;
+}

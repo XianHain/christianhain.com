@@ -5,6 +5,8 @@ logo: black
 logoDark: dusty-blue
 headTitle: "iReport Facebook Integration"
 headDescription: "CNN iReport, the networks user-generated news division gets a whole lot better with integrated Facebook support. Now stories are shared via the users timeline with beautiful thumbnails and high-quality photo galleries."
+thumbnail: "https://assets.christianhain.com/pages/portfolio/ireport-facebook-integration/ireportthumbnail20130422.jpg"
+publishDate: 2013-01-14
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
 

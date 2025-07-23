@@ -6,14 +6,17 @@
       <div class="page-title">
         <h1 class="page-title__h1">Portfolio</h1>
       </div>
-      <ul>
-        {%- for portfolio in collections.portfolio -%}
-          <li>
-            <a
-              href="{{ portfolio.url }}"
-              title="{{ portfolio.data.headTitle }}"
-            >
-              {{ portfolio.data.headTitle }}
+      <ul class="portfolio-list">
+        {%- assign sortedPortfolio = collections.portfolio | sort: "data.publishDate" | reverse -%}
+        {%- for portfolio in sortedPortfolio -%}
+          <li class="portfolio-list__item">
+            <a href="{{ portfolio.url }}" class="portfolio-list__link" title="{{ portfolio.data.headTitle }}">
+              <img class="portfolio-list__image" src="{{ portfolio.data.thumbnail }}" alt="{{ portfolio.data.headTitle }} project image" />
+              <div class="portfolio-list__content">
+                <h2 class="portfolio-list__title">{{ portfolio.data.headTitle }}</h2>
+                <p><time datetime="{{ portfolio.data.publishDate | date: '%Y-%m-%d' }}">{{ portfolio.data.publishDate | date: '%B %d, %Y' }}</time></p>
+                <p class="portfolio-list__synopsis">{{ portfolio.data.headDescription }}</p>
+              </div>
             </a>
           </li>
         {%- endfor -%}

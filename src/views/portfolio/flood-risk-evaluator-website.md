@@ -5,6 +5,8 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Flood Risk Evaluator Website"
 headDescription: "Website redesign focused on the user, and helping them discover the site's service."
+thumbnail: "https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frethumbnail20150913.jpg"
+publishDate: 2015-09-13
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
 
