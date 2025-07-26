@@ -5,7 +5,7 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Flood Risk Evaluator Website"
 headDescription: "Website redesign focused on the user, and helping them discover the site's service."
-thumbnail: "https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frethumbnail20150913.jpg"
+thumbnail: "https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frethumbnail20150913.webp"
 publishDate: 2015-09-13
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
@@ -47,7 +47,7 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/flood-risk-evaluator-website"
 ---
 
-![Enviornmental shot of the Flood Risk Evaluator on a laptop and mobile phone](https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/fre20150913.jpg)
+![Environmental shot of the Flood Risk Evaluator on a laptop and mobile phone](https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fre20150913.webp)
 ## Background
 The Flood Risk Evaluator (FRE) is service powered by Smart Vent Products, Inc.
 Aimed at lowering the cost of flood insurance for homeowners, FRE provides
@@ -62,7 +62,7 @@ redesign the site, specifically asking for a modern and professional look.
 <figure data-theme="polaroid">
   <img 
     alt="Pre-existing FRE Website" 
-    src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
   >
   <figcaption>Pre-existing FRE Website</figcaption>
 </figure>
@@ -108,7 +108,7 @@ Reds and oranges were also chosen to add warmth to the page.
 <figure data-theme="polaroid">
   <img 
     alt="Color Palette with various tints" 
-    src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.jpg"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.webp"
   >
   <figcaption>Color Palette with various tints</figcaption>
 </figure>
@@ -124,7 +124,7 @@ counterparts.
 <figure data-theme="polaroid">
   <img 
     alt="Icons of FEMA documents" 
-    src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/fredocuments20150913.jpg"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fredocuments20150913.webp"
   >
   <figcaption>
     The existing icons (left) were too literal with distracting embellishments.
@@ -145,7 +145,7 @@ the handle is at the bottom of the glass.
 <figure data-theme="polaroid">
   <img 
     alt="Redesigned Logo Icons" 
-    src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/freicons20150913.jpg"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/freicons20150913.webp"
   >
   <figcaption>
     The original symbol (left) had a good concept, and was already in 
@@ -173,7 +173,7 @@ between the picture and website content.
 <figure data-theme="polaroid">
   <img 
     alt="Color-graded Video Image" 
-    src="https://assets.christianhain.com/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"
   >
   <figcaption>
     Used video-editing software to recolor the footage to fit the brand colors.

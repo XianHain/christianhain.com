@@ -5,7 +5,7 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Delta.com"
 headDescription: "Delta Airlines, the world's number one airline company, took on the task of rebuilding their website from the ground up. Their site is now built upon an HTML 5 backbone and uses the latest in Javascript and Ajax to offer a fresh new user experience."
-thumbnail: "https://assets.christianhain.com/pages/portfolio/delta-website/deltathumbnail20130422.jpg"
+thumbnail: "https://assets.christianhain.com/images/pages/portfolio/delta-website/deltathumbnail20130422.webp"
 publishDate: 2012-11-13
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
@@ -71,7 +71,7 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/delta-website"
 ---
 
-![Delta Website on a computer screen](https://assets.christianhain.com/pages/portfolio/delta-website/delta20121114.png)
+![Delta Website on a computer screen](https://assets.christianhain.com/images/pages/portfolio/delta-website/delta20121114.png)
 
 ## Wheels up in 5 minutes...
 
@@ -90,7 +90,7 @@ Explore), which focused on offering clients vacation packages and hotel deals.
 <figure data-theme="polaroid">
   <img 
     alt="Screenshot of Delta.com Donate Miles" 
-    src="https://assets.christianhain.com/pages/portfolio/delta-website/delta_donatemiles20130412.jpg"
+    src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.jpg"
   >
   <figcaption>Delta.com Donate Miles</figcaption>
 </figure>

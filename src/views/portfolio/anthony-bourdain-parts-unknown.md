@@ -5,7 +5,7 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Anthony Bourdain, Parts Unknown"
 headDescription: "Responsive website for CNN's new television series, <i>Anthony Bourdain, Parts Unknown.</i>"
-thumbnail: "https://assets.christianhain.com/pages/portfolio/anthony-bourdain-parts-unknown/bourdainthumbnail20130422.jpg"
+thumbnail: "https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdainthumbnail20130422.webp"
 publishDate: 2013-04-11
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
@@ -40,7 +40,7 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/anthony-bourdain-parts-unknown"
 ---
 
-![Anthony Bourdain, Parts Unknown site loaded on a phone, tablet, and desktop computer screen](https://assets.christianhain.com/pages/portfolio/anthony-bourdain-parts-unknown/bourdaintagged20130411.png)
+![Anthony Bourdain, Parts Unknown site loaded on a phone, tablet, and desktop computer screen](https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdaintagged20130411.webp)
 If you're a fan of CNN, you may have noticed advertisements for a new show that
 isn't news related. If you're an Anthony Bourdain fan, you may have noticed that
 he's coming out with a new television show on a news network. Either way, 

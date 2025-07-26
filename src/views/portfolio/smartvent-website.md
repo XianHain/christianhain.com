@@ -5,7 +5,7 @@ logo: black
 logoDark: dusty-blue
 headTitle: "SmartVent Website"
 headDescription: "Smart Vent Products, Inc. manufactures the only ICC-ES Certified Foundation Flood Vent. This New Jersey-based company needed a website that brought them up to current standards of web development and SEO practices in order to stay ahead of newly emerging competition."
-thumbnail: "https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_mockup20130422.jpg"
+thumbnail: "https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_mockup20130422.webp"
 publishDate: 2013-01-01
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
@@ -61,12 +61,12 @@ canonical: "https://www.christianhain.com/portfolio/smartvent-website"
 ---
 
 ## Homepage
-![SmartVent Homepage mockup with Local Representative details](https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_homepage20121211.png)
-![SmartVent Homepage mockup with upcoming events](https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_homepageb20121211.png)
+![SmartVent Homepage mockup with Local Representative details](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepage20121211.webp)
+![SmartVent Homepage mockup with upcoming events](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepageb20121211.webp)
 
 ## Locator
-![SmartVent Locator Page mockup](https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_locator20121211.png)
+![SmartVent Locator Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_locator20121211.webp)
 
 ## Testimonial
-![SmartVent Testimonial Landing Page mockup](https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_testimonial20121211.png)
-![SmartVent Testimonial Detail Page mockup](https://assets.christianhain.com/pages/portfolio/smartvent-website/smartvent_testimonialdetail20121211.png)
+![SmartVent Testimonial Landing Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonial20121211.webp)
+![SmartVent Testimonial Detail Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonialdetail20121211.webp)

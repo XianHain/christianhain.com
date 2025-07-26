@@ -5,7 +5,7 @@ logo: black
 logoDark: dusty-blue
 headTitle: "Withered Album Credits"
 headDescription: "An Pen of d4vd's \"Withered\" credits, made accessible"
-thumbnail: "https://assets.christianhain.com/pages/portfolio/d4vd-withered-credits/withered-thumbnail.jpg"
+thumbnail: "https://assets.christianhain.com/images/pages/portfolio/d4vd-withered-credits/withered-thumbnail.webp"
 publishDate: 2025-07-07
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]
@@ -88,7 +88,7 @@ other words, the text on the jacket will inevitably not work, and the people who
 worked on this album will be lost in the sands of time.
 
 <figure data-theme="polaroid">
-  <img alt="Withered Album cover" src="https://assets.christianhain.com/pages/portfolio/d4vd-withered-credits/withered-album-back-cover.jpg">
+  <img alt="Withered Album cover" src="https://assets.christianhain.com/images/pages/portfolio/d4vd-withered-credits/withered-album-back-cover.webp">
   <figcaption>Picture of the Withered Album's "credits"</figcaption>
 </figure>
 
@@ -103,8 +103,8 @@ Anyway... that was enough motivation for me.
 ### Before
 <figure>
   <video controls autoplay style="inline-size: 100%;">
-    <source src="https://assets.christianhain.com/pages/portfolio/d4vd-withered-credits/withered-existing-site.mp4" type="video/mp4" />
-    Download the <a href="https://assets.christianhain.com/pages/portfolio/d4vd-withered-credits/withered-existing-site.mp4">video</a>
+    <source src="https://assets.christianhain.com/images/pages/portfolio/d4vd-withered-credits/withered-existing-site.mp4" type="video/mp4" />
+    Download the <a href="https://assets.christianhain.com/images/pages/portfolio/d4vd-withered-credits/withered-existing-site.mp4">video</a>
   </video>
   <figcaption>The current, pre-existing version of the credits</figcaption>
 </figure>
