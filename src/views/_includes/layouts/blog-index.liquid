@@ -17,15 +17,19 @@
           {% for item in pagination.items %}
             <tr>
               <td class="blog-table__cell blog-table__cell--time">
-                <time
-                  title="{{ item.publishedAt | blogPostTimestamp }}"
-                  datetime="{{ item.publishedAt }}"
-                >
-                  {{ item.publishedAt | blogListTimestamp }}
-                </time>
+                <p>
+                  <time
+                    title="{{ item.publishedAt | blogPostTimestamp }}"
+                    datetime="{{ item.publishedAt }}"
+                  >
+                    {{ item.publishedAt | blogListTimestamp }}
+                  </time>
+                </p>
               </td>
               <td class="blog-table__cell">
-                <a href="/blog/{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a>
+                <p>
+                  <a href="/blog/{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a>
+                </p>
                 <p>{{ item.brief }}</p>
               </td>
             </tr>
