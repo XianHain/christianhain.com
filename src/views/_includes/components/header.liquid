@@ -1,5 +1,4 @@
 <header class="header">
-  <i class="header__spacer"></i>
   <div class="header__logo">
     <a href="/" title="Homepage">
       <picture>
@@ -20,8 +19,23 @@
     </a>
   </div>
 
-  <div class="header__menu">
-    {% include "./menu.liquid" %}
+  <div class="header__chrome">
+    <div class="header__fixed-chrome-content">
+      <svg class="header__bar">
+        <rect height="2.5rem" width="100%"></rect>
+        <defs>
+          <linearGradient id="header-shadow" x1="0" y1="0" x2="0" y2="1">
+            <stop class="header__bar__stop-1" offset="0%" />
+            <stop class="header__bar__stop-2" offset="100%" />
+          </linearGradient>
+        </defs>
+        <rect class="header__bar__solid-bar" width="100%" height="40"></rect>
+        <rect class="header__bar__shadow-gradient" width="100%" height="12" fill="url(#header-shadow)"></rect>
+      </svg>
+      <div class="header__menu">
+        {% include "./menu.liquid" %}
+      </div>
+    </div>
   </div>
 
 </header>

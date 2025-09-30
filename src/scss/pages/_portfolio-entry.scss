@@ -2,6 +2,13 @@
   --p-font-family: var(--monolisa);
   --p-font-size: .75em;
 
+  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color-alpha0: light-dark(
+      hsla(0, 0%, 100%, 0),
+      hsla(215, 33%, 10%, 0)
+  );
+
   p {
     max-width: 80ch;
     align-self: center;

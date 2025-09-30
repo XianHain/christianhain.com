@@ -3,6 +3,7 @@ layout: layouts/blog-index.liquid
 theme: blog
 logo: black
 logoDark: green
+pageName: blog
 headTitle: "Blogs, Memos, and Articles"
 headDescription: "A collection of my thoughts on life and the Web"
 footerTypes: ["written-by-human"]

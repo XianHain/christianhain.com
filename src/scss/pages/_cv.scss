@@ -8,6 +8,10 @@ $two-column-breakpoint: 53rem;
 
   font-family: var(--amsi-narrow-regular), sans-serif;
 
+  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color-alpha0: light-dark(hsla(0, 0%, 100%, 0), hsla(215, 33%, 10%, 0%));
+
   --a-print-color: inherit;
   --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
   --a-default-color: light-dark(var(--pink-dark), hsl(215, 22%, 66%));

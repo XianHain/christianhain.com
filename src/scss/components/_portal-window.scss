@@ -1,11 +1,17 @@
 .portal-window {
   --portal-window-color-primary: var(--blue-bright);
   --portal-window-color-secondary: var(--blue-mid);
+  --portal-window-gradient-start: 20%;
 
   background: linear-gradient(
-      to bottom,
-      color-mix(in hsl, var(--portal-window-color-primary) 30%, transparent) 50%,
-      color-mix(in hsl, var(--portal-window-color-primary) 55%, transparent) 100%
+    to bottom,
+    color-mix(
+      in hsl,
+      var(--portal-window-color-primary) 50%,
+      transparent
+    )
+    var(--portal-window-gradient-start),
+    color-mix(in hsl, var(--portal-window-color-primary) 85%, transparent) 100%
   );
   border-radius: var(--portal-window-border-radius, 2rem);
   border: .0625rem solid var(--portal-window-color-primary);
@@ -19,9 +25,9 @@
   --portal-window-screen-shadow: hsl(0, 0%, 0%, .2);
 
   background: var(--portal-window-screen-background, radial-gradient(
-      farthest-corner at 50% -50%,
-      var(--portal-window-color-secondary) 80%,
-      color-mix(in hsl, var(--portal-window-color-secondary) 70%, var(--black)) 100%
+    farthest-corner at 50% -50%,
+    var(--portal-window-color-secondary) 80%,
+    color-mix(in hsl, var(--portal-window-color-secondary) 70%, var(--black)) 100%
   ));
   border: var(--portal-window-screen-border, .125rem solid var(--black));
   border-radius: var(--portal-window-screen-border-radius, var(--portal-window-border-radius, 2rem));

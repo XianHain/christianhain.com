@@ -11,6 +11,9 @@
   --font-emphasis-ultra: var(--amsi-condensed-ultra);
   line-height: 1.75em;
 
+  --header-bar-color: transparent;
+  --header-bar-color-alpha0: transparent;
+
   --background-start-color: light-dark(var(--white-mid), var(--blue-dark));
   --background-end-color: light-dark(var(--white-shadow), var(--blue-mid));
   --background-direction: light-dark(120deg, 0deg);
@@ -190,6 +193,7 @@
 .blog-entry {
   --portal-window-frame-padding: .5rem;
   --portal-window-border-radius: 1.5rem;
+  --portal-window-gradient-start: 50%;
   --portal-window-color-primary: light-dark(var(--blue-bright), var(--green-bright));
   --portal-window-color-secondary: light-dark(var(--white), var(--green-dark));
   --portal-window-screen-background: light-dark(

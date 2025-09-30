@@ -1,4 +1,7 @@
 [data-pagename="404"] {
+  --header-bar-color: hsl(52, 100%, 50%);
+  --header-bar-color-alpha0: hsla(52, 100%, 50%, 0);
+
   background-color: var(--yellow-c);
   color: var(--black);
   font-family: var(--amsi-narrow-light), sans-serif;

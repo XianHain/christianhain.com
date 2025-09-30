@@ -1,3 +1,8 @@
+[data-pagename="blog-entry"] {
+  --header-bar-color: light-dark(hsl(0, 0%, 100%) ,hsl(148, 98%, 7%));
+  --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0) ,hsla(148, 98%, 7%, 0));
+}
+
 %_copy {
   max-width: var(--max-width);
   margin: 0 auto;

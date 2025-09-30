@@ -1,5 +1,10 @@
 @use "../utils/blog-nav";
 
+[data-pagename="blog"] {
+  --header-bar-color: light-dark(hsl(0, 0%, 100%) ,hsl(148, 98%, 7%));
+  --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0) ,hsla(148, 98%, 7%, 0));
+}
+
 .blog-table {
   border-collapse: collapse;
   font-family: var(--monolisa), monospace;

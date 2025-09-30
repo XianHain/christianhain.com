@@ -30,6 +30,9 @@ $breakpoint-ultra: 146em;
   color: var(--black);
   background-color: var(--pantone-mocha-mousse);
   scrollbar-color: hsl(60, 33%, 93%) hsl(10, 47%, 93%);
+
+  --header-bar-color: transparent;
+  --header-bar-color-alpha0: transparent;
 }
 
 .now-clock-hero {
