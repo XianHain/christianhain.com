@@ -38,16 +38,23 @@
 }
 
 .header__bar__shadow-gradient {
-  height: .75rem;
   pointer-events: none;
   transform: translateY(2.5rem);
 }
 
-.header__bar__stop-1 {
+.header__bar__shadow-gradient--0 {
+  height: 2.5rem;
+}
+
+.header__bar__shadow-gradient--1 {
+  height: 1.25rem;
+}
+
+.header__bar__stop-0 {
   stop-color: var(--header-bar-color);
 }
 
-.header__bar__stop-2 {
+.header__bar__stop-1 {
   stop-color: var(--header-bar-color-alpha0);
 }
 
