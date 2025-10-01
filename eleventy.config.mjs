@@ -39,13 +39,18 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addFilter('atom_dateToRfc3339', (date) => pluginRss.dateToRfc3339(new Date(date)));
 
-  eleventyConfig.addFilter('blogListTimestamp', (date) =>
-    new Date(date).toLocaleString('en-US', {
+  eleventyConfig.addFilter('blogListTimestamp', (date) => {
+    const mmdd = new Date(date).toLocaleString('en-US', {
       day: '2-digit',
-      year: 'numeric',
       month: 'short',
     })
-  );
+
+    const yyyy = new Date(date).toLocaleString('en-US', {
+      year: 'numeric',
+    })
+
+    return `<span>${mmdd},</span><span> </span><span>${yyyy}</span>`;
+  });
 
   eleventyConfig.addFilter('blogPostTimestamp', (date) =>
     new Date(date).toLocaleString('en-US', {

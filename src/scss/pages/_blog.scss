@@ -41,11 +41,21 @@
     @media (min-width: 40rem) {
       --left-right-padding: 2ch;
     }
+
+    p + p {
+      --p-margin: 0;
+    }
   }
 
   .blog-table__cell--time {
-    @media (min-width: 40rem) {
+    span:first-of-type {
       white-space: nowrap;
+    }
+
+    span:nth-of-type(n + 1) {
+      @media (min-width: 40rem) {
+        white-space: nowrap;
+      }
     }
   }
 
