@@ -3,7 +3,15 @@
   {% for page in collections.all %}
     <url>
       <loc>{{ site.url }}{{ page.url | url }}</loc>
-      <lastmod>{{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</lastmod>
+      <lastmod>
+        {% if page.data.blogpost %}
+          {{ page.data.blogpost.publishedAt | date: "%Y-%m-%dT%H:%M:%S%z" }}
+        {% elsif page.lastUpdated %}
+          {{ page.lastUpdated | date: "%Y-%m-%dT%H:%M:%S%z" }}
+        {% else %}
+          {{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}
+        {% endif %}
+      </lastmod>
     </url>
   {% endfor %}
 </urlset>
