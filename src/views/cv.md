@@ -8,7 +8,7 @@ headDescription: "15+ years in web UI design, UX enhancement, and team building.
 menuTypes: ["utility"]
 footerTypes: ["csm", "webby", "written-by-human"]
 
-lastmod: 2025-10-07
+lastmod: Tue Oct 07 2025 14:14:29 GMT-0400
 
 canonical: "https://www.christianhain.com/cv/"
 ---
