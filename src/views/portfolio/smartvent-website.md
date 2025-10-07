@@ -6,7 +6,7 @@ logoDark: dusty-blue
 headTitle: "SmartVent Website"
 headDescription: "Smart Vent Products, Inc. manufactures the only ICC-ES Certified Foundation Flood Vent. This New Jersey-based company needed a website that brought them up to current standards of web development and SEO practices in order to stay ahead of newly emerging competition."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_mockup20130422.webp"
-lastUpdated: 2013-01-01
+lastmod: 2013-01-01
 publishDate: 2013-01-01
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]

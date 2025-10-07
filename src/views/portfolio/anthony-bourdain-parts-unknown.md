@@ -6,7 +6,7 @@ logoDark: dusty-blue
 headTitle: "Anthony Bourdain, Parts Unknown"
 headDescription: "Responsive website for CNN's new television series, <i>Anthony Bourdain, Parts Unknown.</i>"
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdainthumbnail20130422.webp"
-lastUpdated: 2013-04-11
+lastmod: 2013-04-11
 publishDate: 2013-04-11
 footerTypes: ["written-by-human"]
 tags: ["portfolio"]

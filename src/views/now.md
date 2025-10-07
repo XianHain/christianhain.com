@@ -7,7 +7,7 @@ headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]
 footerTypes: ["pantone", "written-by-human", "vecteezy-crt-tv-screen"]
 
-lastUpdate: 2025-01-22
+lastmod: 2025-01-22
 
 canonical: "https://www.christianhain.com/now/"
 ---
