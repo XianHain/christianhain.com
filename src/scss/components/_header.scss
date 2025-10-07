@@ -18,6 +18,10 @@
   order: 1;
   block-size: 5rem;
   z-index: 100;
+
+  @media print {
+    display: none;
+  }
 }
 
 .header__fixed-chrome-content {
