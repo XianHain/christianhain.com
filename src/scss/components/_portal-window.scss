@@ -15,7 +15,7 @@
   );
   border-radius: var(--portal-window-border-radius, 2rem);
   border: .0625rem solid var(--portal-window-color-primary);
-  box-shadow: 0 1rem 4rem hsl(0, 0%, 0%, .4);
+  box-shadow: 0 .25rem .75rem hsl(0, 0%, 0%, .2);
   margin: 0 auto;
   max-width: 50rem;
   padding: var(--portal-window-frame-padding, .25rem);
