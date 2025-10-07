@@ -19,8 +19,8 @@ canonical: "https://www.christianhain.com/cv/"
     <li>16+ years of experience with web-based user interface design, development, user experience enhancement, usability and accessibility, automated testing, leadership, team building, and delivering functional products on time</li>
     <li>Industry experience in fintech, e-commerce, news and entertainment, transportation, construction, and specialty products</li>
     <li>Seven enterprise-level site rewrites, four enterprise-level redesigns (reskinning or piecemeal upgrades), nine small-business or charity builds, three internal web tools, one greenfield SaSS product, one NPM Package distro, and one portfolio site including three-tier web applications, microservices, single-page apps, and brochure sites</li>
-    <li>Expertise experience in conceptualizing business requirements, creating flow diagrams, designing prototypes from concepts, developing front-end and server-side code, converting prototypes into user interfaces, building design systems, and implementing the look and feel of web pages/web apps</li>
-    <li>Experienced in leading and training cross-functional teams to deliver best-in-class software and creating meaningful artifacts</li>
+    <li>Expertise experience in conceptualizing business requirements, creating flow diagrams, designing prototypes from concepts/converting prototypes into user interfaces, developing front-end and server-side code, building design systems, and implementing the look and feel of web pages/web apps</li>
+    <li>Experienced in leading and training cross-functional teams to deliver best-in-class software with meaningful artifacts</li>
   </ol>
   <h3 class="cv-section-header cv-section-header--margin">Technical qualifications</h3>
   <div class="cv-grid">
@@ -182,7 +182,7 @@ canonical: "https://www.christianhain.com/cv/"
       <aside>
         <dl>
           <dt>Title</dt>
-          <dd>Principle SWE</dd>
+          <dd>Principal <abbr title="Software Engineer">SWE</abbr></dd>
           <dt>Dates associated</dt>
           <dd>August 2022&ndash;Present</dd>
         </dl>
@@ -190,14 +190,14 @@ canonical: "https://www.christianhain.com/cv/"
     </div>
     <div class="cv-story cv-story--margin">
       <p>After a successful career of developing <abbr title="business to consumer">B2C</abbr> websites, the next step was to try my hand at <abbr title="business to business">B2B</abbr> <abbr title="software as a service">SaaS</abbr>.</p>
-      <p>Following the CTO and TPM I worked with at Amazon, I joined FinQuery (LeaseQuery at the time) and helped the company develop their lease-accounting software. It's not the most glamorous product to work on, but neither were <a href="#smartvent" title="jump to Smart Product Innovations, Inc.">flood vents</a> when I started my career. Nevertheless, I was able to work with a talented UX team to bring beauty to the product in a way that would make Steve Jobs proud.</p>
-      <p>My main goal was to transform a hodgepodge of UIs into a unified platform and my secondary goal was to bring structure to development teams, increasing both the developer experience and quality of the product. During my time so far, I've been able to mentor several engineers, influence the direction of the product, and add structure to the day-to-day activities of multiple teams. The efforts have paid off as the company <a rel="nofollow" href="https://finquery.com/press-releases/finquery-announces-majority-growth-investment-from-ta-associates/" title="FinQuery Announces Majority Growth Investment from TA Associates" target="_blank">received a majority-growth investment from TA Associates</a> and has a solid foundation to continue to build from.</p>
+      <p>Following the <abbr title="Chief Technical Officer">CTO</abbr> and <abbr title="Technical Program Manager">TPM</abbr> I worked with at Amazon, I joined FinQuery (LeaseQuery at the time) and helped the company develop their lease-accounting software. It's not the most glamorous product to work on, but neither were <a href="#smartvent" title="jump to Smart Product Innovations, Inc.">flood vents</a> when I started my career. Nevertheless, I was able to work with a talented <abbr title="User Experience">UX</abbr> team to bring beauty to the product in a way that would make Steve Jobs proud.</p>
+      <p>My main goal was to transform a hodgepodge of <abbr title="User Interfaces">UIs</abbr> into a unified platform and my secondary goal was to bring structure to development teams, increasing both the developer experience and quality of the product. During my time so far, I've been able to mentor several engineers, influence the direction of the product, and add structure to the day-to-day activities of multiple teams. The efforts have paid off as the company <a rel="nofollow" href="https://finquery.com/press-releases/finquery-announces-majority-growth-investment-from-ta-associates/" title="FinQuery Announces Majority Growth Investment from TA Associates" target="_blank">received a majority-growth investment from TA Associates</a> and has a solid foundation to continue to build from.</p>
     </div>
 
     <h3 class="cv-section-header cv-section-header--margin">Brought enterprise practices to startup minds</h3>
     <ol class="cv-list">
-      <li>Reported directly to a company co-founder/lead architect until the company was acquired</li>
-      <li>Co-hosted Scrum workshops and trainings</li>
+      <li>Reported directly to a company co-founder (the Lead Architect) until the company was acquired</li>
+      <li>Co-hosted Scrum workshops and trainings with <abbr title="Chief Technical Officer">CTO</abbr>, <abbr title="Technical Program Manager">TPM</abbr>, and <abbr title="Vice President">VP</abbr> of Infrastructure</li>
       <li>Coached Lead Product Owner on how to write meaningful work tickets with reasonable scope</li>
       <li>Helped shift the mindset of the organization from a "scrappy" corner-cutting approach to a robust, well-tested, "measure-twice, cut once" approach</li>
       <li>Encouraged teams to include edge-cases as part of the initial design</li>
@@ -209,11 +209,11 @@ canonical: "https://www.christianhain.com/cv/"
         <h3 class="cv-section-header cv-section-header--margin">Drove teams to success</h3>
         <ol class="cv-list">
           <li>Helped finish a lease entry product that streamlines the data-entry process</li>
-          <li>Advised product and engineering through a UI-Refresh project, introducing them several UI development patterns</li>
-          <li>Established standards and best practices around key CI/CD concepts such as code organization and maintainability, QA-Code Reviews, and conventional commits</li>
+          <li>Advised product and engineering through a <abbr title="User Interface">UI</abbr>-Refresh project, introducing them several <abbr title="User Interface">UI</abbr> development patterns</li>
+          <li>Established standards and best practices around key <abbr title="Continuous Integration/Continuous Development">CI/CD</abbr> concepts such as code organization and maintainability, <abbr title="Quality Assurance">QA</abbr>-Code Reviews, and conventional commits</li>
           <li>Led multiple teams of engineers to deliver a new product while fostering a remote-worker culture</li>
           <li>Mentored full-stack and backend engineers as they develop/transition into frontend engineering including VPs</li>
-          <li>Evaluated several AI agents including GitHub Copilot, Tabnine, Junie, Gemini, and Cursor during the initial boom of AI-Assisted Coding</li>
+          <li>Evaluated several <abbr title="Artificial Intelligence">AI</abbr> agents including GitHub Copilot, Tabnine, Junie, Gemini, and Cursor during the initial boom of AI-Assisted Coding</li>
         </ol>
       </div>
       <div class="cv-grid__a2">
