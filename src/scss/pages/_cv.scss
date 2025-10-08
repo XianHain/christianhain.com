@@ -231,6 +231,10 @@ $two-column-breakpoint: 53rem;
   margin: var(--margin-top) auto 0;
   max-width: var(--max-width);
 
+  > p:not(p:first-of-type) {
+    --p-text-indent: 4ch;
+  }
+
   @media (min-width: $two-column-breakpoint) {
     --margin-top: .5em;
   }
@@ -246,6 +250,10 @@ $two-column-breakpoint: 53rem;
 
 .cv-story--margin {
   --margin-top: 1rem;
+}
+
+.cv-story--condensed {
+  --p-line-height: 1.5;
 }
 
 /****************************************************************************** Employment Heading */
