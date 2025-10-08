@@ -78,9 +78,14 @@
 }
 
 .header__logo {
-  height: 4rem;
-  margin: .25rem auto 0;
-  padding: 0 1rem;
-  width: 11.75rem;
+  height: 4em;
+  margin: .25em auto 0;
+  padding: 0 1em;
+  width: 11.75em;
   order: 2;
+
+  @media print {
+    width: 8em;
+    height: 2.75em;
+  }
 }
