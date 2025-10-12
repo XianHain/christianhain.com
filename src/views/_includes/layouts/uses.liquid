@@ -34,37 +34,32 @@
             <h3 class="uses-grid__subgrid-heading">{{ subcategory.category }}</h3>
             <div class="uses-grid__subgrid-items">
               {% for item in subcategory.items %}
-                {% if item.url %}
-                  <a
-                    rel="nofollow"
-                    href="{{ item.url }}"
-                    class="uses-item uses-item--{{ category.category | downcase }}"
-                    target="_blank"
-                  >
-                    <div class="uses-item__image-wrapper">
-                      <img
-                        alt="{{ item.productName }} product image or icon"
-                        src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
-                        class="uses-item__image"
-                      >
-                    </div>
-                    <p>{{ item.productName }}</p>
-                  </a>
-                {% else %}
-                  <div
-                    rel="nofollow"
-                    class="uses-item uses-item--{{ category.category | downcase }}"
-                  >
-                    <div class="uses-item__image-wrapper">
-                      <img
-                        alt="{{ item.productName }} product image or icon"
-                        src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
-                        class="uses-item__image"
-                      >
-                    </div>
-                    <p>{{ item.productName }}</p>
+                <div
+                  rel="js-uses-item"
+                  role="button"
+                  class="uses-item uses-item--{{ category.category | downcase }}"
+                  onclick="window.xian.uses.togglePopover(event)"
+                  data-href="{{ item.url }}"
+                  data-vendor="{{ item.vendor }}"
+                  data-license="{{ item.license }}"
+                  data-productname="{{ item.productName }}"
+                >
+                  <div class="uses-item__image-wrapper">
+                    <img
+                      alt="{{ item.productName }} product image or icon"
+                      src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
+                      class="uses-item__image"
+                    >
                   </div>
-                {% endif %}
+                  <p class="uses-item__name">{{ item.productName }}</p>
+                  <button
+                    class="uses-item__show-details"
+                    title="Show Details"
+                    onclick="window.xian.uses.togglePopover(event)"
+                  >
+                    {% include "../icons/eye.svg" %}
+                  </button>
+                </div>
               {% endfor %}
             </div>
           </div>
@@ -72,4 +67,41 @@
       </div>
     {% endfor %}
   </main>
+
+  <aside
+    rel="js-uses-popover"
+    class="uses-popover"
+    popover="auto"
+  >
+    <div
+      rel="js-uses-popover-content"
+      class="uses-popover__content"
+    ></div>
+    <template rel="js-uses-product-details">
+      <h4
+        rel="js-product-name js-populate"
+        class="uses-popover__title"
+      ></h4>
+      <button
+        rel="js-close-button"
+        title="Close"
+        class="uses-popover__close"
+        onclick="window.xian.uses.togglePopover(event)"
+      >
+        {% include "../icons/close.svg" %}
+      </button>
+      <dl class="uses-popover__details">
+        <dt rel="js-description">Product Description</dt>
+        <dd rel="js-description js-populate"></dd>
+        <dt rel="js-vendor">Vendor</dt>
+        <dd rel="js-vendor js-populate"></dd>
+        <dt rel="js-license">License</dt>
+        <dd rel="js-license js-populate"></dd>
+        <dt rel="js-url">URL</dt>
+        <dd rel="js-url">
+          <a rel="nofollow js-url js-populate" target="_blank"></a>
+        </dd>
+      </dl>
+    </template>
+  </aside>
 {% endblock %}
