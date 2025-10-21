@@ -14,6 +14,7 @@
 @use "themes/email";
 @use "themes/article";
 @use "themes/polaroid";
+@use "themes/blockquote" as blockquote-theme;
 @use "themes/video-player";
 
 @use "components/written-by-human";

@@ -1,0 +1,21 @@
+[data-theme="blockquote"] {
+  --p-margin: 2em 0 0;
+  border-left: .125em solid var(--blockquote-border-color, hsla(0, 0%, 0%, .05));
+  margin: var(--p-margin, 2em 0 0);
+
+  blockquote {
+    border-left: 0;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    margin: 0;
+  }
+
+  figcaption {
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    margin: 1em 0 0;
+    text-align: right;
+  }
+}
