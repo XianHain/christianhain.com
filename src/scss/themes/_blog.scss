@@ -4,7 +4,6 @@
   --font-emphasis-bold: var(--amsi-condensed-bold);
   --font-emphasis-regular: var(--amsi-narrow-bold);
 
-  --p-font-size: .75em;
   --p-line-height: 2;
   --p-font-family: var(--monolisa);
   --p-font-weight: 400;
@@ -24,6 +23,10 @@
     var(--black), color-mix(in hsl, var(--body-color), var(--background-color) 30%)
   );
   --footer-border-color: color-mix(in hsl, var(--body-color) 20%, var(--background-color));
+
+  main {
+    --p-font-size: .75em;
+  }
 
   p + p,
   ol + p,
