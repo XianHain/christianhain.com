@@ -21,7 +21,9 @@
         {{ blogpost.brief }}
       </summary>
       <content xml:lang="{{ metadata.language }}" type="html">
-        {{ blogpost.content.markdown | markdown | htmlToAbsoluteUrls: _absolutePostUrl }}
+        <![CDATA[
+          {{ blogpost.content.markdown | markdown | htmlToAbsoluteUrls: _absolutePostUrl }}
+        ]]>
       </content>
       {% if blogpost.ogMetaData.image %}
         <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
