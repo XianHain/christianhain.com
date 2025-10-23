@@ -1,6 +1,10 @@
 {% layout "./base.liquid" %}
 
 {% block content %}
+  {% assign music_content = blogpost.content.markdown | music | strip %}
+  {% assign songquote_content = blogpost.content.markdown | songquote | strip %}
+  {% assign postscript_content = blogpost.content.markdown | postscript | strip %}
+
   <main class="page__content printable">
     <article class="blog">
       <div class="page-title">
@@ -17,10 +21,25 @@
           </span>
         </p>
       </div>
-      <div class="blog__copy" data-theme="memo">
-        {{ blogpost.content.markdown | markdown | safe }}
+      <div class="blog__copy">
+        {% if songquote_content != "" %}
+          <div class="blog__songquote" data-theme="memo-aux">
+            {{ songquote_content | safe }}
+            <br>
+          </div>
+        {% endif %}
+        <div data-theme="memo">
+          {{ blogpost.content.markdown | formatted | safe }}
+        </div>
       </div>
       <p class="blog__signature">&mdash; {{ blogpost.author.name }}</p>
+
+      {% if postscript_content != "" or music_content != "" %}
+        <aside class="blog__copy blog__postscript" data-theme="memo-aux">
+          {{ postscript_content | safe }}
+          {{ music_content | safe }}
+        </aside>
+      {% endif %}
     </article>
   </main>
   <script type="application/ld+json">

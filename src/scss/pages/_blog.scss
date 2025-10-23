@@ -83,6 +83,10 @@
     gap: 2rem;
   }
 
+  .blog__songquote {
+    text-align: center;
+  }
+
   .blog__copy {
     @extend %_copy;
 
@@ -93,5 +97,20 @@
 
   .blog__signature {
     text-align: right;
+  }
+
+  .blog__postscript {
+    padding: 2em 0 0;
+
+    &:before {
+      content:  "";
+      display: block;
+      height: .0625rem;
+      background: var(--footer-border-color);
+      width: 60%;
+      margin: 0 auto;
+      top: -2em;
+      position: relative;
+    }
   }
 }

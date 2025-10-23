@@ -62,7 +62,13 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, "\\n").trim());
 
-  eleventyConfig.addFilter('markdown', async (content) => {
+  eleventyConfig.addFilter('markdown', (content) => {
+    return marked.parse(content)
+      // Remove only the meta tags, leave the content between
+      .replace(/<meta data-xian[^>]*>/g, '')
+  });
+
+  eleventyConfig.addFilter('formatted', async (content) => {
     return await marked.parse(content)
       // Article Theme
       .replace('<meta data-xian="article-start">', '</div><div data-theme="article"><div class="blog__copy">')
@@ -75,6 +81,26 @@ export default async function(eleventyConfig) {
       // Video-Player Theme
       .replace('<meta data-xian="videoplayer-start">', '</div><div data-theme="video-player"><div class="blog__copy">')
       .replace('<meta data-xian="videoplayer-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+      // Remove elements that are later repositioned
+      .replace(/<meta data-xian="ps-start">[\s\S]*?<meta data-xian="ps-end">/g, '')
+      .replace(/<meta data-xian="songquote-start">[\s\S]*?<meta data-xian="songquote-end">/g, '')
+      .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '')
+  });
+
+  eleventyConfig.addFilter('songquote', (content) => {
+    return marked.parse(content)
+      .match(/<meta data-xian="songquote-start">([\s\S]*?)<meta data-xian="songquote-end">/)?.[1]
+  });
+
+  eleventyConfig.addFilter('postscript', (content) => {
+    return marked.parse(content)
+      .match(/<meta data-xian="ps-start">([\s\S]*?)<meta data-xian="ps-end">/)?.[1]
+  });
+
+  eleventyConfig.addFilter('music', (content) => {
+    return marked.parse(content)
+      .match(/<meta data-xian="music-start">([\s\S]*?)<meta data-xian="music-end">/)?.[1]
   });
 
   eleventyConfig.setLibrary('liquid', new Liquid());

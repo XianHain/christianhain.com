@@ -5,6 +5,10 @@
   --a-hover-color: light-dark(var(--pink-dark), var(--amber));
   --a-default-color: light-dark(var(--blue-ink), var(--green-bright));
 
+  inline-size: 100%;
+  margin: 0 auto;
+  max-inline-size: var(--max-width);
+
   & ~ & > p,
   & > p:not(& > p:first-of-type):not(p:has(img)) {
     --p-text-indent: 4ch;
@@ -25,4 +29,13 @@
   * + p {
     --p-margin: 1em 0 0;
   }
+}
+
+[data-theme="memo-aux"] {
+  --max-width: 70ch;
+
+  --a-hover-color: light-dark(var(--pink-dark), var(--amber));
+  --a-default-color: light-dark(var(--blue-ink), var(--green-bright));
+
+  inline-size: 100%;
 }
