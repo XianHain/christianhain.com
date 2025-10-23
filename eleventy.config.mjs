@@ -24,11 +24,14 @@ export default async function(eleventyConfig) {
         removeComments: true,
         useShortDoctype: true,
         collapseWhitespace: true,
+        conservativeCollapse: false,
       };
     } else if (outputPath.endsWith('.xml')) {
       options = {
         keepClosingSlash: true,
         collapseWhitespace: true,
+        conservativeCollapse: false,
+        collapseInlineTagWhitespace: true,
       };
     }
 
