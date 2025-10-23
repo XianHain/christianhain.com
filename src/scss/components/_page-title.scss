@@ -27,8 +27,6 @@
   }
 
   > * + * {
-    display: inline-block;
-
     &:before {
       @media (min-width: 30rem) {
         content: "\2022";

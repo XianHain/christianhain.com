@@ -9,8 +9,11 @@
           <time datetime="{{ blogpost.publishedAt }}">
             {{ blogpost.publishedAt | blogPostTimestamp }}
           </time>
-          <span>
-            {{ blogpost.readTimeInMinutes }} minute read
+          <span class="read-length">
+            <span class="read-length__time">
+              {{ blogpost.readTimeInMinutes }} minute read
+            </span>
+            <svg role="presentation" class="read-length__monospace-spacer"></svg>
           </span>
         </p>
       </div>
