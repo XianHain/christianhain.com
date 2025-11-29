@@ -52,11 +52,22 @@
     grid-area: note;
   }
 
-  .tiktok-music-video {
+  .social-music-videos {
     margin: 4em 0 0;
   }
 
-  .tiktok-music-video__figure {
+  .social-music-videos__videos {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .social-music-videos__figure {
+    margin: 0;
     max-inline-size: 325px;
   }
 

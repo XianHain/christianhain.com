@@ -39,10 +39,19 @@ permalink: recipes/cranberry-sauce/index.html
   </ol>
 </section>
 
-<aside class="tiktok-music-video">
-  <h2>TikTok Music Video</h2>
-  <figure class="tiktok-music-video__figure" data-theme="video-player">
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@xianhain/video/7577556082269244702" data-video-id="7577556082269244702" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@xianhain" href="https://www.tiktok.com/@xianhain?refer=embed">@xianhain</a> <p>Growing up, my great grandmother would cook all the side dishes for thanksgiving; many of them were canned, including a cranberry jelly. Today, I make my own sauce but always use her ladle to serve it as a way of honoring one of my earliest food memories. I paired this with a custom mix of NF’s “Home” to cherish those who couldn’t be here this week 🦃🤎👨‍🍳</p> <a target="_blank" title="♬ original sound - Christian" href="https://www.tiktok.com/music/original-sound-7577561186712619807?refer=embed">♬ original sound - Christian</a> </section> </blockquote>
-  </figure>
-  <script async src="https://www.tiktok.com/embed.js"></script>
+<aside class="social-music-videos">
+  <h2>Social Media Music Videos</h2>
+  <ul class="social-music-videos__videos">
+    <li>
+      <figure class="social-music-videos__figure" data-theme="video-player">
+        <iframe width="325" height="578" src="https://www.youtube-nocookie.com/embed/uC3BoSA_UNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </figure>
+    </li>
+    <li>
+      <figure class="social-music-videos__figure" data-theme="video-player">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@xianhain/video/7577556082269244702" data-video-id="7577556082269244702" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@xianhain" href="https://www.tiktok.com/@xianhain?refer=embed">@xianhain</a> <p>Growing up, my great grandmother would cook all the side dishes for thanksgiving; many of them were canned, including a cranberry jelly. Today, I make my own sauce but always use her ladle to serve it as a way of honoring one of my earliest food memories. I paired this with a custom mix of NF’s “Home” to cherish those who couldn’t be here this week 🦃🤎👨‍🍳</p> <a target="_blank" title="♬ original sound - Christian" href="https://www.tiktok.com/music/original-sound-7577561186712619807?refer=embed">♬ original sound - Christian</a> </section> </blockquote>
+      </figure>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+    </li>
+  </ul>
 </aside>
