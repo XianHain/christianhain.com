@@ -1,0 +1,13 @@
+{% layout "./base.liquid" %}
+
+{% block content %}
+<main class="page__content" data-theme="recipes">
+  <article>
+    <div class="page-title">
+      <h1 class="page-title__h1">{{ headTitle }}</h1>
+    </div>
+
+    {{ content }}
+  </article>
+</main>
+{% endblock %}

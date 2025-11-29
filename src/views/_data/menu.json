@@ -33,6 +33,17 @@
     }
   },
   {
+    "id": "recipes",
+    "type": "navigation",
+    "attributes": {
+      "rel": [],
+      "href": "/recipes",
+      "title": "Recipes",
+      "target": "_self",
+      "displayValue": "Recipes"
+    }
+  },
+  {
     "id": "portfolio",
     "type": "navigation",
     "attributes": {
@@ -107,6 +118,17 @@
       "title": "Blog RSS Feed",
       "target": "_blank",
       "displayValue": "RSS"
+    }
+  },
+  {
+    "id": "footer-recipes",
+    "type": "footer",
+    "attributes": {
+      "rel": [],
+      "href": "/recipes",
+      "title": "Recipes",
+      "target": "_self",
+      "displayValue": "Recipes"
     }
   },
   {

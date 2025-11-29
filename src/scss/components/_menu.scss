@@ -82,6 +82,10 @@
     transform: translateY(.125em);
   }
 
+  .menu-item--recipes & {
+    transform: scale(.95) translateY(.0625em);
+  }
+
   .menu-item--uses & {
     transform: scale(.95);
   }
