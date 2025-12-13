@@ -1,15 +1,155 @@
+import * as sass from 'sass';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import esbuild from 'esbuild';
+import {Buffer} from 'node:buffer';
 import {Liquid} from 'liquidjs';
 import {marked} from 'marked';
 import {minify} from 'html-minifier-terser';
 import pluginRss from '@11ty/eleventy-plugin-rss';
-import EleventyPluginRobotsTxt from "eleventy-plugin-robotstxt";
+import {transform, browserslistToTargets} from 'lightningcss';
+import browserslist from 'browserslist';
+import EleventyPluginRobotsTxt from 'eleventy-plugin-robotstxt';
+
+const OUTPUT_DIR = 'public';
 
 export default async function(eleventyConfig) {
+  // Set up environment-based layout selection
+  const productionMode = process.env.NODE_ENV === 'production';
+  eleventyConfig.addGlobalData('isProduction', productionMode);
+
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {
     sitemapURL: 'https://www.christianhain.com/sitemap.xml',
     shouldBlockAIRobots: true,
+  });
+
+  eleventyConfig.addTemplateFormats('scss');
+  eleventyConfig.addExtension('scss', {
+    // opt-out of Eleventy Layouts
+    useLayouts: false,
+
+    outputFileExtension: 'css',
+
+    compileOptions: {
+      permalink: function (contents, inputPath) {
+        return (data) => (data.page.inputPath.endsWith('styles.scss'))
+          ? 'styles.min.css'
+          : undefined;
+      }
+    },
+
+    compile: async function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath);
+
+      // Don’t compile file names that start with an underscore
+      if(!parsed.name.startsWith('_')) {
+        let result = sass.compileString(inputContent, {
+          loadPaths: [
+            parsed.dir || '.',
+            this.config.dir.includes,
+          ]
+        });
+
+        // Map dependencies for incremental builds
+        await this.addDependencies(inputPath, result.loadedUrls);
+
+        // Prepare vendor prefixes
+        const targets = browserslistToTargets(
+          browserslist('> 0.2% and not dead')
+        );
+        const outputDir = path.resolve(OUTPUT_DIR);
+        const cssFilename = parsed.name + '.css';
+        const cssPath = path.join(outputDir, cssFilename);
+        const cssMapPath = cssPath + '.map';
+
+        // Process with lightningcss for vendor prefixes, no minification
+        let {
+          map: unminifiedMap,
+          code: unminifiedCss,
+        } = await transform({
+          code: Buffer.from(result.css),
+          filename: cssFilename,
+          minify: false,
+          sourceMap: true,
+          targets,
+        });
+        await fs.mkdir(outputDir, { recursive: true });
+        await fs.writeFile(cssPath, unminifiedCss);
+        if (unminifiedMap) {
+          await fs.writeFile(cssMapPath, unminifiedMap);
+        }
+
+        // Process with lightningcss for vendor prefixes with minification
+        return async () => {
+          const minCssFilename = parsed.name + '.min.css';
+          const minCssPath = path.join(outputDir, minCssFilename);
+          const minCssMapPath = minCssPath + '.map';
+          let {code, map} = await transform({
+            code: Buffer.from(result.css),
+            filename: minCssFilename,
+            minify: true,
+            sourceMap: true,
+            targets,
+          });
+          if (map) {
+            await fs.writeFile(minCssMapPath, map);
+          }
+          return code;
+        };
+      }
+    },
+  });
+
+  // JavaScript bundling with esbuild (concatenate all .mjs in /src/_scripts/)
+  eleventyConfig.on('eleventy.before', async () => {
+    const outputDir = path.resolve(OUTPUT_DIR);
+    const scriptsDir = path.resolve('src/_scripts');
+    const jsPath = path.join(outputDir, 'scripts.js');
+    const minJsPath = path.join(outputDir, 'scripts.min.js');
+    const tempEntry = path.join(scriptsDir, '.eleventy-scripts-entry.mjs');
+
+    // Get all .mjs files in scriptsDir (sorted for deterministic order)
+    let files = (await fs.readdir(scriptsDir))
+      .filter(f => f.endsWith('.mjs'))
+      .sort();
+
+    if (files.length > 0) {
+      // Create a temp entry file that imports all scripts
+      const importLines = files.map(
+        (file) => `import './${file}';`
+      ).join('\n');
+      await fs.writeFile(tempEntry, importLines);
+      await fs.mkdir(outputDir, { recursive: true });
+
+      // Unminified bundle
+      await esbuild.build({
+        entryPoints: [tempEntry],
+        bundle: true,
+        sourcemap: true,
+        minify: false,
+        format: 'esm',
+        outfile: jsPath,
+        write: true,
+        allowOverwrite: true,
+      });
+
+      // Minified bundle
+      await esbuild.build({
+        entryPoints: [tempEntry],
+        bundle: true,
+        sourcemap: true,
+        minify: true,
+        format: 'esm',
+        outfile: minJsPath,
+        write: true,
+        allowOverwrite: true,
+      });
+
+      // Clean up temp entry file
+      await fs.unlink(tempEntry);
+    }
   });
 
   eleventyConfig.addShortcode('year', () => new Date().getFullYear());
@@ -46,11 +186,11 @@ export default async function(eleventyConfig) {
     const mmdd = new Date(date).toLocaleString('en-US', {
       day: '2-digit',
       month: 'short',
-    })
+    });
 
     const yyyy = new Date(date).toLocaleString('en-US', {
       year: 'numeric',
-    })
+    });
 
     return `<span>${mmdd},</span><span> </span><span>${yyyy}</span>`;
   });
@@ -63,12 +203,12 @@ export default async function(eleventyConfig) {
     })
   );
 
-  eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, "\\n").trim());
+  eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, '\\n').trim());
 
   eleventyConfig.addFilter('markdown', (content) => {
     return marked.parse(content)
       // Remove only the meta tags, leave the content between
-      .replace(/<meta data-xian[^>]*>/g, '')
+      .replace(/<meta data-xian[^>]*>/g, '');
   });
 
   eleventyConfig.addFilter('formatted', async (content) => {
@@ -88,22 +228,22 @@ export default async function(eleventyConfig) {
       // Remove elements that are later repositioned
       .replace(/<meta data-xian="ps-start">[\s\S]*?<meta data-xian="ps-end">/g, '')
       .replace(/<meta data-xian="songquote-start">[\s\S]*?<meta data-xian="songquote-end">/g, '')
-      .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '')
+      .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '');
   });
 
   eleventyConfig.addFilter('songquote', (content) => {
     return marked.parse(content)
-      .match(/<meta data-xian="songquote-start">([\s\S]*?)<meta data-xian="songquote-end">/)?.[1]
+      .match(/<meta data-xian="songquote-start">([\s\S]*?)<meta data-xian="songquote-end">/)?.[1];
   });
 
   eleventyConfig.addFilter('postscript', (content) => {
     return marked.parse(content)
-      .match(/<meta data-xian="ps-start">([\s\S]*?)<meta data-xian="ps-end">/)?.[1]
+      .match(/<meta data-xian="ps-start">([\s\S]*?)<meta data-xian="ps-end">/)?.[1];
   });
 
   eleventyConfig.addFilter('music', (content) => {
     return marked.parse(content)
-      .match(/<meta data-xian="music-start">([\s\S]*?)<meta data-xian="music-end">/)?.[1]
+      .match(/<meta data-xian="music-start">([\s\S]*?)<meta data-xian="music-end">/)?.[1];
   });
 
   eleventyConfig.setLibrary('liquid', new Liquid());
@@ -113,8 +253,8 @@ export default async function(eleventyConfig) {
 
   return {
     dir: {
-      input: 'src/views',
-      output: 'public',
+      input: 'src',
+      output: OUTPUT_DIR
     },
   };
 }

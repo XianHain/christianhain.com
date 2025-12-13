@@ -13,6 +13,7 @@ lastmod: Tue Oct 07 2025 14:14:29 GMT-0400
 canonical: "https://www.christianhain.com/cv/"
 ---
 
+
 <section class="cv-section cv-section--no-border">
   <h2 class="cv-section-title">Qualifications</h2>
   <ol class="cv-list">
