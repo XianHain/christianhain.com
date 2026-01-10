@@ -2,71 +2,24 @@
 
 {% block content %}
   <main>
-    <div class="now-clock-hero">
-      <div class="now-clock-hero__face now-clock-face">
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--12"><span>12</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--01"><span>1</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--02"><span>2</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--03"><span>3</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--04"><span>4</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--05"><span>5</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--06"><span>6</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--07"><span>7</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--08"><span>8</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--09"><span>9</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--10"><span>10</span></div>
-        <div class="now-clock-face__number now-clock-face-number now-clock-face-number--11"><span>11</span></div>
-      </div>
-      <div class="now-clock-hero__ticker">
-        <svg role="presentation" class="now-clock-hero__ticker-circle" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="50" fill="currentColor" />
-        </svg>
-        <div class="now-clock-hero__ticker-hand now-hand now-hand--hour" rel="js-hour-hand">
-          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
-        </div>
-        <div class="now-clock-hero__ticker-hand now-hand now-hand--minute" rel="js-minute-hand">
-          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
-        </div>
-        <div class="now-clock-hero__ticker-hand now-hand now-hand--second" rel="js-second-hand">
-          <div class="now-hand__radius"><div class="now-hand__hand"></div></div>
-        </div>
-      </div>
-
-      <div class="now-title">
-        <h1>/now</h1>
-        <p>
-          Inspired by the <a rel="nofollow" href="http://nownownow.com" title="NowNowNow Community: sites with a /now page" target="_blank">NowNowNow community</a>.
-        </p>
-      </div>
+    <div class="now-title">
+      <h1>/now</h1>
+      <p>
+        Inspired by the <a rel="nofollow" href="http://nownownow.com" title="NowNowNow Community: sites with a /now page" target="_blank">NowNowNow community</a>.
+      </p>
     </div>
 
-    <div class="now-computer">
-      <div class="now-computer__shell">
-        <div class="now-computer__bevel">
-          <div class="now-computer__screen">
-            <div class="now-content">
-              <div class="page__content">
-                <p class="now-content__timestamp">Last updated: <time datetime="{{ lastmod }}">{{ lastmod }}</time></p>
-                {{ content | safe }}
-              </div>
-            </div>
-            <video class="now-content__video" autoplay="true" playsinline="true" muted="true" loop="true">
-              <source src="https://assets.christianhain.com/videos/vecteezy_an-old-television-screen-with-a-white-background_54561226.mp4">
-            </video>
-          </div>
-        </div>
+    <div class="now-clock">
+      <div class="now-clock__hand now-clock__hand--hour" rel="js-hour-hand" style="transform: rotate(90deg);"></div>
+      <div class="now-clock__hand now-clock__hand--minute" rel="js-minute-hand" style="transform: rotate(180deg);"></div>
+      <div class="now-clock__hand now-clock__hand--second" rel="js-second-hand" style="transform: rotate(270deg);"></div>
+      <div class="now-clock__center-circle"></div>
+    </div>
 
-        <div class="now-computer__sticker">
-          <div class="now-pantone-sticker">
-            <p class="now-pantone-sticker__text">
-              Color scheme inspired by:<br>
-              <span class="now-pantone-sticker__name">PANTONE&reg; Mocha Mousse</span>,<br>
-              <span class="now-pantone-sticker__color-of-the-year">2025 Color of the Year.</span>
-            </p>
-            <div class="now-pantone-sticker__swatch">
-            </div>
-          </div>
-        </div>
+    <div class="now-content">
+      <div class="page__content">
+        <p class="now-content__timestamp">Last updated: <time datetime="{{ lastmod }}">{{ lastmod }}</time></p>
+        {{ content | safe }}
       </div>
     </div>
   </main>
