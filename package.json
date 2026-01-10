@@ -20,13 +20,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
-    "@11ty/eleventy-fetch": "5.1.0",
+    "@11ty/eleventy-fetch": "5.1.1",
     "@11ty/eleventy-plugin-rss": "2.0.4",
-    "@babel/core": "7.28.4",
+    "@babel/core": "7.28.5",
     "@babel/plugin-syntax-import-attributes": "7.27.1",
-    "@babel/preset-env": "7.28.3",
-    "browserlist": "1.0.1",
-    "eleventy-plugin-robotstxt": "1.0.0",
+    "@babel/preset-env": "7.28.5",
+    "browserlist": "1.0.2",
+    "eleventy-plugin-robotstxt": "1.0.2",
     "gulp": "5.0.1",
     "gulp-babel": "8.0.0",
     "gulp-clean": "0.4.0",
@@ -39,8 +39,8 @@
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "3.0.2",
     "html-minifier-terser": "7.2.0",
-    "liquidjs": "10.21.1",
-    "marked": "16.3.0",
-    "sass": "1.93.2"
+    "liquidjs": "10.24.0",
+    "marked": "17.0.1",
+    "sass": "1.97.2"
   }
 }
