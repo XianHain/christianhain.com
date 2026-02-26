@@ -34,20 +34,20 @@
             <article class="blog-entry portal-window">
               <div class="blog-entry__window portal-window__screen">
                 <div class="blog-entry__content">
-                  <h1 class="blog-entry__title">{{ item.title }}</h1>
+                  <h1 class="blog-entry__title">{{ item.data.title }}</h1>
                   <div class="blog-entry__body-copy">
                     <p class="blog-entry__meta page-title__meta">
-                      <time datetime="{{ item.publishedAt }}">
-                        {{ item.publishedAt | blogPostTimestamp }}
+                      <time datetime="{{ item.data.publishedAt }}">
+                        {{ item.data.date | blogPostTimestamp }}
                       </time>
                       <span>
-                        {{ item.readTimeInMinutes }} minute read
+                        {{ item.data.readTime }} minute read
                       </span>
                     </p>
-                    <p class="blog-entry__brief">{{ item.brief }}</p>
+                    <p class="blog-entry__brief">{{ item.data.brief }}</p>
                     <ul class="blog-entry__link-list">
                       <li>
-                        <a class="blog-entry__link" href="/blog/{{ item.slug }}" title="{{ item.title }}">
+                        <a class="blog-entry__link" href="{{ item.page.url }}" title="{{ item.data.title }}">
                           Read Post
                         </a>
                       </li>

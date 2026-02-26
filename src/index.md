@@ -12,6 +12,6 @@ eleventyExcludeFromCollections: true
 
 canonical: "https://www.christianhain.com"
 pagination:
-  data: blog-posts
+  data: collections.blog
   size: 1
 ---

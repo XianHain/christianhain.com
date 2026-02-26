@@ -1,21 +1,21 @@
 {% layout "./base.liquid" %}
 
 {% block content %}
-  {% assign music_content = blogpost.content.markdown | music | strip %}
-  {% assign songquote_content = blogpost.content.markdown | songquote | strip %}
-  {% assign postscript_content = blogpost.content.markdown | postscript | strip %}
+  {% assign music_content = content | music | strip %}
+  {% assign songquote_content = content | songquote | strip %}
+  {% assign postscript_content = content | postscript | strip %}
 
   <main class="page__content printable">
     <article class="blog">
       <div class="page-title">
-        <h1 class="page-title__h1">{{ blogpost.title }}</h1>
+        <h1 class="page-title__h1">{{ title }}</h1>
         <p class="page-title__meta">
-          <time datetime="{{ blogpost.publishedAt }}">
-            {{ blogpost.publishedAt | blogPostTimestamp }}
+          <time datetime="{{ date }}">
+            {{ date | blogPostTimestamp }}
           </time>
           <span class="read-length">
             <span class="read-length__time">
-              {{ blogpost.readTimeInMinutes }} minute read
+              {{ readTime }} minute read
             </span>
             <svg role="presentation" class="read-length__monospace-spacer"></svg>
           </span>
@@ -29,10 +29,10 @@
           </div>
         {% endif %}
         <div data-theme="memo">
-          {{ blogpost.content.markdown | formatted | safe }}
+          {{ content | formatted | safe }}
         </div>
       </div>
-      <p class="blog__signature">&mdash; {{ blogpost.author.name }}</p>
+      <p class="blog__signature">&mdash; {{ author }}</p>
 
       {% if postscript_content != "" or music_content != "" %}
         <aside class="blog__copy blog__postscript" data-theme="memo-aux">
@@ -46,15 +46,15 @@
     {
       "@context": "https://schema.org",
       "@type": "Blog",
-      "url": "{{ blogpost.url }}",
-      "text": "{{ blogpost.content.text | json | slice: 1, -1 }}",
-      "headline": "{{ blogpost.title | json | slice: 1, -1 }}",
-      "datePublished": "{{ blogpost.publishedAt }}",
+      "url": "{{ url }}",
+      "text": "{{ brief }}",
+      "headline": "{{ title }}",
+      "datePublished": "{{ date }}",
       "copyrightHolder": "CRHain Design LLC",
       "author": {
         "@type": "Person",
-        "givenName": "{{ blogpost.author.givenName }}",
-        "familyName": "{{ blogpost.author.familyName }}"
+        "givenName": "{{ authorGiven }}",
+        "familyName": "{{ authorFamily }}"
       }
     }
   </script>

@@ -12,7 +12,7 @@ metadata:
   author:
     name: "Christian Hain"
 pagination:
-  data: blog-posts
+  data: collections.blog
   size: 20
   alias: blogposts
 ---

@@ -3,7 +3,7 @@
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.permalink }}" rel="self" />
-  <updated>{{ blogposts[0].publishedAt | atom_dateToRfc3339 }}</updated>
+  <updated>{{ blogposts[0].data.date | atom_dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
@@ -13,21 +13,21 @@
     {% assign _absolutePostUrl = blogpost.url | absoluteUrl: metadata.url %}
 
     <entry>
-      <title>{{ blogpost.title }}</title>
+      <title>{{ blogpost.data.title }}</title>
       <link href="{{ _absolutePostUrl }}" />
-      <updated>{{ blogpost.publishedAt | atom_dateToRfc3339 }}</updated>
-      <id>{{ blogpost.url }}</id>
+      <updated>{{ blogpost.data.date | atom_dateToRfc3339 }}</updated>
+      <id>{{ blogpost.data.url }}</id>
       <summary>
-        {{ blogpost.brief }}
+        {{ blogpost.data.brief }}
       </summary>
       <content xml:lang="{{ metadata.language }}" type="html">
         <![CDATA[
-          {{ blogpost.content.markdown | markdown | htmlToAbsoluteUrls: _absolutePostUrl }}
+          {{ blogpost.content | markdown | htmlToAbsoluteUrls: _absolutePostUrl }}
         ]]>
       </content>
-      {% if blogpost.ogMetaData.image %}
+      {% if blogpost.data.ogImage %}
         <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/"
-          url="{{ blogpost.ogMetaData.image }}"
+          url="{{ blogpost.data.ogImage }}"
           height="129" width="247"
         >
         </media:thumbnail>
