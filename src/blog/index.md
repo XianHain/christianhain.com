@@ -10,7 +10,7 @@ footerTypes: ["written-by-human"]
 
 canonical: "https://www.christianhain.com/blog/"
 pagination:
-  data: blog-posts
+  data: collections.blog
   size: 5
 permalink: "blog/{%- if pagination.pageNumber > 0 -%}page-{{- pagination.pageNumber | plus:1 -}}{%- endif -%}/"
 ---

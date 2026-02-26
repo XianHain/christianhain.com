@@ -20,6 +20,12 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
 
+  // Create blog collection from markdown files
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md")
+      .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+  });
+
   eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {
     sitemapURL: 'https://www.christianhain.com/sitemap.xml',
     shouldBlockAIRobots: true,
@@ -204,12 +210,6 @@ export default async function(eleventyConfig) {
   );
 
   eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, '\\n').trim());
-
-  eleventyConfig.addFilter('markdown', (content) => {
-    return marked.parse(content)
-      // Remove only the meta tags, leave the content between
-      .replace(/<meta data-xian[^>]*>/g, '');
-  });
 
   eleventyConfig.addFilter('formatted', async (content) => {
     return await marked.parse(content)

@@ -19,18 +19,18 @@
               <td class="blog-table__cell blog-table__cell--time">
                 <p>
                   <time
-                    title="{{ item.publishedAt | blogPostTimestamp }}"
-                    datetime="{{ item.publishedAt }}"
+                    title="{{ item.date | blogPostTimestamp }}"
+                    datetime="{{ item.date }}"
                   >
-                    {{ item.publishedAt | blogListTimestamp }}
+                    {{ item.date | blogListTimestamp }}
                   </time>
                 </p>
               </td>
               <td class="blog-table__cell">
                 <p>
-                  <a href="/blog/{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a>
+                  <a href="{{ item.page.url }}" title="{{ item.data.title }}">{{ item.data.title }}</a>
                 </p>
-                <p>{{ item.brief }}</p>
+                <p>{{ item.data.brief }}</p>
               </td>
             </tr>
           {% endfor %}
