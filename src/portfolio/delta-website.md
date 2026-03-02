@@ -72,7 +72,7 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/delta-website"
 ---
 
-![Delta Website on a computer screen](https://assets.christianhain.com/images/pages/portfolio/delta-website/delta20121114.png)
+![Delta Website on a computer screen](https://assets.christianhain.com/images/pages/portfolio/delta-website/delta20121114.webp)
 
 ## Wheels up in 5 minutes...
 
@@ -91,7 +91,7 @@ Explore), which focused on offering clients vacation packages and hotel deals.
 <figure data-theme="polaroid">
   <img 
     alt="Screenshot of Delta.com Donate Miles" 
-    src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.jpg"
+    src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.webp"
   >
   <figcaption>Delta.com Donate Miles</figcaption>
 </figure>
