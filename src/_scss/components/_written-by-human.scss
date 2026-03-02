@@ -1,3 +1,10 @@
 .written-by-human {
   flex-shrink: 0;
+  block-size: 2.5rem;
+  inline-size: 8rem;
+
+  @media print {
+    block-size: 1.5rem;
+    inline-size: 6rem;
+  }
 }

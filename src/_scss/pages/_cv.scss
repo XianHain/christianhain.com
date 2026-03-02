@@ -6,7 +6,9 @@ $two-column-breakpoint: 53rem;
   color: light-dark(var(--black), hsl(215, 22%, 66%));
   background-color: light-dark(var(--white), var(--charcoal));
 
-  font-family: var(--amsi-narrow-regular), sans-serif;
+  font-family: var(--amsi-normal), sans-serif;
+  line-height: 1.75;
+  font-size: .875em;
 
   --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
   --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
@@ -15,6 +17,12 @@ $two-column-breakpoint: 53rem;
   --a-print-color: inherit;
   --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
   --a-default-color: light-dark(var(--pink-dark), hsl(215, 22%, 66%));
+
+  @media print {
+    font-family: var(--amsi-narrow-regular), sans-serif;
+    line-height: inherit;
+    font-size: inherit;
+  }
 }
 
 
@@ -103,7 +111,11 @@ $two-column-breakpoint: 53rem;
   margin: 0;
   font-family: var(--amsi-condensed-ultra), sans-serif;
   font-weight: 400;
-  font-size: 1.75em;
+  font-size: 2em;
+
+  @media print {
+    font-size: 1.75em;
+  }
 }
 
 .cv-section-header,
@@ -115,11 +127,19 @@ $two-column-breakpoint: 53rem;
 }
 
 .cv-section-header {
-  font-size: 1.375em;
+  font-size: 1.5em;
+
+  @media print {
+    font-size: 1.375em;
+  }
 }
 
 .cv-section-subheader {
-  font-size: 1.125em;
+  font-size: 1.5em;
+
+  @media print {
+    font-size: 1.125em;
+  }
 }
 
 .cv-section-header--margin {
@@ -146,6 +166,7 @@ $two-column-breakpoint: 53rem;
 
   > * + * {
     margin: 1em 0 0;
+    break-inside: avoid;
   }
 }
 
@@ -174,6 +195,7 @@ $two-column-breakpoint: 53rem;
 .cv-details {
   margin: 0;
   padding: 0;
+  font-family: var(--amsi-narrow-regular), sans-serif;
 
   dd {
     display: inline;
@@ -224,7 +246,11 @@ $two-column-breakpoint: 53rem;
   --p-line-height: 2;
   --margin-top: 1rem;
   --max-width: 60ch;
-  --p-font-size: .75em;
+  --p-font-size: .875em;
+
+  @media print {
+    --p-font-size: .75em;
+  }
 
   font-family: var(--monolisa), monospace;
   hyphens: auto;
@@ -278,10 +304,16 @@ $two-column-breakpoint: 53rem;
 
   dl {
     display: flex;
+    font-size: 1.2em;
+    gap: 1em;
+    line-height: 2.375;
     margin: 0;
     text-transform: uppercase;
-    gap: 1em;
-    line-height: 1.75;
+
+    @media print {
+      font-size: inherit;
+      line-height: 1.75;
+    }
   }
 
   dt {
