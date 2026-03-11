@@ -47,22 +47,20 @@ xian.uses = xian.uses || (function uses() {
     _template = document.querySelector(
       '[rel="js-uses-product-details"]'
     );
-    if (!_template) {
-      throw new Error('Could not find template');
-    }
+    if (_template) {
+      _popover = document.querySelector(
+        '[rel="js-uses-popover"]'
+      )
+      if (!_popover) {
+        throw new Error('Could not find popover element');
+      }
 
-    _popover = document.querySelector(
-      '[rel="js-uses-popover"]'
-    )
-    if (!_popover) {
-      throw new Error('Could not find popover element');
-    }
-
-    _popoverContent = document.querySelector(
-      '[rel="js-uses-popover-content"]'
-    )
-    if (!_popoverContent) {
-      throw new Error('Could not find element to populate popover template');
+      _popoverContent = document.querySelector(
+        '[rel="js-uses-popover-content"]'
+      )
+      if (!_popoverContent) {
+        throw new Error('Could not find element to populate popover template');
+      }
     }
   }
 
