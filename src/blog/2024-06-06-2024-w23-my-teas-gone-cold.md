@@ -14,8 +14,6 @@ tags: ["56744721958ef13879b949aa", "5ce547ba32b49d9b601220ee", "56b0ba4604f00615
 canonical: "https://www.christianhain.com/blog/2024-w23-my-teas-gone-cold/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/2024-w23-my-teas-gone-cold/

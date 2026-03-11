@@ -14,8 +14,6 @@ tags: ["63dc9bff980f5b820d64aa00", "56744722958ef13879b94f1b", "658b1bb47f2e4b55
 canonical: "https://www.christianhain.com/blog/if-i-did-it-then-i-did-it-right/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/if-i-did-it-then-i-did-it-right/

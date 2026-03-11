@@ -1,8 +1,6 @@
 ---
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
-logo: black
-logoDark: dusty-blue
 headTitle: "Flood Risk Evaluator Website"
 headDescription: "Website redesign focused on the user, and helping them discover the site's service."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frethumbnail20150913.webp"

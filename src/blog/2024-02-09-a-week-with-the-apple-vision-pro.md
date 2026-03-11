@@ -14,8 +14,6 @@ tags: ["6482e0778a9f5d90985e4c5e", "56744721958ef13879b948ba", "56744722958ef138
 canonical: "https://www.christianhain.com/blog/a-week-with-the-apple-vision-pro/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/a-week-with-the-apple-vision-pro/

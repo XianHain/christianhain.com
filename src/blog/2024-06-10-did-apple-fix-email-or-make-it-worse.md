@@ -14,8 +14,6 @@ tags: ["6667ba4e744a84a3c01b99ae", "56744721958ef13879b9488e", "638891761e50d717
 canonical: "https://www.christianhain.com/blog/did-apple-fix-email-or-make-it-worse/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/did-apple-fix-email-or-make-it-worse/

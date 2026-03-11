@@ -1,8 +1,6 @@
 ---
 layout: layouts/portfolio-index.liquid
 pageName: portfolio
-logo: black
-logoDark: dusty-blue
 headTitle: "Portfolio"
 headDescription: "Some samples of my design work"
 footerTypes: ["written-by-human"]

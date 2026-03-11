@@ -14,8 +14,6 @@ tags: ["56744722958ef13879b950f8"]
 canonical: "https://www.christianhain.com/blog/great-documentation-context/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/great-documentation-context/

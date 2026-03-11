@@ -14,8 +14,6 @@ tags: ["5e79af71ecd57502528cb065", "56744723958ef13879b95470", "56744721958ef138
 canonical: "https://www.christianhain.com/blog/i-dont-speak-german-but-i-can-if-youd-like/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/i-dont-speak-german-but-i-can-if-youd-like/

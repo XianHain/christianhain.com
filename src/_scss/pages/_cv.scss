@@ -3,7 +3,7 @@
 $two-column-breakpoint: 53rem;
 
 [data-pagename="cv"] {
-  color: light-dark(var(--black), hsl(215, 22%, 66%));
+  color: light-dark(var(--black), var(--blue-dusty));
   background-color: light-dark(var(--white), var(--charcoal));
 
   font-family: var(--amsi-normal), sans-serif;
@@ -16,7 +16,7 @@ $two-column-breakpoint: 53rem;
 
   --a-print-color: inherit;
   --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
-  --a-default-color: light-dark(var(--pink-dark), hsl(215, 22%, 66%));
+  --a-default-color: light-dark(var(--pink-dark), var(--blue-dusty));
 
   @media print {
     font-family: var(--amsi-narrow-regular), sans-serif;

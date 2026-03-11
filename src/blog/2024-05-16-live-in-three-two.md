@@ -14,8 +14,6 @@ tags: ["591d0f67b5bbb96606f07af4", "56744721958ef13879b949aa"]
 canonical: "https://www.christianhain.com/blog/live-in-three-two/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/live-in-three-two/

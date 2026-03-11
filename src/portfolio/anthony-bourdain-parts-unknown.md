@@ -1,8 +1,6 @@
 ---
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
-logo: black
-logoDark: dusty-blue
 headTitle: "Anthony Bourdain, Parts Unknown"
 headDescription: "Responsive website for CNN's new television series, <i>Anthony Bourdain, Parts Unknown.</i>"
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdainthumbnail20130422.webp"

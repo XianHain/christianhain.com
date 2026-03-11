@@ -1,8 +1,6 @@
 ---
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
-logo: black
-logoDark: dusty-blue
 headTitle: "SmartVent Catalog Cover"
 headDescription: "Beautiful cover design for a twelve-page article on how to protect commercial buildings from flood damage. This simple design and product feature helps offset dense but important content within."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svbooksthumbnail20130422.webp"

@@ -1,8 +1,6 @@
 ---
 layout: layouts/now.liquid
 pageName: now
-logo: black
-logoDark: dusty-blue
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]

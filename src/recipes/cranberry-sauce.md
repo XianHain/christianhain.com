@@ -1,8 +1,6 @@
 ---
 layout: layouts/recipes-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: recipes
 footerTypes: ["written-by-human"]
 lastmod: 2025-11-29

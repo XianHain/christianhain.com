@@ -14,8 +14,6 @@ tags: ["56744723958ef13879b95230"]
 canonical: "https://www.christianhain.com/blog/good-design-solves-problems/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/good-design-solves-problems/

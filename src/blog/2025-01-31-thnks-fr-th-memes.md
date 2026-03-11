@@ -14,8 +14,6 @@ tags: ["56744721958ef13879b94da0", "58b6c12eb2566b537ac16cb7", "56744721958ef138
 canonical: "https://www.christianhain.com/blog/thnks-fr-th-memes/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/thnks-fr-th-memes/

@@ -1,8 +1,6 @@
 ---
 layout: layouts/home.liquid
 pageName: homepage
-logo: blue-mid-2
-logoDark: blue
 menuTypes: ["navigation"]
 permalink: "{%- if pagination.pageNumber == 0 -%}/index.html{%- else -%}/.delete/homepages/{{- pagination.pageNumber -}}/{%- endif -%}"
 headTitle: "It's me! Christian"

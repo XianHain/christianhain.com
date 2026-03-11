@@ -79,7 +79,11 @@
 }
 
 .header__logo {
-  height: 4em;
+  --header-logo-primary-color: currentColor;
+  --header-logo-secondary-color: currentColor;
+  --header-logo-credential-color: transparent;
+
+  height: 4.5em;
   margin: .25em auto 0;
   padding: 0 1em;
   width: 11.75em;
@@ -89,4 +93,50 @@
     width: 8em;
     height: 2.75em;
   }
+
+  &.header__logo--csm {
+    --header-logo-credential-color: var(--header-logo-primary-color);
+  }
+
+  [data-pagename="homepage"] & {
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--white));
+  }
+
+  [data-pagename="cv"] &,
+  [data-pagename="now"] &,
+  [data-pagename="uses"] &,
+  [data-pagename="portfolio"] & {
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
+  }
+
+  [data-pagename="404"] & {
+    --header-logo-primary-color: var(--black);
+    --header-logo-secondary-color: var(--pink-bright);
+  }
+
+  [data-pagename="blog"] &,
+  [data-pagename="recipes"] & {
+    --header-logo-primary-color: light-dark(var(--black), var(--green-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--amber));
+  }
+}
+
+.header__logo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header__logo-at path {
+  fill: var(--header-logo-secondary-color);
+}
+
+.header__logo-name path {
+  fill: var(--header-logo-primary-color);
+}
+
+.header__logo-credential path {
+  fill: var(--header-logo-credential-color);
 }

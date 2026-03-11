@@ -14,8 +14,6 @@ tags: ["56899b310716b983ccc797b5", "5714fe4e151fa7c4488cc1ae", "596dfa81107fab27
 canonical: "https://www.christianhain.com/blog/uh-oh-goodbye-io/"
 layout: layouts/blog-entry.liquid
 theme: blog
-logo: black
-logoDark: green
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/uh-oh-goodbye-io/
