@@ -1,37 +1,16 @@
 @use "sass:meta";
 @use "sass:color";
 
-$breakpoint-super-narrow: 34em;
-
 /****************************************************************************** clock-hero */
 [data-pagename="now"] {
-  --header-bar-color: transparent;
-  --header-bar-color-alpha0: transparent;
-}
+  font-family: var(--amsi-normal), sans-serif;
 
-/****************************************************************************** title */
-.now-title {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  margin: 4em auto;
-  text-align: center;
-}
-
-.now-title h1 {
-  font-family: ThygaItalicSemirounded, sans-serif;
-  margin: 0;
-  font-weight: 400;
-  line-height: .75;
-  font-size: 8em;
-
-  @media (min-width: $breakpoint-super-narrow) {
-    font-size: 16em;
-  }
-}
-
-.now-title p {
-  font-family: ThygaSemirounded, sans-serif;
-  font-size: 1.5em;
+  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  --header-bar-color-alpha0: light-dark(
+      hsla(0, 0%, 100%, 0),
+      hsla(215, 33%, 10%, 0)
+  );
 }
 
 /****************************************************************************** clock */

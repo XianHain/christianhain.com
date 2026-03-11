@@ -36,3 +36,27 @@
     }
   }
 }
+
+.slash-page-title {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 4em auto;
+  text-align: center;
+}
+
+.slash-page-title__h1 {
+  font-family: ThygaItalicSemirounded, sans-serif;
+  margin: 0;
+  font-weight: 400;
+  line-height: .75;
+  font-size: 8em;
+
+  @media (min-width: 34em) {
+    font-size: 16em;
+  }
+}
+
+.slash-page-title__description {
+  font-family: ThygaSemirounded, sans-serif;
+  font-size: 1.5em;
+}
