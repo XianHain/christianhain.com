@@ -15,7 +15,7 @@
         </thead>
         <tbody>
           {% for item in pagination.items %}
-            <tr>
+            <tr class="blog-table__row">
               <td class="blog-table__cell blog-table__cell--time">
                 <p>
                   <time
@@ -27,10 +27,26 @@
                 </p>
               </td>
               <td class="blog-table__cell">
-                <p>
-                  <a href="{{ item.page.url }}" title="{{ item.data.title }}">{{ item.data.title }}</a>
-                </p>
-                <p>{{ item.data.brief }}</p>
+                <div class="blog-table__cell-content">
+                  <p>
+                    <a
+                      href="{{ item.page.url }}"
+                      title="{{ item.data.title }}"
+                    >
+                      {{ item.data.title }}
+                    </a>
+                  </p>
+                  <p>{{ item.data.brief }}</p>
+                  <div class="blog-table__read-post">
+                    <a
+                      href="{{ item.page.url }}"
+                      class="blog-table__read-post-link"
+                      title="{{ item.data.title }}"
+                    >
+                      Read Post
+                    </a>
+                  </div>
+                </div>
               </td>
             </tr>
           {% endfor %}
