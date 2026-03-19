@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/did-apple-fix-email-or-make-it-worse"
-brief: "To: WorldFrom: MeCC: Your Micromanager, My MicromanagerSubject: Fwd: Re: Re: Re: Re: email sucks\nHello, World,\nI hope this message finds you well. This is my umpteenth attempt to reach you about generative content and how much I don't want to read it..."
+brief: "Hello, World, I hope this message finds you well. This is my umpteenth attempt to reach you about generative content and how much I don't want to read it…"
 tags: ["6667ba4e744a84a3c01b99ae", "56744721958ef13879b9488e", "638891761e50d717cbfd7b5b", "56744721958ef13879b948ba", "56744722958ef13879b94f11", "666663d8744a84a3c0289f80", "64924c87f9b78f110e1bc573", "56744722958ef13879b95038", "6642538acfdcf6a57c2d8efe"]
 canonical: "https://www.christianhain.com/blog/did-apple-fix-email-or-make-it-worse/"
 layout: layouts/blog-entry.liquid

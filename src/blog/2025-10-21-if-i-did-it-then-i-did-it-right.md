@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: "https://assets.christianhain.com/images/pages/blog/2025-10-21-if-i-did-it-then-i-did-it-right/og.png"
 url: "https://www.christianhain.com/blog/if-i-did-it-then-i-did-it-right"
-brief: "Mediocre? That just won't suffice.\n\n\nI think about these lyrics from NF's \"SUFFICE\" almost daily, especially when developing software. For the past couple of years I've been professionally balancing one of my favorite Amazon Leadership Principles, \"I..."
+brief: "Mediocre? That just won't suffice. I think about these lyrics from NF's \"SUFFICE\" almost daily, especially when developing software. For the past couple of years I've been professionally balancing one of my favorite Amazon Leadership Principles…"
 tags: ["63dc9bff980f5b820d64aa00", "56744722958ef13879b94f1b", "658b1bb47f2e4b55d0289532", "56744721958ef13879b94906", "629a4c0ca7681524f75be0f9"]
 canonical: "https://www.christianhain.com/blog/if-i-did-it-then-i-did-it-right/"
 layout: layouts/blog-entry.liquid

@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/2024-w23-my-teas-gone-cold"
-brief: "Oooh-wee! These past two weeks were a struggle, ngl! Building this blog has been a back-burner idea of mine for years, and I’m so proud to have finally got something set up. 49 people read my original post! WAY-YYY more than the zero I was expecting...."
+brief: "Oooh-wee! These past two weeks were a struggle, ngl! Building this blog has been a back-burner idea of mine for years, and I’m so proud to have finally got something set up. 49 people read my original post! WAY-YYY more than the zero I was expecting."
 tags: ["56744721958ef13879b949aa", "5ce547ba32b49d9b601220ee", "56b0ba4604f0061506b35fae"]
 canonical: "https://www.christianhain.com/blog/2024-w23-my-teas-gone-cold/"
 layout: layouts/blog-entry.liquid
