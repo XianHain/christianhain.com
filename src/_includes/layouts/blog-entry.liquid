@@ -1,9 +1,9 @@
 {% layout "./base.liquid" %}
 
 {% block content %}
-  {% assign music_content = content | music | strip %}
-  {% assign songquote_content = content | songquote | strip %}
-  {% assign postscript_content = content | postscript | strip %}
+  {% assign music_content = content | music %}
+  {% assign songquote_content = content | songquote %}
+  {% assign postscript_content = content | postscript %}
 
   <main class="page__content printable">
     <article class="blog">
@@ -24,7 +24,7 @@
       <div class="blog__copy">
         {% if songquote_content != "" %}
           <div class="blog__songquote" data-theme="memo-aux">
-            {{ songquote_content | safe }}
+            {{ songquote_content | formatted | safe }}
             <br>
           </div>
         {% endif %}

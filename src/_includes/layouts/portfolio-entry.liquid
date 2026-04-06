@@ -9,7 +9,7 @@
 
       <div class="layout-portfolio">
         <aside class="layout-portfolio__sidebar">
-          <p>{{ headDescription }}</p>
+          <p>{{ headDescription | formatted }}</p>
           <dl>
             {% for metadatum in metadata %}
               <dt>{{ metadatum.title }}</dt>
@@ -37,7 +37,7 @@
           </dl>
         </aside>
         <section class="layout-portfolio__content">
-          {{ content }}
+          {{ content | formatted }}
         </section>
       </div>
     </article>

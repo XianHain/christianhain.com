@@ -36,7 +36,7 @@
                       {{ item.data.title }}
                     </a>
                   </p>
-                  <p>{{ item.data.brief }}</p>
+                  <p>{{ item.data.brief | formatted }}</p>
                   <div class="blog-table__read-post">
                     <a
                       href="{{ item.page.url }}"

@@ -40,13 +40,18 @@ export default async function(eleventyConfig) {
 
     compileOptions: {
       permalink: function (contents, inputPath) {
-        return (data) => (data.page.inputPath.endsWith('styles.scss'))
-          ? 'styles.min.css'
-          : undefined;
+        return (data) => {
+          let permalink = undefined;
+          if (data.page.inputPath.endsWith('styles.scss')) {
+            permalink = 'styles.min.css';
+          }
+          return permalink;
+        }
       }
     },
 
     compile: async function (inputContent, inputPath) {
+      let resultString = null;
       let parsed = path.parse(inputPath);
 
       // Don’t compile file names that start with an underscore
@@ -88,7 +93,7 @@ export default async function(eleventyConfig) {
         }
 
         // Process with lightningcss for vendor prefixes with minification
-        return async () => {
+        resultString = async () => {
           const minCssFilename = parsed.name + '.min.css';
           const minCssPath = path.join(outputDir, minCssFilename);
           const minCssMapPath = minCssPath + '.map';
@@ -105,6 +110,8 @@ export default async function(eleventyConfig) {
           return code;
         };
       }
+
+      return resultString ?? undefined;
     },
   });
 
@@ -181,9 +188,11 @@ export default async function(eleventyConfig) {
       };
     }
 
-    return (options)
-      ? await minify(content, options)
-      : content;
+    let result = content;
+    if (options) {
+      result = await minify(content, options);
+    }
+    return result;
   });
 
   eleventyConfig.addFilter('atom_dateToRfc3339', (date) => pluginRss.dateToRfc3339(new Date(date)));
@@ -211,38 +220,51 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, '\\n').trim());
 
+  const formatMarkdown = async (content) => {
+    let result = null;
+    if (content) {
+      result = (await marked.parse(content, {
+        breaks: true,
+        gfm: true,
+      }))
+        .replace(/ {2}/g, '&nbsp; ')
+
+        // Article Theme
+        .replace('<meta data-xian="article-start">', '</div><div data-theme="article"><div class="blog__copy">')
+        .replace('<meta data-xian="article-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+        // Email Theme
+        .replace('<meta data-xian="email-start">', '</div><div data-theme="email"><div class="blog__copy">')
+        .replace('<meta data-xian="email-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+        // Video-Player Theme
+        .replace('<meta data-xian="videoplayer-start">', '</div><div data-theme="video-player"><div class="blog__copy">')
+        .replace('<meta data-xian="videoplayer-end">', '</div></div><div class="blog__copy" data-theme="memo">')
+
+        // Remove elements that are later repositioned
+        .replace(/<meta data-xian="ps-start">[\s\S]*?<meta data-xian="ps-end">/g, '')
+        .replace(/<meta data-xian="songquote-start">[\s\S]*?<meta data-xian="songquote-end">/g, '')
+        .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '');
+    }
+    return result;
+  };
+
   eleventyConfig.addFilter('formatted', async (content) => {
-    return await marked.parse(content)
-      // Article Theme
-      .replace('<meta data-xian="article-start">', '</div><div data-theme="article"><div class="blog__copy">')
-      .replace('<meta data-xian="article-end">', '</div></div><div class="blog__copy" data-theme="memo">')
-
-      // Email Theme
-      .replace('<meta data-xian="email-start">', '</div><div data-theme="email"><div class="blog__copy">')
-      .replace('<meta data-xian="email-end">', '</div></div><div class="blog__copy" data-theme="memo">')
-
-      // Video-Player Theme
-      .replace('<meta data-xian="videoplayer-start">', '</div><div data-theme="video-player"><div class="blog__copy">')
-      .replace('<meta data-xian="videoplayer-end">', '</div></div><div class="blog__copy" data-theme="memo">')
-
-      // Remove elements that are later repositioned
-      .replace(/<meta data-xian="ps-start">[\s\S]*?<meta data-xian="ps-end">/g, '')
-      .replace(/<meta data-xian="songquote-start">[\s\S]*?<meta data-xian="songquote-end">/g, '')
-      .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '');
+    return await formatMarkdown(content);
   });
 
-  eleventyConfig.addFilter('songquote', (content) => {
-    return marked.parse(content)
+  eleventyConfig.addFilter('songquote', async (content) => {
+    return (await formatMarkdown(content))
       .match(/<meta data-xian="songquote-start">([\s\S]*?)<meta data-xian="songquote-end">/)?.[1];
   });
 
-  eleventyConfig.addFilter('postscript', (content) => {
-    return marked.parse(content)
+  eleventyConfig.addFilter('postscript', async (content) => {
+    return (await formatMarkdown(content))
       .match(/<meta data-xian="ps-start">([\s\S]*?)<meta data-xian="ps-end">/)?.[1];
   });
 
-  eleventyConfig.addFilter('music', (content) => {
-    return marked.parse(content)
+  eleventyConfig.addFilter('music', async (content) => {
+    return (await formatMarkdown(content))
       .match(/<meta data-xian="music-start">([\s\S]*?)<meta data-xian="music-end">/)?.[1];
   });
 
