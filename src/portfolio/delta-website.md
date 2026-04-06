@@ -76,13 +76,14 @@ canonical: "https://www.christianhain.com/portfolio/delta-website"
 
 Delta, one of the only profitable airlines in the industry, was looking for a
 way to refresh their online presence and provide a friendlier experience for
-their customers. To do so, they've enlisted the help of Razorfish and several
+their customers.  To do so, they've enlisted the help of Razorfish and several
 contracting companies to deliver a new delta.com.
 
-Such a large undertaking needed to be broken out into segments, or towers. I was
-a part of the Loyalty team, which involved working with SkyMiles, the company's
-frequent-flier credit system. I also worked on Escape (previously named
-Explore), which focused on offering clients vacation packages and hotel deals.
+Such a large undertaking needed to be broken out into segments, or towers.  I
+was a part of the Loyalty team, which involved working with SkyMiles, the
+company's frequent-flier credit system.  I also worked on Escape (previously
+named Explore), which focused on offering clients vacation packages and hotel
+deals.
 
 ### Buy, Gift, Transfer, and Donate Skymiles.
 
@@ -95,10 +96,11 @@ Explore), which focused on offering clients vacation packages and hotel deals.
 </figure>
 
 In order to provide the best experience to the user on the SkyMiles pages, AJAX
-was used heavily to send data back and forth to the server. Also, to protect
+was used heavily to send data back and forth to the server.  Also, to protect
 against fraud, standard security practices were used such as front-end and
-server-side validation. Finally, a service call was placed upon final selection
-of Donate Now at the time of transaction to prevent against any anomalies.
+server-side validation.  Finally, a service call was placed upon final
+selection of Donate Now at the time of transaction to prevent against any
+anomalies.
 
 jQuery was used for user experience and animations to help bring the pages to
 life.

@@ -2,7 +2,7 @@
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "iReport Facebook Integration"
-headDescription: "CNN iReport, the networks user-generated news division gets a whole lot better with integrated Facebook support. Now stories are shared via the users timeline with beautiful thumbnails and high-quality photo galleries."
+headDescription: "CNN iReport, the networks user-generated news division gets a whole lot better with integrated Facebook support.  Now stories are shared via the users timeline with beautiful thumbnails and high-quality photo galleries."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/ireport-facebook-integration/ireportthumbnail20130422.webp"
 lastmod: 2013-01-14
 publishDate: 2013-01-14
