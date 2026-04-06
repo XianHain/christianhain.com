@@ -26,7 +26,14 @@
       a non-exhaustive list of the tools and programs I use to capture, create, and develop.
     </p>
 
-    {% for category in uses %}
+    <p class="now-content__timestamp">
+      Last updated:
+      <time datetime="{{ lastmod }}">
+        {{ lastmod }}
+      </time>
+    </p>
+
+    {% for category in uses.categories %}
       <div class="uses-grid">
         <h2 class="uses-grid__heading">{{ category.category }}</h2>
         {% for subcategory in category.items %}
