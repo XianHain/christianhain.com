@@ -173,8 +173,8 @@
           {
             "productName": "macOS",
             "vendor": "Apple Inc.",
-            "url": "https://www.apple.com/macos/macos-sequoia/",
-            "image": "mac-os.svg",
+            "url": "https://www.apple.com/os/macos/",
+            "image": "macos-tahoe.webp",
             "license": "Perpetual",
             "specs": null
           },
@@ -182,8 +182,8 @@
             "id": 6,
             "productName": "iOS",
             "vendor": "Apple Inc.",
-            "url": "https://www.apple.com/ios/ios-18/",
-            "image": "ios-18.png",
+            "url": "https://www.apple.com/os/ios/",
+            "image": "ios-26-badge-icon.png",
             "license": "Perpetual",
             "specs": null
           }
@@ -215,12 +215,36 @@
             "image": "iterm-2.png",
             "license": "Donationware",
             "specs": null
+          },
+          {
+            "productName": "Junie",
+            "vendor": "JetBrains s.r.o.",
+            "url": "https://www.jetbrains.com/junie/",
+            "image": "junie-color.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
+            "productName": "Claude Code",
+            "vendor": "Anthropic PBC",
+            "url": "https://claude.ai/",
+            "image": "claude-ai-icon.png",
+            "license": "Free",
+            "specs": null
           }
         ]
       },
       {
         "category": "Audio/Video Applications",
         "items": [
+          {
+            "productName": "DaVinci Resolve",
+            "vendor": "Blackmagic Design Pty. Ltd.",
+            "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+            "image": "davinci-resolve.png",
+            "license": "Free",
+            "specs": null
+          },
           {
             "productName": "Cleanshot X",
             "vendor": "MTW",
@@ -310,14 +334,6 @@
             "image": "safari-browser-logo.svg",
             "license": "Free",
             "specs": null
-          },
-          {
-            "productName": "Arc Browser",
-            "vendor": "The Browser Company",
-            "url": "https://arc.net/gift/d0d83acb",
-            "image": "arc-browser-logo.svg",
-            "license": "Free",
-            "specs": null
           }
         ]
       },
@@ -383,6 +399,14 @@
             "specs": null
           },
           {
+            "productName": "Vite",
+            "vendor": null,
+            "url": "https://vite.dev/",
+            "image": "vite.svg",
+            "license": "Free",
+            "specs": null
+          },
+          {
             "productName": "Git",
             "vendor": null,
             "url": "https://git-scm.com/",
@@ -391,10 +415,10 @@
             "specs": null
           },
           {
-            "productName": "Gulp",
+            "productName": "Homebrew",
             "vendor": null,
-            "url": "https://gulpjs.com/",
-            "image": "gulp-icon.svg",
+            "url": "https://brew.sh/",
+            "image": "homebrew.svg",
             "license": "Free",
             "specs": null
           }
@@ -403,6 +427,22 @@
       {
         "category": "Writing",
         "items": [
+          {
+            "productName": "iA Writer",
+            "vendor": "Information Architects Inc.",
+            "url": "https://ia.net/writer",
+            "image": "ia-writer-2026-02-11.webp",
+            "license": "Perpetual",
+            "specs": null
+          },
+          {
+            "productName": "Bear",
+            "vendor": "Shiny Frog",
+            "url": "https://bear.app/",
+            "image": "bear-2021-01-20.webp",
+            "license": "Subscription",
+            "specs": null
+          },
           {
             "productName": "Typora",
             "vendor": "Typora",
@@ -417,14 +457,6 @@
             "url": "https://www.apple.com/in/pages/",
             "image": "apple-pages.png",
             "license": "Perpetual",
-            "specs": null
-          },
-          {
-            "productName": "Google Docs",
-            "vendor": "Google LLC",
-            "url": "https://workspace.google.com/products/docs/",
-            "image": "google-docs-2020.svg",
-            "license": "Free",
             "specs": null
           }
         ]
@@ -465,6 +497,14 @@
             "url": "https://www.grammarly.com/",
             "image": "grammarly-icon.svg",
             "license": "Annual",
+            "specs": null
+          },
+          {
+            "productName": "Google Docs",
+            "vendor": "Google LLC",
+            "url": "https://workspace.google.com/products/docs/",
+            "image": "google-docs-2020.svg",
+            "license": "Free",
             "specs": null
           }
         ]
