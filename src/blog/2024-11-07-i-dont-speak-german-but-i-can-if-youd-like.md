@@ -19,20 +19,20 @@ footerTypes: ["written-by-human"]
 permalink: /blog/i-dont-speak-german-but-i-can-if-youd-like/
 ---
 
-Hey! Recently I’ve been looking through Google Search Console to try and resolve
-some non-indexed page issues. Anyway, I kept seeing a 404 report for
+Hey!  Recently I’ve been looking through Google Search Console to try and
+resolve some non-indexed page issues.  Anyway, I kept seeing a 404 report for
 www.christianhain.com/k1.
 
-Well, I finally figured out how to tell where Google was indexing the link from,
-and it’s coming from an Austrian Wikipedia article for
+Well, I finally figured out how to tell where Google was indexing the link
+from, and it’s coming from an Austrian Wikipedia article for
 <a rel="nofollow" href="https://www.uncut.at/movies/film.php?movie_id=3597" lang="de-AT" title="Karl in der Au" target="_blank">
   *Karl in der Au* (2007)</a>.
 I had almost forgotten that I didn’t always own this domain and was able to
 register it in 2012.
 
 Now, listen, I’m not one to deny a free backlink (even `nofollow` links), so…
-for those of you that came from the Wikipedia article: Hello. I’m not the
-Christian Hain you’re looking for. But, here is
+for those of you that came from the Wikipedia article: Hello.  I’m not the
+Christian Hain you’re looking for.  But, here is
 <a rel="nofollow" href="https://web.archive.org/web/20110203012507/http://christianhain.com/" title="ChristianHain.com (circa 2011)" target="_blank">
   the archived version of their site</a>.
 Unfortunately, there’s no index for `/k1` and I’m pretty sure it was an Adobe
@@ -42,7 +42,7 @@ Also, here’s a trailer from the <i lang="de-AT">Diagonale Festival des
 österreichischen Films</i>:
 
 <div style="padding:57.5% 0 0 0;position:relative;">
-<iframe 
+<iframe
   src="https://player.vimeo.com/video/18679922?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   frameborder="0"
   allow="autoplay; fullscreen; picture-in-picture; clipboard-write"

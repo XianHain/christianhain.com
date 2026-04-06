@@ -28,29 +28,29 @@ permalink: /blog/thnks-fr-th-memes/
 
 Yes, I too, have decided to <a rel="nofollow" href="https://www.reddit.com/r/technology/comments/1hxp6wk/google_searches_for_deleting_facebook_instagram/" title="Reddit: Google searches for deleting Facebook, Instagram explode after Meta ends fact-checking" target="_blank">
   deactivate my Meta accounts</a>.
-And it's kinda a big deal. I'm proud to be a Millennial, a social-media pioneer,
-and an early Twitter user (back when there was a 140-character limit). Not once,
-not ever, have I willingly removed a social media account. In fact, I kinda
-collect them like Pokémon.
+And it's kinda a big deal.  I'm proud to be a Millennial, a social-media
+pioneer, and an early Twitter user (back when there was a 140-character limit).
+Not once, not ever, have I willingly removed a social media account.  In fact,
+I kinda collect them like Pokémon.
 
-But I'm older now. Wiser. I know what a "Daily Active User" means to an
-investor. I no longer feel comfortable knowing that my scrolls and clicks
+But I'm older now.  Wiser.  I know what a "Daily Active User" means to an
+investor.  I no longer feel comfortable knowing that my scrolls and clicks
 support Zuckerberg, who recently announced that Meta would no longer employ
-fact-checkers. Whether you believe platforms like Facebook or Instagram should
-be moderated doesn't concern me, but the use of unpaid labor does. It's not my
-job to read and understand Meta's content policy. I don't have time to argue for
-morals in the comments so Zuck' can turn to investors and tout increased
-engagement. All so that he can then take that money and use it against the very
-people I'd be arguing for.
+fact-checkers.  Whether you believe platforms like Facebook or Instagram should
+be moderated doesn't concern me, but the use of unpaid labor does.  It's not my
+job to read and understand Meta's content policy.  I don't have time to argue
+for morals in the comments so Zuck' can turn to investors and tout increased
+engagement.  All so that he can then take that money and use it against the
+very people I'd be arguing for.
 
 To those of you who use Instagram or Facebook for your business, I support your
-hustle. For me, however, it no longer makes sense. All I was doing was sharing
-memes with the same three people, posting a couple of pictures to prove I was
-alive, and doom-scrolling for hours.
+hustle.  For me, however, it no longer makes sense.  All I was doing was
+sharing memes with the same three people, posting a couple of pictures to prove
+I was alive, and doom-scrolling for hours.
 
 The good news is, I can do most of that on BlueSky (*tastes like you, but
-sweeter* 🤣). So, if you care to share a funny clip, that's where you'll find
-me. My username is
+sweeter* 🤣).  So, if you care to share a funny clip, that's where you'll find
+me.  My username is
 <a rel="nofollow" href="https://bsky.app/profile/xianhain.com" title="@XianHain.com on BlueSky" target="_blank">
   @XianHain.com</a>.
 
