@@ -110,6 +110,12 @@ $uses-subgrid-bredakpoint: 34rem;
   min-block-size: 4rem;
   min-inline-size: 4rem;
   object-fit: contain;
+
+  @media (prefers-color-scheme: dark) {
+    .uses-item[data-invert-in-dark-mode="true"] & {
+      filter: invert(1);
+    }
+  }
 }
 
 .uses-item__name {

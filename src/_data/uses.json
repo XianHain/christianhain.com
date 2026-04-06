@@ -353,6 +353,7 @@
             "vendor": "Zach Leatherman",
             "url": "https://www.11ty.dev/",
             "image": "11ty-logo.svg",
+            "invertInDarkMode": true,
             "license": "Free",
             "specs": null
           },
@@ -361,6 +362,7 @@
             "vendor": "Vercel, Inc.",
             "url": "https://nextjs.org/",
             "image": "next-js-icon.svg",
+            "invertInDarkMode": true,
             "license": "Free",
             "specs": null
           },
@@ -440,6 +442,7 @@
             "vendor": "Microsoft",
             "url": "https://github.com",
             "image": "github-logo.svg",
+            "invertInDarkMode": true,
             "license": "Annual",
             "specs": null
           },

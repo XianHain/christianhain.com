@@ -43,6 +43,7 @@
                   data-vendor="{{ item.vendor }}"
                   data-license="{{ item.license }}"
                   data-productname="{{ item.productName }}"
+                  {% if item.invertInDarkMode %}data-invert-in-dark-mode="true"{% endif %}
                 >
                   <div class="uses-item__image-wrapper">
                     <img
