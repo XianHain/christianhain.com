@@ -18,7 +18,9 @@
 
     <div class="now-content">
       <div class="page__content">
-        <p class="now-content__timestamp">Last updated: <time datetime="{{ lastmod }}">{{ lastmod }}</time></p>
+        <p class="now-content__timestamp">
+          Last updated: <time datetime="{{ lastmod }}">{{ lastmod | fullDateString }}</time>
+        </p>
         {{ content | safe }}
       </div>
     </div>

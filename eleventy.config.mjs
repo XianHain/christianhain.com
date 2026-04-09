@@ -219,6 +219,74 @@ export default async function(eleventyConfig) {
   );
 
   eleventyConfig.addFilter('escapeNewlines', (string) => string.replace(/\n/g, '\\n').trim());
+  
+  eleventyConfig.addFilter('fullDateString', (date) => {
+    const d = new Date(date);
+    const parts = {
+      weekday: d.toLocaleString(
+        'en-US',
+        { weekday: 'short', timeZone: 'America/New_York' }
+      ),
+      month: d.toLocaleString(
+        'en-US',
+        { month: 'short', timeZone: 'America/New_York' }
+      ),
+      day: d.toLocaleString(
+        'en-US',
+        { day: '2-digit', timeZone: 'America/New_York' }
+      ),
+      year: d.toLocaleString(
+        'en-US',
+        { year: 'numeric', timeZone: 'America/New_York' }
+      ),
+      hour: d.toLocaleString(
+        'en-US',
+        { hour: '2-digit', hour12: false, timeZone: 'America/New_York' }
+      )
+        .replace(/^24/, '00'),
+      minute: d.toLocaleString(
+        'en-US',
+        { minute: '2-digit', timeZone: 'America/New_York' }
+      ),
+      second: d.toLocaleString(
+        'en-US',
+        { second: '2-digit', timeZone: 'America/New_York' }
+      ),
+    };
+
+    const isDST = (date) => {
+      const january = new Date(new Date(date).getFullYear(), 0, 1)
+        .getTimezoneOffset();
+      const july = new Date(new Date(date).getFullYear(), 6, 1)
+        .getTimezoneOffset();
+      return Math.max(january, july) !== new Date(date).getTimezoneOffset();
+    };
+    
+    const timezoneName = isDST(d) ? 'Eastern Daylight Time' : 'Eastern Standard Time';
+    const timezoneOffset = isDST(d) ? 'GMT-0400' : 'GMT-0500';
+
+    const dateString = `${parts.weekday} ${parts.month} ${parts.day} ${parts.year} ${parts.hour}:${parts.minute}:${parts.second} ${timezoneOffset} (${timezoneName})`;
+
+    // Wrap at 80 chars
+    if (dateString.length > 80) {
+      const words = dateString.split(' ');
+      let lines = [];
+      let currentLine = '';
+
+      for (const word of words) {
+        if ((currentLine + word).length > 80) {
+          lines.push(currentLine.trim());
+          currentLine = word + ' ';
+        } else {
+          currentLine += word + ' ';
+        }
+      }
+      lines.push(currentLine.trim());
+      return lines.join('\n');
+    }
+
+    return dateString;
+  });
 
   const formatMarkdown = async (content) => {
     let result = null;
