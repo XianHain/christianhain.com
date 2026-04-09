@@ -6,42 +6,44 @@ headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]
 footerTypes: ["written-by-human", "vecteezy-crt-tv-screen"]
 
-lastmod: 2026-01-10T19:00:00-05:00
+lastmod: 2026-04-08T22:22:00-05:00
 
 canonical: "https://www.christianhain.com/now/"
 ---
 
-## What's going on?
+## Joy, Hope, and Fear
 
-As I approach midlife (which I assume is early 40s, but who knows), I'm starting
-to pay a lot more attention to how I want the second half of my life to be. What
-struggles do I want to let go, what relationships do I want to hold onto, and
-what's the meaning of life?
+Over the weekend I found myself back in the kitchen, moreso than usual. Instead
+of cooking _for_ an occasian, cooking _was_ the occasion. I've made a
+bastardized <i lang="es">paella</i> (all technique, no authentic ingredients),
+my version of the Crunchwrap Supreme, spaghetti, oxtails, potatoes, and even
+more rice... all in the span of three days.
 
-A part of that is healing childhood wounds. The thing about being a Capricorn is
-everybody loves the hard-working financially secure aspects, but underneath
-there's a craving for stability. I grew up in a single-parent household and my
-mother and sister are both air signs. We would move about every two years for
-one reason or another, but as an earth sign, I've realized that affected me a 
-lot more than it did the rest of the household. I wanted stability and
-predictability but that was constantly ripped away from me as I was thrown into
-unknown environments with no roots. Relationships were temporary... friendships
-superficial. The only constant was work and a few cherished possessions.
+Really, what happened is I got into a fender bender and I stocked up on
+groceries in the event I was without a car for a couple of weeks. I've been
+extremely frugal lately because our economy has been under a lot of pressure and
+layoffs are on the rise. My New Year's resolution was already to cut down on
+takeout services, but I found myself in such a panic that I was back to eating
+$1 ramen packets because I needed to prepare myself for an apocolypse. All the
+while still trying to put my best foot forward at work and defend the integrity
+of my craft.
 
-While lonely, that gave me a leg up in my career, but now I'm at a point in life
-where I'm reflecting on things and I feel as though not much has changed. There
-are few familiar faces, no "Day Ones," and now AI is knocking on the door
-threatening to take away the only constant. I know that's a "Doomer"
-perspective, but it's hard to keep the intrusive thoughts at bay.
+Needless to say, it felt good to step away from that and enjoy the process of
+creating something without the nagging thought of, "AI's approaching, this could
+all be over soon." 
 
-So now I'm trying to figure out what the second half of life is going to look
-like. Change is inevitable and at least I can say I've put in 10,000 hours to
-understand and master the fundamentals of my craft. I'm good there, but I need 
-to focus more energy on the parts of life that always felt empty instead of
-worrying about losing the only part that felt whole.
+I use a lot of food analogies in my day-to-day work. Instead of comparing web
+development to building a house, I like to talk about soups and sandwhiches,
+because just like a burger, we can choose to buy a disappointing Big Mac and be
+back on the road in five minutes, or we can fire up the grill and create a
+burger worth eating… one with more protein and fewer calories… and better
+flavor, if you ask me.
 
-That... and ease up on the takeout. I think Doordash is $100/year and my goal is
-to have that be a waste of money. To order less than $100 worth of delivery in
-2026 so that I can comfortably cancel in 2027.
+The little mental reset changed how I approached my work this week. Instead of
+feeling defensive, I feel reassured. I think people are starting to see through
+the hype promises of AI-only development and coming back to center and favor
+AI-assisted development.
 
-Wish me luck!
+Still, there's a little bit of sadness in my heart. Even after giving away half
+the food I made, the fridge is still overflowing with leftovers. There's an
+emptiness hiding in the abundacne… there's no one to share with.
