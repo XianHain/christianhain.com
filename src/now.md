@@ -24,7 +24,7 @@ groceries in the event I was without a car for a couple of weeks. I've been
 extremely frugal lately because our economy has been under a lot of pressure and
 layoffs are on the rise. My New Year's resolution was already to cut down on
 takeout services, but I found myself in such a panic that I was back to eating
-$1 ramen packets because I needed to prepare myself for an apocolypse. All the
+$1 ramen packets because I needed to prepare myself for an apocalypse. All the
 while still trying to put my best foot forward at work and defend the integrity
 of my craft.
 
