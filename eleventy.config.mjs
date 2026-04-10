@@ -295,7 +295,7 @@ export default async function(eleventyConfig) {
         breaks: true,
         gfm: true,
       }))
-        .replace(/ {2}/g, '&nbsp; ')
+        .replace(/([.!?](?:(?:&quot;|['"]|\\?["']))?|&hellip;) {2}/g, '$1&nbsp; ')
 
         // Article Theme
         .replace('<meta data-xian="article-start">', '</div><div data-theme="article"><div class="blog__copy">')
