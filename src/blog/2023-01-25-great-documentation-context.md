@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: "https://assets.christianhain.com/images/pages/blog/2023-01-25-great-documentation-context/og.png"
 url: "https://www.christianhain.com/blog/great-documentation-context"
-brief: "Knock-knock, who's there? Documentation about documentation! Just kidding, it's more like a series of essays, so even better. In the first part of this series, I want to discuss the most important thing anyone can do to make their documentation the best: give me context"
+brief: "Knock-knock, who's there?  Documentation about documentation!  Just kidding, it's more like a series of essays, so even better.  In the first part of this series, I want to discuss the most important thing anyone can do to make their documentation the best: give me context"
 tags: ["56744722958ef13879b950f8"]
 canonical: "https://www.christianhain.com/blog/great-documentation-context/"
 layout: layouts/blog-entry.liquid

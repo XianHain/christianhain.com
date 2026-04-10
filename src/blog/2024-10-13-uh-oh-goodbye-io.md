@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/uh-oh-goodbye-io"
-brief: "If you haven’t heard by now, the .io ccTLD is at risk of removal due to a British Treaty that was signed on October 3, 2024. In short, the Chagos Islands (ccTLD: .io) in the Indian Ocean have been given to Mauritius (ccTLD: .mu)…"
+brief: "If you haven’t heard by now, the .io ccTLD is at risk of removal due to a British Treaty that was signed on October 3, 2024.  In short, the Chagos Islands (ccTLD: .io) in the Indian Ocean have been given to Mauritius (ccTLD: .mu)…"
 tags: ["56899b310716b983ccc797b5", "5714fe4e151fa7c4488cc1ae", "596dfa81107fab2733afc2f9", "652d8d7a32ede19a5b737659", "63c51a9d09eddfeb66d7356f", "6440c579a75bf124a05f1c4f", "5674471d958ef13879b94798", "62b7da7992447c9aed5b8fa6", "63044e1509d19537666eb6e1"]
 canonical: "https://www.christianhain.com/blog/uh-oh-goodbye-io/"
 layout: layouts/blog-entry.liquid

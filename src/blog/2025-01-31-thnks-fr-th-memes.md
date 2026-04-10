@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/thnks-fr-th-memes"
-brief: "Even though they weren't so great. Yes, I too, have decided to deactivate my Meta accounts. And it's kinda a big deal. I'm proud to be a Millennial, a social-media pioneer, and an early Twitter user (back when there was a 140-character limit)."
+brief: "Even though they weren't so great.  Yes, I too, have decided to deactivate my Meta accounts.  And it's kinda a big deal.  I'm proud to be a Millennial, a social-media pioneer, and an early Twitter user (back when there was a 140-character limit)."
 tags: ["56744721958ef13879b94da0", "58b6c12eb2566b537ac16cb7", "56744721958ef13879b94aec", "5732da8af311f7ed13dddcb3", "62c693be60d6757393f84427", "64354e63311bf43ae8e5f7c1", "5f91d8666aa1ed54804baf67"]
 canonical: "https://www.christianhain.com/blog/thnks-fr-th-memes/"
 layout: layouts/blog-entry.liquid

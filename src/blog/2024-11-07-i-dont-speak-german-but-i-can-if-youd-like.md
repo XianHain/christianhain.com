@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/i-dont-speak-german-but-i-can-if-youd-like"
-brief: "Hey! Recently I’ve been looking through Google Search Console to try and resolve some non-indexed page issues. Anyway, I kept seeing a 404 report for www.christianhain.com/k1. Well, I finally figured out how to tell where Google was indexing the link…"
+brief: "Hey!  Recently I’ve been looking through Google Search Console to try and resolve some non-indexed page issues.  Anyway, I kept seeing a 404 report for www.christianhain.com/k1.  Well, I finally figured out how to tell where Google was indexing the link…"
 tags: ["5e79af71ecd57502528cb065", "56744723958ef13879b95470", "56744721958ef13879b949aa", "657d8eb6c26ff09a815d80c2"]
 canonical: "https://www.christianhain.com/blog/i-dont-speak-german-but-i-can-if-youd-like/"
 layout: layouts/blog-entry.liquid

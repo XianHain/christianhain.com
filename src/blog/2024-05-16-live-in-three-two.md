@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/live-in-three-two"
-brief: "One day, in the late ‘90s, I came home from school to find a Gateway Computer in the living room; the Windows 98 screensaver bounced around, waiting for me. It wasn’t something I asked for, in fact, I’m not even sure I understood what computers were."
+brief: "One day, in the late ‘90s, I came home from school to find a Gateway Computer in the living room; the Windows 98 screensaver bounced around, waiting for me.  It wasn’t something I asked for, in fact, I’m not even sure I understood what computers were."
 tags: ["591d0f67b5bbb96606f07af4", "56744721958ef13879b949aa"]
 canonical: "https://www.christianhain.com/blog/live-in-three-two/"
 layout: layouts/blog-entry.liquid

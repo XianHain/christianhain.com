@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: "https://assets.christianhain.com/images/pages/blog/2025-10-21-if-i-did-it-then-i-did-it-right/og.png"
 url: "https://www.christianhain.com/blog/if-i-did-it-then-i-did-it-right"
-brief: "Mediocre? That just won't suffice. I think about these lyrics from NF's \"SUFFICE\" almost daily, especially when developing software. For the past couple of years I've been professionally balancing one of my favorite Amazon Leadership Principles…"
+brief: "\"Mediocre?  That just won't suffice.\"  I think about these lyrics from NF's \"SUFFICE\" almost daily, especially when developing software.  For the past couple of years I've been professionally balancing one of my favorite Amazon Leadership Principles…"
 tags: ["63dc9bff980f5b820d64aa00", "56744722958ef13879b94f1b", "658b1bb47f2e4b55d0289532", "56744721958ef13879b94906", "629a4c0ca7681524f75be0f9"]
 canonical: "https://www.christianhain.com/blog/if-i-did-it-then-i-did-it-right/"
 layout: layouts/blog-entry.liquid
@@ -58,7 +58,8 @@ one because:
 </ol>
 
 Dramatics aside, this is pretty common in software and is lovingly known as
-"<a rel="nofollow" href="https://en.wikipedia.org/wiki/Technical_debt" title="Technical Debt according to Wikipedia" target="_blank">tech debt</a>,"
+"<a rel="nofollow" href="https://en.wikipedia.org/wiki/Technical_debt" title="Technical Debt according to Wikipedia" target="_blank">
+  tech debt</a>,"
 a term to describe the idea that the short-term gains of today will eventually
 have to be paid back with interest.  I've seen teams who are diligent about
 managing their tech debts and others that let it go with the promise of, "we'll

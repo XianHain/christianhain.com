@@ -9,7 +9,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: "https://assets.christianhain.com/images/pages/blog/2024-02-09-a-week-with-the-apple-vision-pro/og.png"
 url: "https://www.christianhain.com/blog/a-week-with-the-apple-vision-pro"
-brief: "Wow 🤯, what a crazy week in the Apple universe. By now, I'm sure you've seen the videos of people driving while wearing Apple Vision Pro's, or perhaps you've seen memes of people gesticulating wildly in public. All I can say is, \"Yikes!\""
+brief: "Wow 🤯, what a crazy week in the Apple universe.  By now, I'm sure you've seen the videos of people driving while wearing Apple Vision Pro's, or perhaps you've seen memes of people gesticulating wildly in public.  All I can say is, \"Yikes!\""
 tags: ["6482e0778a9f5d90985e4c5e", "56744721958ef13879b948ba", "56744722958ef13879b94f1b", "56744723958ef13879b952af", "641c21b1fe70c2c6425afaa3", "574dc610be8cff2ed6571a40"]
 canonical: "https://www.christianhain.com/blog/a-week-with-the-apple-vision-pro/"
 layout: layouts/blog-entry.liquid
