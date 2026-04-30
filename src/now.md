@@ -4,7 +4,7 @@ pageName: now
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"
 menuTypes: ["navigation"]
-footerTypes: ["written-by-human", "vecteezy-crt-tv-screen"]
+footerTypes: ["written-by-human"]
 
 lastmod: 2026-04-08T22:22:00-05:00
 
