@@ -33,6 +33,7 @@
       </time>
     </p>
 
+    {% assign item_count = 0 %}
     {% for category in uses.categories %}
       <div class="uses-grid">
         <h2 class="uses-grid__heading">{{ category.category }}</h2>
@@ -41,6 +42,7 @@
             <h3 class="uses-grid__subgrid-heading">{{ subcategory.category }}</h3>
             <div class="uses-grid__subgrid-items">
               {% for item in subcategory.items %}
+                {% assign item_count = item_count | plus: 1 %}
                 <div
                   rel="js-uses-item"
                   role="button"
@@ -57,6 +59,13 @@
                       alt="{{ item.productName }} product image or icon"
                       src="https://assets.christianhain.com/images/pages/uses/{{ item.image }}"
                       class="uses-item__image"
+                      width="216"
+                      height="216"
+                      {% if item_count <= 2 %}
+                        fetchpriority="high"
+                      {% else %}
+                        loading="lazy"
+                      {% endif %}
                     >
                   </div>
                   <p class="uses-item__name">{{ item.productName }}</p>

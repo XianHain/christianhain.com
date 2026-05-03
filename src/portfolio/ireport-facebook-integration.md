@@ -43,4 +43,10 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/ireport-facebook-integration"
 ---
 
-![](https://assets.christianhain.com/images/pages/portfolio/ireport-facebook-integration/facebooktimeline20130116.webp)
+<figure>
+  <img
+    src="https://assets.christianhain.com/images/pages/portfolio/ireport-facebook-integration/facebooktimeline20130116.webp"
+    alt="Stylized Facebook Timeline"
+    fetchpriority="high"
+  >
+</figure>

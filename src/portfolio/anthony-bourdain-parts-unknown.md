@@ -39,7 +39,14 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/anthony-bourdain-parts-unknown"
 ---
 
-![Anthony Bourdain, Parts Unknown site loaded on a phone, tablet, and desktop computer screen](https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdaintagged20130411.webp)
+<figure>
+  <img
+    alt="Anthony Bourdain, Parts Unknown site loaded on a phone, tablet, and desktop computer screen"
+    src="https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdaintagged20130411.webp"
+    fetchpriority="high"
+  >
+</figure>
+
 If you're a fan of CNN, you may have noticed advertisements for a new show that
 isn't news-related.  If you're an Anthony Bourdain fan, you may have noticed
 that he's coming out with a new television show on a news network.  Either way,

@@ -55,12 +55,19 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/smartvent-website"
 ---
 
-![Stack of SmartVent catalogs](https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svbooks20121114.webp)
+<figure>
+  <img
+    src="https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svbooks20121114.webp"
+    alt="Stack of SmartVent catalogs"
+    fetchpriority="high"
+  >
+</figure>
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Front cover o the SmartVent catalog" 
-    src="https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svcover20121114.webp"
-  >
+  <img
+  alt="Front cover o the SmartVent catalog"
+  src="https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svcover20121114.webp"
+  loading="lazy"
+>
   <figcaption>Front cover o the SmartVent catalog</figcaption>
 </figure>

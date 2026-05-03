@@ -11,7 +11,18 @@
         {%- for portfolio in sortedPortfolio -%}
           <li class="portfolio-list__item">
             <a href="{{ portfolio.url }}" class="portfolio-list__link" title="{{ portfolio.data.headTitle }}">
-              <img class="portfolio-list__image" src="{{ portfolio.data.thumbnail }}" alt="{{ portfolio.data.headTitle }} project image" />
+              <img
+                alt="{{ portfolio.data.headTitle }} project image"
+                src="{{ portfolio.data.thumbnail }}"
+                class="portfolio-list__image"
+                width="636"
+                height="400"
+                {% if forloop.index <= 3 %}
+                  fetchpriority="high"
+                {% else %}
+                  loading="lazy"
+                {% endif %}
+              />
               <div class="portfolio-list__content">
                 <h2 class="portfolio-list__title">{{ portfolio.data.headTitle }}</h2>
                 <p><time datetime="{{ portfolio.data.publishDate | date: '%Y-%m-%d' }}">{{ portfolio.data.publishDate | date: '%B %d, %Y' }}</time></p>

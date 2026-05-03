@@ -46,7 +46,14 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/flood-risk-evaluator-website"
 ---
 
-![Environmental shot of the Flood Risk Evaluator on a laptop and mobile phone](https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fre20150913.webp)
+<figure>
+  <img
+    alt="Environmental shot of the Flood Risk Evaluator on a laptop and mobile phone"
+    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fre20150913.webp"
+    fetchpriority="high"
+  >
+</figure>
+
 ## Background
 The Flood Risk Evaluator (FRE) is service powered by Smart Vent Products, Inc.
 Aimed at lowering the cost of flood insurance for homeowners, FRE provides
@@ -59,10 +66,11 @@ service is legitimate and that the savings are real.  FRE contacted me to help
 redesign the site, specifically asking for a modern and professional look.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Pre-existing FRE Website" 
-    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
-  >
+  <img
+  alt="Pre-existing FRE Website"
+  src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
+  loading="lazy"
+>
   <figcaption>Pre-existing FRE Website</figcaption>
 </figure>
 
@@ -85,11 +93,11 @@ content on larger devices.
 
 <figure data-theme="video-player">
   <iframe
-    width="100%"
     src="https://www.youtube.com/embed/rzBR2brBkMQ?si=0dPs8dfqn7vd52-8" 
-    title="YouTube video player" 
-    frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    title="YouTube video player" 
+    width="100%"
+    frameborder="0" 
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
@@ -106,10 +114,11 @@ Vent Products, Inc., which uses a royal blue for their construction product.
 Reds and oranges were also chosen to add warmth to the page.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Color Palette with various tints" 
-    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.webp"
-  >
+  <img
+  alt="Color Palette with various tints"
+  src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.webp"
+  loading="lazy"
+>
   <figcaption>Color Palette with various tints</figcaption>
 </figure>
 
@@ -122,10 +131,11 @@ communicated with generic patterns that captured the most distinct details of
 their real-world counterparts.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Icons of FEMA documents" 
-    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fredocuments20150913.webp"
-  >
+  <img
+  alt="Icons of FEMA documents"
+  src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fredocuments20150913.webp"
+  loading="lazy"
+>
   <figcaption>
     The existing icons (left) were too literal with distracting
     embellishments.  Exaggerating the important details in the new icons
@@ -143,10 +153,11 @@ family, removed tension points.  I also skewed the letter for a more natural
 look, where the handle is at the bottom of the glass.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Redesigned Logo Icons" 
-    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/freicons20150913.webp"
-  >
+  <img
+  alt="Redesigned Logo Icons"
+  src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/freicons20150913.webp"
+  loading="lazy"
+>
   <figcaption>
     The original symbol (left) had a good concept, and was already in
     circulation for other FRE branding.  A few minor detail changes, and the
@@ -171,10 +182,11 @@ The video was colorized to help re-enforce the brand and create extra contrast
 between the picture and website content.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Color-graded Video Image" 
-    src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"
-  >
+  <img
+  alt="Color-graded Video Image"
+  src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"
+  loading="lazy"
+>
   <figcaption>
     Used video-editing software to recolor the footage to fit the brand colors.
   </figcaption>

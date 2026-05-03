@@ -54,6 +54,11 @@
   display: block;
 }
 
+.portfolio-list__image {
+  object-fit: cover;
+  width: 100%;
+}
+
 .portfolio-list__title {
   margin: .5rem 0 0;
 }

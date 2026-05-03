@@ -195,6 +195,22 @@ export default async function(eleventyConfig) {
     return result;
   });
 
+  eleventyConfig.addFilter("cssmin", function(code) {
+    const targets = browserslistToTargets(browserslist('> 0.2% and not dead'));
+    const result = sass.compileString(code, {
+      loadPaths: [
+        'src/_scss',
+        'src',
+      ]
+    });
+
+    return transform({
+      code: Buffer.from(result.css),
+      minify: true,
+      targets,
+    }).code.toString();
+  });
+
   eleventyConfig.addFilter('atom_dateToRfc3339', (date) => pluginRss.dateToRfc3339(new Date(date)));
 
   eleventyConfig.addFilter('blogListTimestamp', (date) => {

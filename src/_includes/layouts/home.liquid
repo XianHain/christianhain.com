@@ -25,7 +25,14 @@
         </a>
       </div>
       <div class="intro__video-wrapper">
-        <video class="intro__video" autoplay="true" playsinline="true" muted="true" loop="true">
+        <video
+          loop="true"
+          class="intro__video"
+          muted="true"
+          autoplay="true"
+          playsinline="true"
+          fetchpriority="high"
+        >
           <source src="https://assets.christianhain.com/videos/intro-background-video-2025-01-14.mp4">
         </video>
       </div>
@@ -83,6 +90,7 @@
           src="https://assets.christianhain.com/images/xianhain-headshot.png"
           width="160"
           height="160"
+          loading="lazy"
         >
         <img
           alt="Christian's Adobe Creative Type Illustration: The Innovator"
@@ -91,6 +99,7 @@
           class="headshot__modified-img"
           width="160"
           height="160"
+          loading="lazy"
           aria-hidden="true"
         >
       </div>

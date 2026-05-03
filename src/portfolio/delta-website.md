@@ -70,7 +70,13 @@ metadata: [
 canonical: "https://www.christianhain.com/portfolio/delta-website"
 ---
 
-![Delta Website on a computer screen](https://assets.christianhain.com/images/pages/portfolio/delta-website/delta20121114.webp)
+<figure>
+  <img
+    alt="Delta Website on a computer screen"
+    src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta20121114.webp"
+    fetchpriority="high"
+  >
+</figure>
 
 ## Wheels up in 5 minutes...
 
@@ -88,10 +94,11 @@ deals.
 ### Buy, Gift, Transfer, and Donate Skymiles.
 
 <figure data-theme="polaroid">
-  <img 
-    alt="Screenshot of Delta.com Donate Miles" 
-    src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.webp"
-  >
+  <img
+  alt="Screenshot of Delta.com Donate Miles"
+  src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.webp"
+  loading="lazy"
+>
   <figcaption>Delta.com Donate Miles</figcaption>
 </figure>
 

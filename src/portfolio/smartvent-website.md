@@ -60,12 +60,34 @@ canonical: "https://www.christianhain.com/portfolio/smartvent-website"
 ---
 
 ## Homepage
-![SmartVent Homepage mockup with Local Representative details](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepage20121211.webp)
-![SmartVent Homepage mockup with upcoming events](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepageb20121211.webp)
+<figure>
+  <img
+    src="https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepage20121211.webp"
+    alt="SmartVent Homepage mockup with Local Representative details"
+    fetchpriority="high"
+  >
+</figure>
+<img
+  src="https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_homepageb20121211.webp"
+  alt="SmartVent Homepage mockup with upcoming events"
+  loading="lazy"
+>
 
 ## Locator
-![SmartVent Locator Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_locator20121211.webp)
+<img
+  src="https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_locator20121211.webp"
+  alt="SmartVent Locator Page mockup"
+  loading="lazy"
+>
 
 ## Testimonial
-![SmartVent Testimonial Landing Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonial20121211.webp)
-![SmartVent Testimonial Detail Page mockup](https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonialdetail20121211.webp)
+<img
+  src="https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonial20121211.webp"
+  alt="SmartVent Testimonial Landing Page mockup"
+  loading="lazy"
+>
+<img
+  src="https://assets.christianhain.com/images/pages/portfolio/smartvent-website/smartvent_testimonialdetail20121211.webp"
+  alt="SmartVent Testimonial Detail Page mockup"
+  loading="lazy"
+>

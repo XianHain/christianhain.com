@@ -49,7 +49,34 @@
   <link rel="icon" type="{{ site.favicon.type }}" href="{{ site.favicon.url }}">
   <link rel="apple-touch-icon" href="{{ site.favicon.url }}">
 
-  <link rel="stylesheet" href="/styles.css?v={{ calVer.cssVersion }}">
+  <link rel="preconnect"         href="https://fonts.googleapis.com">
+  <link rel="preconnect"         href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+  <link rel="stylesheet"         href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap">
+  <link rel="stylesheet"         href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" media="print" onload="this.media='all'">
+
+  <link rel="preload" as="style" href="https://assets.christianhain.com/fonts/webfontkit-20250111-030900/stylesheet.css">
+  <link rel="stylesheet"         href="https://assets.christianhain.com/fonts/webfontkit-20250111-030900/stylesheet.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://assets.christianhain.com/fonts/monolisa-webfont/monolisa.css">
+  <link rel="stylesheet"         href="https://assets.christianhain.com/fonts/monolisa-webfont/monolisa.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://assets.christianhain.com/fonts/thyga/thyga-semirounded.css">
+  <link rel="stylesheet"         href="https://assets.christianhain.com/fonts/thyga/thyga-semirounded.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://assets.christianhain.com/fonts/thyga/thyga-italic.css">
+  <link rel="stylesheet"         href="https://assets.christianhain.com/fonts/thyga/thyga-italic.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://assets.christianhain.com/fonts/thyga/thyga-italic-semirounded.css">
+  <link rel="stylesheet"         href="https://assets.christianhain.com/fonts/thyga/thyga-italic-semirounded.css" media="print" onload="this.media='all'">
+
+  {% if pageName == "homepage" or pageName == "portfolio" %}
+    <style>
+      {% capture css %}
+        {% include "../../_scss/styles.scss" %}
+      {% endcapture %}
+      {{ css | cssmin }}
+    </style>
+  {% else %}
+    <link rel="stylesheet" href="/styles.css?v={{ calVer.cssVersion }}">
+  {% endif %}
 </head>
 <body class="page" data-theme="{{ theme }}" data-pagename="{{ pageName }}">
 
@@ -60,22 +87,30 @@
 
   {% include "../components/footer.liquid" %}
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTZFDM9WP"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-CSTZFDM9WP');
+    window.addEventListener('load', function() {
+      var gtmScript = document.createElement('script');
+      gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-CSTZFDM9WP';
+      document.body.appendChild(gtmScript);
+      
+      gtmScript.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CSTZFDM9WP');
+      };
+    });
   </script>
 
   <script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_koCpYJGsHmDxwdXbIyNoFBXkaJOMHpqRzaUs05PsGpw', {
-      api_host: 'https://www.christianhain.com/ph',
-      defaults: '2025-05-24',
-      person_profiles: 'always',
-    })
+    window.addEventListener('load', function() {
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_koCpYJGsHmDxwdXbIyNoFBXkaJOMHpqRzaUs05PsGpw', {
+        api_host: 'https://www.christianhain.com/ph',
+        defaults: '2025-05-24',
+        person_profiles: 'always',
+      });
+    });
   </script>
 
   <script type="module" async src="/scripts.js?v={{ calVer.jsVersion }}"></script>
