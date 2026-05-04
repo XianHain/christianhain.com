@@ -33,6 +33,7 @@
         {%- endfor -%}
       </ul>
     </article>
+
     <nav class="blog-nav">
       <ul class="blog-nav__link-list">
         {% if pagination.previousPageLink %}
@@ -51,5 +52,32 @@
         {% endif %}
       </ul>
     </nav>
+
+    <aside>
+      <a
+        rel="nofollow"
+        href="https://behance.net/CRHain"
+        class="portfolio-list__promo"
+        title="View more work on Behance"
+        target="_blank"
+      >
+        <div>
+          <img
+            alt="Behance"
+            src="https://assets.christianhain.com/images/behance-promo-2026.webp"
+            class="portfolio-list__promo-image"
+            width="636"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <h2 class="portfolio-list__promo-title">More on Behance</h2>
+          <p class="portfolio-list__promo-synopsis">
+            Check out some throwback designs posted on Behance.
+          </p>
+        </div>
+      </a>
+    </aside>
   </main>
 {% endblock %}

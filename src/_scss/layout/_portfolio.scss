@@ -66,3 +66,41 @@
 .portfolio-list__synopsis {
   margin: .5rem 0 0;
 }
+
+.portfolio-list__promo {
+  background: light-dark(var(--white-mid), var(--blue-dark));
+  border-radius: .5em;
+  border: .0625em solid light-dark(var(--white-shadow), var(--blue-dark));
+  display: flex;
+  gap: 2em;
+  margin: 5em 0 0;
+  padding: 1em;
+  text-decoration: none;
+
+  &:hover {
+    background: light-dark(var(--white-shadow), var(--blue-mid));
+  }
+
+  > :first-child {
+    width: calc(100% / 3);
+  }
+
+  > :last-child {
+    flex-grow: 1;
+    align-self: center;
+  }
+}
+
+.portfolio-list__promo-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.portfolio-list__promo-title {
+  margin: 0;
+}
+
+.portfolio-list__promo-synopsis {
+  font-family: var(--amsi-normal), sans-serif;
+  font-size: 1em;
+}
