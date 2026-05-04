@@ -24,9 +24,9 @@ xian.clock = xian.clock || (function clock() {
   // updateClock(); // Initialize immediately
 
 
-  const secondHand = document.querySelector('[rel="js-second-hand"]');
-  const minuteHand = document.querySelector('[rel="js-minute-hand"]');
-  const hourHand = document.querySelector('[rel="js-hour-hand"]');
+  const secondHand = document.querySelector('[data-js="second-hand"]');
+  const minuteHand = document.querySelector('[data-js="minute-hand"]');
+  const hourHand = document.querySelector('[data-js="hour-hand"]');
 
   function calculateDropShadowOffset(degrees, distance) {
     const radians = degrees * (Math.PI / 180);

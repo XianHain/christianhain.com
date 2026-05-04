@@ -13,10 +13,13 @@
             {% assign active = true %}
           {% endif %}
 
-          <li rel="js-menu-item" data-active="{{ active }}">
+          <li data-js="menu-item" data-active="{{ active }}">
             {% if menuItem.attributes.href %}
               <a
-                rel="{{ menuItem.attributes.rel | join: " " }}"
+                {%- assign _rel = menuItem.attributes.rel -%}
+                {%- assign _js = menuItem.attributes.dataJs -%}
+                {% if _rel != "" %} rel="{{ _rel }}"{% endif %}
+                {% if _js != "" %} data-js="{{ _js }}"{% endif %}
                 href="{{ menuItem.attributes.href }}"
                 class="menu-item menu-item--link menu-item--{{ menuItem.id }}"
                 title="{{ menuItem.attributes.title }}"
@@ -38,7 +41,10 @@
       {% if menuItem.type == "utility" and menuTypes contains "utility" %}
         {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
         <button
-          rel="{{ menuItem.attributes.rel | join: " " }}"
+          {%- assign _rel = menuItem.attributes.rel -%}
+          {%- assign _js = menuItem.attributes.dataJs -%}
+          {% if _rel != "" %} rel="{{ _rel }}"{% endif %}
+          {% if _js != "" %} data-js="{{ _js }}"{% endif %}
           class="menu-item menu-item--button"
           title="{{ menuItem.attributes.title }}"
           onclick="{{ menuItem.attributes.onclick }}"

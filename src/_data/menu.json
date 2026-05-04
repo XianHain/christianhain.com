@@ -3,7 +3,7 @@
     "id": "home",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/",
       "title": "Home",
       "target": "_self",
@@ -14,7 +14,7 @@
     "id": "blog",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/blog",
       "title": "Blog",
       "target": "_self",
@@ -25,7 +25,7 @@
     "id": "cv",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/cv",
       "title": "Curriculum Vitae",
       "target": "_self",
@@ -36,7 +36,7 @@
     "id": "recipes",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/recipes",
       "title": "Recipes",
       "target": "_self",
@@ -47,7 +47,7 @@
     "id": "portfolio",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/portfolio",
       "title": "Portfolio",
       "target": "_self",
@@ -58,7 +58,7 @@
     "id": "uses",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/uses",
       "title": "What I Use",
       "target": "_self",
@@ -69,7 +69,7 @@
     "id": "now",
     "type": "navigation",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/now",
       "title": "What am I up to Now",
       "target": "_self",
@@ -80,7 +80,7 @@
     "id": "print",
     "type": "utility",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "title": "Print",
       "onclick": "window.print()",
       "target": "_self",
@@ -91,7 +91,7 @@
     "id": "footer-home",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/",
       "title": "Homepage",
       "target": "_self",
@@ -102,7 +102,7 @@
     "id": "footer-blog",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/blog",
       "title": "Blog",
       "target": "_self",
@@ -113,7 +113,7 @@
     "id": "footer-rss",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/blog/feed.xml",
       "title": "Blog RSS Feed",
       "target": "_blank",
@@ -124,7 +124,7 @@
     "id": "footer-recipes",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/recipes",
       "title": "Recipes",
       "target": "_self",
@@ -135,7 +135,7 @@
     "id": "footer-cv",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/cv",
       "title": "Curriculum Vitae",
       "target": "_self",
@@ -146,7 +146,7 @@
     "id": "footer-uses",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/uses",
       "title": "What I Use",
       "target": "_self",
@@ -157,7 +157,7 @@
     "id": "footer-now",
     "type": "footer",
     "attributes": {
-      "rel": [],
+      "rel": "",
       "href": "/now",
       "title": "What am I up to Now",
       "target": "_self",
@@ -168,7 +168,7 @@
     "id": "footer-source-code",
     "type": "footer",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://github.com/XianHain/christianhain.com",
       "title": "Source Code (GitHub)",
       "target": "_blank",

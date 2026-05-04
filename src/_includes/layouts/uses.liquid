@@ -44,7 +44,7 @@
               {% for item in subcategory.items %}
                 {% assign item_count = item_count | plus: 1 %}
                 <div
-                  rel="js-uses-item"
+                  data-js="uses-item"
                   role="button"
                   class="uses-item uses-item--{{ category.category | downcase }}"
                   onclick="window.xian.uses.togglePopover(event)"
@@ -86,21 +86,21 @@
   </main>
 
   <aside
-    rel="js-uses-popover"
+    data-js="uses-popover"
     class="uses-popover"
     popover="auto"
   >
     <div
-      rel="js-uses-popover-content"
+      data-js="uses-popover-content"
       class="uses-popover__content"
     ></div>
-    <template rel="js-uses-product-details">
+    <template data-js="uses-product-details">
       <h4
-        rel="js-product-name js-populate"
+        data-js="product-name populate"
         class="uses-popover__title"
       ></h4>
       <button
-        rel="js-close-button"
+        data-js="close-button"
         title="Close"
         class="uses-popover__close"
         onclick="window.xian.uses.togglePopover(event)"
@@ -108,15 +108,15 @@
         {% include "../icons/close.svg" %}
       </button>
       <dl class="uses-popover__details">
-        <dt rel="js-description">Product Description</dt>
-        <dd rel="js-description js-populate"></dd>
-        <dt rel="js-vendor">Vendor</dt>
-        <dd rel="js-vendor js-populate"></dd>
-        <dt rel="js-license">License</dt>
-        <dd rel="js-license js-populate"></dd>
-        <dt rel="js-url">URL</dt>
-        <dd rel="js-url">
-          <a rel="nofollow js-url js-populate" target="_blank"></a>
+        <dt data-js="description">Product Description</dt>
+        <dd data-js="description populate"></dd>
+        <dt data-js="vendor">Vendor</dt>
+        <dd data-js="vendor populate"></dd>
+        <dt data-js="license">License</dt>
+        <dd data-js="license populate"></dd>
+        <dt data-js="url">URL</dt>
+        <dd data-js="url">
+          <a rel="nofollow" data-js="url populate" target="_blank"></a>
         </dd>
       </dl>
     </template>

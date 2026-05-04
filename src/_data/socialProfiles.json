@@ -3,7 +3,7 @@
     "id": "hashnode",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://hashnode.com/@XianHain",
       "title": "Hashnode",
       "target": "_blank",
@@ -14,7 +14,7 @@
     "id": "behance",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://behance.net/CRHain",
       "title": "Behance",
       "target": "_blank",
@@ -25,7 +25,7 @@
     "id": "linkedin",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://www.linkedin.com/in/crhain",
       "title": "LinkedIn",
       "target": "_blank",
@@ -36,9 +36,10 @@
     "id": "adobe",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow", "js-headshot-toggle"],
+      "rel": "nofollow",
       "href": "https://mycreativetype.com/type/luminary/",
       "title": "My Adobe Creative Type",
+      "dataJs": "headshot-toggle",
       "target": "_blank",
       "displayValue": "My Adobe Creative Type"
     }
@@ -47,7 +48,7 @@
     "id": "github",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://github.com/xianhain",
       "title": "GitHub",
       "target": "_blank",
@@ -58,7 +59,7 @@
     "id": "codepen",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://codepen.io/xianhain",
       "title": "CodePen",
       "target": "_blank",
@@ -69,7 +70,7 @@
     "id": "tiktok",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://tiktok.com/@xianhain",
       "title": "TikTok",
       "target": "_blank",
@@ -80,7 +81,7 @@
     "id": "bluesky",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://bsky.app/profile/xianhain.com",
       "title": "Bluesky",
       "target": "_blank",
@@ -91,7 +92,7 @@
     "id": "reddit",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://www.reddit.com/user/XianHain/",
       "title": "Reddit",
       "target": "_blank",
@@ -102,7 +103,7 @@
     "id": "twitch",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://www.twitch.tv/xianhain",
       "title": "Twitch",
       "target": "_blank",
@@ -113,7 +114,7 @@
     "id": "youtube",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://www.youtube.com/@XianHain",
       "title": "YouTube",
       "target": "_blank",
@@ -124,7 +125,7 @@
     "id": "spotify",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://open.spotify.com/user/1282452590?si=5ab8145563764157",
       "title": "Spotify",
       "target": "_blank",
@@ -135,7 +136,7 @@
     "id": "xbox",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://www.xbox.com/en-US/play/user/XianHain",
       "title": "Xbox",
       "target": "_blank",
@@ -146,7 +147,7 @@
     "id": "steam",
     "type": "social",
     "attributes": {
-      "rel": ["nofollow"],
+      "rel": "nofollow",
       "href": "https://steamcommunity.com/id/xianhain/",
       "title": "Steam",
       "target": "_blank",

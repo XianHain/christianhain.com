@@ -1,9 +1,9 @@
 window.xian = window.xian || {};
 xian.adobeCreativeType = xian.adobeCreativeType || (function adobeCreativeType() {
-  const headshotToggle = document.querySelector('[rel~="js-headshot-toggle"]');
-  const headshotOriginal = document.querySelector('[rel~="js-headshot--original"]');
-  const headshotModified = document.querySelector('[rel~="js-headshot--modified"]');
-  const headshotContainer = document.querySelector('[rel~="js-headshot"]');
+  const headshotToggle = document.querySelector('[data-js~="headshot-toggle"]');
+  const headshotOriginal = document.querySelector('[data-js~="headshot--original"]');
+  const headshotModified = document.querySelector('[data-js~="headshot--modified"]');
+  const headshotContainer = document.querySelector('[data-js~="headshot"]');
   const state = {
     modified: false,
     focusCount: 0,
