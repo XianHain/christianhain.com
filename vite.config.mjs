@@ -57,12 +57,13 @@ const jsCssBannerPlugin = () => {
 
 export default defineConfig({
   root: OUTPUT_DIR,
+  publicDir: false,
   plugins: [
     htmlBannerPlugin(),
     jsCssBannerPlugin(),
   ],
   build: {
-    outDir: `${OUTPUT_DIR}/.delete`,
+    outDir: '.delete',
     emptyOutDir: false,
   },
 });
