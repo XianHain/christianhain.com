@@ -2,6 +2,9 @@
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "Anthony Bourdain, Parts Unknown"
+slug: "anthony-bourdain-parts-unknown"
+date: 2013-04-11
+permalink: /portfolio/anthony-bourdain-parts-unknown/
 headDescription: "Responsive website for CNN's new television series, <i>Anthony Bourdain, Parts Unknown.</i>"
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/anthony-bourdain-parts-unknown/bourdainthumbnail20130422.webp"
 lastmod: 2013-04-11

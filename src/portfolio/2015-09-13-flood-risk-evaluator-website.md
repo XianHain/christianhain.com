@@ -2,6 +2,9 @@
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "Flood Risk Evaluator Website"
+slug: "flood-risk-evaluator-website"
+date: 2015-09-13
+permalink: /portfolio/flood-risk-evaluator-website/
 headDescription: "Website redesign focused on the user, and helping them discover the site's service."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frethumbnail20150913.webp"
 lastmod: 2015-09-13

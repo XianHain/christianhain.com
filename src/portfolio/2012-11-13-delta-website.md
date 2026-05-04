@@ -2,6 +2,9 @@
 layout: layouts/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "Delta.com"
+slug: "delta-website"
+date: 2012-11-13
+permalink: /portfolio/delta-website/
 headDescription: "Delta Airlines, the world's number one airline company, took on the task of rebuilding their website from the ground up. Their site is now built upon an HTML 5 backbone and uses the latest in Javascript and Ajax to offer a fresh new user experience."
 thumbnail: "https://assets.christianhain.com/images/pages/portfolio/delta-website/deltathumbnail20130422.webp"
 lastmod: 2012-11-13
