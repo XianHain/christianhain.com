@@ -72,10 +72,6 @@
     text-align: right;
     transition: opacity .2s ease-in-out;
 
-    &:before {
-      @extend %blog-nav-link-pseudo-before;
-    }
-
     @at-root [data-pagename="blog"] .blog-table__row:hover .blog-table__read-post-link,
              [data-pagename="blog"] .blog-table__row:focus-within .blog-table__read-post-link {
       --read-post-link-opacity: 1;
@@ -104,10 +100,6 @@
 
   .blog-nav__link {
     @extend %blog-nav-link;
-  }
-
-  .blog-nav__link:before {
-    @extend %blog-nav-link-pseudo-before;
   }
 
   .blog {
