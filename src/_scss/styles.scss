@@ -18,11 +18,11 @@
 @use "themes/blockquote" as blockquote-theme;
 @use "themes/video-player";
 
-@use "components/written-by-human";
+@use "../_includes/components/footer/written-by-human";
 @use "components/portal-window";
 @use "components/read-length";
 @use "components/page-title";
-@use "components/footer";
+@use "../_includes/components/footer/footer";
 @use "components/header";
 @use "components/menu";
 

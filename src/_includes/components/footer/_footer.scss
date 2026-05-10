@@ -1,14 +1,17 @@
-@use "../utils/_print-page-dimensions" as *;
+@use "../../../_scss/utils/print-page-dimensions" as *;
 
 .footer {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1em;
+  --footer-color: initial;
+  --footer-border-color: hsla(0, 0%, 0%, .3);
+
   color: var(--footer-color);
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 1em var(--local-footer-padding-bottom, 0);
 
   @supports (padding-bottom:env(safe-area-inset-bottom)) {
+    --local-footer-padding-bottom: var(--safe-area-inset-bottom);
     --safe-area-inset-bottom: env(safe-area-inset-bottom);
-    padding-bottom: var(--safe-area-inset-bottom);
   }
 
   &.printable {
@@ -21,11 +24,9 @@
 }
 
 .footer__content {
-  --p-font-family: var(--font-meta);
-
-  border-top: .0625rem solid var(--footer-border-color, hsla(0, 0%, 0%, .3));
+  border-top: .0625rem solid var(--footer-border-color);
   display: flex;
-  font-family: var(--p-font-family), sans-serif;
+  font-family: var(--font-meta), sans-serif;
   gap: 2em;
   justify-content: start;
   line-height: 1.5;
@@ -38,10 +39,10 @@
 
 .footer__copyright {
   display: inline-block;
-  font-size: .75rem;
+  font-size: var(--local-footer-font-size, .75rem);
 
   @media print {
-    font-size: .5rem;
+    --local-footer-font-size: .5rem;
   }
 }
 
@@ -50,9 +51,7 @@
 }
 
 .footer__quick-links {
-  --display: flex;
-
-  display: var(--display);
+  display: var(--local-footer-display, flex);
   font-size: .75em;
   flex-wrap: wrap;
   gap: 1em;
@@ -62,6 +61,6 @@
   text-transform: uppercase;
 
   @media print {
-    --display: none;
+    --local-footer-display: none;
   }
 }
