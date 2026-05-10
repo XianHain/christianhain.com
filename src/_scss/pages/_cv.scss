@@ -11,8 +11,14 @@ $two-column-breakpoint: 53rem;
   font-size: .875em;
 
   --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
-  --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
-  --header-bar-color-alpha0: light-dark(hsla(0, 0%, 100%, 0), hsla(215, 33%, 10%, 0%));
+
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+    --header-bar-color-alpha0: light-dark(hsla(0, 0%, 100%, 0), hsla(215, 33%, 10%, 0%));
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
+  }
 
   --a-print-color: inherit;
   --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
@@ -246,13 +252,8 @@ $two-column-breakpoint: 53rem;
   --p-line-height: 2;
   --margin-top: 1rem;
   --max-width: 60ch;
-  --p-font-size: .875em;
 
-  @media print {
-    --p-font-size: .75em;
-  }
-
-  font-family: var(--monolisa), monospace;
+  font-family: var(--amsi-normal), sans-serif;
   hyphens: auto;
   margin: var(--margin-top) auto 0;
   max-width: var(--max-width);

@@ -23,8 +23,8 @@
 @use "components/read-length";
 @use "components/page-title";
 @use "../_includes/components/footer/footer";
-@use "components/header";
-@use "components/menu";
+@use "../_includes/components/header/header";
+@use "../_includes/components/header/menu";
 
 @use "layout/portfolio" as portfolio-layout;
 

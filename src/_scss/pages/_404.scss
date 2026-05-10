@@ -1,6 +1,12 @@
 [data-pagename="404"] {
-  --header-bar-color: hsl(52, 100%, 50%);
-  --header-bar-color-alpha0: hsla(52, 100%, 50%, 0);
+
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: hsl(52, 100%, 50%);
+    --header-bar-color-alpha0: hsla(52, 100%, 50%, 0);
+    --header-logo-primary-color: var(--black);
+    --header-logo-secondary-color: var(--pink-bright)
+  }
 
   background-color: var(--yellow-c);
   color: var(--black);

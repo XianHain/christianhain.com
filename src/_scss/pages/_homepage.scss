@@ -11,9 +11,6 @@
   --font-emphasis-ultra: var(--amsi-condensed-ultra);
   line-height: 1.75em;
 
-  --header-bar-color: transparent;
-  --header-bar-color-alpha0: transparent;
-
   --background-start-color: light-dark(var(--white-mid), var(--blue-dark));
   --background-end-color: light-dark(var(--white-shadow), var(--blue-mid));
   --background-direction: light-dark(120deg, 0deg);
@@ -26,6 +23,14 @@
   background-repeat: no-repeat;
 
   color: light-dark(var(--blue-dark), var(--white));
+
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: transparent;
+    --header-bar-color-alpha0: transparent;
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--white));
+  }
 }
 
 

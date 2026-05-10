@@ -6,8 +6,13 @@
 }
 
 [data-pagename="blog"] {
-  --header-bar-color: light-dark(hsl(0, 0%, 100%) ,hsl(148, 98%, 7%));
-  --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0) ,hsla(148, 98%, 7%, 0));
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(148, 98%, 7%));
+    --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0), hsla(148, 98%, 7%, 0));
+    --header-logo-primary-color: light-dark(var(--black), var(--green-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--amber));
+  }
 
   .blog-table {
     border-collapse: collapse;

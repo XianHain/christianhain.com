@@ -2,7 +2,7 @@
   <nav class="menu__nav portal-window">
     <ul class="menu__list portal-window__screen">
       {% for menuItem in menu %}
-        {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
+        {% assign _iconPath = "../../icons/" | append: menuItem.id | append: ".svg" %}
 
         {% if menuItem.type == "navigation" %}
           {% assign active = false %}
@@ -39,7 +39,7 @@
 
     {% for menuItem in menu %}
       {% if menuItem.type == "utility" and menuTypes contains "utility" %}
-        {% assign _iconPath = "../icons/" | append: menuItem.id | append: ".svg" %}
+        {% assign _iconPath = "../../icons/" | append: menuItem.id | append: ".svg" %}
         <button
           {%- assign _rel = menuItem.attributes.rel -%}
           {%- assign _js = menuItem.attributes.dataJs -%}

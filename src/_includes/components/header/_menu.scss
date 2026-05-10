@@ -1,9 +1,9 @@
-@use "../utils/video-background";
+@use "../../../_scss/utils/video-background";
 
 .menu {
+  align-items: center;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   width: max-content;
 
@@ -11,17 +11,17 @@
 }
 
 .menu__nav {
-  display: flex;
   align-items: center;
+  display: flex;
 
   @extend %video-background-layer-3;
 }
 
 .menu__list {
   display: flex;
+  gap: .75em;
   list-style: none;
   margin: 0;
-  gap: .75em;
 }
 
 .menu-item {
@@ -34,23 +34,24 @@
 }
 
 .menu-item--link {
-  color: var(--portal-window-color-primary);
+  color: var(--local-menu-item-link-color, var(--portal-window-color-primary));
   filter: drop-shadow(0 .125em .0625em var(--black));
-  opacity: .5;
+  opacity: var(--local-menu-item-link-opacity, .5);
 
-  &:hover {
-    color: var(--pink-mid);
+  &:hover,
+  &:focus-visible {
+    --local-menu-item-link-color: var(--pink-mid);
   }
 
   .menu:hover &,
   [data-active="true"] & {
-    opacity: 1;
+    --local-menu-item-link-opacity: 1;
   }
 }
 
 .menu-item--button {
   appearance: none;
-  background: 0;
+  background-color: var(--local-menu-item-background-color, transparent);
   border-radius: 50%;
   border: 0;
   color: var(--portal-window-color-secondary);
@@ -59,15 +60,20 @@
   padding: .25em;
 
   &:hover {
-    background-color: color-mix(in hsl, var(--portal-window-color-primary) 50%, transparent);
+    --local-menu-item-background-color: color-mix(
+        in hsl,
+        var(--portal-window-color-primary) 50%,
+        transparent
+    );
+
     box-shadow: 0 .125em 0 color-mix(in hsl, var(--portal-window-color-primary) 30%, transparent),
                 inset 0 .125em .125em color-mix(in hsl, var(--portal-window-color-secondary) 50%, transparent);
   }
 }
 
 .menu-item__icon {
-  display: block;
   block-size: 1.5em;
+  display: block;
   inline-size: 1.5em;
 
   .menu-item--home & {
@@ -96,8 +102,8 @@
 }
 
 .menu-item__text {
-  clip: rect(0 0 0 0);
   clip-path: inset(50%);
+  clip: rect(0 0 0 0);
   height: .0625em;
   overflow: hidden;
   position: absolute;

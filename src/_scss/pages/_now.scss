@@ -6,11 +6,17 @@
   font-family: var(--amsi-normal), sans-serif;
 
   --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
-  --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
-  --header-bar-color-alpha0: light-dark(
+
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+    --header-bar-color-alpha0: light-dark(
       hsla(0, 0%, 100%, 0),
       hsla(215, 33%, 10%, 0)
-  );
+    );
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
+  }
 }
 
 /****************************************************************************** clock */
