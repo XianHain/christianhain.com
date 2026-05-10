@@ -1,0 +1,93 @@
+.portal-window {
+  --portal-window-max-inline-size: initial;
+  --portal-window-inline-size: 100%;
+  --portal-window-color-primary: var(--blue-bright);
+  --portal-window-color-secondary: var(--blue-mid);
+  --portal-window-gradient-start: 20%;
+  --portal-window-border-radius: 2rem;
+  --portal-window-frame-padding: .25rem;
+
+  --portal-window-screen-background: radial-gradient(
+      farthest-corner at 50% -50%,
+      var(--portal-window-color-secondary) 80%,
+      color-mix(in hsl, var(--portal-window-color-secondary) 70%, var(--black)) 100%
+  );
+  --portal-window-screen-border: .125rem solid var(--black);
+  --portal-window-screen-border-radius: var(--portal-window-border-radius);
+  --portal-window-screen-shadow: hsl(0, 0%, 0%, .2);
+  --portal-window-screen-padding: .5rem 1rem;
+
+  margin: 0 auto;
+  max-inline-size: var(--portal-window-max-inline-size);
+  inline-size: var(--portal-window-inline-size);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  &.portal-window--has-frame-content {
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.portal-window__empty-space {
+  .portal-window--has-frame-content & {
+    display: block;
+    grid-column: 1;
+    visibility: hidden;
+  }
+}
+
+.portal-window__frame {
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      color-mix(
+          in hsl,
+          var(--portal-window-color-primary) 50%,
+          transparent
+      )
+      var(--portal-window-gradient-start),
+      color-mix(in hsl, var(--portal-window-color-primary) 85%, transparent) 100%
+  );
+  border-radius: var(--portal-window-border-radius);
+  border: .0625rem solid var(--portal-window-color-primary);
+  box-shadow: 0 .25rem .75rem hsl(0, 0%, 0%, .2);
+  display: grid;
+  grid-template-columns: var(--local-portal-frame-grid-template-columns, auto auto);
+  padding: var(--portal-window-frame-padding);
+  inline-size: 100%;
+
+  // Support subgrid for better centering if available
+  @supports (grid-template-columns: subgrid) {
+    --local-portal-frame-grid-template-columns: subgrid;
+  }
+
+  .portal-window--has-frame-content & {
+    grid-column: 2 / 4;
+  }
+}
+
+.portal-window__frame-content {
+  .portal-window--has-frame-content & {
+    grid-column: 2;
+    justify-self: center;
+    }
+}
+
+.portal-window__screen {
+  background: var(--portal-window-screen-background);
+  border: var(--portal-window-screen-border);
+  border-radius: var(--portal-window-screen-border-radius);
+  box-shadow: inset 1rem 1rem 2rem var(--portal-window-screen-shadow),
+              inset -1rem -1rem 2rem var(--portal-window-screen-shadow);
+  padding: var(--portal-window-screen-padding);
+
+  @media (min-width: 30rem) {
+    --border-radius: .75rem;
+  }
+
+  .portal-window--has-frame-content & {
+    grid-column: 1;
+  }
+}

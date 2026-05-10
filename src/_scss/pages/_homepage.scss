@@ -193,13 +193,17 @@
   margin: 4rem 0 0;
   padding: 0 1rem;
   position: relative;
+
+  --local-homepage-blog-color: light-dark(var(--blue-bright), var(--green-bright));
 }
 
-.blog-entry {
+// @TODO: CSS layers
+.blog-entry .portal-window {
+  --portal-window-max-inline-size: 50rem;
   --portal-window-frame-padding: .5rem;
   --portal-window-border-radius: 1.5rem;
   --portal-window-gradient-start: 50%;
-  --portal-window-color-primary: light-dark(var(--blue-bright), var(--green-bright));
+  --portal-window-color-primary: var(--local-homepage-blog-color);
   --portal-window-color-secondary: light-dark(var(--white), var(--green-dark));
   --portal-window-screen-background: light-dark(
       var(--white),
@@ -214,11 +218,13 @@
   --portal-window-screen-padding: 1rem;
   --portal-window-screen-shadow: light-dark(hsl(0, 0%, 0%, .05), hsl(0, 0%, 0%, .2));
 
-  color: light-dark(var(--black), var(--portal-window-color-primary));
-
   @media (min-width: 30rem) {
     --portal-window-frame-padding: 1rem;
   }
+}
+
+.blog-entry {
+  color: light-dark(var(--black), var(--local-homepage-blog-color));
 }
 
 .blog-entry__content {

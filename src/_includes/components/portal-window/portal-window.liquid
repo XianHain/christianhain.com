@@ -1,0 +1,19 @@
+<div class="portal-window{% if contentInFrame != blank %} portal-window--has-frame-content{% endif %}">
+  {% if contentInFrame != blank %}
+    <div class="portal-window__empty-space" aria-hidden="true">
+      {{ contentInFrame }}
+    </div>
+  {% endif %}
+
+  <div class="portal-window__frame">
+    <div class="portal-window__screen">
+      {{ contentInScreen }}
+    </div>
+
+    {% if contentInFrame != blank %}
+      <div class="portal-window__frame-content">
+        {{ contentInFrame }}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,6 +1,6 @@
 <div class="menu">
-  <nav class="menu__nav portal-window">
-    <ul class="menu__list portal-window__screen">
+  {% capture portalWindowContentInScreen %}
+    <ul class="menu__list">
       {% for menuItem in menu %}
         {% assign _iconPath = "../../icons/" | append: menuItem.id | append: ".svg" %}
 
@@ -35,8 +35,9 @@
         {% endif %}
       {% endfor %}
     </ul>
+  {% endcapture %}
 
-
+  {% capture portalWindowContentInFrame %}
     {% for menuItem in menu %}
       {% if menuItem.type == "utility" and menuTypes contains "utility" %}
         {% assign _iconPath = "../../icons/" | append: menuItem.id | append: ".svg" %}
@@ -56,5 +57,10 @@
         </button>
       {% endif %}
     {% endfor %}
+  {% endcapture %}
+
+
+  <nav class="menu__nav">
+    {% include "../portal-window/portal-window.liquid", contentInScreen: portalWindowContentInScreen, contentInFrame: portalWindowContentInFrame %}
   </nav>
 </div>

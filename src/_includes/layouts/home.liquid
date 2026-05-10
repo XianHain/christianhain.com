@@ -41,38 +41,41 @@
       <div class="blog__content">
         <div class="blog__entries">
           {% for item in pagination.items %}
-            <article class="blog-entry portal-window">
-              <div class="blog-entry__window portal-window__screen">
-                <div class="blog-entry__content">
-                  <h1 class="blog-entry__title">{{ item.data.title }}</h1>
-                  <div class="blog-entry__body-copy">
-                    <p class="blog-entry__meta page-title__meta">
-                      <time datetime="{{ item.data.publishedAt }}">
-                        {{ item.data.date | blogPostTimestamp }}
-                      </time>
-                      <span>
-                        {{ item.data.readTime }} minute read
-                      </span>
-                    </p>
-                    <p class="blog-entry__brief">
-                      {{ item.data.brief | formatted }}
-                    </p>
-                    <ul class="blog-entry__link-list">
-                      <li>
-                        <a class="blog-entry__link" href="{{ item.page.url }}" title="{{ item.data.title }}">
-                          Read Post
-                        </a>
-                      </li>
-                      <li>
-                        <a class="blog-entry__link" href="/blog/" title="Blog">
-                          View All Posts
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+
+            {% capture portalWindowContentInScreen %}
+              <div class="blog-entry__content">
+                <h1 class="blog-entry__title">{{ item.data.title }}</h1>
+                <div class="blog-entry__body-copy">
+                  <p class="blog-entry__meta page-title__meta">
+                    <time datetime="{{ item.data.publishedAt }}">
+                      {{ item.data.date | blogPostTimestamp }}
+                    </time>
+                    <span>
+                      {{ item.data.readTime }} minute read
+                    </span>
+                  </p>
+                  <p class="blog-entry__brief">
+                    {{ item.data.brief | formatted }}
+                  </p>
+                  <ul class="blog-entry__link-list">
+                    <li>
+                      <a class="blog-entry__link" href="{{ item.page.url }}" title="{{ item.data.title }}">
+                        Read Post
+                      </a>
+                    </li>
+                    <li>
+                      <a class="blog-entry__link" href="/blog/" title="Blog">
+                        View All Posts
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            {% endcapture %}
+            <article class="blog-entry">
+              {% include "../components/portal-window/portal-window.liquid", contentInScreen: portalWindowContentInScreen %}
             </article>
+
           {% endfor %}
         </div>
       </div>
