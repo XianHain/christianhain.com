@@ -1,0 +1,13 @@
+<p class="blog-date-and-read-time">
+  <time datetime="{{ contentBlogPublishDate }}">
+    {{ contentBlogPublishDate | blogPostTimestamp }}
+  </time>
+
+  <span class="blog-date-and-read-time__read-time">
+    <span class="blog-date-and-read-time__read-time__time">
+      {{ contentBlogReadTimeInMinutes }} minute read
+    </span>
+    <svg role="presentation" class="blog-date-and-read-time__monospace-spacer">
+    </svg>
+  </span>
+</p>

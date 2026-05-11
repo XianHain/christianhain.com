@@ -3,9 +3,10 @@
 {% block content %}
   <main class="page__content">
     <article>
-      <div class="page-title">
-        <h1 class="page-title__h1">Portfolio</h1>
-      </div>
+      {% include "../../components/page-title/page-title.liquid",
+        contentH1: "Portfolio",
+        contentDescription: headDescription
+      %}
       <ul class="portfolio-list">
         {%- assign sortedPortfolio = collections.portfolio | sort: "data.publishDate" | reverse -%}
         {%- for portfolio in sortedPortfolio -%}

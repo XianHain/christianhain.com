@@ -3,9 +3,9 @@
 {% block content %}
   <main class="page__content printable">
     <article>
-      <div class="page-title">
-        <h1 class="page-title__h1">Blogs, Memos, and Articles</h1>
-      </div>
+      {% include "../../components/page-title/page-title.liquid",
+        contentH1: "Blogs, Memos, and Articles"
+      %}
       <table class="blog-table">
         <thead>
           <tr>

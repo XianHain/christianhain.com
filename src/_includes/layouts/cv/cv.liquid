@@ -2,13 +2,17 @@
 
 {% block content %}
   <main class="page__content printable">
-    <div class="page-title">
-      <h1 class="page-title__h1"><i>Curriculum Vitae</i></h1>
+    {% capture cv_meta %}
       <p class="page-title__meta">
         <span>Version: <time datetime="{{ lastmod | date: "%Y-%m-%dT%H:%M:%S%z" }}">{{ lastmod | date: "%Y-%m-%d" }}</time></span>
       </p>
       <p class="page-title__meta">Atlanta, GA, USA</p>
-    </div>
+    {% endcapture %}
+
+    {% include "../../components/page-title/page-title.liquid",
+      contentH1: "<i>Curriculum Vitae</i>",
+      contentMeta: cv_meta
+    %}
 
     {{ content | formatted }}
   </main>

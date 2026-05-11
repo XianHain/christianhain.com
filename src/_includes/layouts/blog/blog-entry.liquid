@@ -7,20 +7,17 @@
 
   <main class="page__content printable">
     <article class="blog">
-      <div class="page-title">
-        <h1 class="page-title__h1">{{ title }}</h1>
-        <p class="page-title__meta">
-          <time datetime="{{ date }}">
-            {{ date | blogPostTimestamp }}
-          </time>
-          <span class="read-length">
-            <span class="read-length__time">
-              {{ readTime }} minute read
-            </span>
-            <svg role="presentation" class="read-length__monospace-spacer"></svg>
-          </span>
-        </p>
-      </div>
+      {% capture blog_meta %}
+        {% include "../../components/blog-date-and-read-time/blog-date-and-read-time.liquid",
+          contentBlogPublishDate: date,
+          contentBlogReadTimeInMinutes: readTime
+        %}
+      {% endcapture %}
+
+      {% include "../../components/page-title/page-title.liquid",
+        contentH1: title,
+        contentMeta: blog_meta
+      %}
       <div class="blog__copy">
         {% if songquote_content != "" %}
           <div class="blog__songquote" data-theme="memo-aux">

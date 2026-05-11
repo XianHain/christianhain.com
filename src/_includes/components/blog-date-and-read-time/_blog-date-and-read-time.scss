@@ -1,0 +1,38 @@
+.blog-date-and-read-time {
+  align-items: center;
+  display: flex;
+  flex-direction: var(--local-blog-date-and-read-time-flex-direction, column);
+  justify-content: center;
+  line-height: 1.5;
+  margin: var(--local-blog-date-and-read-time-margin, 1em);
+
+  @media (min-width: 30rem) {
+    --local-blog-date-and-read-time-flex-direction: row;
+    --local-blog-date-and-read-time-margin: .5em;
+    gap: 2ch;
+  }
+
+  > * + * {
+    &:before {
+      @media (min-width: 30rem) {
+        content: "\2022";
+        display: inline-block;
+        margin: 0 2ch 0 0;
+      }
+    }
+  }
+}
+
+.blog-date-and-read-time__blog-read-time {
+  display: inline-block;
+}
+
+.blog-date-and-read-time__blog-read-time__time {
+  display: inline-block;
+}
+
+.blog-date-and-read-time__monospace-spacer {
+  display: inline-block;
+  height: 0;
+  width: 1ch;
+}

@@ -1,0 +1,17 @@
+{% assign contentH1Length = contentH1 | strip_html | strip_newlines | strip | size %}
+
+<div class="page-title{% if contentH1Length > 18 %} page-title--long{% endif %}">
+  <h1 class="page-title__h1">
+    {{ contentH1 }}
+  </h1>
+
+  {% if contentMeta %}
+    {{ contentMeta }}
+  {% endif %}
+
+  {% if contentDescription %}
+    <p class="page-title__description">
+      {{ contentDescription }}
+    </p>
+  {% endif %}
+</div>

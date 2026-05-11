@@ -46,14 +46,12 @@
               <div class="blog-entry__content">
                 <h1 class="blog-entry__title">{{ item.data.title }}</h1>
                 <div class="blog-entry__body-copy">
-                  <p class="blog-entry__meta page-title__meta">
-                    <time datetime="{{ item.data.publishedAt }}">
-                      {{ item.data.date | blogPostTimestamp }}
-                    </time>
-                    <span>
-                      {{ item.data.readTime }} minute read
-                    </span>
-                  </p>
+
+                  {% include "../../components/blog-date-and-read-time/blog-date-and-read-time.liquid",
+                    contentBlogPublishDate: item.data.date,
+                    contentBlogReadTimeInMinutes: item.data.readTime
+                  %}
+
                   <p class="blog-entry__brief">
                     {{ item.data.brief | formatted }}
                   </p>

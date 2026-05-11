@@ -18,14 +18,13 @@
 @use "themes/blockquote" as blockquote-theme;
 @use "themes/video-player";
 
-@use "components/read-length";
-@use "components/page-title";
 @use "../_includes/components/footer/footer";
 @use "../_includes/components/footer/written-by-human";
 @use "../_includes/components/header/header";
 @use "../_includes/components/header/menu";
-@use "../_includes/components/page-titles/slash-page-title";
+@use "../_includes/components/page-title/page-title";
 @use "../_includes/components/portal-window/portal-window";
+@use "../_includes/components/blog-date-and-read-time/blog-date-and-read-time";
 
 @use "../_includes/layouts/cv/cv";
 @use "../_includes/layouts/404/404" as four-oh-four;
