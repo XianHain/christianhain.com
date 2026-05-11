@@ -19,11 +19,11 @@ footerTypes: ["written-by-human"]
 permalink: /blog/did-apple-fix-email-or-make-it-worse/
 ---
 
-<meta data-xian="email-start">
+<xian-email style="font-size:.75em">
 
-**To**: World
-**From**: Me
-**CC**: Your Micromanager, My Micromanager
+**To**: World<br>
+**From**: Me<br>
+**CC**: Your Micromanager, My Micromanager<br>
 **Subject**: Fwd: Re: Re: Re: Re: email sucks
 
 Hello, World,
@@ -46,12 +46,12 @@ with shit you didn't write.  Isn't that fun!
 
 I eagerly await your response by <abbr title="end of day">EOD</a>.
 
-——
+——<br>
 Warm wishes, best regards, and a corporate-mandated signature promoting our
-latest awards or endeavors,
+latest awards or endeavors,<br>
 Christian
 
-<meta data-xian="email-end">
+</xian-email>
 
 Dubbed "<abbr title="Artificial Intelligence">AI</abbr> for the Rest of Us,"
 Apple's recent keynote highlights new
