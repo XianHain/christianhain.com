@@ -96,14 +96,14 @@ deals.
 
 ### Buy, Gift, Transfer, and Donate Skymiles.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Screenshot of Delta.com Donate Miles"
   src="https://assets.christianhain.com/images/pages/portfolio/delta-website/delta_donatemiles20130412.webp"
   loading="lazy"
 >
   <figcaption>Delta.com Donate Miles</figcaption>
-</figure>
+</xian-polaroid>
 
 In order to provide the best experience to the user on the SkyMiles pages, AJAX
 was used heavily to send data back and forth to the server.  Also, to protect

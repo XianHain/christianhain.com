@@ -7,14 +7,12 @@
 @use "base/abbr";
 @use "base/body";
 @use "base/code";
-@use "base/figure";
 @use "base/blockquote";
 
 @use "themes/blog";
 @use "themes/memo";
 @use "themes/email";
 @use "themes/article";
-@use "themes/polaroid";
 @use "themes/blockquote" as blockquote-theme;
 @use "themes/video-player";
 

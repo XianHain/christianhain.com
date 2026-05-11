@@ -186,12 +186,14 @@ I was trying to figure out how to `$ run the project;` and the `readme` had all
 of the build instructions for the `local environment`.
 </blockquote>
 
-<figure data-theme="polaroid">
-  <iframe src="https://giphy.com/embed/pJmnk86fXFNmrUb8LB" width="480" height="270" class="giphy-embed"></iframe>
-  <figcaption>
-    Giphy clip of Taylor Swift singing "It's me. Hi. I'm the problem, it's me"
-  </figcaption>
-</figure>
+<xian-polaroid style="margin:0 auto;width:75%">
+  <figure>
+    <iframe src="https://giphy.com/embed/pJmnk86fXFNmrUb8LB" width="480" height="270" class="giphy-embed"></iframe>
+    <figcaption>
+      Giphy clip of Taylor Swift singing "It's me. Hi. I'm the problem, it's me"
+    </figcaption>
+  </figure>
+</xian-polaroid>
 
 Adding monospace formatting to tech terms is useful because it helps visually
 separate code from prose and is especially useful whenever referring to the

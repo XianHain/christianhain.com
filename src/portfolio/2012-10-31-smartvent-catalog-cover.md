@@ -66,11 +66,11 @@ canonical: "https://www.christianhain.com/portfolio/smartvent-catalog-cover"
   >
 </figure>
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Front cover o the SmartVent catalog"
   src="https://assets.christianhain.com/images/pages/portfolio/smartvent-catalog-cover/svcover20121114.webp"
   loading="lazy"
 >
   <figcaption>Front cover o the SmartVent catalog</figcaption>
-</figure>
+</xian-polaroid>

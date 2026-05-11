@@ -37,10 +37,12 @@ portfolio site before graduation.  Of course, after I got my grade for the
 class, it was never maintained, and I never thought to download a copy the
 database.  I did buy my first domain, though.
 
-<figure data-theme="polaroid">
-  <img alt="A screenshot of my original 'Coming Soon' page" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1715838034283/46b5d4ad-0ef0-456d-b29a-366bcf1925bc.png">
-  <figcaption>A screenshot of my original "Coming Soon" page</figcaption>
-</figure>
+<xian-polaroid>
+  <figure>
+    <img alt="A screenshot of my original 'Coming Soon' page" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1715838034283/46b5d4ad-0ef0-456d-b29a-366bcf1925bc.png">
+    <figcaption>A screenshot of my original "Coming Soon" page</figcaption>
+  </figure>
+</xian-polaroid>
 
 And from that point forward, my site was the go-to place for absolutely
 nothing.  At most, you could find three stale projects I once worked on.

@@ -68,14 +68,14 @@ The existing website did not reflect the credibility necessary to prove the
 service is legitimate and that the savings are real.  FRE contacted me to help
 redesign the site, specifically asking for a modern and professional look.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Pre-existing FRE Website"
   src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frebefore20150913.gif"
   loading="lazy"
 >
   <figcaption>Pre-existing FRE Website</figcaption>
-</figure>
+</xian-polaroid>
 
 ## The Process
 To start, I began dissecting what was working on the current site, and what
@@ -116,14 +116,14 @@ Vent Products, Inc., which uses a royal blue for their construction product.
 
 Reds and oranges were also chosen to add warmth to the page.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Color Palette with various tints"
   src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frecolorblocks20150913.webp"
   loading="lazy"
 >
   <figcaption>Color Palette with various tints</figcaption>
-</figure>
+</xian-polaroid>
 
 ## Iconography
 The existing site had images of the forms customers would need to submit,
@@ -133,7 +133,7 @@ paper-clips was more of a distraction than an asset.  The message could be
 communicated with generic patterns that captured the most distinct details of
 their real-world counterparts.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Icons of FEMA documents"
   src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/fredocuments20150913.webp"
@@ -144,7 +144,7 @@ their real-world counterparts.
     embellishments.  Exaggerating the important details in the new icons
     (right) have a greater effect.
   </figcaption>
-</figure>
+</xian-polaroid>
 
 ### FRE Icon
 The FRE logo features a stylized e that looks like a magnifying glass.  I
@@ -155,7 +155,7 @@ Carefully, I recreated the e to match the stroke of the rest of the font
 family, removed tension points.  I also skewed the letter for a more natural
 look, where the handle is at the bottom of the glass.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Redesigned Logo Icons"
   src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/freicons20150913.webp"
@@ -166,7 +166,7 @@ look, where the handle is at the bottom of the glass.
     circulation for other FRE branding.  A few minor detail changes, and the
     new magnifying glass (right) is still recognizable.
   </figcaption>
-</figure>
+</xian-polaroid>
 
 ## Video
 A huge trend on the internet is the use of large, oversized images.  Just about
@@ -184,7 +184,7 @@ architecture could have these scenes anywhere between Miami and Seattle.
 The video was colorized to help re-enforce the brand and create extra contrast
 between the picture and website content.
 
-<figure data-theme="polaroid">
+<xian-polaroid>
   <img
   alt="Color-graded Video Image"
   src="https://assets.christianhain.com/images/pages/portfolio/flood-risk-evaluator/frerainwindow20150913.gif"
@@ -193,4 +193,4 @@ between the picture and website content.
   <figcaption>
     Used video-editing software to recolor the footage to fit the brand colors.
   </figcaption>
-</figure>
+</xian-polaroid>
