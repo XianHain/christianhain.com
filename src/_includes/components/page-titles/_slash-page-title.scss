@@ -1,0 +1,24 @@
+.slash-page-title {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 4em auto;
+  text-align: center;
+}
+
+.slash-page-title__h1 {
+  font-family: ThygaItalicSemirounded, sans-serif;
+  font-size: var(--local-slash-page-title-h1-font-size, 8em);
+  font-weight: 400;
+  line-height: .75;
+  margin: 0;
+  text-transform: lowercase;
+
+  @media (min-width: 34em) {
+    --local-slash-page-title-h1-font-size: 16em;
+  }
+}
+
+.slash-page-title__description {
+  font-family: ThygaSemirounded, sans-serif;
+  font-size: 1.5em;
+}
