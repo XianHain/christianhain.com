@@ -17,6 +17,7 @@ theme: blog
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/if-i-did-it-then-i-did-it-right/
+musicUrl: "https://www.youtube.com/embed/JsIoJ9cxrYs?si=AN1hlveg7GsIND_2"
 ---
 
 <meta data-xian="songquote-start">
@@ -117,19 +118,3 @@ In the meantime, catch a vibe and enjoy
   NF's "SUFFICE"</a>.
 
 <meta data-xian="ps-end">
-
-<meta data-xian="music-start">
-<iframe
-  width="100%"
-  height="100%"
-  style="aspect-ratio: 16 / 9; 
-  display: block;
-  margin: 2em 0 0;" 
-  src="https://www.youtube.com/embed/JsIoJ9cxrYs?si=AN1hlveg7GsIND_2" 
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen="true">
-</iframe>
-<meta data-xian="music-end">

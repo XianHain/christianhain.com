@@ -26,7 +26,7 @@
               />
               <div class="portfolio-list__content">
                 <h2 class="portfolio-list__title">{{ portfolio.data.headTitle }}</h2>
-                <p><time datetime="{{ portfolio.data.publishDate | date: '%Y-%m-%d' }}">{{ portfolio.data.publishDate | date: '%B %d, %Y' }}</time></p>
+                <p class="portfolio-list__publish-date"><time datetime="{{ portfolio.data.publishDate | date: '%Y-%m-%d' }}">{{ portfolio.data.publishDate | date: '%B %d, %Y' }}</time></p>
                 <p class="portfolio-list__synopsis">{{ portfolio.data.headDescription }}</p>
               </div>
             </a>

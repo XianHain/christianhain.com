@@ -17,7 +17,7 @@ theme: blog
 pageName: blog
 footerTypes: ["written-by-human"]
 permalink: /blog/thnks-fr-th-memes/
-
+musicUrl: "https://www.youtube.com/embed/onzL0EM1pKY?si=J3-m28_VTxi0Sgpu"
 ---
 
 <meta data-xian="songquote-start">
@@ -53,17 +53,3 @@ sweeter* 🤣).  So, if you care to share a funny clip, that's where you'll find
 me.  My username is
 <a rel="nofollow" href="https://bsky.app/profile/xianhain.com" title="@XianHain.com on BlueSky" target="_blank">
   @XianHain.com</a>.
-
-<meta data-xian="music-start">
-<iframe 
-  width="100%"
-  height="100%"
-  style="aspect-ratio: 16 / 9; display: block; margin: 2em 0 0;"
-  src="https://www.youtube.com/embed/onzL0EM1pKY?si=J3-m28_VTxi0Sgpu"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe>
-<meta data-xian="music-end">

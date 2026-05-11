@@ -324,7 +324,6 @@ export default async function(eleventyConfig) {
         // Remove elements that are later repositioned
         .replace(/<meta data-xian="ps-start">[\s\S]*?<meta data-xian="ps-end">/g, '')
         .replace(/<meta data-xian="songquote-start">[\s\S]*?<meta data-xian="songquote-end">/g, '')
-        .replace(/<meta data-xian="music-start">[\s\S]*?<meta data-xian="music-end">/g, '');
     }
     return result;
   };
@@ -341,11 +340,6 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('postscript', async (content) => {
     return (await formatMarkdown(content))
       .match(/<meta data-xian="ps-start">([\s\S]*?)<meta data-xian="ps-end">/)?.[1];
-  });
-
-  eleventyConfig.addFilter('music', async (content) => {
-    return (await formatMarkdown(content))
-      .match(/<meta data-xian="music-start">([\s\S]*?)<meta data-xian="music-end">/)?.[1];
   });
 
   eleventyConfig.setLibrary('liquid', new Liquid());

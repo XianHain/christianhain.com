@@ -28,15 +28,17 @@
               </td>
               <td class="blog-table__cell">
                 <div class="blog-table__cell-content">
-                  <p>
+                  <h2 class="blog-table__title">
                     <a
                       href="{{ item.page.url }}"
                       title="{{ item.data.title }}"
                     >
                       {{ item.data.title }}
                     </a>
+                  </h2>
+                  <p class="blog-table__brief">
+                    {{ item.data.brief | formatted }}
                   </p>
-                  <p>{{ item.data.brief | formatted }}</p>
                   <div class="blog-table__read-post">
                     <a
                       href="{{ item.page.url }}"

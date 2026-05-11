@@ -2,6 +2,8 @@
   align-items: center;
   display: flex;
   flex-direction: var(--local-blog-date-and-read-time-flex-direction, column);
+  font-family: var(--monolisa), monospace;
+  font-size: .875em;
   justify-content: center;
   line-height: 1.5;
   margin: var(--local-blog-date-and-read-time-margin, 1em);
@@ -29,10 +31,4 @@
 
 .blog-date-and-read-time__blog-read-time__time {
   display: inline-block;
-}
-
-.blog-date-and-read-time__monospace-spacer {
-  display: inline-block;
-  height: 0;
-  width: 1ch;
 }

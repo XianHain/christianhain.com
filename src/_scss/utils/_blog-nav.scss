@@ -8,10 +8,8 @@
 }
 
 %blog-nav-link {
-  --a-default-color: light-dark(var(--black), var(--white));
-  --a-hover-color: light-dark(var(--pink-bright), var(--amber));
+  --a-color: light-dark(var(--black), var(--white));
+  --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
 
-  font-family: var(--amsi-narrow-regular), sans-serif;
-  text-underline-offset: .5rem;
-  text-decoration-color: light-dark(var(--blue-bright), var(--green-bright));
+  font-family: var(--amsi-narrow-bold), sans-serif;
 }

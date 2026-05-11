@@ -1,7 +1,6 @@
 {% layout "../base.liquid" %}
 
 {% block content %}
-  {% assign music_content = content | music %}
   {% assign songquote_content = content | songquote %}
   {% assign postscript_content = content | postscript %}
 
@@ -31,10 +30,21 @@
       </div>
       <p class="blog__signature">&mdash; {{ author }}</p>
 
-      {% if postscript_content != "" or music_content != "" %}
+      {% if postscript_content != "" or musicUrl %}
         <aside class="blog__copy blog__postscript" data-theme="memo-aux">
           {{ postscript_content | safe }}
-          {{ music_content | safe }}
+          {% if musicUrl %}
+            <div class="blog__music">
+              <iframe
+                src="{{ musicUrl }}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
+          {% endif %}
         </aside>
       {% endif %}
     </article>

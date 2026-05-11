@@ -1,19 +1,20 @@
 @use "base/(root)" as *;
 @use "base/a";
-@use "base/p";
-@use "base/hx";
 @use "base/img";
-@use "base/pre";
 @use "base/abbr";
 @use "base/body";
 @use "base/code";
-@use "base/blockquote";
 
-@use "themes/blog";
-@use "themes/memo";
-@use "themes/article";
-@use "themes/blockquote" as blockquote-theme;
-@use "themes/video-player";
+//@use "base/p";
+//@use "base/hx";
+//@use "base/pre";
+//@use "base/blockquote";
+
+//@use "themes/blog";
+//@use "themes/memo";
+//@use "themes/article";
+//@use "themes/blockquote" as blockquote-theme;
+//@use "themes/video-player";
 
 @use "../_includes/components/footer/footer";
 @use "../_includes/components/footer/written-by-human";

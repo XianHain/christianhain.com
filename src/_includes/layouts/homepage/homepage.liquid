@@ -52,9 +52,9 @@
                     contentBlogReadTimeInMinutes: item.data.readTime
                   %}
 
-                  <p class="blog-entry__brief">
+                  <div class="blog-entry__brief">
                     {{ item.data.brief | formatted }}
-                  </p>
+                  </div>
                   <ul class="blog-entry__link-list">
                     <li>
                       <a class="blog-entry__link" href="{{ item.page.url }}" title="{{ item.data.title }}">

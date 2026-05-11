@@ -1,8 +1,6 @@
 [data-pagename="portfolio"] {
-  --p-font-family: var(--monolisa);
-  --p-font-size: .75em;
-
-  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  color: light-dark(var(--black), var(--blue-dusty));
 
   // @TODO - replace with CSS layers later
   .header {
@@ -14,14 +12,23 @@
     --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
     --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
   }
+}
+
+.portfolio {
+  margin: 2rem 0 0;
+  font-family: var(--amsi-normal), sans-serif;
+
+  @media (min-width: 50rem) {
+    display: flex;
+    gap: 2rem;
+  }
 
   p {
-    max-width: 80ch;
-    align-self: center;
+    margin: 0;
   }
 
   p + p, {
-    --p-margin: 2em 0 0;
+    margin: 2em 0 0;
   }
 
   h2,
@@ -31,27 +38,17 @@
 
   dt {
     font-family: var(--amsi-narrow-bold), sans-serif;
-    font-size: .75rem;
     text-transform: uppercase;
   }
 
   dd {
     margin: 0;
     font-family: var(--monolisa), monospace;
-    font-size: .75em;
+    font-size: .875em;
   }
 
   dd + dt {
     margin-top: .5rem;
-  }
-}
-
-.portfolio {
-  margin: 2rem 0 0;
-
-  @media (min-width: 50rem) {
-    display: flex;
-    gap: 2rem;
   }
 }
 
@@ -96,6 +93,11 @@
 .portfolio-list__link {
   text-decoration: none;
   display: block;
+  color: var(--local-portfolio-list-link-color, light-dark(var(--black), var(--white)));
+
+  &:hover {
+    --local-portfolio-list-link-color: light-dark(var(--pink-bright), var(--pink-light));
+  }
 }
 
 .portfolio-list__image {
@@ -104,17 +106,25 @@
 }
 
 .portfolio-list__title {
+  font-family: var(--amsi-narrow-bold), sans-serif;
   margin: .5rem 0 0;
+}
+
+.portfolio-list__publish-date {
+  font-family: var(--monolisa), monospace;
+  font-size: .875em;
 }
 
 .portfolio-list__synopsis {
   margin: .5rem 0 0;
+  font-family: var(--amsi-normal), sans-serif;
 }
 
 .portfolio-list__promo {
   background: light-dark(var(--white-mid), var(--blue-dark));
   border-radius: .5em;
   border: .0625em solid light-dark(var(--white-shadow), var(--blue-dark));
+  color: light-dark(var(--black), var(--white));
   display: flex;
   gap: 2em;
   margin: 5em 0 0;
@@ -123,6 +133,7 @@
 
   &:hover {
     background: light-dark(var(--white-shadow), var(--blue-mid));
+    color: inherit;
   }
 
   > :first-child {
@@ -141,6 +152,7 @@
 }
 
 .portfolio-list__promo-title {
+  font-family: var(--amsi-narrow-bold), sans-serif;
   margin: 0;
 }
 

@@ -2,9 +2,9 @@ $uses-grid-breakpoint: 40rem;
 $uses-subgrid-bredakpoint: 34rem;
 
 [data-pagename="uses"] {
+  background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  color: light-dark(var(--black), var(--blue-dusty));
   font-family: var(--amsi-normal), sans-serif;
-
-  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
 
   // @TODO - replace with CSS layers later
   .header {

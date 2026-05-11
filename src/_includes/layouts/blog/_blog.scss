@@ -3,21 +3,28 @@
 %_copy {
   max-width: var(--max-width);
   margin: 0 auto;
+  line-height: 2;
 }
 
 [data-pagename="blog"] {
+  background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+  color: light-dark(var(--black), var(--blue-dusty));
+  font-family: var(--amsi-normal), sans-serif;
+
   // @TODO - replace with CSS layers later
   .header {
-    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(148, 98%, 7%));
-    --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0), hsla(148, 98%, 7%, 0));
-    --header-logo-primary-color: light-dark(var(--black), var(--green-bright));
-    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--amber));
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+    --header-bar-color-alpha0: light-dark(
+        hsla(0, 0%, 100%, 0),
+        hsla(215, 33%, 10%, 0)
+    );
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
   }
 }
 
 .blog-table {
   border-collapse: collapse;
-  font-family: var(--monolisa), monospace;
   margin: 4em 0 0;
   width: 100%;
 }
@@ -49,9 +56,10 @@
     --left-right-padding: 2ch;
   }
 
-  @at-root [data-pagename="blog"] .blog-table__row:hover .blog-table__cell,
+  @at-root
+  [data-pagename="blog"] .blog-table__row:hover .blog-table__cell,
   [data-pagename="blog"] .blog-table__row:focus-within .blog-table__cell {
-    background-color: light-dark(hsl(0, 0%, 95%), hsla(148, 98%, 15%, .5));
+    background-color: light-dark(var(--white-shadow), var(--charcoal-dark));
   }
 
   p + p {
@@ -62,6 +70,17 @@
 .blog-table__cell-content {
   display: flex;
   flex-direction: column;
+}
+
+.blog-table__title {
+  font-family: var(--amsi-narrow-bold), sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.blog-table__brief {
+  margin: 0;
 }
 
 .blog-table__read-post {
@@ -85,6 +104,9 @@
 }
 
 .blog-table__cell--time {
+  font-family: var(--monolisa), monospace;
+  font-size: .875em;
+
   span:first-of-type {
     white-space: nowrap;
   }
@@ -144,5 +166,16 @@
     margin: 0 auto;
     top: -2em;
     position: relative;
+  }
+}
+
+.blog__music {
+  margin: 2em 0 0;
+
+  iframe {
+    aspect-ratio: 16 / 9;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }

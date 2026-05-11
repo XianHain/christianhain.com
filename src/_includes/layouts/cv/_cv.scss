@@ -20,10 +20,6 @@ $two-column-breakpoint: 53rem;
     --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
   }
 
-  --a-print-color: inherit;
-  --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
-  --a-default-color: light-dark(var(--pink-dark), var(--blue-dusty));
-
   @media print {
     font-family: var(--amsi-narrow-regular), sans-serif;
     line-height: inherit;
@@ -44,6 +40,11 @@ $two-column-breakpoint: 53rem;
   margin: 0 auto;
   font-smooth: always;
   padding: 0 1rem;
+
+  a {
+    --a-color: light-dark(var(--pink-bright), var(--purple-light));
+    --a-hover-color: light-dark(var(--pink-dark), var(--pink-mid));
+  }
 
   &.printable {
     @extend %print-page-dimensions;

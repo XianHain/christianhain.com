@@ -1,9 +1,9 @@
 @media only screen {
   a {
-    color: var(--a-default-color);
+    color: var(--a-color, initial);
 
     &:hover {
-      color: var(--a-hover-color);
+      color: var(--a-hover-color, initial);
     }
 
     &[target*="blank"]:after {
@@ -21,7 +21,7 @@
 
 @media print {
   a {
-    color: var(--a-print-color);
+    color: var(--a-print-color, initial);
     text-decoration: none;
   }
 }
