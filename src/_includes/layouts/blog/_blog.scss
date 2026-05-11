@@ -1,0 +1,148 @@
+@use "../../../_scss/utils/blog-nav";
+
+%_copy {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+[data-pagename="blog"] {
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(148, 98%, 7%));
+    --header-bar-color-alpha0: light-dark(hsl(0, 0%, 100%, 0), hsla(148, 98%, 7%, 0));
+    --header-logo-primary-color: light-dark(var(--black), var(--green-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--amber));
+  }
+}
+
+.blog-table {
+  border-collapse: collapse;
+  font-family: var(--monolisa), monospace;
+  margin: 4em 0 0;
+  width: 100%;
+}
+
+.blog-table__heading {
+  --left-right-padding: .5625em;
+
+  font-family: var(--amsi-condensed-bold), sans-serif;
+  font-weight: 400;
+  padding: .5em var(--left-right-padding);
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: 40rem) {
+    --left-right-padding: 1.125em;
+  }
+}
+
+.blog-table__cell {
+  --left-right-padding: 1ch;
+
+  border-top: .0625em solid var(--footer-border-color);
+  line-height: 2;
+  padding: .4365em var(--left-right-padding) .5em;
+  vertical-align: top;
+  transition: background-color .2s ease-in-out;
+
+  @media (min-width: 40rem) {
+    --left-right-padding: 2ch;
+  }
+
+  @at-root [data-pagename="blog"] .blog-table__row:hover .blog-table__cell,
+  [data-pagename="blog"] .blog-table__row:focus-within .blog-table__cell {
+    background-color: light-dark(hsl(0, 0%, 95%), hsla(148, 98%, 15%, .5));
+  }
+
+  p + p {
+    --p-margin: 0;
+  }
+}
+
+.blog-table__cell-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-table__read-post {
+  text-align: right;
+}
+
+.blog-table__read-post-link {
+  @extend %blog-nav-link;
+
+  // @TODO: rewrite css to accept variable font size
+  font-size: .75em;
+
+  opacity: var(--read-post-link-opacity, 0);
+  text-align: right;
+  transition: opacity .2s ease-in-out;
+
+  @at-root [data-pagename="blog"] .blog-table__row:hover .blog-table__read-post-link,
+  [data-pagename="blog"] .blog-table__row:focus-within .blog-table__read-post-link {
+    --read-post-link-opacity: 1;
+  }
+}
+
+.blog-table__cell--time {
+  span:first-of-type {
+    white-space: nowrap;
+  }
+
+  span:nth-of-type(n + 1) {
+    @media (min-width: 40rem) {
+      white-space: nowrap;
+    }
+  }
+}
+
+.blog-nav {
+  padding: 2rem 0 0;
+}
+
+.blog-nav__link-list {
+  @extend %blog-nav-link-list;
+}
+
+.blog-nav__link {
+  @extend %blog-nav-link;
+}
+
+.blog {
+  @extend %_copy;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog__songquote {
+  text-align: center;
+}
+
+.blog__copy {
+  @extend %_copy;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.blog__signature {
+  text-align: right;
+}
+
+.blog__postscript {
+  padding: 2em 0 0;
+
+  &:before {
+    content:  "";
+    display: block;
+    height: .0625rem;
+    background: var(--footer-border-color);
+    width: 60%;
+    margin: 0 auto;
+    top: -2em;
+    position: relative;
+  }
+}

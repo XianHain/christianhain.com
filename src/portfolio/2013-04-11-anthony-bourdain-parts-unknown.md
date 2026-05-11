@@ -1,5 +1,5 @@
 ---
-layout: layouts/portfolio-entry.liquid
+layout: layouts/portfolio/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "Anthony Bourdain, Parts Unknown"
 slug: "anthony-bourdain-parts-unknown"

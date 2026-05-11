@@ -1,5 +1,5 @@
 ---
-layout: layouts/cv.liquid
+layout: layouts/cv/cv.liquid
 pageName: cv
 headTitle: "Curriculum Vitae"
 headDescription: "15+ years in web UI design, UX enhancement, and team building. Expert in e-commerce, enterprise site redesigns, and development best practices."

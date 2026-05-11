@@ -1,4 +1,53 @@
-.layout-portfolio {
+[data-pagename="portfolio"] {
+  --p-font-family: var(--monolisa);
+  --p-font-size: .75em;
+
+  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
+    --header-bar-color-alpha0: light-dark(
+        hsla(0, 0%, 100%, 0),
+        hsla(215, 33%, 10%, 0)
+    );
+    --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
+  }
+
+  p {
+    max-width: 80ch;
+    align-self: center;
+  }
+
+  p + p, {
+    --p-margin: 2em 0 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--amsi-narrow-bold), sans-serif;
+  }
+
+  dt {
+    font-family: var(--amsi-narrow-bold), sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--monolisa), monospace;
+    font-size: .75em;
+  }
+
+  dd + dt {
+    margin-top: .5rem;
+  }
+}
+
+.portfolio {
   margin: 2rem 0 0;
 
   @media (min-width: 50rem) {
@@ -7,11 +56,11 @@
   }
 }
 
-.layout-portfolio__content {
+.portfolio__content {
   flex-grow: 1;
 }
 
-.layout-portfolio__sidebar {
+.portfolio__sidebar {
   max-inline-size: 15rem;
   inline-size: 100%;
   order: 1;
@@ -33,19 +82,15 @@
   min-inline-size: 10rem;
   max-inline-size: calc(33.333% - 2rem);
   inline-size: 100%;
-}
 
-@media (max-width: 56.25rem) {
-  .portfolio-list__item {
-    flex: 1 1 calc(50% - 2rem);
-    max-inline-size: calc(50% - 2rem);
-  }
-}
-
-@media (max-width: 37.5rem) {
-  .portfolio-list__item {
+  @media (max-width: 37.5rem) {
     flex: 1 1 100%;
     max-inline-size: 100%;
+  }
+
+  @media (max-width: 56.25rem) {
+    flex: 1 1 calc(50% - 2rem);
+    max-inline-size: calc(50% - 2rem);
   }
 }
 

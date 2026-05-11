@@ -1,4 +1,4 @@
-{% layout "./base.liquid" %}
+{% layout "../base.liquid" %}
 
 {% block content %}
   <main class="page__content">
@@ -74,7 +74,7 @@
                     title="Show Details"
                     onclick="window.xian.uses.togglePopover(event)"
                   >
-                    {% include "../icons/eye.svg" %}
+                    {% include "../../icons/eye.svg" %}
                   </button>
                 </div>
               {% endfor %}
@@ -105,7 +105,7 @@
         class="uses-popover__close"
         onclick="window.xian.uses.togglePopover(event)"
       >
-        {% include "../icons/close.svg" %}
+        {% include "../../icons/close.svg" %}
       </button>
       <dl class="uses-popover__details">
         <dt data-js="description">Product Description</dt>

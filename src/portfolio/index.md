@@ -1,5 +1,5 @@
 ---
-layout: layouts/portfolio-index.liquid
+layout: layouts/portfolio/portfolio-index.liquid
 pageName: portfolio
 headTitle: "Portfolio"
 headDescription: "Some samples of my design work"

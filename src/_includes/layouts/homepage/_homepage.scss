@@ -1,5 +1,5 @@
-@use "../utils/blog-nav";
-@use "../utils/video-background";
+@use "../../../_scss/utils/blog-nav";
+@use "../../../_scss/utils/video-background";
 
 [data-pagename="homepage"] {
   --font-primary-light: var(--amsi-normal-light);

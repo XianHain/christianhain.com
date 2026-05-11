@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.liquid
+layout: layouts/homepage/homepage.liquid
 pageName: homepage
 menuTypes: ["navigation"]
 permalink: "{%- if pagination.pageNumber == 0 -%}/index.html{%- else -%}/.delete/homepages/{{- pagination.pageNumber -}}/{%- endif -%}"

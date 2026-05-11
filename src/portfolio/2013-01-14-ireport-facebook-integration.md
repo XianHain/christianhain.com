@@ -1,5 +1,5 @@
 ---
-layout: layouts/portfolio-entry.liquid
+layout: layouts/portfolio/portfolio-entry.liquid
 pageName: portfolio
 headTitle: "iReport Facebook Integration"
 slug: "ireport-facebook-integration"

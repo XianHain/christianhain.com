@@ -12,7 +12,7 @@ url: "https://www.christianhain.com/blog/great-documentation-formatting"
 brief: "Welcome back!  I've missed you.  It has been weird to think about blogging in the wake of ChatGPT, but I promised a series, and here it is!  This is part two of the Great Documentation essay series.  In part one, I talked about giving context, and today I'll discuss formatting…"
 tags: ["56744722958ef13879b950f8"]
 canonical: "https://www.christianhain.com/blog/great-documentation-formatting/"
-layout: layouts/blog-entry.liquid
+layout: layouts/blog/blog-entry.liquid
 theme: blog
 pageName: blog
 footerTypes: ["written-by-human"]

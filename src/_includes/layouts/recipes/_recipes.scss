@@ -1,0 +1,88 @@
+[data-pagename="recipes"] {
+  // @TODO - replace with CSS layers later
+  .header {
+    --header-bar-color: light-dark(hsl(0, 0%, 100%), hsl(148, 98%, 7%));
+    --header-bar-color-alpha0: light-dark(
+      hsl(0, 0%, 100%, 0),
+      hsla(148, 98%, 7%, 0)
+    );
+    --header-logo-primary-color: light-dark(var(--black), var(--green-bright));
+    --header-logo-secondary-color: light-dark(var(--pink-bright), var(--amber));
+  }
+}
+
+.recipe-phase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 30% 70%;
+  }
+
+  > * {
+    margin: 0;
+  }
+}
+
+.recipe-phase__ingredients {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-template-areas:
+    "quantity unit name"
+    ".        .    note";
+  grid-auto-rows: auto;
+  column-gap: 1em;
+  row-gap: 0.25em;
+  align-items: center;
+}
+
+.recipe-ingredient {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-areas: inherit;
+  grid-column: 1 / -1;
+}
+
+.recipe-ingredient__quantity {
+  grid-area: quantity;
+}
+
+.recipe-ingredient__unit {
+  grid-area: unit;
+}
+
+.recipe-ingredient__name {
+  grid-area: name;
+}
+
+.recipe-ingredient__note {
+  grid-area: note;
+}
+
+.recipe-social-music-videos {
+  margin: 4em 0 0;
+}
+
+.recipe-social-music-videos__videos {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.recipe-social-music-videos__figure {
+  margin: 0;
+  max-inline-size: 325px;
+}
+
+.recipe-tiktok-embed {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: .5em;
+}

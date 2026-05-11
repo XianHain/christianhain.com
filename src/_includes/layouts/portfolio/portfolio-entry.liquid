@@ -1,4 +1,4 @@
-{% layout "./base.liquid" %}
+{% layout "../base.liquid" %}
 
 {% block content %}
   <main class="page__content" data-theme="portfolio">
@@ -7,8 +7,8 @@
         <h1 class="page-title__h1">{{ headTitle }}</h1>
       </div>
 
-      <div class="layout-portfolio">
-        <aside class="layout-portfolio__sidebar">
+      <div class="portfolio">
+        <aside class="portfolio__sidebar">
           <p>{{ headDescription | formatted }}</p>
           <dl>
             {% for metadatum in metadata %}
@@ -36,7 +36,7 @@
             {% endfor %}
           </dl>
         </aside>
-        <section class="layout-portfolio__content">
+        <section class="portfolio__content">
           {{ content | formatted }}
         </section>
       </div>

@@ -26,13 +26,11 @@
 @use "../_includes/components/header/header";
 @use "../_includes/components/header/menu";
 
-@use "layout/portfolio" as portfolio-layout;
-
-@use "pages/cv";
-@use "pages/404" as four-oh-four;
-@use "pages/now";
-@use "pages/uses";
-@use "pages/blog" as blog-page;
-@use "pages/recipes";
-@use "pages/homepage";
-@use "pages/portfolio-entry";
+@use "../_includes/layouts/cv/cv";
+@use "../_includes/layouts/404/404" as four-oh-four;
+@use "../_includes/layouts/now/now";
+@use "../_includes/layouts/uses/uses";
+@use "../_includes/layouts/blog/blog" as blog-layout;
+@use "../_includes/layouts/recipes/recipes";
+@use "../_includes/layouts/homepage/homepage";
+@use "../_includes/layouts/portfolio/portfolio";

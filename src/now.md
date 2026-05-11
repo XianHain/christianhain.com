@@ -1,5 +1,5 @@
 ---
-layout: layouts/now.liquid
+layout: layouts/now/now.liquid
 pageName: now
 headTitle: "/now"
 headDescription: "What's going on now? A brief update into what I'm focused on"

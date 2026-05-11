@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog-index.liquid
+layout: layouts/blog/blog-index.liquid
 theme: blog
 pageName: blog
 headTitle: "Blogs, Memos, and Articles"

@@ -1,4 +1,4 @@
-{% layout "./base.liquid" %}
+{% layout "../base.liquid" %}
 
 {% block content %}
   <main>
@@ -17,7 +17,7 @@
           title="@XianHain on YouTube"
         >
           <span class="youtube-cta__icon">
-            {% include "../icons/youtube-solid.svg" %}
+            {% include "../../icons/youtube-solid.svg" %}
           </span>
           <span class="youtube-cta__text">
             Go to playlist!
@@ -73,7 +73,7 @@
               </div>
             {% endcapture %}
             <article class="blog-entry">
-              {% include "../components/portal-window/portal-window.liquid", contentInScreen: portalWindowContentInScreen %}
+              {% include "../../components/portal-window/portal-window.liquid", contentInScreen: portalWindowContentInScreen %}
             </article>
 
           {% endfor %}
@@ -133,7 +133,7 @@
                 target="{{ profile.attributes.target }}"
               >
                 <span class="work-with-me__social-link-icon">
-                  {% assign _iconPath = "../icons/" | append: profile.id | append: ".svg" %}
+                  {% assign _iconPath = "../../icons/" | append: profile.id | append: ".svg" %}
                   {% include _iconPath %}
                 </span>
                 <span class="work-with-me__social-link-text">{{ profile.attributes.title }}</span>

@@ -12,7 +12,7 @@ url: "https://www.christianhain.com/blog/good-design-solves-problems"
 brief: "Good design is about solving problems, regardless of the medium.  American architect, Bertrand Goldberg, designed the Marina City in 1959 to address what he believed to be an issue with Chicago residents leaving the city to live in the suburbs."
 tags: ["56744723958ef13879b95230"]
 canonical: "https://www.christianhain.com/blog/good-design-solves-problems/"
-layout: layouts/blog-entry.liquid
+layout: layouts/blog/blog-entry.liquid
 theme: blog
 pageName: blog
 footerTypes: ["written-by-human"]
