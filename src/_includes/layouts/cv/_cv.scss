@@ -1,16 +1,10 @@
 @use "../../../_scss/utils/_print-page-dimensions" as *;
 
-$two-column-breakpoint: 53rem;
+$two-column-breakpoint: 60em;
 
 [data-pagename="cv"] {
   color: light-dark(var(--black), var(--blue-dusty));
   background-color: light-dark(var(--white), var(--charcoal));
-
-  font-family: var(--amsi-normal), sans-serif;
-  line-height: 1.75;
-  font-size: .875em;
-
-  --background-color: light-dark(hsl(0, 0%, 100%), hsl(215, 33%, 10%));
 
   // @TODO - replace with CSS layers later
   .header {
@@ -18,12 +12,6 @@ $two-column-breakpoint: 53rem;
     --header-bar-color-alpha0: light-dark(hsla(0, 0%, 100%, 0), hsla(215, 33%, 10%, 0%));
     --header-logo-primary-color: light-dark(var(--black), var(--blue-dusty));
     --header-logo-secondary-color: light-dark(var(--pink-bright), var(--pink-mid));
-  }
-
-  @media print {
-    font-family: var(--amsi-narrow-regular), sans-serif;
-    line-height: inherit;
-    font-size: inherit;
   }
 }
 
@@ -39,11 +27,11 @@ $two-column-breakpoint: 53rem;
   max-width: $two-column-breakpoint;
   margin: 0 auto;
   font-smooth: always;
-  padding: 0 1rem;
+  padding: 0 1em;
 
   a {
-    --a-color: light-dark(var(--pink-bright), var(--purple-light));
-    --a-hover-color: light-dark(var(--pink-dark), var(--pink-mid));
+    --a-color: light-dark(var(--pink-dark), var(--purple-light));
+    --a-hover-color: light-dark(var(--pink-bright), var(--pink-mid));
   }
 
   &.printable {
@@ -53,15 +41,13 @@ $two-column-breakpoint: 53rem;
 
 /****************************************************************************** Grid */
 .cv-grid {
-  --grid-template-columns: repeat(1, 1fr);
-
   display: grid;
-  grid-template-columns: var(--grid-template-columns);
   grid-column-gap: 2em;
   grid-row-gap: 1em;
+  grid-template-columns: var(--local-cv-grid-template-columns, repeat(1, 1fr));
 
   @media print, (min-width: $two-column-breakpoint) {
-    --grid-template-columns: repeat(2, 1fr);
+    --local-cv-grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -83,70 +69,78 @@ $two-column-breakpoint: 53rem;
 
 /****************************************************************************** Section */
 .cv-section {
-  --margin-top: 1em;
-  --padding: 1em 1em 0;
-
-  border-top: .0625rem solid black;
-  margin: var(--margin-top) 0 0;
-  padding: var(--padding);
+  border-top: var(
+      --local-cv-section-border-top,
+      .0625rem solid light-dark(black, var(--blue-dusty))
+  );
+  font-family: var(--local-cv-font-family, var(--amsi-normal)), sans-serif;
+  line-height: var(--local-cv-line-height, 1.75);
+  margin: var(--local-cv-section-margin-top, 1em) 0 0;
+  padding: var(--local-cv-section-padding, 1em 1em 0);
 
   @media (min-width: $two-column-breakpoint) {
-    --margin-top: 3em;
-    --padding: 2em 4em 0;
+    --local-cv-section-margin-top: 3em;
+    --local-cv-section-padding: 2em 4em 0;
   }
 
   @media print {
-    --margin-top: 1em;
-    --padding: 1em 4em 0;
+    --local-cv-font-family: var(--amsi-narrow-regular), sans-serif;
+    --local-cv-font-size: auto;
+    --local-cv-line-height: auto;
+    --local-cv-section-margin-top: 1em;
+    --local-cv-section-padding: 1em 4em 0;
   }
 }
 
 .cv-section--new-page {
   @media print {
-    padding: 0 4em;
+    --local-cv-section-border-top: 0;
+    --local-cv-section-padding: 0 4em;
     page-break-before: always;
-    border: none;
   }
 }
 
 .cv-section--no-border {
-  border: 0;
+  --local-cv-section-border-top: 0;
 }
 
 /****************************************************************************** Headings */
 .cv-section-title {
-  margin: 0;
   font-family: var(--amsi-condensed-ultra), sans-serif;
+  font-size: var(--local-cv-section-title-font-size, 2em);
   font-weight: 400;
-  font-size: 2em;
+  margin: 0;
 
   @media print {
-    font-size: 1.75em;
+    --local-cv-section-title-font-size: 1.75em;
   }
-}
-
-.cv-section-header,
-.cv-section-subheader {
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 400;
-  font-family: var(--amsi-condensed-black), sans-serif;
 }
 
 .cv-section-header {
-  font-size: 1.5em;
+  font-family: var(--amsi-condensed-black), sans-serif;
+  font-size: var(--local-cv-section-header-font-size, 1.5em);
+  font-weight: 400;
+  margin: 0;
+  text-transform: var(--local-cv-section-header-text-transform, uppercase);
 
   @media print {
-    font-size: 1.375em;
+    --local-cv-section-header-font-size: 1.375em;
   }
 }
 
-.cv-section-subheader {
-  font-size: 1.5em;
+.cv-section-header--subheader-0 {
+  --local-cv-section-header-text-transform: uppercase;
+  --local-cv-section-header-font-size: 1.375em;
 
   @media print {
-    font-size: 1.125em;
+    --local-cv-section-header-font-size: 1.125em;
   }
+}
+
+.cv-section-header--subheader-1 {
+  --local-cv-section-header-text-transform: auto;
+  --local-cv-section-header-font-size: auto;
+  font-family: var(--amsi-narrow-bold), sans-serif;
 }
 
 .cv-section-header--margin {
@@ -231,7 +225,6 @@ $two-column-breakpoint: 53rem;
 
 .cv-details__title {
   display: inline;
-  font-family: var(--amsi-narrow-bold), sans-serif;
 
   &:after {
     content: ": ";
@@ -250,57 +243,64 @@ $two-column-breakpoint: 53rem;
 
 /****************************************************************************** Story */
 .cv-story {
-  --p-line-height: 2;
-  --margin-top: 1rem;
-  --max-width: 60ch;
-
-  font-family: var(--amsi-normal), sans-serif;
   hyphens: auto;
-  margin: var(--margin-top) auto 0;
-  max-width: var(--max-width);
-
-  > p:not(p:first-of-type) {
-    --p-text-indent: 4ch;
-  }
+  line-height: var(--local-cv-story-line-height, 2);
+  margin: var(--local-cv-story-margin-top, 1em) auto 0;
+  max-width: var(--local-cv-story-max-width, 60ch);
 
   @media (min-width: $two-column-breakpoint) {
-    --margin-top: .5em;
+    --local-cv-story-margin-top: .5em;
+  }
+
+  @media print {
+    --local-cv-story-line-height: 1.5;
   }
 
   > * {
-    --p-margin: 0;
+    --local-cv-story-margin-top: 0;
   }
 
   > * + * {
-    --p-margin: 1em 0 0;
+    --local-cv-story-margin-top: 1em;
   }
 }
 
 .cv-story--margin {
-  --margin-top: 1rem;
+  --local-cv-story-margin-top: 1em;
 }
 
 .cv-story--condensed {
-  --p-line-height: 1.5;
+  --local-cv-story-line-height: 1.5;
 }
 
 /****************************************************************************** Employment Heading */
 .cv-employment-heading {
-  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 1em;
+  line-height: 1;
 
-  @media (min-width: $two-column-breakpoint) {
+  @media (min-width: 42em) {
+    align-items: flex-end;
     display: flex;
+  }
+
+  > h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 min-content;
+    gap: .25em;
+    margin: 0;
   }
 
   > h2 > span:first-child {
     &:after {
-      content: ": ";
+      content: ":";
       font-family: var(--amsi-narrow-bold), sans-serif;
     }
   }
 
   > h2 > span:last-child {
+    display: inline-block;
     font-family: var(--amsi-condensed-regular), sans-serif;
   }
 
@@ -308,9 +308,13 @@ $two-column-breakpoint: 53rem;
     display: flex;
     font-size: 1.2em;
     gap: 1em;
-    line-height: 2.375;
-    margin: 0;
+    line-height: 1;
     text-transform: uppercase;
+    margin: var(--local-cv-employment-heading-dl-margin, .5em 0 0);
+
+    @media (min-width: 42em) {
+      --local-cv-employment-heading-dl-margin: 0;
+    }
 
     @media print {
       font-size: inherit;
@@ -340,8 +344,8 @@ $two-column-breakpoint: 53rem;
 
 .cv-award-details__badges {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 1em 0 0;
 }
 
@@ -362,4 +366,17 @@ $two-column-breakpoint: 53rem;
 /****************************************************************************** Misc */
 .cv-p {
   margin: 0;
+}
+
+.cv-meta {
+  font-family: var(--monolisa), monospace;
+  font-size: .875em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 clamp(2em, 5vw, 4em);
+
+  > * {
+    margin: 0;
+  }
 }
