@@ -39,7 +39,9 @@ canonical: "https://www.christianhain.com/cv/"
         <dd><a rel="nofollow" href="https://javascript.plainenglish.io/the-relationship-between-javascript-ecmascript-6d17706a576" title="The Relationship Between JavaScript & ECMAScript" target="_blank">EcmaScript/JavaScript</a></dd>
         <dd><a rel="nofollow" href="https://html.spec.whatwg.org"                                                                  title="HTML Standard Homepage"                           target="_blank">HTML</a></dd>
         <dd><a rel="nofollow" href="https://www.w3.org/Style/CSS/current-work"                                                     title="CSS Current Work and How to Participate"          target="_blank">CSS</a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">JavaScript</dt>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          JavaScript
+        </dt>
         <dd><a rel="nofollow" href="https://lit.dev"                     title="Lit Web Components Homepage"  target="_blank">Lit Web Components</a></dd>
         <dd><a rel="nofollow" href="https://www.typescriptlang.org/play" title="TypeScript@latest Playground" target="_blank">TypeScript</a></dd>
         <dd><a rel="nofollow" href="https://storybook.js.org/docs/8"     title="Storybook@8 Developer Docs"   target="_blank">Storybook.js</a></dd>
@@ -49,30 +51,36 @@ canonical: "https://www.christianhain.com/cv/"
         <dd><a rel="nofollow" href="https://nextjs.org/blog"             title="Next Blog"                    target="_blank">Next.js</a></dd>
         <dd><a rel="nofollow" href="https://rollupjs.org"                title="Rollup Homepage"              target="_blank">Rollup</a></dd>
         <dd><a rel="nofollow" href="https://webpack.js.org/concepts/"    title="WebPack Developer Docs"       target="_blank">Webpack</a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">JavaScript Test Frameworks</dt>
+        <dd><a rel="nofollow" href="https://vite.dev"                    title="Vite Homepage"                target="_blank">Vite</a></dd>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          JavaScript Test Frameworks
+        </dt>
         <dd><a rel="nofollow" href="https://modern-web.dev/docs/test-runner/overview/" title="Web Test Runner Page" target="_blank">Web Test Runner</a></dd>
         <dd><a rel="nofollow" href="https://github.com/mochajs/mocha/wiki"             title="Mocha GitHub Wiki"    target="_blank">MochaJS</a></dd>
         <dd><a rel="nofollow" href="https://jestjs.io"                                 title="Jest Homepage"        target="_blank">Jest.js</a></dd>
         <dd><a rel="nofollow" href="https://vitest.dev"                                title="Vitest Homepage"        target="_blank">Vitest</a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1"><abbr title="Cascading Style Sheets">CSS</abbr></dt>
-        <dd><a rel="nofollow" href="https://sass-lang.com/playground/"     title="Sass Playground"     target="_blank">Sass/SCSS</a></dd>
-        <dd><a rel="nofollow" href="https://lesscss.org/about/"            title="Less History"        target="_blank">Less</a></dd>
-        <dd><a rel="nofollow" href="https://get.foundation/"               title="Foundation Homepage" target="_blank">Foundation</a> (<a rel="nofollow" href="https://get.foundation/sites/docs/" title="Foundation for Sites Docs" target="_blank">Foundation for Sites</a>, <a rel="nofollow" href="https://get.foundation/emails/docs/" title="Foundation for Emails Docs" target="_blank">Foundation for Emails</a>)</dd>
-        <dd><a rel="nofollow" href="https://blog.getbootstrap.com/"        title="Bootstrap Blog"      target="_blank">Bootstrap</a></dd>
-        <dd><a rel="nofollow" href="https://materializecss.com/about.html" title="About Materialize"   target="_blank">Materialize</a></dd>
-        <dd><a rel="nofollow" href="https://tailwindcss.com"               title="Tailwind Homepage"   target="_blank">Tailwind</a></dd>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          <abbr title="Cascading Style Sheets">CSS</abbr>
+        </dt>
+        <dd><a rel="nofollow" href="https://sass-lang.com/playground/"          title="Sass Playground"   target="_blank">Sass/SCSS</a></dd>
+        <dd><a rel="nofollow" href="https://tailwindcss.com"                    title="Tailwind Homepage" target="_blank">Tailwind</a></dd>
+        <dd><a rel="nofollow" href="https://github.com/css-modules/css-modules" title="CSS Modules Repo"  target="_blank">CSS Modules</a></dd>
+        <dd><a rel="nofollow" href="https://cssinjs.org/?v=v10.10.1"            title="JSS Homepage"      target="_blank">JSS (CSS-in-JS)</a></dd>
       </dl>
     </div>
     <div class="cv-grid__a2">
       <h4 class="cv-section-header cv-section-header--subheader-0">Software and services</h4>
       <dl class="cv-details">
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Templating Languages & <abbr title="Content Management System">CMS</abbr></dt>
-        <dd><a rel="nofollow" href="https://www.11ty.dev"                  title="11ty Homepage"                     target="_blank">11ty</a></dd>
-        <dd><a rel="nofollow" href="https://liquidjs.com"                  title="Liquid.js Homepage"                target="_blank">Liquid</a></dd>
-        <dd><a rel="nofollow" href="https://twig.symfony.com/"             title="Twig Homepage"                     target="_blank">Twig</a></dd>
-        <dd><a rel="nofollow" href="https://craftcms.com/docs/3.x/"        title="Craft@3 Developer Docs"            target="_blank">Craft <abbr title="Content Management System">CMS</abbr></a></dd>
-        <dd><a rel="nofollow" href="https://docs.expressionengine.com/v2/" title="ExpressionEngine@2 Developer Docs" target="_blank">ExpressionEngine <abbr title="Content Management System">CMS</abbr></a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1"><abbr title="Software as a Service">SaaS</abbr></dt>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          Templating Languages & <abbr title="Content Management System">CMS</abbr>
+        </dt>
+        <dd><a rel="nofollow" href="https://www.11ty.dev"           title="11ty Homepage"          target="_blank">11ty</a></dd>
+        <dd><a rel="nofollow" href="https://liquidjs.com"           title="Liquid.js Homepage"     target="_blank">Liquid</a></dd>
+        <dd><a rel="nofollow" href="https://twig.symfony.com/"      title="Twig Homepage"          target="_blank">Twig</a></dd>
+        <dd><a rel="nofollow" href="https://craftcms.com/docs/3.x/" title="Craft@3 Developer Docs" target="_blank">Craft <abbr title="Content Management System">CMS</abbr></a></dd>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          <abbr title="Software as a Service">SaaS</abbr>
+        </dt>
         <dd><a rel="nofollow" href="https://github.com/enterprise"                                                                                                                                     title="GitHub Enterprise Page"                                                                               target="_blank">GitHub Enterprise</a></dd>
         <dd><a rel="nofollow" href="https://www.datadoghq.com/"                                                                                                                                        title="DataDog Homepage"                                                                                     target="_blank">DataDog</a></dd>
         <dd><a rel="nofollow" href="https://www.heap.io/"                                                                                                                                              title="Heap Homepage"                                                                                        target="_blank">Heap</a></dd>
@@ -81,20 +89,29 @@ canonical: "https://www.christianhain.com/cv/"
         <dd><a rel="nofollow" href="https://www.splunk.com/en_us/newsroom/press-releases/2020/splunk-to-acquire-plumbr-and-rigor-expanding-the-worlds-most-comprehensive-observability-portfolio.html" title="Splunk to Acquire Plumbr and Rigor, Expanding the World’s Most Comprehensive Observability Portfolio" target="_blank">Rigor</a></dd>
         <dd><a rel="nofollow" href="https://www.atlassian.com/"                                                                                                                                        title="Atlassian Homepage"                                                                                   target="_blank">Atlassian Products</a></dd>
         <dd><a rel="nofollow" href="https://developer.goacoustic.com/acoustic-exp-analytics/docs/tealeaf-ui-capture-overview-1"                                                                        title="Acoustic Tealeaf Web SDK Overview"                                                                    target="_blank">Acoustic/CoreMetrics</a></dd>
-        <dd><a rel="nofollow" href="https://marketingplatform.google.com/about/analytics/"                                                                                                             title="About Google Analytics"                                                                               target="_blank">Google Analytics</a></dd>
-        <dd><a rel="nofollow" href="https://www.litmus.com/"                                                                                                                                           title="Litmus Homepage"                                                                                      target="_blank">Litmus</a></dd>
-        <dd><a rel="nofollow" href="https://aws.amazon.com/free/"                                                                                                                                      title="AWS Homepage"                                                                                         target="_blank">Amazon Web Services (<abbr title="Amazon Web Services">AWS</abbr>)</a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Databases</dt>
+        <dd><a rel="nofollow" href="https://aws.amazon.com/free/"                                                                                                                                      title="AWS Homepage"                                                                                         target="_blank">Amazon Web Services (<abbr title="Amazon Web Services">AWS</abbr>)</a></dd> 
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          Databases
+        </dt>
         <dd><a rel="nofollow" href="https://aws.amazon.com/what-is/sql/" title="What is SQL?" target="_blank"><abbr title="Structured Query Language">SQL</abbr></a> (<a rel="nofollow" href="https://dev.mysql.com" title="MySQL Developer Zone" target="_blank">MySQL</a>) and <a rel="nofollow" href="https://aws.amazon.com/nosql/" title="What is NoSQL?" target="_blank">NoSQL</a> (<a rel="nofollow" href="https://www.mongodb.com/docs/legacy/?site=docs" title="MongoDB@3 Legacy Docs Downloader" target="_blank">MongoDB</a>, <a rel="nofollow" href="https://aws.amazon.com/dynamodb/" title="AWS DynamoDB Landing Page" target="_blank">DynamoDB</a>)</dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Software development tools</dt>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          Software development tools
+        </dt>
         <dd><a rel="nofollow" href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" title="So You Think You Know Git - FOSDEM 2024" target="_blank">Git</a></dd>
         <dd><a rel="nofollow" href="https://yarnpkg.com/blog/release/4.0"        title="Release: Yarn 4.0 🪄⚗️"                  target="_blank">Yarn</a>/<a               rel="nofollow" href="https://docs.npmjs.com/about-npm" title="About NPM" target="_blank">NPM</a></dd>
         <dd><a rel="nofollow" href="https://www.jetbrains.com/webstorm/"         title="Webstorm"                                target="_blank">JetBrains Webstorm</a>/<a rel="nofollow" href="https://www.jetbrains.com/junie/" title="Junie"     target="_blank">Junie <abbr title="Artificial Intelligence">AI</abbr></a></dd>
         <dd><a rel="nofollow" href="https://www.docker.com/blog/"                title="Docker Blog"                             target="_blank">Docker</a></dd>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
+          Agentic development tools
+        </dt>
+        <dd><a rel="nofollow" href="https://www.jetbrains.com/junie/"         title="Junie Landing Page" target="_blank">Junie</a></dd>
+        <dd><a rel="nofollow" href="https://code.claude.com/docs/en/overview" title="Claude Code Docs"   target="_blank">Claude Code</a></dd>
       </dl>
     </div>
     <div class="cv-grid__b1">
-      <h4 class="cv-section-header cv-section-header--subheader-0">Methodologies</h4>
+      <h4 class="cv-section-header cv-section-header--subheader-0">
+        Methodologies
+      </h4>
       <ul class="cv-details">
         <li><a rel="nofollow" href="https://getbem.com/"                                            title="BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development" target="_blank"><abbr title="Block Element Modifier">BEM</abbr></a>, <a rel="nofollow" href="https://smacss.com/" title="Scalable and Modular Architecture for CSS" target="_blank"><abbr title="Scalable and Modular Architecture for CSS">SMACCs</abbr></a>, <a rel="nofollow" href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/" title="Axiomatic CSS and Lobotomized Owls" target="_blank">Lobotomized Owl</a>, and other conventions to manage enterprise-level <abbr title="Cascading Style Sheets">CSS</abbr></li>
         <li><a rel="nofollow" href="https://atomicdesign.bradfrost.com/chapter-1/"                  title="Atomic Design by Brad Frost"                                                                                   target="_blank">Atomic Design</a></li>
@@ -102,7 +119,7 @@ canonical: "https://www.christianhain.com/cv/"
         <li><a rel="nofollow" href="https://gist.github.com/rveitch/84cea9650092119527bc"           title="Seven-in-One Pattern"                                                                                          target="_blank">Seven-in-One <abbr title="Cascading Style Sheets">CSS</abbr></a></li>
         <li>responsive design</li>
         <li>accessible/semantic design</li>
-        <li><abbr title="Artificial Intelligence">AI</abbr> Agentic/Spec-Driven Development</li>
+        <li><abbr title="Artificial Intelligence">AI</abbr> Agentic/Spec-Driven Development (<a rel="nofollow" href="https://github.com/github/spec-kit" title="Spec-kit GitHub Repo" target="_blank">Spec-kit</a>)</li>
       </ul>
     </div>
   </div>
@@ -111,20 +128,20 @@ canonical: "https://www.christianhain.com/cv/"
     <div class="cv-grid">
       <div class="cv-grid__a1">
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Documentation</dt>
-        <dd><a rel="nofollow" href="https://www.mediawiki.org/wiki/Developer_hub"  title="MediaWiki Developer Hub" target="_blank">MediaWiki</a></dd>
         <dd>Technical documentation and diagramming</dd>
         <dd>Whitepapers</dd>
         <dd>One-pagers/<abbr title="Press Release Frequently Asked Questions">PR FAQs</abbr></dd>
         <dd>Business Requirement Documents</dd>
+        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Misc</dt>
+        <dd>Leadership</dd>
+        <dd>Mentorship</dd>
+        <dd>Community building</dd>
       </div>
       <div class="cv-grid__a2">
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1"><abbr title="User Interface">UI</abbr>/<abbr title="User Experience">UX</abbr></dt>
         <dd><a rel="nofollow" href="https://www.adobe.com/creativecloud/features.html"                          title="Adobe Creative Cloud Features"                    target="_blank">Adobe Creative Cloud</a> (<a rel="nofollow" href="https://www.adobe.com/products/photoshop/features.html" title="Adobe Photoshop Features" target="_blank">Photoshop</a>, <a rel="nofollow" href="https://www.adobe.com/products/illustrator/features.html" title="Adobe Illustrator Features" target="_blank">Illustrator</a>, <a rel="nofollow" href="https://helpx.adobe.com/support/xd.html#troubleshooting" title="Adobe XD is in Maintenance Mode" target="_blank">XD</a>, <a rel="nofollow" href="https://helpx.adobe.com/animate/using/whats-new.html" title="Adobe Animate New Features" target="_blank">Animate</a>)</dd>
         <dd><a rel="nofollow" href="https://www.figma.com/best-practices/tips-for-a-better-developer-workflow/" title="Figma Tips for a Better Developer Workflow"       target="_blank">Figma</a></dd>
         <dd><a rel="nofollow" href="https://mermaid.ai/landing"                                                 title="The Future of Diagramming & Visual Collaboration" target="_blank">Mermaid.js</a></dd>
-        <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Misc</dt>
-        <dd>Lead/develop purpose-driven committees</dd>
-        <dd>A/B testing</dd>
       </div>
     </div>
   </dl>
@@ -137,6 +154,11 @@ canonical: "https://www.christianhain.com/cv/"
         <li><span>5 years</span><span> @ </span><span><a href="#amazon" title="Jump to Amazon Experience Section">Amazon, Inc./Fabric, Inc.</a></span></li>
         <li><span>5 years</span><span> @ </span><span><a href="#cnn"    title="Jump to CNN Experience Section">Turner Services, Inc./CNN</a></span></li>
         <li><span>1 year</span><span> @ </span><span><a  href="#delta"  title="Jump to Delta Experience Section">Wipro Limited/Delta Air Lines, Inc.</a></span></li>
+      </ul>
+      <h3 class="cv-section-header">Startup Experience</h3>
+      <ul class="cv-sneaky-list">
+        <li><span>4 years</span><span> @ </span><span><a href="#finquery"  title="Jump to FinQuery Experience Section">FinQuery, LLC.</a></span></li>
+        <li><span>1 year</span><span> @ </span><span><a  href="#smartvent" title="Jump to SmartVent Experience Section">SmartVent, Inc.</a></span></li>
       </ul>
     </div>
     <div class="cv-grid__a2">
