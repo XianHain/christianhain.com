@@ -235,11 +235,13 @@
 }
 
 .blog-entry__title {
-  text-align: center;
-  font-size: 2rem;
-  margin: 0;
+  font-family: ThygaItalicSemirounded, sans-serif;
+  font-size: 3em;
   font-weight: 400;
-  font-family: var(--amsi-narrow-bold), sans-serif;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .blog-entry__brief {
