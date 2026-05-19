@@ -158,7 +158,7 @@ canonical: "https://www.christianhain.com/cv/"
       <h3 class="cv-section-header">Startup Experience</h3>
       <ul class="cv-sneaky-list">
         <li><span>4 years</span><span> @ </span><span><a href="#finquery"  title="Jump to FinQuery Experience Section">FinQuery, LLC.</a></span></li>
-        <li><span>1 year</span><span> @ </span><span><a  href="#smartvent" title="Jump to SmartVent Experience Section">SmartVent, Inc.</a></span></li>
+        <li><span>1 year</span><span> @ </span><span><a  href="#smartvent" title="Jump to SmartVent Experience Section">Smart Product Innovations, Inc.</a></span></li>
       </ul>
     </div>
     <div class="cv-grid__a2">
@@ -418,80 +418,52 @@ canonical: "https://www.christianhain.com/cv/"
         </dl>
       </aside>
     </div>
-    <div class="cv-story cv-story--margin">
-      <p>In 2011, I joined <abbr title="Cable News Network">CNN</abbr> to work
-        on their Election Center website
-        (<span style="hyphens: none">Romney</span> vs.
-        <span style="hyphens: none">Obama</span>), but it turns out that
-        onboarding someone three months before a major election is unrealistic.
-        My only contribution was adding punctuation to “U.S. House” and
-        “U.S. Senate” on the
-        <a rel="nofollow" href="https://web.archive.org/web/20130228203716/http://edition.cnn.com/election/2012/results/race/senate" title="Archive of CNN's 2012 U.S. Senate Results Page" target="_blank">Race & Results</a>
-        pages.</p>
-      <p>I sought redemption in 2016 when I asked to work on the Election Center
-        again (from the beginning, this time).  Starting in the
-        <a rel="nofollow" href="https://www.cnn.com/election/2016/primaries" title="2016 Primaries Election Center" target="_blank">primaries</a>,
-        a team of five created a website powered by live results from
-        <abbr title="Associated Press">AP</abbr> feeds, presenting users with
-        real-time updates as votes came in.  We built the app in React.js and
-        reached a peak audience of 13 million unique visitors (2 million
-        concurrent).</p>
-      <p>During my time, I contributed to other projects that led to
-        <a href="#webby-awards" title="Jump to Webby Awards">five Webby Awards</a>,
-        including a site redesign from 2012 to 2013, updates to the now-defunct
-        <a rel="nofollow" href="https://web.archive.org/web/20140203003826/http://ireport.cnn.com/badge-index.jspa" title="Archived iReport Badge Index" target="_blank">iReport</a>
-        social platform,
-        <a rel="nofollow" href="https://web.archive.org/web/20130504011343/http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown/index.html" title="Archive of Anthony Bourdain Parts Unknown" target="_blank">television special pages</a>,
-        several
-        <a rel="nofollow" href="https://web.archive.org/web/20171107000012/http://www.cnn.com/entertainment/" title="Archived Version of CNN Entertainment Section Front" target="_blank">branded-section redesigns</a>,
-        and a few internal story-telling tools.</p>
+    <div class="cv-grid">
+      <div class="cv-grid__a1">
+        <div class="cv-story cv-story--condensed">
+          <p>In 2011, I joined <abbr title="Cable News Network">CNN</abbr> to work
+            on their Election Center's 
+            <a rel="nofollow" href="https://web.archive.org/web/20130228203716/http://edition.cnn.com/election/2012/results/race/senate" title="Archive of CNN's 2012 U.S. Senate Results Page" target="_blank">Race & Results</a> pages.
+          <p>In 2016, we did it again. Starting in the
+            <a rel="nofollow" href="https://www.cnn.com/election/2016/primaries" title="2016 Primaries Election Center" target="_blank">primaries</a>,
+            a small team of five created a website powered by live results from
+            <abbr title="Associated Press">AP</abbr> feeds, presenting users 
+            with real-time updates as votes came in. We built the app in
+            React.js and reached a peak audience of 13 million unique visitors
+            (2 million concurrent).</p>
+          <p>During my time, I contributed to other projects that led to
+            <a href="#webby-awards" title="Jump to Webby Awards">five Webby Awards</a>,
+            including a whole-site redesign from 2012 to 2013, updates to the now-defunct
+            <a rel="nofollow" href="https://web.archive.org/web/20140203003826/http://ireport.cnn.com/badge-index.jspa" title="Archived iReport Badge Index" target="_blank">iReport</a>
+            social platform,
+            <a rel="nofollow" href="https://web.archive.org/web/20130504011343/http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown/index.html" title="Archive of Anthony Bourdain Parts Unknown" target="_blank">television special pages</a>,
+            several
+            <a rel="nofollow" href="https://web.archive.org/web/20171107000012/http://www.cnn.com/entertainment/" title="Archived Version of CNN Entertainment Section Front" target="_blank">branded-section redesigns</a>,
+            and a few internal story-telling tools.</p>
+        </div>
+      </div>
+      <div class="cv-grid__a2">
+        <h3 class="cv-section-header">Accomplishments</h3>
+        <ol class="cv-list">
+          <li>Helped rewrite the entire CNN Website, developed a Facebook chatbot
+            prototype with
+            <a rel="nofollow" href="https://www.ibm.com/watson" title="IBM Watson" target="_blank">IBM Watson</a></li>
+          <li>Led “tiger teams” to build internal problem-solving tools used in
+            breaking news stories</li>
+          <li>Collaborated with editorial, design, and analytics teams to deliver
+            unified content experiences and ensure web properties met the needs of
+            both users and advertisers</li>
+          <li>Conducted focus groups and 
+            <a rel="nofollow" href="https://www.optimizely.com/developers/experimentation/" title="Optimizely Experimentation Landing Page" target="_blank">Optimizely</a>
+            A/B testing campaigns</li>
+          <li>Built the 2016 Election Center website, which supported millions
+            of concurrent visitors and zero defects</li>
+        </ol>
+      </div>
     </div>
-    <h3 class="cv-section-header cv-section-header--margin">Built sites, tools, and bots</h3>
-    <ol class="cv-list">
-      <li>Helped rewrite the entire CNN Website using
-        <a rel="nofollow" href="https://github.com/linkedin/dustjs/tree/v2.7.5" title="Dust@2 Source Code" target="_blank">Dust.js</a>
-        and MongoDB, developed a Facebook chatbot prototype with IBM Watson,
-        redesigned branded sections for several intellectual properties, and
-        handled release communications and changelogs</li>
-      <li>Led “tiger teams” to build internal problem-solving tools used in
-        breaking news stories, wrote an internal mapping application that used
-        Angular and Google Maps API v3 (then immediately switched to MapBox
-        because they offered better licensing terms)</li>
-      <li>Collaborated with editorial, design, and analytics teams to deliver
-        unified content experiences and ensure web properties met the needs of
-        both users and advertisers</li>
-    </ol>
-    <h3 class="cv-section-header cv-section-header--margin">Studied needs, wants, and trends</h3>
-    <ol class="cv-list cv-list--2-column">
-      <li>Worked closely with editorial and design teams to understand goals and
-        pain points, which turned into successful features and product
-        launches</li>
-      <li>Analyzed internal user behavior with Node.js scripts to identify areas
-        of opportunity for improvement</li>
-      <li>Conducted focus groups and Optimizely A/B testing campaigns to
-        empathize with users and optimize their journeys across high-traffic
-        news and special event sites</li>
-      <li>Led developer experience initiatives to ensure junior developers could
-        easily contribute alongside senior developers</li>
-      <li>Prioritized features by studying past success in terms of generated ad
-        revenue vs. project cost</li>
-    </ol>
-    <h3 class="cv-section-header cv-section-header--margin">Built CNN.com's 2016 Election Center</h3>
-    <ol class="cv-list">
-      <li>Built the 2016 Election Center website with React.js in four months,
-        which supported millions of concurrent visitors</li>
-      <li>Created head-to-head trackers that tallied the votes for each
-        candidate, ensuring that developers tagged 
-        <abbr title="User Interface">UI</abbr> elements with 
-        <abbr title="Accessible Rich Internet Applications">ARIA</abbr> labels
-        to add context (such as what a checkmark next to a candidate
-        meant)</li>
-      <li>Worked diligently with other developers and <abbr title="Quality Assurance">QA</abbr> to deliver an
-        experience with an immovable deadline and zero defects</li>
-    </ol>
   </article>
   <a id="delta"></a>
-  <article class="cv-section cv-section--new-page">
+  <article class="cv-section">
     <div class="cv-employment-heading">
       <h2 class="cv-section-title">
         <span>Work experience</span>
@@ -512,19 +484,16 @@ canonical: "https://www.christianhain.com/cv/"
           <p>In 2011, I went all-in as a Web Developer.  I opened my business,
             packed all my life’s belongings in a smart® Car, and relocated from
             <span style="hyphens: none">Pennsylvania</span> to Georgia.</p>
-          <p>Delta offered me an opportunity to help rebuild their website.
-            After merging with Northwest Airlines, Delta commissioned
-            Razorfish to design a
+          <p>Delta offered an opportunity to help rebuild their website after 
+            they merged with Northwest Airlines. Razorfish was hired to desgin
             <a rel="nofollow" href="https://vimeopro.com/truestories/true-stories-case-studies/video/48962520" title="Razorfish/Delta Case Study" target="_blank">new experience</a>
-            and hired several contractors to deliver it.  They uprooted and
+            and several contractors delivered it. We uprooted and
             rewrote everything: databases, server logic and hardware,
             front-end website, mobile website (<code>m.*</code> sites were
-            still the norm back then), and their mobile app.  It was an
-            exciting experience.</p>
-          <p>I primarily focused on their loyalty
-            <a rel="nofollow" href="https://web.archive.org/web/20250701211830/https://www.delta.com/buygftxfer/displayDonateMiles.action" title="Archive page for 'Donate Delta SkyMiles'" target="_blank">Delta SkyMiles&reg; program dashboards</a>.
-            Logged-in users could transact by buying, selling, gifting, or
-            donating miles.</p>
+            still the norm back then), and their iOS app.</p>
+          <p>I focused on the
+            <a rel="nofollow" href="https://web.archive.org/web/20250701211830/https://www.delta.com/buygftxfer/displayDonateMiles.action" title="Archive page for 'Donate Delta SkyMiles'" target="_blank">Delta SkyMiles&reg; program dashboards</a>
+            where users could buy, sell, gift, or donate miles.</p>
         </div>
       </div>
       <div class="cv-grid__a2">
@@ -614,7 +583,7 @@ canonical: "https://www.christianhain.com/cv/"
             graphics designed by somebody else to hand them over to developers
             in Scandinavia.  I include this story because this is when I read
             the book
-            <a rel="nofollow" href="https://sensible.com/dont-make-me-think/" title="Don't Make Me Think, Revisited" target="_blank">“Don’t Make Me Think”</a>
+            <a rel="nofollow" href="https://sensible.com/dont-make-me-think/" title="Don't Make Me Think, Revisited" target="_blank"><i>Don’t Make Me Think</i></a>
             by Steve Krug.  And thus began my quest to build great websites.</p>
         </div>
       </div>
