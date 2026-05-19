@@ -1,11 +1,11 @@
-@media only screen {
-  a {
-    color: var(--a-color, initial);
+a {
+  color: var(--a-color, initial);
 
-    &:hover {
-      color: var(--a-hover-color, initial);
-    }
+  &:hover {
+    color: var(--a-hover-color, initial);
+  }
 
+  @media only screen {
     &[target*="blank"]:after {
       content: " (opens in new window)";
       display: inline-block;
@@ -17,10 +17,8 @@
       width: 0;
     }
   }
-}
 
-@media print {
-  a {
+  @media print {
     color: var(--a-print-color, initial);
     text-decoration: none;
   }

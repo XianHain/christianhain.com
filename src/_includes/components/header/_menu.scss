@@ -37,10 +37,11 @@
   overflow: hidden;
   transition: opacity .2s ease-in-out,
               color .3s ease-in-out,
+              fill .3s ease-in-out,
               background-color .2s ease-in-out;
 }
 
-.menu-item--link {
+a.menu-item--link {
   color: var(--local-menu-item-link-color, var(--portal-window-color-primary));
   filter: drop-shadow(0 .125em .0625em var(--black));
   opacity: var(--local-menu-item-link-opacity, .5);
