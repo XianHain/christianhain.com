@@ -1,8 +1,10 @@
 ---
 title: "If I did it, then I did it right"
+headTitle: "If I did it, then I did it right"
 slug: "if-i-did-it-then-i-did-it-right"
 date: 2025-10-21T04:11:11.150Z
-description: "Balancing software standards and deadlines; tech debt and quality are crucial. Short-term hacks often cause long-term issues"
+publishDate: 2025-10-21T04:11:11.150Z
+headDescription: "Balancing software standards and deadlines; tech debt and quality are crucial. Short-term hacks often cause long-term issues"
 readTime: 4
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

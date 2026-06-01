@@ -1,8 +1,10 @@
 ---
 title: "A week with the Apple Vision Pro"
+headTitle: "A week with the Apple Vision Pro"
 slug: "a-week-with-the-apple-vision-pro"
 date: 2024-02-09T12:00:12.203Z
-description: "Experience a week with the Apple Vision Pro through the eyes of a software engineer, exploring spatial computing's new possibilities and challenges"
+publishDate: 2024-02-09T12:00:12.203Z
+headDescription: "Experience a week with the Apple Vision Pro through the eyes of a software engineer, exploring spatial computing's new possibilities and challenges"
 readTime: 6
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

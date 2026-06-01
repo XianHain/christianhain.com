@@ -1,8 +1,10 @@
 ---
 title: "Uh-oh, goodbye `.io`?"
+headTitle: "Uh-oh, goodbye `.io`?"
 slug: "uh-oh-goodbye-io"
 date: 2024-10-13T22:39:32.111Z
-description: "The `.io` domain is at risk due to sovereignty changes. Explore potential impacts on tech startups and domain regulations"
+publishDate: 2024-10-13T22:39:32.111Z
+headDescription: "The `.io` domain is at risk due to sovereignty changes. Explore potential impacts on tech startups and domain regulations"
 readTime: 2
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

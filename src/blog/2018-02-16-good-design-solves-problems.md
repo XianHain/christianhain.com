@@ -1,8 +1,10 @@
 ---
 title: "Good Design Solves Problems"
+headTitle: "Good Design Solves Problems"
 slug: "good-design-solves-problems"
 date: 2018-02-16T05:18:37.000Z
-description: "This article talks about using ARIA labels as a way to add context to visual assumptions applied to an election results table."
+publishDate: 2018-02-16T05:18:37.000Z
+headDescription: "This article talks about using ARIA labels as a way to add context to visual assumptions applied to an election results table."
 readTime: 3
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

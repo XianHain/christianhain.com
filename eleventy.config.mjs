@@ -23,7 +23,11 @@ export default async function(eleventyConfig) {
   // Create blog collection from markdown files
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
-      .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+      .sort((a, b) => {
+        const dateA = new Date(a.data.publishDate || a.data.date);
+        const dateB = new Date(b.data.publishDate || b.data.date);
+        return dateB - dateA;
+      });
   });
 
   eleventyConfig.addPlugin(EleventyPluginRobotsTxt, {

@@ -1,13 +1,15 @@
 ---
 title: "The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
+headTitle: "The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
 slug: "the-realish-reason-spotifys-disco-logo-feels-wrong"
 date: 2026-05-19T08:01:00.000Z
-description: "Spoiler: It's probably A.I. Slop 🙃"
+publishDate: 2026-05-19T08:01:00-04:00
+headDescription: "Spotify introduced a 20th-anniversary icon that violates their own design guidelines. I suspect I know why it happened, and it involves A.I."
 readTime: 2
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"
 authorFamily: "Hain"
-ogImage: "https://www.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/og.png"
+ogImage: "https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/og.png"
 url: "https://www.christianhain.com/blog/the-realish-reason-spotifys-disco-logo-feels-wrong"
 brief: "Spotify introduced a 20th-anniversary icon that violates their own design guidelines. I suspect I know why it happened, and it involves A.I."
 tags: ["design", "spotify", "ai", "brand-guidelines"]
@@ -36,7 +38,7 @@ living or dead, is purely coincidental.
   --<br>
   Boss
 
-  <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-icon-feels-wrong/spotify-disco-icon.webp" alt="Spotify Disco Icon" width="100" height="100" />
+  <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-disco-logo.webp" alt="Spotify Disco Icon" width="100" height="100" />
 </xian-email>
 
 Okay! Real quick, what's going on?
@@ -77,9 +79,9 @@ use the logo to make new objects or shapes</q> (like a disco ball) or
 <q cite="https://developer.spotify.com/documentation/design#logo-misuse">don't
 place the logo in a busy area</q> (…like a disco ball).
 
-<xian-polaroid>
+<xian-polaroid style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)">
   <figure>
-    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-icon-feels-wrong/spotify-logo-misuse.webp" alt="Excerpt from Spotify's Design Guidelines"/>
+    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-logo-misuse.webp" alt="Excerpt from Spotify's Design Guidelines"/>
     <figcaption>
       <cite>
         <a rel="nofollow"
@@ -108,7 +110,7 @@ templates.</q>
 
 <xian-polaroid style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)">
   <figure>
-    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-icon-feels-wrong/spotify-app-icon-template.webp" alt="Spotify App Icon with iOS App Icon Template Overlay"/>
+    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-app-icon-template.webp" alt="Spotify App Icon with iOS App Icon Template Overlay"/>
     <figcaption>
       Spotify's Disco Icon with iOS App Icon Template Overlay. The outer circle
       is highlighted in a thicker reddish stroke to show how much of the icon
@@ -119,7 +121,7 @@ templates.</q>
 
 <xian-polaroid style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)">
   <figure>
-    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-icon-feels-wrong/spotify-app-in-app-folder.webp" alt="Spotify App Icon in App Folder"/>
+    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-app-in-app-folder.webp" alt="Spotify App Icon in App Folder"/>
     <figcaption>
       Spotify's Disco App Icon in an App Folder where it becomes unrecognizable.
     </figcaption>
@@ -147,7 +149,7 @@ that shouldn't come as a surprise.
 
 <xian-polaroid style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)">
   <figure>
-    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-icon-feels-wrong/spotify-pop-crave-response.webp" alt="Spotify's response to Pop Crave"/>
+    <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-pop-crave-response.webp" alt="Spotify's response to Pop Crave"/>
     <figcaption>
       <cite>
         <a rel="nofollow"
@@ -191,10 +193,15 @@ icon anywhere; this is what I suspect happened:
    You're welcome 🤘😉
 
 Anyway, thanks for reading! I wrote this article for LinkedIn, so if you want to
-talk about it, we can do it over there. And in the words of the late Michael
+talk about it, <a rel="nofollow"
+  href="https://www.linkedin.com/posts/crhain_do-you-know-whats-wrong-with-spotifys-20th-anniversary-share-7462485949969756161-kpdP/"
+  title="LinkedIn: The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
+  target="_blank">we can do it over there.</a>
+And in the words of the late Michael
 Jackson, "Brad, what are you gonna do? What are you gonna do?!"
 
-<iframe 
+<iframe
+  style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)"
   width="560"
   height="315"
   src="https://www.youtube.com/embed/k7wFNIR0KtQ?si=ycG2He86fTA_9Npk&amp;start=8" 
@@ -203,8 +210,3 @@ Jackson, "Brad, what are you gonna do? What are you gonna do?!"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen></iframe>
-
-<a rel="nofollow"
-  href="https://www.linkedin.com/posts/xianhain_the-realish-reason-spotifys-disco-logo-feels-activity-7332029321457811456-M-V5"
-  title="LinkedIn: The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
-  target="_blank">Read and comment on LinkedIn</a>

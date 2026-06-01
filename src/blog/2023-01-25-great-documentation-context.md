@@ -1,8 +1,10 @@
 ---
 title: "Great Documentation: Context"
+headTitle: "Great Documentation: Context"
 slug: "great-documentation-context"
 date: 2023-01-25T16:02:29.567Z
-description: "Enhance documentation by including purpose statements, background, definitions, references, and relevant meta-information for context"
+publishDate: 2023-01-25T16:02:29.567Z
+headDescription: "Enhance documentation by including purpose statements, background, definitions, references, and relevant meta-information for context"
 readTime: 7
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

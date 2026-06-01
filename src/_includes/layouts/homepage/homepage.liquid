@@ -47,8 +47,9 @@
                 <h1 class="blog-entry__title">{{ item.data.title }}</h1>
                 <div class="blog-entry__body-copy">
 
+                  {% assign itemPublishDate = item.data.publishDate | default: item.data.date %}
                   {% include "../../components/blog-date-and-read-time/blog-date-and-read-time.liquid",
-                    contentBlogPublishDate: item.data.date,
+                    contentBlogPublishDate: itemPublishDate,
                     contentBlogReadTimeInMinutes: item.data.readTime
                   %}
 

@@ -1,8 +1,10 @@
 ---
 title: "2024-W23: My Tea's Gone Cold"
+headTitle: "2024-W23: My Tea's Gone Cold"
 slug: "2024-w23-my-teas-gone-cold"
 date: 2024-06-06T22:59:09.413Z
-description: "A candid reflection on mental health struggles while pursuing personal goals"
+publishDate: 2024-06-06T22:59:09.413Z
+headDescription: "A candid reflection on mental health struggles while pursuing personal goals"
 readTime: 1
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

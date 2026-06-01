@@ -29,11 +29,17 @@
   <meta property="og:url" content="{{ canonical }}">
   <meta property="og:image" content="{{ ogImage | default: site.favicon.url }}">
   <meta property="og:title" content="{{ headTitle | escape | default: site.title }}">
+  <meta property="og:site_name" content="{{ site.authorName }}">
   <meta property="og:description" content="{{ headDescription | escape | default: site.description }}">
 
-  {% if blogpost %}
+  {% if pageName == 'blog' and layout == 'layouts/blog/blog-entry.liquid' %}
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="{{ blogpost.publishedAt }}">
+    {% assign publishDate = publishDate | default: date %}
+    <meta property="article:published_time" content="{{ publishDate | atom_dateToRfc3339 }}">
+    {% for tag in tags %}
+      <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+    <meta property="article:author" content="https://www.christianhain.com/">
   {% else %}
     <meta property="og:type" content="website">
   {% endif %}

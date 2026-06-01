@@ -1,8 +1,10 @@
 ---
 title: "I don't speak German, but I can if you'd like!"
+headTitle: "I don't speak German, but I can if you'd like!"
 slug: "i-dont-speak-german-but-i-can-if-youd-like"
 date: 2024-11-07T17:41:36.785Z
-description: "Exploring non-indexed pages, an unexpected Austrian Wikipedia link, and a nostalgic look at a 2011 website. Discover the intriguing journey!"
+publishDate: 2024-11-07T17:41:36.785Z
+headDescription: "Exploring non-indexed pages, an unexpected Austrian Wikipedia link, and a nostalgic look at a 2011 website. Discover the intriguing journey!"
 readTime: 1
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

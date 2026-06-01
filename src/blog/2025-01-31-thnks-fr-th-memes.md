@@ -1,8 +1,10 @@
 ---
 title: "Thnks fr th Memes"
+headTitle: "Thnks fr th Memes"
 slug: "thnks-fr-th-memes"
 date: 2025-01-31T21:10:59.395Z
-description: "Yes, I too, have decided to deactivate my Instagram, because I don't work for free!"
+publishDate: 2025-01-31T21:10:59.395Z
+headDescription: "Yes, I too, have decided to deactivate my Instagram, because I don't work for free!"
 readTime: 2
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

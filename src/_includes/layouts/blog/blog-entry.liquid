@@ -1,6 +1,7 @@
 {% layout "../base.liquid" %}
 
 {% block content %}
+  {% assign publishDate = publishDate | default: date %}
   {% assign songquote_content = content | songquote %}
   {% assign postscript_content = content | postscript %}
 
@@ -8,7 +9,7 @@
     <article class="blog">
       {% capture blog_meta %}
         {% include "../../components/blog-date-and-read-time/blog-date-and-read-time.liquid",
-          contentBlogPublishDate: date,
+          contentBlogPublishDate: publishDate,
           contentBlogReadTimeInMinutes: readTime
         %}
       {% endcapture %}
@@ -56,7 +57,7 @@
       "url": "{{ url }}",
       "text": "{{ brief }}",
       "headline": "{{ title }}",
-      "datePublished": "{{ date }}",
+      "datePublished": "{{ publishDate }}",
       "copyrightHolder": "CRHain Design LLC",
       "author": {
         "@type": "Person",

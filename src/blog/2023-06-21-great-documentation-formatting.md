@@ -1,8 +1,10 @@
 ---
 title: "Great Documentation: Formatting"
+headTitle: "Great Documentation: Formatting"
 slug: "great-documentation-formatting"
 date: 2023-06-21T12:00:42.035Z
-description: "Part 2 of the Great Documentation essay series: formatting. Enhance your documentation's headings, lists, code blocks, terminology, and tables"
+publishDate: 2023-06-21T12:00:42.035Z
+headDescription: "Part 2 of the Great Documentation essay series: formatting. Enhance your documentation's headings, lists, code blocks, terminology, and tables"
 readTime: 9
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

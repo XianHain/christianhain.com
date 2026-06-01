@@ -1,8 +1,10 @@
 ---
 title: "Did Apple Fix Email or Make it Worse?"
+headTitle: "Did Apple Fix Email or Make it Worse?"
 slug: "did-apple-fix-email-or-make-it-worse"
 date: 2024-06-11T02:45:34.764Z
-description: "Dubbed \"AI for the Rest of Us,\" Apple's recent keynote highlights new Apple Intelligence features... but they lost me with the ChatGPT integrations."
+publishDate: 2024-06-11T02:45:34.764Z
+headDescription: "Dubbed \"AI for the Rest of Us,\" Apple's recent keynote highlights new Apple Intelligence features... but they lost me with the ChatGPT integrations."
 readTime: 4
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"

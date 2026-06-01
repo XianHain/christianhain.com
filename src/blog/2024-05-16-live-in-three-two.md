@@ -1,8 +1,10 @@
 ---
 title: "Live in three… two…"
+headTitle: "Live in three… two…"
 slug: "live-in-three-two"
 date: 2024-05-16T05:48:48.295Z
-description: "Discover the nostalgic journey of creating personal websites, from the '90s to today, in this heartfelt story of digital evolution"
+publishDate: 2024-05-16T05:48:48.295Z
+headDescription: "Discover the nostalgic journey of creating personal websites, from the '90s to today, in this heartfelt story of digital evolution"
 readTime: 2
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"
