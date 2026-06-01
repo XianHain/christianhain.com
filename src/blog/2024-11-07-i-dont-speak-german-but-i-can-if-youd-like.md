@@ -11,7 +11,7 @@ authorGiven: "Christian"
 authorFamily: "Hain"
 ogImage: ""
 url: "https://www.christianhain.com/blog/i-dont-speak-german-but-i-can-if-youd-like"
-brief: "Hey!  Recently I’ve been looking through Google Search Console to try and resolve some non-indexed page issues.  Anyway, I kept seeing a 404 report for www.christianhain.com/k1.  Well, I finally figured out how to tell where Google was indexing the link…"
+brief: "Hey! Recently I’ve been looking through Google Search Console to try and resolve some non-indexed page issues. Anyway, I kept seeing a 404 report for www.christianhain.com/k1. Well, I finally figured out how to tell where Google was indexing the link…"
 tags: ["5e79af71ecd57502528cb065", "56744723958ef13879b95470", "56744721958ef13879b949aa", "657d8eb6c26ff09a815d80c2"]
 canonical: "https://www.christianhain.com/blog/i-dont-speak-german-but-i-can-if-youd-like/"
 layout: layouts/blog/blog-entry.liquid
@@ -21,8 +21,8 @@ footerTypes: ["written-by-human"]
 permalink: /blog/i-dont-speak-german-but-i-can-if-youd-like/
 ---
 
-Hey!  Recently I’ve been looking through Google Search Console to try and
-resolve some non-indexed page issues.  Anyway, I kept seeing a 404 report for
+Hey! Recently I’ve been looking through Google Search Console to try and resolve
+some non-indexed page issues. Anyway, I kept seeing a 404 report for
 www.christianhain.com/k1.
 
 Well, I finally figured out how to tell where Google was indexing the link
@@ -33,8 +33,8 @@ I had almost forgotten that I didn’t always own this domain and was able to
 register it in 2012.
 
 Now, listen, I’m not one to deny a free backlink (even `nofollow` links), so…
-for those of you that came from the Wikipedia article: Hello.  I’m not the
-Christian Hain you’re looking for.  But, here is
+for those of you that came from the Wikipedia article: Hello. I’m not the
+Christian Hain you’re looking for. But, here is
 <a rel="nofollow" href="https://web.archive.org/web/20110203012507/http://christianhain.com/" title="ChristianHain.com (circa 2011)" target="_blank">
   the archived version of their site</a>.
 Unfortunately, there’s no index for `/k1` and I’m pretty sure it was an Adobe

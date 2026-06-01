@@ -198,20 +198,20 @@ canonical: "https://www.christianhain.com/cv/"
       <p>The <abbr title="Chief Technical Officer">CTO</abbr> and
         <abbr title="Technical Program Manager">TPM</abbr> at FinQuery
         (LeaseQuery at the time) reached out to me to see if I'd be interested
-        in joining to help develop their lease-accounting software.  It's not
+        in joining to help develop their lease-accounting software. It's not
         the most glamorous product to work on, but neither were
         <a href="#smartvent" title="jump to Smart Product Innovations, Inc.">flood vents</a>
-        when I started my career.  Nevertheless, we've worked together before,
-        and so I agreed to take on the challenge.  I worked with a talented
+        when I started my career. Nevertheless, we've worked together before,
+        and so I agreed to take on the challenge. I worked with a talented
         <abbr title="User Experience">UX</abbr> team to bring beauty to the
         product in a way that would make Steve Jobs proud.</p>
       <p>My main goal was to transform a hodgepodge of
         <abbr title="User Interfaces">UIs</abbr> into a unified platform, and my
         secondary goal was to bring structure to development teams by improving
-        both the developer experience and the product's quality.  So far, I've
+        both the developer experience and the product's quality. So far, I've
         been able to mentor several engineers, influence the product's
         direction, and add structure to the day-to-day activities of multiple
-        teams.  The efforts have paid off, as the company
+        teams. The efforts have paid off, as the company
         <a rel="nofollow" href="https://finquery.com/press-releases/finquery-announces-majority-growth-investment-from-ta-associates/" title="FinQuery Announces Majority Growth Investment from TA Associates" target="_blank">received a majority-growth investment from TA Associates</a>
         and has a solid foundation to build upon.</p>
     </div>
@@ -312,8 +312,8 @@ canonical: "https://www.christianhain.com/cv/"
     <div class="cv-story cv-story--margin">
       <p>In 2017, a former co-worker called me about an opportunity at
         <span style="hyphens: none">Fabric.com</span>, an e-commerce
-        company/warehouse in Kennesaw, Georgia.  They were looking to rewrite
-        their website using React.js.  I had just finished a sizeable React.js
+        company/warehouse in Kennesaw, Georgia. They were looking to rewrite
+        their website using React.js. I had just finished a sizeable React.js
         project a few months prior, so this was an excellent opportunity to
         continue expanding my experience.</p>
       <p>During my time, I rewrote the front-end of their checkout application,
@@ -323,7 +323,7 @@ canonical: "https://www.christianhain.com/cv/"
         led a team of junior developers to reimagine the site’s
         <a rel="nofollow" href="https://web.archive.org/web/20210921201721/https://www.fabric.com/buy/ef-391/kona-cotton-teal-blue" title="Kona Cotton Teal Blue" target="_blank">product detail page</a>,
         and led a Scrum team of senior developers to rewrite legacy .NET
-        applications with graceful deprecations.  Most of the new applications
+        applications with graceful deprecations. Most of the new applications
         used React.js and Next.js, and I used
         <a rel="nofollow" href="https://stenciljs.com/docs/v2/introduction" title="Stencil@2 Developer Docs" target="_blank">Stencil.js</a>
         to build Web Components for any <abbr title="User Interface">UI</abbr> elements
@@ -331,7 +331,7 @@ canonical: "https://www.christianhain.com/cv/"
       <p>Additionally, I managed several Optimizely campaigns, led the company’s
         Customer Experience Committee, and spearheaded accessibility
         initiatives.</p>
-      <p>Unfortunately, all good things must come to an end.  During the last
+      <p>Unfortunately, all good things must come to an end. During the last
         12 months of my time there, I helped sunset Fabric.com and transition
         customers to Amazon.com proper.</p>
     </div>
@@ -481,7 +481,7 @@ canonical: "https://www.christianhain.com/cv/"
     <div class="cv-grid">
       <div class="cv-grid__a1">
         <div class="cv-story cv-story--condensed">
-          <p>In 2011, I went all-in as a Web Developer.  I opened my business,
+          <p>In 2011, I went all-in as a Web Developer. I opened my business,
             packed all my life’s belongings in a smart® Car, and relocated from
             <span style="hyphens: none">Pennsylvania</span> to Georgia.</p>
           <p>Delta offered an opportunity to help rebuild their website after 
@@ -532,12 +532,12 @@ canonical: "https://www.christianhain.com/cv/"
       <div class="cv-grid__a1">
         <div class="cv-story cv-story--condensed">
           <p>My first job out of college was for an industrial manufacturing
-            company.  <span style="hyphens: none">Smart Vent Products,
+            company. <span style="hyphens: none">Smart Vent Products,
             Inc.</span> (under the umbrella of
             <span style="hyphens: none">Smart Product Innovations, Inc.</span>)
             develops patented wet-floodproofing vents that help protect homes
             and businesses during floods by alleviating pressure against the
-            building's foundation.  They also patented and manufactured the
+            building's foundation. They also patented and manufactured the
             <span style="hyphens: none">CLEANCut Touchless Paper Towel
             Dispenser</span> (now discontinued).</p>
         </div>
@@ -574,22 +574,22 @@ canonical: "https://www.christianhain.com/cv/"
     <div class="cv-grid">
       <div class="cv-grid__a1">
         <div class="cv-story cv-story--condensed">
-          <p>Stuzo is where my professional web experience started.  At the
+          <p>Stuzo is where my professional web experience started. At the
             time, Facebook Pages allowed brands to create custom games and
             sweepstakes on the platform, and
             <a rel="nofollow" href="https://web.archive.org/web/20110203123510/http://www.stuzo.com/" title="Archived Version of Stuzo.com" target="_blank">Stuzo</a>
             was one of the top five partners Facebook recommended.</p>
           <p>Not much glory in this job; I spent a lot of time splicing
             graphics designed by somebody else to hand them over to developers
-            in Scandinavia.  I include this story because this is when I read
+            in Scandinavia. I include this story because this is when I read
             the book
             <a rel="nofollow" href="https://sensible.com/dont-make-me-think/" title="Don't Make Me Think, Revisited" target="_blank"><i>Don’t Make Me Think</i></a>
-            by Steve Krug.  And thus began my quest to build great websites.</p>
+            by Steve Krug. And thus began my quest to build great websites.</p>
         </div>
       </div>
       <div class="cv-grid__a2">
         <h3 class="cv-section-header">Accomplishments</h3>
-        <p class="cv-p">I graduated, yay!  And you made it to the end of my <abbr title="Curriculum Vitae">CV</abbr>,
+        <p class="cv-p">I graduated, yay! And you made it to the end of my <abbr title="Curriculum Vitae">CV</abbr>,
           thank you!</p>
       </div>
     </div>

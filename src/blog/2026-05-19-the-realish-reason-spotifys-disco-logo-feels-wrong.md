@@ -35,8 +35,7 @@ living or dead, is purely coincidental.
 
   Hey, real quick, can you add this to tonight's release? Thx!
 
-  --<br>
-  Boss
+  --<br> Boss
 
   <img src="https://assets.christianhain.com/images/pages/blog/2026-05-19-the-realish-reason-spotifys-disco-logo-feels-wrong/spotify-disco-logo.webp" alt="Spotify Disco Icon" width="100" height="100" />
 </xian-email>
@@ -134,8 +133,8 @@ a competent designer has willfully disregarded all five when simple adjustments
 would have satisfied most of them. *That's* why it feels off. Both Spotify and
 Apple spent time and resources developing their guidelines for cohesion. Every
 other app on the screen followed the minimalist dress code, if you will, and
-then Spotify shows up in an oversized sequin onesie. Like… <abbr title="oh my gosh">omg</abbr>,
-we get it, it's your birthday. Chill out.
+then Spotify shows up in an oversized sequin onesie. Like… <abbr title="oh my
+gosh">omg</abbr>, we get it, it's your birthday. Chill out.
 
 Because it's also strange to me that this gimmick was applied to mobile apps but
 not to their web app or socials, which are *much* easier to change since they
@@ -194,11 +193,10 @@ icon anywhere; this is what I suspect happened:
 
 Anyway, thanks for reading! I wrote this article for LinkedIn, so if you want to
 talk about it, <a rel="nofollow"
-  href="https://www.linkedin.com/posts/crhain_do-you-know-whats-wrong-with-spotifys-20th-anniversary-share-7462485949969756161-kpdP/"
-  title="LinkedIn: The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
-  target="_blank">we can do it over there.</a>
-And in the words of the late Michael
-Jackson, "Brad, what are you gonna do? What are you gonna do?!"
+href="https://www.linkedin.com/posts/crhain_do-you-know-whats-wrong-with-spotifys-20th-anniversary-share-7462485949969756161-kpdP/"
+title="LinkedIn: The (Real-ish) Reason Spotify's Disco Logo Feels Wrong"
+target="_blank">we can do it over there.</a> And in the words of the late
+Michael Jackson, "Brad, what are you gonna do? What are you gonna do?!"
 
 <iframe
   style="inline-size:min(50%,100%);min-inline-size:min(25em,100%)"
