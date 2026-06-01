@@ -21,8 +21,8 @@ class XianPolaroid extends HTMLElement {
           max-inline-size: 100%;
           margin: 1em auto;
           padding: .5em;
-          rotate: var(--xian-polaroid-rotation, 0deg);
-          transition: rotate .5s ease-out;
+          rotate: var(--xian-polaroid-print-rotate, var(--xian-polaroid-rotation, 0deg));
+          transition: var(--xian-polaroid-print-transition, rotate .5s ease-out);
         }
         xian-polaroid:hover {
           rotate: 0deg;
@@ -54,6 +54,13 @@ class XianPolaroid extends HTMLElement {
         xian-polaroid a:focus,
         xian-polaroid a:hover {
           color: var(--pink-bright);
+        }
+
+        @media print {
+          xian-polaroid {
+            --xian-polaroid-print-rotate: 0deg;
+            --xian-polaroid-print-transition: none;
+          }
         }
       `;
       document.head.appendChild(style);

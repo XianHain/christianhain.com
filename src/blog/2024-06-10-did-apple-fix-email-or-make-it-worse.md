@@ -21,7 +21,7 @@ footerTypes: ["written-by-human"]
 permalink: /blog/did-apple-fix-email-or-make-it-worse/
 ---
 
-<xian-email style="font-size:.75em">
+<xian-email>
 
 **To**: World<br> **From**: Me<br> **CC**: Your Micromanager, My
 Micromanager<br> **Subject**: Fwd: Re: Re: Re: Re: email sucks

@@ -45,6 +45,7 @@ class XianEmail extends HTMLElement {
           color: light-dark(var(--blue-ink), var(--white));
           display: block;
           font-family: var(--monolisa), monospace;
+          font-size: .875em;
           margin: 1em auto;
           padding: 1em;
         }
@@ -53,7 +54,6 @@ class XianEmail extends HTMLElement {
           align-items: center;
           border-bottom: .0625rem solid light-dark(hsla(0, 0%, 0%, .05), hsla(0, 0%, 100%, .1));
           display: flex;
-          font-size: 1em;
           inline-size: 100%;
           padding-bottom: 0.5em;
         }
@@ -84,7 +84,6 @@ class XianEmail extends HTMLElement {
 
         ::slotted(*) {
           color: inherit;
-          font-size: 1em !important;
           margin-bottom: 0 !important;
           margin-top: 0 !important;
           max-inline-size: 100%;
