@@ -22,7 +22,7 @@ permalink: /blog/2024-w23-my-teas-gone-cold/
 ---
 
 Oooh-wee! These past two weeks were a struggle,
-<abbr title="not gonna lie">ngl</abbr>! Building this blog has been a
+<abbr title="not gonna lie">n.g.l.</abbr>! Building this blog has been a
 back-burner idea of mine for years, and I’m so proud to have finally got
 something set up. 49 people read my
 <a href="https://christianhain.com/blog/week-in-review-2024-w21/" title="Week in Review: 2024-W21">

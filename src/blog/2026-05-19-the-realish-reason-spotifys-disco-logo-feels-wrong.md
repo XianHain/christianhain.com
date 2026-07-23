@@ -45,7 +45,7 @@ Okay! Real quick, what's going on?
   href="https://9to5mac.com/2026/05/17/spotify-confirms-disco-ball-app-icon-is-temporary-and-regular-logo-will-return/"
   title="9to5Mac: Spotify confirms disco ball app icon is temporary and regular logo will return"
   target="_blank">Spotify introduced a 20th-anniversary icon</a>
-for iOS (and maybe Android, <abbr title="I don't know">idk</abbr>), and
+for iOS (and maybe Android, <abbr title="I don't know">i.d.k.</abbr>), and
 <a rel="nofollow"
   href="https://www.reddit.com/r/Music/comments/1tgs4up/spotify_after_massive_user_backlash_over/"
   title="Reddit: Spotify after massive user backlash over logo"
@@ -61,7 +61,7 @@ That same fictitious executive is also bragging about how they're redefining ent
 industries in 
 <a rel="nofollow"
   href="https://www.vlerick.com/en/insights/ai-feels-unprecedented-every-revolution-did/"
-  title="Vlerick Business School: AI feels unprecedented; every revolution did"
+  title="Vlerick Business School: A.I. feels unprecedented; every revolution did"
   target="_blank">an unprecedented era that seems to have a lot of precedence</a>.
 
 I digress, but I also have anecdotal evidence.
@@ -134,7 +134,7 @@ would have satisfied most of them. *That's* why it feels off. Both Spotify and
 Apple spent time and resources developing their guidelines for cohesion. Every
 other app on the screen followed the minimalist dress code, if you will, and
 then Spotify shows up in an oversized sequin onesie. Like… <abbr title="oh my
-gosh">omg</abbr>, we get it, it's your birthday. Chill out.
+gosh">o.m.g.</abbr>, we get it, it's your birthday. Chill out.
 
 Because it's also strange to me that this gimmick was applied to mobile apps but
 not to their web app or socials, which are *much* easier to change since they

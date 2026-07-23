@@ -98,13 +98,13 @@ incredible piece of advice:
 
 That's what this all boils down to. As an engineer, we're responsible for the
 quality and maintainability of our code. I've always been partial to the
-"crack in the window pane" analogy (<abbr title="also known as">aka</abbr>,
+"crack in the window pane" analogy (<abbr title="also known as">a.k.a.</abbr>,
 <a rel="nofollow" href="https://omarizquierdo.dev/posts/broken-windows-theory/" title="Omar Izquierdo's post on Broken Windows Theory" target="_blank">
   Broken Windows Theory</a>.
 It might start as something small and unnoticeable, but left unattended, and
 it'll eventually spread. And… if you're okay with ignoring that problem, you
 probably won't care when other panes break, paint peels, wood rots,
-<abbr lang="la" title="et cetera">etc</abbr>. Before long the neglect will be
+<abbr lang="la" title="et cetera">etc.</abbr> Before long the neglect will be
 evident from across the street; property values will decline, customers will
 go elsewhere, cash flow will dwindle, and suddenly it's too late. We can't
 afford to fix the problem.

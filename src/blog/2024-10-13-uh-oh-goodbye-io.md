@@ -23,7 +23,7 @@ permalink: /blog/uh-oh-goodbye-io/
 ---
 
 If you haven’t heard by now, the `.io`
-<abbr title="country code top-level domain">ccTLD</abbr> is at risk of removal
+<abbr title="country code top-level domain">c.c.T.L.D.</abbr> is at risk of removal
 due to a
 <a rel="nofollow" href="https://www.bbc.com/news/articles/c98ynejg4l5o" title="UK will give sovereignty of Chagos Islands to Mauritius" target="_blank">
   British Treaty that was signed on October 3, 2024</a>.
@@ -32,7 +32,7 @@ to Mauritius (ccTLD: `.mu`); learn more by reading
 <a rel="nofollow" href="https://every.to/p/the-disappearance-of-an-internet-domain" target="_blank" title="The Disappearance of an Internet Domain">
   The Disappearance of an Internet Domain</a>.
 Of course, the Internet is buzzing because, according to policy, that would
-mean `.io` has to be removed from the <abbr title="top-level domain">TLD</abbr>
+mean `.io` has to be removed from the <abbr title="top-level domain">T.L.D.</abbr>
 registry. Some people, however, are skeptical and say that too many websites
 use `.io` and would be able to “save” it by throwing money at the
 <a rel="nofollow" href="https://www.iana.org/" title="Internet Assigned Numbers Authority Homepage" target="_blank">

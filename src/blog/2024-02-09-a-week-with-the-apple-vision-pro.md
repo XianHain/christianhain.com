@@ -141,7 +141,7 @@ think that would be a huge win.
 It's an impressive first-generation device. It will take some time before the
 general public comes to a consensus on the best design patterns for elements.
 The Web is already in a weird state of barely-working code that could either be
-improved or completely ruined by AI-generated code.
+improved or completely ruined by A.I.-generated code.
 
 Websites <i lang="fr">en masse</i> won't start optimizing for spatial browsing
 any time soon, either. There are still sites that aren't optimized for mobile or

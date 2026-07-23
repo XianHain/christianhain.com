@@ -4,7 +4,7 @@ headTitle: "Did Apple Fix Email or Make it Worse?"
 slug: "did-apple-fix-email-or-make-it-worse"
 date: 2024-06-11T02:45:34.764Z
 publishDate: 2024-06-11T02:45:34.764Z
-headDescription: "Dubbed \"AI for the Rest of Us,\" Apple's recent keynote highlights new Apple Intelligence features... but they lost me with the ChatGPT integrations."
+headDescription: "Dubbed \"A.I. for the Rest of Us,\" Apple's recent keynote highlights new Apple Intelligence features... but they lost me with the ChatGPT integrations."
 readTime: 4
 author: "Christian Hain (He/Him)"
 authorGiven: "Christian"
@@ -38,25 +38,25 @@ Per my last
   blog post</a>,
 "I'm not here to yuck anyone's yum. If you want to use
 <abbr title="generative pre-trained transformer">GPT</abbr> to summarize
-GPT-posts and then send a GPT-email to your buddies and colleagues so they can
-reply with a GPT-response, have fun!"
+GPT-posts and then send a GPT-email to your buddies and colleagues so they
+can reply with a GPT-response, have fun!"
 
 Well, lucky you! Because now Apple made it easier than ever to spam my inbox
 with shit you didn't write. Isn't that fun!
 
-I eagerly await your response by <abbr title="end of day">EOD</a>.
+I eagerly await your response by <abbr title="end of day">E.O.D.</abbr>.
 
 ——<br> Warm wishes, best regards, and a corporate-mandated signature promoting
 our latest awards or endeavors,<br> Christian
 
 </xian-email>
 
-Dubbed "<abbr title="Artificial Intelligence">AI</abbr> for the Rest of Us,"
+Dubbed "<abbr title="Artificial Intelligence">A.I.</abbr> for the Rest of Us,"
 Apple's recent keynote highlights new
 <a rel="nofollow" href="https://www.apple.com/apple-intelligence/" title="Apple Intelligence Preview" target="blank">
   Apple Intelligence</a>
 features. As you could have guessed by the satire above, I'm not a fan of
-"authored" content using generative AI. Although I'm intrigued about
+"authored" content using generative A.I. Although I'm intrigued about
 summarized notifications or email messages (maybe I'll finally stand a chance
 against my 31,000 unopened messages), Apple lost me with the
 <a rel="nofollow" href="https://en.wikipedia.org/wiki/ChatGPT" title="Wikipedia: ChatGPT" target="_blank">
@@ -65,23 +65,23 @@ integrations.
 
 My eyebrows were already raised when Apple suggested using Apple Intelligence
 to reword emails so they could sound more friendly or confident. The first
-thought I had was, "<em><abbr title="Rest in Peace">RIP</abbr>
+thought I had was, "<em><abbr title="Rest in Peace">R.I.P.</abbr>
 <a rel="nofollow" href="https://en.wikipedia.org/wiki/Grammarly" title="Wikipedia: Grammarly" target="_blank">
   Grammarly</a>
 </em>,"
 since their premium features offered suggested edits to alter the tone of the
 writing but requires an official plugin to use with non-Grammarly apps. My
-second thought was, "*RIP
+second thought was, "*R.I.P.
 <a rel="nofollow" href="https://sparkmailapp.com" title="Spark Mail App's Website" target="_blank">
   Spark Mail</a>*,"
-because their whole schtick is an AI-powered email client to organize the
-inbox. My third thought, however, was, "_<abbr title="what the fuck">WTF</abbr>
+because their whole schtick is an A.I.-powered email client to organize the
+inbox. My third thought, however, was, "_<abbr title="what the fuck">W.T.F.</abbr>
 is this?_"
 
 Listen, I know writing isn't everyone's <i lang="fr">forte</i>, and I understand
 how empowering generative text could be, especially when writing in a second
 language, but as someone who enjoys the art of writing, **I *still* don't want
-to read AI-generated content**. I already don't read emails, but I sure as hell
+to read A.I.-generated content**. I already don't read emails, but I sure as hell
 don't want to read something you didn't bother to write. Considering that
 ChatGPT will be available in all "writing tools," I worry that my already
 flooded inbox will start to look like this:
@@ -102,7 +102,7 @@ flooded inbox will start to look like this:
 
 Maybe Apple's summary feature will boil the noise back down to "Can you please
 provide an update on XYZ Project?" but I can't help but think about how
-ridiculous it is that AI is being used to generate and summarize the same
+ridiculous it is that A.I. is being used to generate and summarize the same
 content. I don't have actual data about this, but some people measure their
 worth in terms of how many emails they can send and respond to and how fast they
 can do it. Now, their whole day will be spent sending generative text back and
@@ -111,11 +111,11 @@ forth and feeling accomplished about it. _Gross!_
 Hopefully this is a fad, like when users could
 <a rel="nofollow" href="https://www.reddit.com/r/ios/comments/c9jzn8/remember_being_able_to_tweet_for_the_notification/" title="From the ios community on Reddit: Remember being able to tweet for the notification center." target="_blank">Tweet from Notification Center.</a>
 Don't get me wrong, I'm cool with all the other Apple Intelligence features
-like <a rel="nofollow" href="https://appleinsider.com/articles/24/06/10/genmoji-will-allow-custom-ai-created-emojis-in-ios-18-and-might-resurrect-memoji" title="Genmoji will allow custom AI-created emojis in iOS 18, and might resurrect Memoji" target="_blank">Genmoji</a>,
+like <a rel="nofollow" href="https://appleinsider.com/articles/24/06/10/genmoji-will-allow-custom-ai-created-emojis-in-ios-18-and-might-resurrect-memoji" title="Genmoji will allow custom A.I.-created emojis in iOS 18, and might resurrect Memoji" target="_blank">Genmoji</a>,
 Siri, handwriting recognition, or the ability to
 <a rel="nofollow" href="https://www.apple.com/newsroom/2024/06/visionos-2-brings-new-spatial-computing-experiences-to-apple-vision-pro/" title="visionOS 2 brings new spatial computing experiences to Apple Vision Pro" target="_blank">
   convert 2D photos into Spatial photos</a>.
-Still, I was disappointed to see Apple promote Generative AI as a replacement
+Still, I was disappointed to see Apple promote Generative A.I. as a replacement
 for creative writing (yes, business emails fall into this category). If
 phones, computers, and tablets are still considered "communication" devices,
 this new era will be like eavesdropping on GPT conversations. No, thanks!

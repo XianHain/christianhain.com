@@ -29,7 +29,7 @@ while still trying to put my best foot forward at work and defend the integrity
 of my craft.
 
 Needless to say, it felt good to step away from that and enjoy the process of
-creating something without the nagging thought of, "AI's approaching, this could
+creating something without the nagging thought of, "A.I.'s approaching, this could
 all be over soon." 
 
 I use a lot of food analogies in my day-to-day work. Instead of comparing web
@@ -41,8 +41,8 @@ flavor, if you ask me.
 
 The little mental reset changed how I approached my work this week. Instead of
 feeling defensive, I feel reassured. I think people are starting to see through
-the hype promises of AI-only development and coming back to center and favor
-AI-assisted development.
+the hype promises of A.I.-only development and coming back to center and favor
+A.I.-assisted development.
 
 Still, there's a little bit of sadness in my heart. Even after giving away half
 the food I made, the fridge is still overflowing with leftovers. There's an
