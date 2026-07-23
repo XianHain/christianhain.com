@@ -6,7 +6,7 @@ headDescription: "15+ years in web U.I. design, U.X. enhancement, and team build
 menuTypes: ["utility"]
 footerTypes: ["csm", "webby", "vpat", "written-by-human"]
 
-lastmod: Thu Apr 30 2026 15:27:00 GMT-0400
+lastmod: Thu Jul 23 2026 17:39:00 GMT-0400
 
 canonical: "https://www.christianhain.com/cv/"
 ---
@@ -89,11 +89,11 @@ canonical: "https://www.christianhain.com/cv/"
         <dd><a rel="nofollow" href="https://www.splunk.com/en_us/newsroom/press-releases/2020/splunk-to-acquire-plumbr-and-rigor-expanding-the-worlds-most-comprehensive-observability-portfolio.html" title="Splunk to Acquire Plumbr and Rigor, Expanding the World’s Most Comprehensive Observability Portfolio" target="_blank">Rigor</a></dd>
         <dd><a rel="nofollow" href="https://www.atlassian.com/"                                                                                                                                        title="Atlassian Homepage"                                                                                   target="_blank">Atlassian Products</a></dd>
         <dd><a rel="nofollow" href="https://developer.goacoustic.com/acoustic-exp-analytics/docs/tealeaf-ui-capture-overview-1"                                                                        title="Acoustic Tealeaf Web SDK Overview"                                                                    target="_blank">Acoustic/CoreMetrics</a></dd>
-        <dd><a rel="nofollow" href="https://aws.amazon.com/free/"                                                                                                                                      title="AWS Homepage"                                                                                         target="_blank">Amazon Web Services (<abbr title="Amazon Web Services">A.W.S.</abbr>)</a></dd> 
+        <dd><a rel="nofollow" href="https://aws.amazon.com/free/"                                                                                                                                      title="AWS Homepage"                                                                                         target="_blank">Amazon Web Services (<abbr title="Amazon Web Services">AWS</abbr>)</a></dd> 
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
           Databases
         </dt>
-        <dd><a rel="nofollow" href="https://aws.amazon.com/what-is/sql/" title="What is SQL?" target="_blank"><abbr title="Structured Query Language">S.Q.L.</abbr></a> (<a rel="nofollow" href="https://dev.mysql.com" title="MySQL Developer Zone" target="_blank">MySQL</a>) and <a rel="nofollow" href="https://aws.amazon.com/nosql/" title="What is NoSQL?" target="_blank">NoSQL</a> (<a rel="nofollow" href="https://www.mongodb.com/docs/legacy/?site=docs" title="MongoDB@3 Legacy Docs Downloader" target="_blank">MongoDB</a>, <a rel="nofollow" href="https://aws.amazon.com/dynamodb/" title="AWS DynamoDB Landing Page" target="_blank">DynamoDB</a>)</dd>
+        <dd><a rel="nofollow" href="https://aws.amazon.com/what-is/sql/" title="What is SQL?" target="_blank"><abbr title="Structured Query Language">SQL</abbr></a> (<a rel="nofollow" href="https://dev.mysql.com" title="MySQL Developer Zone" target="_blank">MySQL</a>) and <a rel="nofollow" href="https://aws.amazon.com/nosql/" title="What is NoSQL?" target="_blank">NoSQL</a> (<a rel="nofollow" href="https://www.mongodb.com/docs/legacy/?site=docs" title="MongoDB@3 Legacy Docs Downloader" target="_blank">MongoDB</a>, <a rel="nofollow" href="https://aws.amazon.com/dynamodb/" title="AWS DynamoDB Landing Page" target="_blank">DynamoDB</a>)</dd>
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">
           Software development tools
         </dt>
@@ -113,7 +113,7 @@ canonical: "https://www.christianhain.com/cv/"
         Methodologies
       </h4>
       <ul class="cv-details">
-        <li><a rel="nofollow" href="https://getbem.com/"                                            title="BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development" target="_blank"><abbr title="Block Element Modifier">B.E.M.</abbr></a>, <a rel="nofollow" href="https://smacss.com/" title="Scalable and Modular Architecture for CSS" target="_blank"><abbr title="Scalable and Modular Architecture for CSS">S.M.A.CSS</abbr></a>, <a rel="nofollow" href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/" title="Axiomatic CSS and Lobotomized Owls" target="_blank">Lobotomized Owl</a>, and other conventions to manage enterprise-level <abbr title="Cascading Style Sheets">CSS</abbr></li>
+        <li><a rel="nofollow" href="https://getbem.com/"                                            title="BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development" target="_blank"><abbr title="Block Element Modifier">BEM</abbr></a>, <a rel="nofollow" href="https://smacss.com/" title="Scalable and Modular Architecture for CSS" target="_blank"><abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr></a>, <a rel="nofollow" href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/" title="Axiomatic CSS and Lobotomized Owls" target="_blank">Lobotomized Owl</a>, and other conventions to manage enterprise-level <abbr title="Cascading Style Sheets">CSS</abbr></li>
         <li><a rel="nofollow" href="https://atomicdesign.bradfrost.com/chapter-1/"                  title="Atomic Design by Brad Frost"                                                                                   target="_blank">Atomic Design</a></li>
         <li><a rel="nofollow" href="https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits/" title="Make Atomic Git Commits"                                                                                       target="_blank">Atomic Commits</a></li>
         <li><a rel="nofollow" href="https://gist.github.com/rveitch/84cea9650092119527bc"           title="Seven-in-One Pattern"                                                                                          target="_blank">Seven-in-One <abbr title="Cascading Style Sheets">CSS</abbr></a></li>
@@ -130,7 +130,7 @@ canonical: "https://www.christianhain.com/cv/"
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Documentation</dt>
         <dd>Technical documentation and diagramming</dd>
         <dd>Whitepapers</dd>
-        <dd>One-pagers/<abbr title="Press Release Frequently Asked Questions">P.R. F.A.Q.s</abbr></dd>
+        <dd>One-pagers/<abbr title="Press Release Frequently Asked Questions">PR FAQs</abbr></dd>
         <dd>Business Requirement Documents</dd>
         <dt class="cv-details__title cv-section-header cv-section-header--subheader-1">Misc</dt>
         <dd>Leadership</dd>
@@ -209,9 +209,9 @@ canonical: "https://www.christianhain.com/cv/"
         <abbr title="User Interfaces">U.I.s</abbr> into a unified platform, and my
         secondary goal was to bring structure to development teams by improving
         both the developer experience and the product's quality. So far, I've
-        been able to mentor several engineers, influence the product's
-        direction, and add structure to the day-to-day activities of multiple
-        teams. The efforts have paid off, as the company
+        been able to mentor several engineers, lead several high-impact products
+        and influence their direction, and add structure to the day-to-day
+        activities of multiple teams. The efforts have paid off, as the company
         <a rel="nofollow" href="https://finquery.com/press-releases/finquery-announces-majority-growth-investment-from-ta-associates/" title="FinQuery Announces Majority Growth Investment from TA Associates" target="_blank">received a majority-growth investment from TA Associates</a>
         and has a solid foundation to build upon.</p>
     </div>
@@ -219,26 +219,20 @@ canonical: "https://www.christianhain.com/cv/"
       Brought enterprise practices to startup culture
     </h3>
     <ol class="cv-list">
-      <li>Worked directly with cofounders to influence the technical direction
-        and drive platform modernization that reduced technical debt and
-        improved system reliability</li>
+      <li>Worked directly with cofounders to set technical standards and drive 
+        platform modernization that reduced technical debt and improved system
+        reliability</li>
       <li>Transformed organizational mindset from a "scrappy" approach to a
-        robust, scalable, and quality-driven culture with lunch-and-learns,
+        robust, scalable, and quality-driven culture via lunch-and-learns,
         policy docs, and applying a "shift left" approach to reviews and
         feedback, resulting in a significant reduction in pipeline
         incidents</li>
       <li>Co-hosted Scrum workshops and trainings with C-level leadership to
         upskill over 40 engineers and product managers</li>
-      <li>Coached the Lead Product Owner and other stakeholders on the
-        importance of effective ticket writing, enhancing sprint predictability
-        and velocity</li>
-      <li>Identified a few <em lang="fr">faux pas</em> in the technical
-        interview process and revamped them focus on practical skills and
-        cross-functional collaboration</li>
-      <li>Worked with Directors and VPs to improve morale by using techniques
-        discussed in <i>
-          <a rel="nofollow" href="https://www.tablegroup.com/topics-and-resources/teamwork-5-dysfunctions/?srsltid=AfmBOoqtlaTTdH_EfFmgM3GcR-2Q5RFr9VFaFZ1YEdTA2nD_FEoYJUQW" title="Table Group: The Five Dysfunctions of a Team" target="_blank">The Five Dysfunctions of a Team</a>
-        </i> by Patrick Lencioni</li>
+      <li>Coached the Lead Product Owner and other stakeholders on effective
+        ticket writing, enhancing sprint predictability and velocity</li>
+      <li>Revamped the technical interview process and onboarding to reduce
+        friction and set candidates up for success</li>
     </ol>
     <div class="cv-grid">
       <div class="cv-grid__a1">
@@ -271,24 +265,27 @@ canonical: "https://www.christianhain.com/cv/"
         </h3>
         <ol class="cv-list">
           <li>Architected, developed, and maintained a Web Component library to
-            support multiple teams and tech stacks, including React.js, Ruby,
-            and <a rel="nofollow" href="https://dotnet.microsoft.com/en-us/" title=".NET Homepage" target="_blank">.N.E.T.</a></li>
-          <li>Wrote Claude Agents to ensure library usage by non-developers to
-            expedite the transition from prototype to production 
+            support multiple teams and tech stacks, including React, Angular,
+            Ruby, and <a rel="nofollow" href="https://dotnet.microsoft.com/en-us/" title=".NET Homepage" target="_blank">.NET</a></li>
+          <li>Wrote Claude Agents to encourage library usage by non-developers
+            and expedite the transition from prototype to production 
           </li>
           <li>Hosted a static Storybook version of the library so engineers,
             designers, stakeholders, and Claude Agents could explore the
-            library's components and feature sets</li>
+            library's components, documentation, and feature sets</li>
           <li>Initiated the development for generated
-            <a rel="nofollow" href="https://www.itic.org/policy/accessibility/vpat" title="VPAT landing page" target="_blank"><abbr title="Voluntary Product Accessibility Template">V.P.A.T.&reg;</abbr> assessment</a> docs
+            <a rel="nofollow" href="https://www.itic.org/policy/accessibility/vpat" title="VPAT landing page" target="_blank"><abbr title="Voluntary Product Accessibility Template">VPAT&reg;</abbr> assessment</a> docs
             for every component in the library using 
             <a rel="nofollow" href="https://www.deque.com/axe/devtools/" title="Axe DevTools landing page" target="_blank">Axe DevTools</a> for
             automation and <a href="https://en.wikipedia.org/wiki/YAML" title="Wikipedia: Yet Another Markup Language" target="_blank">YAML</a> for
-            criteria that required manual review, allowing use to procure and
+            criteria that required manual review, allowing us to procure and
             maintain government clients that require an
             <a rel="nofollow" href="https://www.section508.gov/sell/acr/" title="" target="_blank">Accessibility Conformance Report</a></li>
-          <li>Worked with Product Owners and U.X. Designers to redefine and align
-            requirements with Browser standards and APIs</li>
+          <li>Worked with Product Owners and U.X. Designers to redefine and
+            align requirements with Browser standards and APIs</li>
+          <li>Used the Component Library and A.I. agents to rebrand acquired 
+            products so Sales teams can quickly demo them to new and existing
+            clients</li>
         </ol>
       </div>
     </div>
@@ -322,7 +319,7 @@ canonical: "https://www.christianhain.com/cv/"
         <a rel="nofollow" href="https://web.archive.org/web/20210701114812/https://www.fabric.com/" title="Internet Archive of Fabric.com" target="_blank">new homepage</a>,
         led a team of junior developers to reimagine the site’s
         <a rel="nofollow" href="https://web.archive.org/web/20210921201721/https://www.fabric.com/buy/ef-391/kona-cotton-teal-blue" title="Kona Cotton Teal Blue" target="_blank">product detail page</a>,
-        and led a Scrum team of senior developers to rewrite legacy .N.E.T.
+        and led a Scrum team of senior developers to rewrite legacy .NET
         applications with graceful deprecations. Most of the new applications
         used React.js and Next.js, and I used
         <a rel="nofollow" href="https://stenciljs.com/docs/v2/introduction" title="Stencil@2 Developer Docs" target="_blank">Stencil.js</a>
@@ -333,7 +330,8 @@ canonical: "https://www.christianhain.com/cv/"
         initiatives.</p>
       <p>Unfortunately, all good things must come to an end. During the last
         12 months of my time there, I helped sunset Fabric.com and transition
-        customers to Amazon.com proper.</p>
+        customers to <span style="white-space: nowrap">Amazon.com</span>
+        proper.</p>
     </div>
     <div class="cv-grid">
       <div class="cv-grid__a1">
@@ -366,8 +364,7 @@ canonical: "https://www.christianhain.com/cv/"
         <h3 class="cv-section-header cv-section-header--margin">Launched several products</h3>
         <ol class="cv-list">
           <li>Rewrote the site’s homepage and custom <abbr title="Content Management System">C.M.S.</abbr>
-            <abbr title="User Interface">U.I.</abbr> and 
-            <abbr title="Content Management System">C.M.S.</abbr>
+            <abbr title="User Interface">U.I.</abbr> and
             <abbr title="Application Programming Interface">A.P.I.</abbr> using
             React.js and
             <a rel="nofollow" href="https://github.com/jaredpalmer/razzle/tree/v2.4.1" title="Razzle@2 Source Code" target="_blank">Razzle.js</a></li>
@@ -378,7 +375,7 @@ canonical: "https://www.christianhain.com/cv/"
           <li>Rebranded and redeveloped transactional email templates, such as
             order and shipment notifications, using Foundation <abbr title="Cascading Style Sheets">CSS</abbr> and
             <a rel="nofollow" href="https://twig.symfony.com" title="Twig Homepage" target="_blank">Twig</a> for templating, 
-            <abbr title="Amazon Web Services">A.W.S.</abbr> <abbr title="Simple Queue Service">S.Q.S.</abbr> to manage the notification queue, and
+            <abbr title="Amazon Web Services">AWS</abbr> <abbr title="Simple Queue Service">SQS</abbr> to manage the notification queue, and
             Litmus.com for client testing</li>
           <li>Led <abbr title="User Interface">U.I.</abbr>/<abbr title="User Experience">U.X.</abbr> efforts
             to deprecate large portions of the site gracefully using feature 
