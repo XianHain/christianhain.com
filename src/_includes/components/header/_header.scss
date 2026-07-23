@@ -113,3 +113,7 @@
 .header__logo-credential path {
   fill: var(--header-logo-credential-color);
 }
+
+.header__logo--acsd {
+  --header-logo-credential-color: var(--header-logo-primary-color);
+}

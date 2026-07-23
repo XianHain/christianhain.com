@@ -4,7 +4,7 @@ pageName: cv
 headTitle: "Curriculum Vitae"
 headDescription: "15+ years in web U.I. design, U.X. enhancement, and team building. Expert in e-commerce, enterprise site redesigns, and development best practices."
 menuTypes: ["utility"]
-footerTypes: ["csm", "webby", "vpat", "written-by-human"]
+footerTypes: ["acsd", "webby", "vpat", "written-by-human"]
 
 lastmod: Thu Jul 23 2026 17:39:00 GMT-0400
 
