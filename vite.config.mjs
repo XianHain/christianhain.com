@@ -12,9 +12,9 @@ const generatedOnTimestamp = `Generated on: ${new Date().toISOString()}`;
 const htmlBannerPlugin = () => {
   return {
     name: 'html-banner',
-    writeBundle() {
+    async writeBundle() {
       const bannerContent = `<!-- ${generatedOnTimestamp} -->\n`;
-      const htmlFiles = glob.sync('./**/*.html', { cwd: OUTPUT_DIR });
+      const htmlFiles = await glob('./**/*.html', { cwd: OUTPUT_DIR });
       htmlFiles.forEach(file => {
         const fullPath = path.join(OUTPUT_DIR, file);
         try {
@@ -36,10 +36,10 @@ const htmlBannerPlugin = () => {
 const jsCssBannerPlugin = () => {
   return {
     name: 'js-css-banner',
-    writeBundle() {
+    async writeBundle() {
       const bannerContent = `/* ${generatedOnTimestamp} */\n`;
-      const jsFiles = glob.sync('./**/*.js', { cwd: OUTPUT_DIR });
-      const cssFiles = glob.sync('./**/*.css', { cwd: OUTPUT_DIR });
+      const jsFiles = await glob('./**/*.js', { cwd: OUTPUT_DIR });
+      const cssFiles = await glob('./**/*.css', { cwd: OUTPUT_DIR });
       [...jsFiles, ...cssFiles].forEach(file => {
         const fullPath = path.join(OUTPUT_DIR, file);
         try {
