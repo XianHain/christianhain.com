@@ -1,7 +1,7 @@
 import * as sass from 'sass';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import esbuild from 'esbuild';
+import {build} from 'vite';
 import {Buffer} from 'node:buffer';
 import {Liquid} from 'liquidjs';
 import {marked} from 'marked';
@@ -146,27 +146,35 @@ export default async function(eleventyConfig) {
       await fs.mkdir(outputDir, { recursive: true });
 
       // Unminified bundle
-      await esbuild.build({
-        entryPoints: [tempEntry],
-        bundle: true,
-        sourcemap: true,
-        minify: false,
-        format: 'esm',
-        outfile: jsPath,
-        write: true,
-        allowOverwrite: true,
+      await build({
+        build: {
+          lib: {
+            entry: tempEntry,
+            formats: ['es'],
+            fileName: () => 'scripts.js',
+          },
+          outDir: outputDir,
+          sourcemap: true,
+          minify: false,
+          emptyOutDir: false,
+        },
+        configFile: false,
       });
 
       // Minified bundle
-      await esbuild.build({
-        entryPoints: [tempEntry],
-        bundle: true,
-        sourcemap: true,
-        minify: true,
-        format: 'esm',
-        outfile: minJsPath,
-        write: true,
-        allowOverwrite: true,
+      await build({
+        build: {
+          lib: {
+            entry: tempEntry,
+            formats: ['es'],
+            fileName: () => 'scripts.min.js',
+          },
+          outDir: outputDir,
+          sourcemap: true,
+          minify: 'oxc',
+          emptyOutDir: false,
+        },
+        configFile: false,
       });
 
       // Clean up temp entry file

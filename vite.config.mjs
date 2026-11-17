@@ -65,5 +65,6 @@ export default defineConfig({
   build: {
     outDir: '.delete',
     emptyOutDir: false,
+    minify: 'oxc',
   },
 });
