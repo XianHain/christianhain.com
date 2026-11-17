@@ -19,6 +19,11 @@ export default async function(eleventyConfig) {
   eleventyConfig.addGlobalData('isProduction', productionMode);
 
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
+  eleventyConfig.addLiquidFilter("dateToRfc822", pluginRss.dateToRfc822);
+  eleventyConfig.addLiquidFilter("getNewestCollectionItemDate", pluginRss.getNewestCollectionItemDate);
+  eleventyConfig.addLiquidFilter("absoluteUrl", pluginRss.absoluteUrl);
+  eleventyConfig.addLiquidFilter("htmlToAbsoluteUrls", pluginRss.convertHtmlToAbsoluteUrls);
 
   // Create blog collection from markdown files
   eleventyConfig.addCollection("blog", function(collectionApi) {
