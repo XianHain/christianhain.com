@@ -4,9 +4,18 @@
   <main class="now-gallery">
     {% for item in now.data %}
       <div class="now-gallery__item">
-        <picture class="now-gallery__picture">
+        <picture
+          class="now-gallery__picture"
+          data-now-image-id="{{ item.id }}"
+          data-now-image-alt="{{ item.attributes.alt }}"
+        >
           <source srcset="{{ item.attributes.avif }}" type="image/avif">
-          <img src="{{ item.attributes.jpg }}" alt="{{ item.attributes.alt }}" class="now-gallery__image" loading="lazy">
+          <img
+            src="{{ item.attributes.jpg }}"
+            alt="{{ item.attributes.alt }}"
+            class="now-gallery__image"
+            loading="lazy"
+          >
         </picture>
       </div>
     {% endfor %}
