@@ -7,12 +7,12 @@
         <picture
           class="now-gallery__picture"
           data-now-image-id="{{ item.id }}"
-          data-now-image-alt="{{ item.attributes.alt }}"
+          data-now-image-alt="{{ item.attributes.alt | escape }}"
         >
           <source srcset="{{ item.attributes.avif }}" type="image/avif">
           <img
             src="{{ item.attributes.jpg }}"
-            alt="{{ item.attributes.alt }}"
+            alt="{{ item.attributes.alt | escape }}"
             class="now-gallery__image"
             loading="lazy"
           >
