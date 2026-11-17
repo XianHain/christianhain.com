@@ -1,26 +1,14 @@
 {% layout "../base.liquid" %}
 
 {% block content %}
-  <main>
-    {% include "../../components/page-title/page-title.liquid",
-      contentH1: "/now",
-      contentDescription: "Inspired by the <a rel='nofollow' href='http://nownownow.com' title='NowNowNow Community: sites with a /now page' target='_blank'>NowNowNow community</a>."
-    %}
-
-    <div class="now-clock">
-      <div class="now-clock__hand now-clock__hand--hour" data-js="hour-hand" style="transform: rotate(90deg);"></div>
-      <div class="now-clock__hand now-clock__hand--minute" data-js="minute-hand" style="transform: rotate(180deg);"></div>
-      <div class="now-clock__hand now-clock__hand--second" data-js="second-hand" style="transform: rotate(270deg);"></div>
-      <div class="now-clock__center-circle"></div>
-    </div>
-
-    <div class="now-content">
-      <div class="page__content">
-        <p class="now-content__timestamp">
-          Last updated: <time datetime="{{ lastmod }}">{{ lastmod | fullDateString }}</time>
-        </p>
-        {{ content | safe }}
+  <main class="now-gallery">
+    {% for item in now.data %}
+      <div class="now-gallery__item">
+        <picture class="now-gallery__picture">
+          <source srcset="{{ item.attributes.avif }}" type="image/avif">
+          <img src="{{ item.attributes.jpg }}" alt="{{ item.attributes.alt }}" class="now-gallery__image" loading="lazy">
+        </picture>
       </div>
-    </div>
+    {% endfor %}
   </main>
 {% endblock %}
