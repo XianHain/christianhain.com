@@ -18,20 +18,20 @@ xian.uses = xian.uses || (function uses() {
   }
 
   function _populateTemplate(item) {
-    if (!item) {
+    if (item) {
+      _clone = _template.content.cloneNode(true);
+
+      _setOrRemoveDlItem('url', item.dataset.href);
+      _setOrRemoveDlItem('vendor', item.dataset.vendor);
+      _setOrRemoveDlItem('license', item.dataset.license);
+      _setOrRemoveDlItem('description', item.dataset.description);
+      _setOrRemoveDlItem('product-name', item.dataset.productname);
+
+      _popoverContent.innerHTML = '';
+      _popoverContent.appendChild(_clone);
+    } else {
       throw new Error('Could not find item');
     }
-
-    _clone = _template.content.cloneNode(true);
-
-    _setOrRemoveDlItem('url', item.dataset.href);
-    _setOrRemoveDlItem('vendor', item.dataset.vendor);
-    _setOrRemoveDlItem('license', item.dataset.license);
-    _setOrRemoveDlItem('description', item.dataset.description);
-    _setOrRemoveDlItem('product-name', item.dataset.productname);
-
-    _popoverContent.innerHTML = '';
-    _popoverContent.appendChild(_clone);
   }
 
   function togglePopover(event) {

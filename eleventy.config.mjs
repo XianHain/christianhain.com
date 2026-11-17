@@ -120,7 +120,11 @@ export default async function(eleventyConfig) {
         };
       }
 
-      return resultString ?? undefined;
+      let finalResult = undefined;
+      if (resultString) {
+        finalResult = resultString;
+      }
+      return finalResult;
     },
   });
 

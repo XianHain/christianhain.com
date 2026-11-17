@@ -13,10 +13,14 @@ xian.adobeCreativeType = xian.adobeCreativeType || (function adobeCreativeType()
     const cacheCount = state.focusCount;
     state.focusCount = state.focusCount + weight;
 
-    return (
+    let result = false;
+    if (
       (cacheCount < 1 && state.focusCount === 1)
         || (cacheCount > 0 && state.focusCount === 0)
-    );
+    ) {
+      result = true;
+    }
+    return result;
   }
 
   function toggle() {
